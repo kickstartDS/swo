@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/header.schema.json",
+  "title": "Header",
+  "type": "object",
+  "properties": {
+    "logo": {
+      "$ref": "http://schema.kickstartds.com/base/picture.schema.json"
+    },
+    "logoHref": {
+      "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/logoHref"
+    },
+    "floating": {
+      "type": "boolean",
+      "title": "Floating",
+      "description": "Make the header float over the first Section",
+      "default": false
+    },
+    "navItems": {
+      "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/items"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["logo"]
+}

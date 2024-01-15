@@ -1,0 +1,34 @@
+# Node
+.DS_Store
+.env
+node_modules
+
+# Storybook
+storybook
+storybook-static
+public/design-tokens.source.json
+
+# Playroom
+tmp
+snippets.json
+components.ts
+
+# kickstartDS
+*.dereffed.json
+*-tokens.json
+src/token/tokens.css
+src/token/IconSprite.js
+src/token/tokens.js
+src/token/icon-sprite.html
+src/token/storybook/tokens.css
+src/token/storybook/icons.svg
+src/token-lughausen/tokens.css
+src/token-lughausen/IconSprite.js
+src/token-lughausen/tokens.js
+src/token-lughausen/icon-sprite.html
+src/token-lughausen/storybook/tokens.css
+src/token-lughausen/storybook/icons.svg
+
+static/*.css
+static/*.css.map
+dist

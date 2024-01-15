@@ -1,0 +1,82 @@
+@use "@kickstartds/base/lib/global/base.css";
+@use "./components/blog-teaser/blog-teaser";
+@use "./components/rich-text/rich-text";
+@use "./components/form/form";
+@use "./fonts-dsa";
+@use "./fonts-lughausen";
+@use "./fonts-telekom";
+@use "./fonts-google";
+@use "./selectors" as *;
+
+body {
+  background: var(--ks-background-color-default);
+}
+
+#{$selectors} {
+  --g-topic--font-weight: var(--ks-font-weight-medium);
+  --g-topic--color: var(--ks-color-fg);
+
+  --g-link--font-weight: var(--ks-font-weight-medium);
+  --g-link--color-hover: var(--ks-color-fg);
+
+  --g-header-height: calc(var(--g-logo--height) + var(--ks-spacing-stack-m) + var(--ks-spacing-stack-m)) !important;
+
+  --g-filter-drop-shadow--higlight: drop-shadow(0px 2px 30px var(--ks-color-primary-alpha-2))
+    drop-shadow(0px 1px 4px var(--ks-color-fg-alpha-8));
+
+  --g-gradient--higlight: linear-gradient(135deg, var(--ks-color-primary) 0%, var(--ks-color-secondary) 100%);
+
+  --l-section--content-padding: var(--ks-spacing-inset-l) !important;
+
+  @media (min-width: 42rem) {
+    --l-section--content-padding: var(--ks-spacing-inset-xl) !important;
+  }
+
+  --l-section--content-width-full: 100vw !important;
+  --l-section--content-width-wide: 1440px !important;
+
+  --dsa-interface--gradient: linear-gradient(
+    90deg,
+    var(--ks-color-primary-to-bg-9),
+    var(--ks-color-primary-to-bg-7),
+    var(--ks-color-primary-to-bg-9)
+  );
+  --dsa-interface--background: #161933b8;
+  --dsa-interface--shadow: 0 0 0 2px var(--ks-color-fg-alpha-8), 0 0px 8px var(--ks-color-fg-alpha-5);
+
+  &[ks-inverted="true"] {
+    --dsa-interface--background: var(--ks-color-bg-alpha-3);
+    --dsa-interface--shadow: 0 0 0 2px var(--ks-color-fg-alpha-9), 0 0px 8px var(--ks-color-fg-alpha-7);
+  }
+
+  .c-divider {
+    --c-divider--background: var(--ks-border-color-accent);
+  }
+
+  .c-post-head {
+    --c-post-head_date--font-weight: var(--ks-font-weight-semi-bold);
+  }
+
+  .g-link {
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
+    width: fit-content;
+    font-family: var(--ks-font-family-copy);
+    font-size: var(--ks-font-size-interface-m);
+    font-weight: var(--ks-font-weight-semi-bold);
+
+    .icon {
+      width: 1.5em;
+      height: 1.5em;
+    }
+  }
+
+  .c-tag-label--m {
+    --c-tag-label--vertical-padding: 0.4em;
+    --c-tag-label--horizontal-padding: 1em;
+    --c-tag-label_icon--size: 1.25em;
+    --c-tag-label_icon--margin-left: -0.6em;
+    --c-tag-label_icon--horizontal-padding: 0.5em;
+  }
+}

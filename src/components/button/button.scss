@@ -1,0 +1,14 @@
+@use "button-tokens.scss";
+
+.c-button {
+  box-shadow: var(--c-button--shadow);
+  transition-property: box-shadow, transform, background-color, color, border;
+
+  &:disabled {
+    pointer-events: none;
+  }
+
+  &:hover {
+    box-shadow: var(--c-button--shadow-hover);
+  }
+}

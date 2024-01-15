@@ -1,0 +1,63 @@
+@import "./header-tokens.scss";
+
+:root {
+  --g-logo--height: 2rem;
+
+  @media (min-width: 42rem) {
+    --g-logo--height: 2.5rem;
+  }
+
+  @media (min-width: 62em) {
+    --g-logo--height: 3rem;
+  }
+}
+
+.c-header {
+  --g-header--spacing-v: var(--ks-spacing-stack-m);
+  --g-header-spacing-h: var(--l-section--content-padding);
+
+  &--floating {
+    background: linear-gradient(var(--ks-color-bg-alpha-5), transparent);
+    position: absolute;
+    z-index: 999;
+
+    .c-nav-main__link {
+      text-shadow: 0 0 10px var(--ks-color-bg-alpha-5);
+    }
+  }
+
+  position: relative;
+  background-color: var(--ks-background-color-default);
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  padding: var(--g-header--spacing-v) 0;
+
+  &__content {
+    padding: 0 var(--g-header-spacing-h);
+    max-width: var(--l-section--content-width-max);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: block;
+
+    img {
+      height: var(--g-logo--height);
+      width: auto;
+    }
+  }
+}
+.c-header--spacer {
+  display: none;
+  @media (min-width: 640px) {
+    display: block;
+    height: var(--g-header-height);
+    z-index: -1;
+    position: relative;
+    background-color: var(--ks-background-color-default);
+  }
+}
