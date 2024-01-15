@@ -1,14 +1,14 @@
 {
-  "name": "@kickstartds/ds-agency-paid",
+  "name": "@kickstartds/ds-agency-premium",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/kickstartDS/ds-agency-paid#readme",
+  "homepage": "https://github.com/kickstartDS/ds-agency-premium#readme",
   "bugs": {
-    "url": "https://github.com/kickstartDS/ds-agency-paid/issues"
+    "url": "https://github.com/kickstartDS/ds-agency-premium/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kickstartDS/ds-agency-paid.git"
+    "url": "git+https://github.com/kickstartDS/ds-agency-premium.git"
   },
   "license": "(MIT OR Apache-2.0)",
   "author": "Jonas Ulrich <jonas.ulrich@kickstartds.com> (https://www.kickstartDS.com/)",
