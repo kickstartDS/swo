@@ -1,3 +1,15 @@
+# v1.0.2 (Mon Jan 15 2024)
+
+#### ⚠️ Pushed to `main`
+
+- build: fix playroom snippets ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v0.0.3 (Mon Jan 15 2024)
 
 #### ⚠️ Pushed to `main`
