@@ -18,13 +18,15 @@ const meta: Meta = {
   render: (args) => (
     <Slider {...args}>
       <TeaserCard
+        imageRatio="unset"
         layout="row"
-        headline="Transformation Love Story"
+        headline="Transformation Love Story Transformation Love Story Transformation Love Story Transformation Love Story"
         image="/static/img/showcases/comp_tfe01.jpg"
         target="#"
         text="See how we saved TechFusions a year's worth of development time"
       />
       <TeaserCard
+        imageRatio="unset"
         layout="row"
         headline="Speed and Scale"
         image="/static/img/showcases/comp_audio01.jpg"
@@ -32,6 +34,7 @@ const meta: Meta = {
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
       />
       <TeaserCard
+        imageRatio="unset"
         layout="row"
         headline="Saving Time and Money"
         image="/static/img/showcases/comp_eco01.jpg"
