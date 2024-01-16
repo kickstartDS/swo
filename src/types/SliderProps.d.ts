@@ -14,10 +14,7 @@ export type AutoPlay = boolean;
  * Add bullet navigation
  */
 export type ShowNavigation = boolean;
-/**
- * The number of visible slides
- */
-export type SlidesPerView = number;
+export type TeaseNeighbourSlides = boolean;
 /**
  * Size of the gap added between slides in pixels
  */
@@ -38,7 +35,7 @@ export type Class = string;
 export interface SliderProps {
   autoplay?: AutoPlay;
   nav?: ShowNavigation;
-  perView?: SlidesPerView;
+  teaseNeighbours?: TeaseNeighbourSlides;
   gap?: Gap;
   arrows?: ShowArrows;
   type?: Type;

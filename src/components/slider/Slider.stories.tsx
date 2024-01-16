@@ -54,7 +54,7 @@ export const WithArrows: Story = {
 export const WithTeasedNeighbours: Story = {
   args: pack({
     gap: 15,
-    perView: 1.5,
+    teaseNeighbours: true,
     arrows: true,
     nav: true,
   }),
