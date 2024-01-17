@@ -9,6 +9,7 @@ export const Slider: FC<PropsWithChildren<SliderProps>> = ({
   autoplay,
   arrows,
   teaseNeighbours,
+  equalHeight,
   children,
   ...props
 }) => (
@@ -18,6 +19,7 @@ export const Slider: FC<PropsWithChildren<SliderProps>> = ({
     arrows={arrows}
     autoplay={autoplay}
     teaseNeighbours={teaseNeighbours}
+    equalHeight={equalHeight}
     {...props}
   >
     {children}

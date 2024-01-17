@@ -5,23 +5,6 @@
     margin-top: var(--ks-spacing-stack-m);
   }
 
-  //make slider children grow vertically
-  .c-slider__slides {
-    align-items: stretch;
-
-    .c-slider__slide {
-      display: flex;
-      flex-grow: 1;
-      justify-content: stretch;
-      align-items: stretch;
-      height: auto;
-
-      > * {
-        flex-grow: 1;
-      }
-    }
-  }
-
   .c-slider__nav-item {
     &:hover {
       .c-slider__bullet {

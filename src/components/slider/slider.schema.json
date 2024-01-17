@@ -13,6 +13,9 @@
     "teaseNeighbours": {
       "$ref": "http://schema.kickstartds.com/content/slider.schema.json#/properties/teaseNeighbours"
     },
+    "equalHeight": {
+      "$ref": "http://schema.kickstartds.com/content/slider.schema.json#/properties/equalHeight"
+    },
     "gap": {
       "$ref": "http://schema.kickstartds.com/content/slider.schema.json#/properties/gap"
     },

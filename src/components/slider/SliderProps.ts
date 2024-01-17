@@ -14,6 +14,7 @@ export type AutoPlay = boolean;
  */
 export type ShowNavigation = boolean;
 export type TeaseNeighbourSlides = boolean;
+export type EqualizeSlidesHeights = boolean;
 /**
  * Size of the gap added between slides in pixels
  */
@@ -35,6 +36,7 @@ export interface SliderProps {
   autoplay?: AutoPlay;
   nav?: ShowNavigation;
   teaseNeighbours?: TeaseNeighbourSlides;
+  equalHeight?: EqualizeSlidesHeights;
   gap?: Gap;
   arrows?: ShowArrows;
   type?: Type;

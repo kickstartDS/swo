@@ -22,7 +22,7 @@ const meta: Meta = {
         layout="row"
         // headline="Transformation Love Story"
         headline="This is a headline that spans over multiple lines, though making the element take up lots of vertical space"
-        image="/static/img/showcases/comp_tfe01.jpg"
+        image="/img/showcases/comp_tfe01.jpg"
         target="#"
         text="See how we saved TechFusions a year's worth of development time"
       />
@@ -30,7 +30,7 @@ const meta: Meta = {
         imageRatio="unset"
         layout="row"
         headline="Speed and Scale"
-        image="/static/img/showcases/comp_audio01.jpg"
+        image="/img/showcases/comp_audio01.jpg"
         target="#"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
       />
@@ -38,7 +38,7 @@ const meta: Meta = {
         imageRatio="unset"
         layout="row"
         headline="Saving Time and Money"
-        image="/static/img/showcases/comp_eco01.jpg"
+        image="/img/showcases/comp_eco01.jpg"
         target="#"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
       />
