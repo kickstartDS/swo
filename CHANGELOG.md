@@ -1,3 +1,16 @@
+# v1.0.5 (Thu Jan 18 2024)
+
+#### 🐛 Bug Fix
+
+- Update slider [#1](https://github.com/kickstartDS/ds-agency-premium/pull/1) ([@lmestel](https://github.com/lmestel) [@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 2
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.4 (Thu Jan 18 2024)
 
 #### ⚠️ Pushed to `main`
