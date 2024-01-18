@@ -163,13 +163,7 @@
       "items": {
         "anyOf": [
           {
-            "$ref": "http://schema.mydesignsystem.com/hero.schema.json"
-          },
-          {
             "$ref": "http://schema.mydesignsystem.com/cta.schema.json"
-          },
-          {
-            "$ref": "http://schema.mydesignsystem.com/mosaic.schema.json"
           },
           {
             "$ref": "http://schema.mydesignsystem.com/faq.schema.json"
@@ -181,10 +175,25 @@
             "$ref": "http://schema.mydesignsystem.com/gallery.schema.json"
           },
           {
-            "$ref": "http://schema.mydesignsystem.com/headline.schema.json"
+            "$ref": "http://schema.mydesignsystem.com/hero.schema.json"
           },
           {
             "$ref": "http://schema.mydesignsystem.com/image-story.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/image-text.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/logos.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/mosaic.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/page-intro.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/slider.schema.json"
           },
           {
             "$ref": "http://schema.mydesignsystem.com/split.schema.json"
@@ -203,12 +212,6 @@
           },
           {
             "$ref": "http://schema.mydesignsystem.com/video-curtain.schema.json"
-          },
-          {
-            "$ref": "http://schema.mydesignsystem.com/image-text.schema.json"
-          },
-          {
-            "$ref": "http://schema.mydesignsystem.com/logos.schema.json"
           }
         ]
       }

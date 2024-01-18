@@ -5,22 +5,23 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {HeroProps} from "../hero/HeroProps";
 import type {CtaProps} from "../cta/CtaProps";
-import type {MosaicProps} from "../mosaic/MosaicProps";
 import type {FaqProps} from "../faq/FaqProps";
 import type {FeaturesProps} from "../features/FeaturesProps";
 import type {GalleryProps} from "../gallery/GalleryProps";
-import type {HeadlineProps} from "../headline/HeadlineProps";
+import type {HeroProps} from "../hero/HeroProps";
 import type {ImageStoryProps} from "../image-story/ImageStoryProps";
+import type {ImageTextProps} from "../image-text/ImageTextProps";
+import type {LogosProps} from "../logos/LogosProps";
+import type {MosaicProps} from "../mosaic/MosaicProps";
+import type {PageIntroProps} from "../page-intro/PageIntroProps";
+import type {SliderProps} from "../slider/SliderProps";
 import type {SplitProps} from "../split/SplitProps";
 import type {StatsProps} from "../stats/StatsProps";
 import type {TeaserCardProps} from "../teaser-card/TeaserCardProps";
 import type {TestimonialsProps} from "../testimonials/TestimonialsProps";
 import type {TextProps} from "../text/TextProps";
 import type {VideoCurtainProps} from "../video-curtain/VideoCurtainProps";
-import type {ImageTextProps} from "../image-text/ImageTextProps";
-import type {LogosProps} from "../logos/LogosProps";
 import type {ButtonProps} from "../button/ButtonProps";
 
 /**
@@ -114,22 +115,23 @@ export type TileWidth = "control" | "card" | "narrow" | "medium" | "wide";
  * Allowed components for content
  */
 export type Content = (
-  | HeroProps
   | CtaProps
-  | MosaicProps
   | FaqProps
   | FeaturesProps
   | GalleryProps
-  | HeadlineProps
+  | HeroProps
   | ImageStoryProps
+  | ImageTextProps
+  | LogosProps
+  | MosaicProps
+  | PageIntroProps
+  | SliderProps
   | SplitProps
   | StatsProps
   | TeaserCardProps
   | TestimonialsProps
   | TextProps
   | VideoCurtainProps
-  | ImageTextProps
-  | LogosProps
 )[];
 /**
  * Buttons of the Button Group
