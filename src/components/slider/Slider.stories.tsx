@@ -20,8 +20,7 @@ const meta: Meta = {
       <TeaserCard
         imageRatio="unset"
         layout="row"
-        // headline="Transformation Love Story"
-        headline="This is a headline that spans over multiple lines, though making the element take up lots of vertical space"
+        headline="Transformation Love Story"
         image="/img/showcases/comp_tfe01.jpg"
         target="#"
         text="See how we saved TechFusions a year's worth of development time"
