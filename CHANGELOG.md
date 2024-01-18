@@ -1,3 +1,15 @@
+# v1.0.3 (Thu Jan 18 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(teaser-card): add buttonlabel prop ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.2 (Mon Jan 15 2024)
 
 #### ⚠️ Pushed to `main`
