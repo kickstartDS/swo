@@ -1,3 +1,15 @@
+# v1.0.6 (Thu Jan 18 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(slider-tokens): increase selector specificity ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.5 (Thu Jan 18 2024)
 
 #### 🐛 Bug Fix
