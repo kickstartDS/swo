@@ -1,3 +1,16 @@
+# v1.0.7 (Thu Jan 18 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branches 'main' and 'main' of github.com:kickstartDS/ds-agency-premium ([@fleven-kds](https://github.com/fleven-kds))
+- feat(componentTeaser): remove component ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.6 (Thu Jan 18 2024)
 
 #### ⚠️ Pushed to `main`
