@@ -2664,10 +2664,10 @@
     classnames "^2.3.2"
     date-fns "^2.30.0"
 
-"@kickstartds/content@3.0.0--canary.166.171.0":
-  version "3.0.0--canary.166.171.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/content/-/content-3.0.0--canary.166.171.0.tgz#1a38b55bea21c2ef02a5a8e570ce63e99b9252e3"
-  integrity sha512-e8uX6zaqoZi5AfbFi+OEH19uZgah1yhYJhZtH7b3AqChwvoANUfZWAi+Qv9reSmgN9lLDnf6GOH0fG1/LgqbNg==
+"@kickstartds/content@3.0.0-next.7":
+  version "3.0.0-next.7"
+  resolved "https://registry.yarnpkg.com/@kickstartds/content/-/content-3.0.0-next.7.tgz#6682627aa0da1b26c6dedcdeee0319a5f3836d13"
+  integrity sha512-a1nhOW65DCW2G5GjCJzExoVVn/GTaqnwSMuWQ1etq/wJ+AZR7Ky35vIz6e7GSQF2rCuHJ4qyu9h4HnayEaLlSw==
   dependencies:
     "@babel/runtime" "^7.21.0"
     "@glidejs/glide" "^3.6.0"
