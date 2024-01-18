@@ -18,23 +18,26 @@ const meta: Meta = {
   render: (args) => (
     <Slider {...args}>
       <TeaserCard
+        imageRatio="unset"
         layout="row"
         headline="Transformation Love Story"
-        image="/static/img/showcases/comp_tfe01.jpg"
+        image="/img/showcases/comp_tfe01.jpg"
         target="#"
         text="See how we saved TechFusions a year's worth of development time"
       />
       <TeaserCard
+        imageRatio="unset"
         layout="row"
         headline="Speed and Scale"
-        image="/static/img/showcases/comp_audio01.jpg"
+        image="/img/showcases/comp_audio01.jpg"
         target="#"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
       />
       <TeaserCard
+        imageRatio="unset"
         layout="row"
         headline="Saving Time and Money"
-        image="/static/img/showcases/comp_eco01.jpg"
+        image="/img/showcases/comp_eco01.jpg"
         target="#"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
       />
@@ -54,7 +57,7 @@ export const WithArrows: Story = {
 export const WithTeasedNeighbours: Story = {
   args: pack({
     gap: 15,
-    perView: 1.5,
+    teaseNeighbours: true,
     arrows: true,
     nav: true,
   }),

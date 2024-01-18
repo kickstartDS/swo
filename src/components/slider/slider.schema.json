@@ -10,8 +10,11 @@
     "nav": {
       "$ref": "http://schema.kickstartds.com/content/slider.schema.json#/properties/nav"
     },
-    "perView": {
-      "$ref": "http://schema.kickstartds.com/content/slider.schema.json#/properties/perView"
+    "teaseNeighbours": {
+      "$ref": "http://schema.kickstartds.com/content/slider.schema.json#/properties/teaseNeighbours"
+    },
+    "equalHeight": {
+      "$ref": "http://schema.kickstartds.com/content/slider.schema.json#/properties/equalHeight"
     },
     "gap": {
       "$ref": "http://schema.kickstartds.com/content/slider.schema.json#/properties/gap"
