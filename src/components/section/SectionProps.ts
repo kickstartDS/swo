@@ -14,7 +14,6 @@ import type {ImageStoryProps} from "../image-story/ImageStoryProps";
 import type {ImageTextProps} from "../image-text/ImageTextProps";
 import type {LogosProps} from "../logos/LogosProps";
 import type {MosaicProps} from "../mosaic/MosaicProps";
-import type {PageIntroProps} from "../page-intro/PageIntroProps";
 import type {SliderProps} from "../slider/SliderProps";
 import type {SplitProps} from "../split/SplitProps";
 import type {StatsProps} from "../stats/StatsProps";
@@ -124,7 +123,6 @@ export type Content = (
   | ImageTextProps
   | LogosProps
   | MosaicProps
-  | PageIntroProps
   | SliderProps
   | SplitProps
   | StatsProps

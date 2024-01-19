@@ -190,9 +190,6 @@
             "$ref": "http://schema.mydesignsystem.com/mosaic.schema.json"
           },
           {
-            "$ref": "http://schema.mydesignsystem.com/page-intro.schema.json"
-          },
-          {
             "$ref": "http://schema.mydesignsystem.com/slider.schema.json"
           },
           {
