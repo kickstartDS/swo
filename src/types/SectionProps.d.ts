@@ -6,22 +6,23 @@ declare module "@kickstartds/base/lib/section/typing" {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {HeroProps} from "@kickstartds/hero.schema.json/lib/hero/typing";
 import type {CtaProps} from "@kickstartds/cta.schema.json/lib/cta/typing";
-import type {MosaicProps} from "@kickstartds/mosaic.schema.json/lib/mosaic/typing";
 import type {FaqProps} from "@kickstartds/faq.schema.json/lib/faq/typing";
 import type {FeaturesProps} from "@kickstartds/features.schema.json/lib/features/typing";
 import type {GalleryProps} from "@kickstartds/gallery.schema.json/lib/gallery/typing";
-import type {HeadlineProps} from "@kickstartds/base/lib/headline/typing";
+import type {HeroProps} from "@kickstartds/hero.schema.json/lib/hero/typing";
 import type {ImageStoryProps} from "@kickstartds/image-story.schema.json/lib/image-story/typing";
+import type {ImageTextProps} from "@kickstartds/image-text.schema.json/lib/image-text/typing";
+import type {LogosProps} from "@kickstartds/logos.schema.json/lib/logos/typing";
+import type {MosaicProps} from "@kickstartds/mosaic.schema.json/lib/mosaic/typing";
+import type {PageIntroProps} from "@kickstartds/page-intro.schema.json/lib/page-intro/typing";
+import type {SliderProps} from "@kickstartds/content/lib/slider/typing";
 import type {SplitProps} from "@kickstartds/split.schema.json/lib/split/typing";
 import type {StatsProps} from "@kickstartds/stats.schema.json/lib/stats/typing";
 import type {TeaserCardProps} from "@kickstartds/teaser-card.schema.json/lib/teaser-card/typing";
 import type {TestimonialsProps} from "@kickstartds/testimonials.schema.json/lib/testimonials/typing";
 import type {TextProps} from "@kickstartds/text.schema.json/lib/text/typing";
 import type {VideoCurtainProps} from "@kickstartds/video-curtain.schema.json/lib/video-curtain/typing";
-import type {ImageTextProps} from "@kickstartds/image-text.schema.json/lib/image-text/typing";
-import type {LogosProps} from "@kickstartds/logos.schema.json/lib/logos/typing";
 import type {ButtonProps} from "@kickstartds/base/lib/button/typing";
 
 /**
@@ -115,22 +116,23 @@ export type TileWidth = "control" | "card" | "narrow" | "medium" | "wide";
  * Allowed components for content
  */
 export type Content = (
-  | HeroProps
   | CtaProps
-  | MosaicProps
   | FaqProps
   | FeaturesProps
   | GalleryProps
-  | HeadlineProps
+  | HeroProps
   | ImageStoryProps
+  | ImageTextProps
+  | LogosProps
+  | MosaicProps
+  | PageIntroProps
+  | SliderProps
   | SplitProps
   | StatsProps
   | TeaserCardProps
   | TestimonialsProps
   | TextProps
   | VideoCurtainProps
-  | ImageTextProps
-  | LogosProps
 )[];
 /**
  * Buttons of the Button Group
