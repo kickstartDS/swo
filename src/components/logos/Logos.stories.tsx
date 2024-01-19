@@ -16,7 +16,7 @@ const meta: Meta<typeof Logos> = {
 export default meta;
 type Story = StoryObj<typeof Logos>;
 
-export const WithTaglineAndButton: Story = {
+export const CenteredWithButton: Story = {
   args: pack({
     logos: [
       {
@@ -48,6 +48,41 @@ export const WithTaglineAndButton: Story = {
       toggle: true,
       style: "button",
     },
+  }),
+};
+
+export const LeftAlignedWithTextLink: Story = {
+  args: pack({
+    logos: [
+      {
+        src: "img/logos/logoipsum-212.svg",
+        alt: "Logo 1",
+      },
+      {
+        src: "img/logos/logoipsum-217.svg",
+        alt: "Logo 2",
+      },
+      {
+        src: "img/logos/logoipsum-239.svg",
+        alt: "Logo 3",
+      },
+      {
+        src: "img/logos/logoipsum-244.svg",
+        alt: "Logo 4",
+      },
+      {
+        src: "img/logos/logoipsum-250.svg",
+        alt: "Logo 5",
+      },
+      {
+        src: "img/logos/logoipsum-286.svg",
+        alt: "Logo 6",
+      },
+    ],
+    cta: {
+      toggle: true,
+    },
+    align: "left",
   }),
 };
 
@@ -108,41 +143,6 @@ export const LogoWall: Story = {
     cta: {
       toggle: false,
     },
-  }),
-};
-
-export const WithTextLink: Story = {
-  args: pack({
-    logos: [
-      {
-        src: "img/logos/logoipsum-212.svg",
-        alt: "Logo 1",
-      },
-      {
-        src: "img/logos/logoipsum-217.svg",
-        alt: "Logo 2",
-      },
-      {
-        src: "img/logos/logoipsum-239.svg",
-        alt: "Logo 3",
-      },
-      {
-        src: "img/logos/logoipsum-244.svg",
-        alt: "Logo 4",
-      },
-      {
-        src: "img/logos/logoipsum-250.svg",
-        alt: "Logo 5",
-      },
-      {
-        src: "img/logos/logoipsum-286.svg",
-        alt: "Logo 6",
-      },
-    ],
-    cta: {
-      toggle: true,
-    },
-    align: "left",
   }),
 };
 
