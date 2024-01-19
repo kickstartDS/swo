@@ -1,3 +1,15 @@
+# v1.1.3 (Fri Jan 19 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(pageIntro): remove pageIntro component ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.1.2 (Fri Jan 19 2024)
 
 #### ⚠️ Pushed to `main`
