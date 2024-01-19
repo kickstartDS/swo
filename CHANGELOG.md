@@ -1,3 +1,15 @@
+# v1.2.0 (Fri Jan 19 2024)
+
+#### 🚀 Enhancement
+
+- Rename `tileWidth` options [#4](https://github.com/kickstartDS/ds-agency-premium/pull/4) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.1.3 (Fri Jan 19 2024)
 
 #### ⚠️ Pushed to `main`
