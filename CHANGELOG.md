@@ -1,3 +1,15 @@
+# v1.2.1 (Mon Jan 22 2024)
+
+#### 🐛 Bug Fix
+
+- Inline themes [#2](https://github.com/kickstartDS/ds-agency-premium/pull/2) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.2.0 (Fri Jan 19 2024)
 
 #### 🚀 Enhancement
