@@ -34,10 +34,10 @@ export const ConditionalSlider: FC<
 
 export const Testimonials: FC<
   TestimonialsProps & HTMLAttributes<HTMLElement>
-> = ({ testimonials, layout = "slider", ...props }) => {
+> = ({ items, layout = "slider", ...props }) => {
   return (
     <ConditionalSlider layout={layout} arrows nav {...props}>
-      {testimonials.map((testimonial, index) => (
+      {items.map((item, index) => (
         <Quote
           className={
             layout === "alternating" && index % 2 === 1
@@ -45,23 +45,23 @@ export const Testimonials: FC<
               : ""
           }
           key={index}
-          text={testimonial.quote}
-          source={testimonial.name}
-          byline={testimonial.title}
-          image={testimonial.image.src}
+          text={item.quote}
+          source={item.name}
+          byline={item.title}
+          image={item.image.src}
           renderSource={() => (
             <>
-              {testimonial?.rating &&
-                (testimonial?.rating ? (
+              {item?.rating &&
+                (item?.rating ? (
                   <div>
-                    {[...Array(testimonial?.rating)].map((_, index) => (
+                    {[...Array(item?.rating)].map((_, index) => (
                       <span key={index}>★</span>
                     ))}
                   </div>
                 ) : (
                   ""
                 ))}
-              <div className="c-quote__source">{testimonial.name}</div>
+              <div className="c-quote__source">{item.name}</div>
             </>
           )}
         />

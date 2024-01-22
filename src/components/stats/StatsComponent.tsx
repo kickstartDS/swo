@@ -4,20 +4,20 @@ import "./stats.scss";
 import { CountUp } from "@kickstartds/content/lib/count-up";
 
 export const Stats: FC<StatsProps & HTMLAttributes<HTMLElement>> = ({
-  stats = [],
+  items = [],
 }) => {
   return (
     <div className="c-stats">
-      {stats.map((stat, index) => (
+      {items.map((item, index) => (
         <CountUp
           className="c-stats__item"
           key={index}
-          to={stat.number}
+          to={item.number}
           icon={{
-            icon: stat?.icon,
+            icon: item?.icon,
           }}
-          text={stat?.description}
-          topic={stat.title}
+          text={item?.description}
+          topic={item.title}
         />
       ))}
     </div>

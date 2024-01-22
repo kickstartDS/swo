@@ -15,7 +15,7 @@ export type LogoTagline = string;
  * @minItems 1
  * @maxItems 20
  */
-export type Logos =
+export type Items =
   | [
       {
         src: URL;
@@ -934,7 +934,7 @@ export type LinkLabel = string;
  */
 export interface LogosProps {
   tagline?: LogoTagline;
-  logos: Logos;
+  items?: Items;
   align?: Alignment;
   logosPerRow?: LogosPerRow;
   cta?: CallToAction;

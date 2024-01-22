@@ -11,7 +11,7 @@
  * @minItems 1
  * @maxItems 4
  */
-export type Stats = [Stat] | [Stat, Stat] | [Stat, Stat, Stat] | [Stat, Stat, Stat, Stat];
+export type Items = [Stat] | [Stat, Stat] | [Stat, Stat, Stat] | [Stat, Stat, Stat, Stat];
 /**
  * The number of the stat
  */
@@ -33,7 +33,7 @@ export type Icon = string;
  * Component used to display stats with a number upcounter
  */
 export interface StatsProps {
-  stats: Stats;
+  items?: Items;
 }
 export interface Stat {
   number: Number;

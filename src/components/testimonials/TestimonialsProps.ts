@@ -36,7 +36,7 @@ export type Rating = number;
 /**
  * Add testimonials featuring an image, a quote, a source and a rating
  */
-export type Testimonials = {
+export type Items = {
   quote: Quote1;
   name: Name;
   title?: Title;
@@ -52,5 +52,5 @@ export type Testimonials = {
  */
 export interface TestimonialsProps {
   layout?: Quote;
-  testimonials?: Testimonials;
+  items?: Items;
 }

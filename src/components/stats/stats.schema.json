@@ -5,9 +5,9 @@
   "description": "Component used to display stats with a number upcounter",
   "type": "object",
   "properties": {
-    "stats": {
+    "items": {
+      "title": "Items",
       "type": "array",
-      "title": "Stats",
       "description": "The stats to display with a number upcounter",
       "items": {
         "type": "object",
