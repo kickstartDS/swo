@@ -146,12 +146,20 @@ The implementation of the new **Design System** and migration to **Storyblok** t
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/img/showcases/comp_tfe01.jpg"
+        button={{
+          label: "View showcase",
+          chevron: true,
+        }}
       />
       <TeaserCard
         target="#"
         headline="Speed and Scale"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
         image="/img/showcases/comp_audio01.jpg"
+        button={{
+          label: "View showcase",
+          chevron: true,
+        }}
       />
     </Section>
     <Section>
@@ -166,11 +174,11 @@ The implementation of the new **Design System** and migration to **Storyblok** t
 );
 
 export default {
-  title: "Pages/Pages",
+  title: "Pages/Archetypes",
   render: Page,
   parameters: {
     layout: "fullscreen",
   },
 };
 
-export const Showcase = {};
+export const Content = {};

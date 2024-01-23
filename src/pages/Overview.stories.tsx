@@ -199,11 +199,11 @@ const Page = () => (
 );
 
 export default {
-  title: "Pages/Pages",
+  title: "Pages/Archetypes",
   render: Page,
   parameters: {
     layout: "fullscreen",
   },
 };
 
-export const ShowcasesOverview = {};
+export const Overview = {};

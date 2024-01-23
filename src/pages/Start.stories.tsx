@@ -157,6 +157,10 @@ We empower your digital teams with the knowledge and skills to manage and evolve
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/img/showcases/comp_tfe01.jpg"
+        button={{
+          label: "View showcase",
+          chevron: true,
+        }}
       />
       <TeaserCard
         target="/showcase-launchpad_paid"
@@ -164,12 +168,20 @@ We empower your digital teams with the knowledge and skills to manage and evolve
         label="Freshest Fruit"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
         image="/img/showcases/comp_audio01.jpg"
+        button={{
+          label: "View showcase",
+          chevron: true,
+        }}
       />
       <TeaserCard
         target="/showcase-eco_paid"
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
         image="/img/showcases/comp_eco01.jpg"
+        button={{
+          label: "View showcase",
+          chevron: true,
+        }}
       />
     </Section>
 
@@ -335,11 +347,11 @@ We empower your digital teams with the knowledge and skills to manage and evolve
 );
 
 export default {
-  title: "Pages/Pages",
+  title: "Pages/Archetypes",
   render: Page,
   parameters: {
     layout: "fullscreen",
   },
 };
 
-export const Landingpage = {};
+export const Start = {};
