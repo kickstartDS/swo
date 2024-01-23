@@ -1,3 +1,15 @@
+# v1.2.7 (Tue Jan 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(ArticelTeaser): fix type error ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.2.6 (Tue Jan 23 2024)
 
 #### ⚠️ Pushed to `main`
