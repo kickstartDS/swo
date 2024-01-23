@@ -23,6 +23,10 @@ const meta: Meta = {
         headline="Transformation Love Story"
         image="/img/showcases/comp_tfe01.jpg"
         target="#"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         text="See how we saved TechFusions a year's worth of development time"
       />
       <TeaserCard
@@ -31,6 +35,10 @@ const meta: Meta = {
         headline="Speed and Scale"
         image="/img/showcases/comp_audio01.jpg"
         target="#"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
       />
       <TeaserCard
@@ -39,6 +47,10 @@ const meta: Meta = {
         headline="Saving Time and Money"
         image="/img/showcases/comp_eco01.jpg"
         target="#"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
       />
     </Slider>

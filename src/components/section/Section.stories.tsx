@@ -3,11 +3,8 @@ import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import sectionStories from "@kickstartds/base/lib/section/section.stories";
 import { TeaserCard } from "../teaser-card/TeaserCardComponent";
-import { Testimonials } from "../testimonials/TestimonialsComponent"; // Added this line
 import schema from "./section.schema.dereffed.json";
 import { Section } from "./SectionComponent";
-import { ImageText } from "../image-text/ImageTextComponent";
-import { Headline } from "../headline/HeadlineComponent";
 
 const meta: Meta<typeof Section> = {
   ...sectionStories,
@@ -22,6 +19,10 @@ const meta: Meta<typeof Section> = {
       <TeaserCard
         layout="row"
         target="#"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/img/showcases/comp_tfe01.jpg"
@@ -29,6 +30,10 @@ const meta: Meta<typeof Section> = {
       <TeaserCard
         layout="row"
         target="#"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         headline="Speed and Scale"
         label="Freshest Fruit"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
@@ -37,6 +42,10 @@ const meta: Meta<typeof Section> = {
       <TeaserCard
         layout="row"
         target="#"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
         image="/img/showcases/comp_eco01.jpg"
@@ -72,6 +81,10 @@ export const Slider: Story = {
       <TeaserCard
         layout="row"
         target="/showcase-techfusion_paid"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/img/showcases/comp_tfe01.jpg"
@@ -79,6 +92,10 @@ export const Slider: Story = {
       <TeaserCard
         layout="row"
         target="/showcase-launchpad_paid"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         headline="Speed and Scale"
         label="Freshest Fruit"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
@@ -87,6 +104,10 @@ export const Slider: Story = {
       <TeaserCard
         layout="row"
         target="/showcase-eco_paid"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
         image="/img/showcases/comp_eco01.jpg"
@@ -94,6 +115,10 @@ export const Slider: Story = {
       <TeaserCard
         layout="row"
         target="/showcase-techfusion_paid"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/img/showcases/comp_tfe01.jpg"
@@ -101,6 +126,10 @@ export const Slider: Story = {
       <TeaserCard
         layout="row"
         target="/showcase-launchpad_paid"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         headline="Speed and Scale"
         label="Freshest Fruit"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
@@ -109,6 +138,10 @@ export const Slider: Story = {
       <TeaserCard
         layout="row"
         target="/showcase-eco_paid"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
         image="/img/showcases/comp_eco01.jpg"
@@ -116,6 +149,10 @@ export const Slider: Story = {
       <TeaserCard
         layout="row"
         target="/showcase-techfusion_paid"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/img/showcases/comp_tfe01.jpg"
@@ -123,6 +160,10 @@ export const Slider: Story = {
       <TeaserCard
         layout="row"
         target="/showcase-launchpad_paid"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         headline="Speed and Scale"
         label="Freshest Fruit"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
@@ -131,6 +172,10 @@ export const Slider: Story = {
       <TeaserCard
         layout="row"
         target="/showcase-eco_paid"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
         image="/img/showcases/comp_eco01.jpg"
@@ -138,6 +183,10 @@ export const Slider: Story = {
       <TeaserCard
         layout="row"
         target="/showcase-techfusion_paid"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/img/showcases/comp_tfe01.jpg"
@@ -145,6 +194,10 @@ export const Slider: Story = {
       <TeaserCard
         layout="row"
         target="/showcase-launchpad_paid"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         headline="Speed and Scale"
         label="Freshest Fruit"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
@@ -153,6 +206,10 @@ export const Slider: Story = {
       <TeaserCard
         layout="row"
         target="/showcase-eco_paid"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
         image="/img/showcases/comp_eco01.jpg"
@@ -288,6 +345,10 @@ export const TileLayout: Story = {
       <TeaserCard
         layout="row"
         target="#"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/img/showcases/comp_tfe01.jpg"
@@ -295,6 +356,10 @@ export const TileLayout: Story = {
       <TeaserCard
         layout="row"
         target="#"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         headline="Speed and Scale"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
         image="/img/showcases/comp_audio01.jpg"
@@ -321,6 +386,10 @@ export const FlexLayout: Story = {
       <TeaserCard
         layout="row"
         target="#"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/img/showcases/comp_tfe01.jpg"
@@ -328,6 +397,10 @@ export const FlexLayout: Story = {
       <TeaserCard
         layout="row"
         target="#"
+        button={{
+          label: "View page",
+          hidden: true,
+        }}
         headline="Speed and Scale"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
         image="/img/showcases/comp_audio01.jpg"

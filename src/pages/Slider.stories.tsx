@@ -17,42 +17,64 @@ const Page = () => (
       }}
     >
       <TeaserCard
-        target="/showcase-techfusion_paid"
+        target="#"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/img/showcases/comp_tfe01.jpg"
+        button={{
+          label: "View showcase",
+          hidden: true,
+        }}
       />
       <TeaserCard
-        target="/showcase-launchpad_paid"
+        target="#"
         headline="Speed and Scale"
-        label="Freshest Fruit"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
         image="/img/showcases/comp_audio01.jpg"
+        button={{
+          label: "View showcase",
+          hidden: true,
+        }}
       />
       <TeaserCard
-        target="/showcase-eco_paid"
+        target="#"
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
         image="/img/showcases/comp_eco01.jpg"
+        button={{
+          label: "View showcase",
+          hidden: true,
+        }}
       />
       <TeaserCard
-        target="/showcase-techfusion_paid"
+        target="#"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/img/showcases/comp_tfe01.jpg"
+        button={{
+          label: "View showcase",
+          hidden: true,
+        }}
       />
       <TeaserCard
-        target="/showcase-launchpad_paid"
+        target="#"
         headline="Speed and Scale"
-        label="Freshest Fruit"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
         image="/img/showcases/comp_audio01.jpg"
+        button={{
+          label: "View showcase",
+          hidden: true,
+        }}
       />
       <TeaserCard
-        target="/showcase-eco_paid"
+        target="#"
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
         image="/img/showcases/comp_eco01.jpg"
+        button={{
+          label: "View showcase",
+          hidden: true,
+        }}
       />
     </Section>
 
