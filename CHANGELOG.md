@@ -1,3 +1,15 @@
+# v1.2.9 (Wed Feb 07 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(components): remove glow ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.2.8 (Tue Jan 23 2024)
 
 #### ⚠️ Pushed to `main`
