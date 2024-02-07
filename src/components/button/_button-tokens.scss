@@ -16,10 +16,8 @@ button.c-button {
     --c-button--background-color: var(--ks-color-primary);
     --c-button--background-color-hover: var(--ks-color-primary);
 
-    --c-button--shadow: 0px 0px 2px 1px var(--ks-color-fg-alpha-4-base),
-      0px 0px 19px 2px var(--ks-color-primary-alpha-2);
-
-    --c-button--shadow-hover: 0px 0px 2px 1px var(--ks-color-fg-alpha-1-base), 0px 0px 19px 4px var(--ks-color-primary);
+    --c-button--shadow: 0;
+    --c-button--shadow-hover: 0;
 
     [ks-inverted="true"] & {
       //primary buttons work better with a light color
