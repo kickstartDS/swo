@@ -30,12 +30,12 @@ export const Cta: FC<CtaProps> = ({
     >
       <Storytelling
         className={classnames(
-          "c-cta",
-          fullWidth ? `c-cta--full-width` : "",
-          highlightText ? `c-cta--highlight-text` : "",
-          colorNeutral ? `c-cta--color-neutral` : "",
+          "dsa-cta",
+          fullWidth ? `dsa-cta--full-width` : "",
+          highlightText ? `dsa-cta--highlight-text` : "",
+          colorNeutral ? `dsa-cta--color-neutral` : "",
           contentAlign && contentAlign !== "center"
-            ? `c-cta--align-${contentAlign}`
+            ? `dsa-cta--align-${contentAlign}`
             : ""
         )}
         backgroundImage={backgroundImage}
