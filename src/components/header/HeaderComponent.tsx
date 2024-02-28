@@ -14,11 +14,14 @@ export const Header: FC<HeaderProps> = ({
 }) => (
   <>
     <div
-      className={classnames("c-header", floating ? `c-header--floating` : "")}
+      className={classnames(
+        "dsa-header",
+        floating ? `dsa-header--floating` : ""
+      )}
     >
-      <div className="c-header__content">
-        <Link className="c-header__logo" href={logoHref}>
-          <Picture {...logo} />
+      <div className="dsa-header__content">
+        <Link className="dsa-header__logo" href={logoHref}>
+          <Picture {...logo} lazy={false} />
         </Link>
 
         <NavMain logo={logo} logoHref={logoHref} items={navItems} />

@@ -1,21 +1,24 @@
-.c-gallery {
+@import "./gallery-tokens.scss";
+@import "../../selectors";
+
+.dsa-gallery {
   &__grid {
     &--stack {
       display: flex;
-      gap: var(--ks-spacing-stack-m);
+      gap: var(--dsa-gallery--gap-vertical);
       flex-direction: column;
     }
 
     &--small-tiles {
       display: grid;
-      gap: var(--ks-spacing-inline-m);
-      grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+      gap: var(--dsa-gallery--gap-horizontal) var(--dsa-gallery--gap-vertical);
+      grid-template-columns: repeat(auto-fit, minmax(min(var(--dsa-gallery--tile-min-width-small), 100%), 1fr));
     }
 
     &--large-tiles {
       display: grid;
-      gap: var(--ks-spacing-inline-m);
-      grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+      gap: var(--dsa-gallery--gap-horizontal) var(--dsa-gallery--gap-vertical);
+      grid-template-columns: repeat(auto-fit, minmax(min(var(--dsa-gallery--tile-min-width-large), 100%), 1fr));
     }
   }
 
@@ -24,21 +27,21 @@
 
     &--square {
       img {
-        aspect-ratio: 1 / 1;
+        aspect-ratio: var(--dsa-gallery--image-ratio-square);
         object-fit: cover;
       }
     }
 
     &--wide {
       img {
-        aspect-ratio: 4 / 3;
+        aspect-ratio: var(--dsa-gallery--image-ratio-wide);
         object-fit: cover;
       }
     }
 
     &--landscape {
       img {
-        aspect-ratio: 16 / 9;
+        aspect-ratio: var(--dsa-gallery--image-ratio-landscape);
         object-fit: cover;
       }
     }
@@ -52,18 +55,16 @@
 
   .pswp__caption {
     background-color: var(--ks-color-bg-alpha-3);
-    color: var(--ks-color-fg);
+    color: var(--dsa-text-color-on-primary); //TBD: semantic fg text color
   }
 }
 
-:root,
-[ks-inverted],
-[ks-theme] {
-  --c-lightbox--bg: var(--ks-color-bg) !important;
+#{$selectors} {
+  --c-lightbox--bg: var(--ks-background-color-default) !important;
   --c-lightbox--placeholder-bg: var(--ks-color-fg-to-bg-1) !important;
   --c-lightbox--root-z-index: var(--ks-depth-modal) !important;
-  --c-lightbox--icon-color: var(--ks-color-fg) !important;
-  --c-lightbox--icon-color-secondary: var(--ks-color-secondary) !important;
+  --c-lightbox--icon-color: var(--dsa-text-color-on-primary) !important; //TBD: semantic fg text color
+  --c-lightbox--icon-color-secondary: var(--ks-color-fg-inverted) !important;
   --c-lightbox--stroke-width: 0px !important;
-  --c-lightbox--error-text-color: var(--ks-color-fg-to-bg-9) !important;
+  --c-lightbox--error-text-color: var(--ks-color-error) !important;
 }

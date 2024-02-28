@@ -26,7 +26,7 @@ export type Target = string;
  */
 export type Label1 = string;
 /**
- * Toggle chevron icon
+ * Toggle arrow icon
  */
 export type Icon = boolean;
 /**
