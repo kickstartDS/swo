@@ -12,10 +12,10 @@
   display: flex;
   flex-direction: column;
 
-  .c-headline {
+  .dsa-headline {
     --c-headline--color: var(--ks-color-fg);
 
-    .c-headline__subheadline {
+    .dsa-headline__subheadline {
       --c-headline_subheadline--color: var(--ks-text-color-primary);
     }
   }

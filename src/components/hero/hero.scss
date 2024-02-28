@@ -6,25 +6,22 @@
   --c-visual_overlay--background-size: 100%;
 
   .c-visual__box {
-    --c-visual_box--background: var(--dsa-hero__box--background-color, var(--ks-color-bg-alpha-2));
-    --c-visual_box--color: var(--dsa-hero__text--color, var(--ks-text-color-default));
-    --c-visual_subheadline--color: var(--ks-text-color-primary);
-    --c-visual_headline--color: var(--ks-color-fg);
-    --c-visual_box--border-radius: var(--ks-border-radius-surface);
-    --c-visual_box--padding: var(--ks-spacing-inset-squish-xl);
+    --c-visual_box--background: var(--dsa-hero__texbox--background-color, var(--ks-color-bg-alpha-2));
+    --c-visual_box--color: var(--dsa-hero__copy--color, var(--ks-text-color-default));
+    --c-visual_box--border-radius: var(--dsa-hero__textbox--border-radius, var(--ks-border-radius-surface));
+    --c-visual_box--padding: var(--dsa-hero__textbox--padding, var(--ks-spacing-inset-squish-xl));
+
+    --c-visual_text--font: var(--dsa-hero__copy--font, var(--ks-font-copy-m));
   }
 
   &--highlight-text.c-visual {
-    .c-visual__box {
-      --c-visual_text--font: var(--dsa-hero_highlight-text__box--font, var(--ks-font-copy-l));
-    }
+    --dsa-hero__copy--font: var(--dsa-hero_highlight-text__box--font, var(--ks-font-copy-l));
   }
 
   &--color-neutral.c-visual {
-    .c-visual__box {
-      --c-visual_box--color: var(--dsa-hero_color-neutral__copy--color, var(--ks-text-color-default));
-      --c-visual_subheadline--color: var(--dsa-hero_color-neutral__copy--color, var(--ks-text-color-default));
-    }
+    --dsa-hero__copy--color: var(--dsa-hero_color-neutral__copy--color, var(--ks-text-color-default));
+    --dsa-hero__headline--color: var(--dsa-hero_color-neutral__copy--color, var(--ks-text-color-default));
+    --dsa-hero__subheadline--color: var(--dsa-hero_color-neutral__copy--color, var(--ks-text-color-default));
   }
 
   --c-visual_overlay--background: transparent;
@@ -37,7 +34,10 @@
     );
 
     &.dsa-hero--content-below {
-      --c-visual_overlay--background: linear-gradient(0deg, var(--ks-background-color-default) 15%, transparent 50%);
+      --c-visual_overlay--background: var(
+        --dsa-hero__overlay--background,
+        linear-gradient(0deg, var(--ks-background-color-default) 15%, transparent 50%)
+      );
     }
 
     .c-visual__box {
@@ -47,12 +47,12 @@
 }
 
 .c-visual.dsa-hero {
-  .c-headline {
-    .c-headline__subheadline {
-      color: var(
-        --dsa-visual__subheadline--color,
-        var(--dsa-headline__subheadline--color, var(--ks-text-color-display))
-      );
+  .dsa-headline {
+    .dsa-headline__headline {
+      color: var(--dsa-hero__headline--color, var(--dsa-headline__headline--color, var(--ks-text-color-display)));
+    }
+    .dsa-headline__subheadline {
+      color: var(--dsa-hero__subheadline--color, var(--dsa-headline__subheadline--color, var(--ks-text-color-primary)));
     }
   }
 
