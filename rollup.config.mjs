@@ -36,7 +36,6 @@ export default {
   input: {
     ...componentEntryPoints,
     ...clientJsEntryPoints,
-    "tokens/themes.css": "src/themes/themes.scss",
   },
   output: {
     dir: "dist",

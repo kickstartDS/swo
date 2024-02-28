@@ -1,50 +1,26 @@
 {
   "ks": {
-    "background-color": {
+    "border-color": {
       "accent": {
         "base": {
-          "value": "{ks.color.bg-inverted.alpha.9.base}",
+          "value": "{ks.color.fg.alpha.8.base}",
           "attributes": {
             "category": "color"
           },
           "token": {
-            "category": "Colors: Background Accent",
+            "category": "Colors: Border Accent",
             "presenter": "Color"
           }
         }
       },
       "accent-inverted": {
         "base": {
-          "value": "{ks.color.bg-inverted.alpha.2.base}",
+          "value": "{ks.color.fg-inverted.alpha.8.base}",
           "attributes": {
             "category": "color"
           },
           "token": {
-            "category": "Colors: Background Accent",
-            "presenter": "Color"
-          }
-        }
-      },
-      "bold": {
-        "base": {
-          "value": "{ks.color.primary.alpha.7.base}",
-          "attributes": {
-            "category": "color"
-          },
-          "token": {
-            "category": "Colors: Background Bold",
-            "presenter": "Color"
-          }
-        }
-      },
-      "bold-inverted": {
-        "base": {
-          "value": "{ks.color.primary.base}",
-          "attributes": {
-            "category": "color"
-          },
-          "token": {
-            "category": "Colors: Background Bold",
+            "category": "Colors: Border Accent",
             "presenter": "Color"
           }
         }
@@ -56,53 +32,53 @@
             "category": "color"
           },
           "token": {
-            "category": "Colors: Background Clear",
+            "category": "Colors: Border Clear",
             "presenter": "Color"
           }
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.fg.alpha.8.base}",
+            "value": "{ks.color.transparent.base}",
             "attributes": {
               "category": "color"
             },
             "token": {
-              "category": "Colors: Background Clear",
+              "category": "Colors: Border Clear",
               "presenter": "Color"
             }
           },
           "hover": {
             "base": {
-              "value": "{ks.color.fg.alpha.7.base}",
+              "value": "{ks.color.primary.alpha.8.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Clear",
+                "category": "Colors: Border Clear",
                 "presenter": "Color"
               }
             }
           },
           "active": {
             "base": {
-              "value": "{ks.color.fg.alpha.6.base}",
+              "value": "{ks.color.primary.alpha.7.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Clear",
+                "category": "Colors: Border Clear",
                 "presenter": "Color"
               }
             }
           },
           "selected": {
             "base": {
-              "value": "{ks.color.fg.alpha.6.base}",
+              "value": "{ks.color.primary.alpha.6.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Clear",
+                "category": "Colors: Border Clear",
                 "presenter": "Color"
               }
             }
@@ -116,53 +92,53 @@
             "category": "color"
           },
           "token": {
-            "category": "Colors: Background Clear",
+            "category": "Colors: Border Clear",
             "presenter": "Color"
           }
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.fg-inverted.alpha.8.base}",
+            "value": "{ks.color.transparent.base}",
             "attributes": {
               "category": "color"
             },
             "token": {
-              "category": "Colors: Background Clear",
+              "category": "Colors: Border Clear",
               "presenter": "Color"
             }
           },
           "hover": {
             "base": {
-              "value": "{ks.color.fg-inverted.alpha.7.base}",
+              "value": "{ks.color.primary-inverted.alpha.7.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Clear",
+                "category": "Colors: Border Clear",
                 "presenter": "Color"
               }
             }
           },
           "active": {
             "base": {
-              "value": "{ks.color.fg-inverted.alpha.6.base}",
+              "value": "{ks.color.primary-inverted.alpha.6.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Clear",
+                "category": "Colors: Border Clear",
                 "presenter": "Color"
               }
             }
           },
           "selected": {
             "base": {
-              "value": "{ks.color.fg-inverted.alpha.6.base}",
+              "value": "{ks.color.primary-inverted.alpha.5.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Clear",
+                "category": "Colors: Border Clear",
                 "presenter": "Color"
               }
             }
@@ -176,19 +152,19 @@
             "category": "color"
           },
           "token": {
-            "category": "Colors: Background Default",
+            "category": "Colors: Border Default",
             "presenter": "Color"
           }
         }
       },
       "default-inverted": {
         "base": {
-          "value": "{ks.color.bg-inverted.base}",
+          "value": "{ks.color.fg.alpha.3.base}",
           "attributes": {
             "category": "color"
           },
           "token": {
-            "category": "Colors: Background Default",
+            "category": "Colors: Border Default",
             "presenter": "Color"
           }
         }
@@ -200,53 +176,53 @@
             "category": "color"
           },
           "token": {
-            "category": "Colors: Background Interface",
+            "category": "Colors: Border Interface",
             "presenter": "Color"
           }
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.transparent.base}",
+            "value": "{ks.color.fg.alpha.7.base}",
             "attributes": {
               "category": "color"
             },
             "token": {
-              "category": "Colors: Background Interface",
+              "category": "Colors: Border Interface",
               "presenter": "Color"
             }
           },
           "disabled": {
             "base": {
-              "value": "{ks.color.fg.alpha.9.base}",
+              "value": "{ks.color.fg.alpha.8.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Interface",
+                "category": "Colors: Border Interface",
                 "presenter": "Color"
               }
             }
           },
           "hover": {
             "base": {
-              "value": "{ks.color.fg.alpha.9.base}",
+              "value": "{ks.color.fg.alpha.5.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Interface",
+                "category": "Colors: Border Interface",
                 "presenter": "Color"
               }
             }
           },
           "active": {
             "base": {
-              "value": "{ks.color.fg.alpha.9.base}",
+              "value": "{ks.color.fg.alpha.3.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Interface",
+                "category": "Colors: Border Interface",
                 "presenter": "Color"
               }
             }
@@ -258,7 +234,7 @@
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Interface",
+                "category": "Colors: Border Interface",
                 "presenter": "Color"
               }
             }
@@ -272,53 +248,53 @@
             "category": "color"
           },
           "token": {
-            "category": "Colors: Background Interface",
+            "category": "Colors: Border Interface",
             "presenter": "Color"
           }
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.transparent.base}",
+            "value": "{ks.color.fg-inverted.alpha.5.base}",
             "attributes": {
               "category": "color"
             },
             "token": {
-              "category": "Colors: Background Interface",
+              "category": "Colors: Border Interface",
               "presenter": "Color"
             }
           },
           "disabled": {
             "base": {
-              "value": "{ks.color.fg-inverted.alpha.9.base}",
+              "value": "{ks.color.fg-inverted.alpha.2.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Interface",
+                "category": "Colors: Border Interface",
                 "presenter": "Color"
               }
             }
           },
           "hover": {
             "base": {
-              "value": "{ks.color.fg-inverted.alpha.9.base}",
+              "value": "{ks.color.fg-inverted.alpha.3.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Interface",
+                "category": "Colors: Border Interface",
                 "presenter": "Color"
               }
             }
           },
           "active": {
             "base": {
-              "value": "{ks.color.fg-inverted.alpha.9.base}",
+              "value": "{ks.color.fg-inverted.alpha.1.base}",
               "attributes": {
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Interface",
+                "category": "Colors: Border Interface",
                 "presenter": "Color"
               }
             }
@@ -330,7 +306,7 @@
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Interface",
+                "category": "Colors: Border Interface",
                 "presenter": "Color"
               }
             }
@@ -344,7 +320,7 @@
             "category": "color"
           },
           "token": {
-            "category": "Colors: Background Primary",
+            "category": "Colors: Border Primary",
             "presenter": "Color"
           }
         },
@@ -355,7 +331,7 @@
               "category": "color"
             },
             "token": {
-              "category": "Colors: Background Primary",
+              "category": "Colors: Border Primary",
               "presenter": "Color"
             }
           },
@@ -366,7 +342,7 @@
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Primary",
+                "category": "Colors: Border Primary",
                 "presenter": "Color"
               }
             }
@@ -378,7 +354,7 @@
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Primary",
+                "category": "Colors: Border Primary",
                 "presenter": "Color"
               }
             }
@@ -390,7 +366,7 @@
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Primary",
+                "category": "Colors: Border Primary",
                 "presenter": "Color"
               }
             }
@@ -403,7 +379,7 @@
               "category": "color"
             },
             "token": {
-              "category": "Colors: Background Primary",
+              "category": "Colors: Border Primary",
               "presenter": "Color"
             }
           }
@@ -416,7 +392,7 @@
             "category": "color"
           },
           "token": {
-            "category": "Colors: Background Primary",
+            "category": "Colors: Border Primary",
             "presenter": "Color"
           }
         },
@@ -427,7 +403,7 @@
               "category": "color"
             },
             "token": {
-              "category": "Colors: Background Primary",
+              "category": "Colors: Border Primary",
               "presenter": "Color"
             }
           },
@@ -438,7 +414,7 @@
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Primary",
+                "category": "Colors: Border Primary",
                 "presenter": "Color"
               }
             }
@@ -450,7 +426,7 @@
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Primary",
+                "category": "Colors: Border Primary",
                 "presenter": "Color"
               }
             }
@@ -462,7 +438,7 @@
                 "category": "color"
               },
               "token": {
-                "category": "Colors: Background Primary",
+                "category": "Colors: Border Primary",
                 "presenter": "Color"
               }
             }
@@ -475,7 +451,7 @@
               "category": "color"
             },
             "token": {
-              "category": "Colors: Background Primary",
+              "category": "Colors: Border Primary",
               "presenter": "Color"
             }
           }
