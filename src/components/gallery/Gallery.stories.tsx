@@ -3,7 +3,8 @@ import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Gallery } from "./GalleryComponent";
-import schema from "./gallery.schema.json";
+import schema from "./gallery.schema.dereffed.json";
+import cssprops from "./gallery-tokens.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta<typeof Gallery> = {
@@ -13,6 +14,7 @@ const meta: Meta<typeof Gallery> = {
   component: Gallery,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
 };
 
@@ -20,6 +22,12 @@ export default meta;
 type Story = StoryObj<typeof Gallery>;
 
 export const SmallSquaresWithLightbox: Story = {
+  parameters: {
+    viewport: {
+      width: 1100,
+      height: 702,
+    },
+  },
   args: pack({
     aspectRatio: "square",
     layout: "smallTiles",
@@ -65,6 +73,12 @@ export const SmallSquaresWithLightbox: Story = {
 };
 
 export const LargeLandscapeTiles: Story = {
+  parameters: {
+    viewport: {
+      width: 1440,
+      height: 735,
+    },
+  },
   args: pack({
     layout: "largeTiles",
     aspectRatio: "landscape",
@@ -104,6 +118,12 @@ export const LargeLandscapeTiles: Story = {
 };
 
 export const FreeAspectRatio: Story = {
+  parameters: {
+    viewport: {
+      width: 1040,
+      height: 779,
+    },
+  },
   args: pack({
     layout: "smallTiles",
     lightbox: true,
@@ -148,6 +168,12 @@ export const FreeAspectRatio: Story = {
 };
 
 export const StackLandscape: Story = {
+  parameters: {
+    viewport: {
+      width: 846,
+      height: 1512,
+    },
+  },
   args: pack({
     aspectRatio: "landscape",
     images: [

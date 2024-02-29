@@ -15,7 +15,7 @@ export const ConditionalSlider: FC<
   if (layout === "slider") {
     return (
       <Slider
-        className="c-testimonials c-testimonials--slider"
+        className="dsa-testimonials dsa-testimonials--slider"
         arrows={arrows}
         nav={nav}
         {...props}
@@ -25,7 +25,7 @@ export const ConditionalSlider: FC<
     );
   } else {
     return (
-      <div className="c-testimonials c-testimonials--list" {...props}>
+      <div className="dsa-testimonials dsa-testimonials--list" {...props}>
         {children}
       </div>
     );

@@ -7,10 +7,10 @@ export const Stats: FC<StatsProps & HTMLAttributes<HTMLElement>> = ({
   items = [],
 }) => {
   return (
-    <div className="c-stats">
+    <div className="dsa-stats">
       {items.map((item, index) => (
         <CountUp
-          className="c-stats__item"
+          className="dsa-stats__item"
           key={index}
           to={item.number}
           icon={{

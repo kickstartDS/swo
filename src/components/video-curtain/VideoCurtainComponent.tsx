@@ -29,9 +29,9 @@ export const VideoCurtain: FC<VideoCurtainProps> = ({
         <VisualContextDefault
           skipButton
           className={classnames(
-            `c-video-curtain`,
-            highlightText ? `c-video-curtain--highlight-text` : "",
-            colorNeutral ? `c-video-curtain--color-neutral` : ""
+            `dsa-video-curtain`,
+            highlightText ? `dsa-video-curtain--highlight-text` : "",
+            colorNeutral ? `dsa-video-curtain--color-neutral` : ""
           )}
           height="fullScreen"
           inbox

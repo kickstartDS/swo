@@ -1,46 +1,18 @@
-:root {
-  .c-visual.c-hero {
-    --c-visual_overlay--background-size: 100%;
-    --c-visual--text-color-neutral: var(--ks-color-fg);
+.dsa-hero {
+  --dsa-hero__headline--color: var(--dsa-headline__headline--color);
+  --dsa-hero__subheadline--color: var(--dsa-headline__subheadline--color);
 
-    .c-visual__box {
-      --c-visual_box--background: var(--ks-color-bg-alpha-2);
-      --c-visual_box--color: var(--ks-color-fg);
-      --c-visual_subheadline--color: var(--ks-text-color-primary);
-      --c-visual_headline--color: var(--ks-color-fg);
-      --c-visual_box--border-radius: var(--ks-border-radius-surface);
-      --c-visual_box--padding: var(--ks-spacing-inset-squish-xl);
-    }
+  --dsa-hero_color-neutral__headline--color: var(--ks-text-color-default);
+  --dsa-hero_color-neutral__subheadline--color: var(--ks-text-color-default);
 
-    &--highlight-text.c-visual {
-      .c-visual__box {
-        --c-visual_text--font: var(--ks-font-copy-l);
-      }
-    }
+  --dsa-hero__copy--color: var(--ks-text-color-default);
+  --dsa-hero__copy--font: var(--dsa-rich-text--font);
+  --dsa-hero_highlight-text__copy--font: var(--ks-font-copy-l);
+  --dsa-hero_color-neutral__copy--color: var(--ks-text-color-default);
 
-    &--color-neutral.c-visual {
-      .c-visual__box {
-        --c-visual_text--color: var(--c-visual--text-color-neutral);
-        --c-visual_subheadline--color: var(--c-visual--text-color-neutral);
-      }
-    }
+  --dsa-hero__textbox--border-radius: var(--ks-border-radius-surface);
+  --dsa-hero__textbox--padding: var(--ks-spacing-inset-squish-xl);
+  --dsa-hero__texbox--background-color: var(--ks-color-bg-alpha-2);
 
-    --c-visual_overlay--background: transparent;
-
-    @container visual (min-width: 640px) {
-      --c-visual_overlay--background: radial-gradient(
-        50% 125% at 100% 0%,
-        var(--ks-color-primary-alpha-5) 0%,
-        var(--ks-color-bg-alpha-5) 100%
-      );
-
-      &.c-hero--content-below {
-        --c-visual_overlay--background: linear-gradient(0deg, var(--ks-background-color-default) 15%, transparent 50%);
-      }
-
-      .c-visual__box {
-        --c-visual_box--max-width: 50rem;
-      }
-    }
-  }
+  --dsa-hero__overlay--background: linear-gradient(0deg, var(--ks-background-color-default) 15%, transparent 50%);
 }

@@ -15,5 +15,24 @@ module.exports = StyleDictionary.extend(config).extend({
     css: {
       buildPath: "src/token-google/",
     },
+    html: {
+      buildPath: "src/token-google/",
+    },
+    jsx: {
+      buildPath: "src/token-google/",
+    },
+    storybook: {
+      buildPath: "src/token-google/storybook/",
+    },
+    js: {
+      transforms: ["attribute/cti", "name/cti/pascal", "size/rem", "color/css"],
+      buildPath: "src/token-google/",
+      files: [
+        {
+          destination: "tokens.js",
+          format: "javascript/es6",
+        },
+      ],
+    },
   },
 });

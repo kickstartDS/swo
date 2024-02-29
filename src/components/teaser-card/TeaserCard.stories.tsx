@@ -3,6 +3,7 @@ import { JSONSchema7 } from "json-schema";
 import { TeaserCard } from "./TeaserCardComponent";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import schema from "./teaser-card.schema.dereffed.json";
+import cssprops from "./teaser-card-tokens.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta<typeof TeaserCard> = {
@@ -12,12 +13,19 @@ const meta: Meta<typeof TeaserCard> = {
   component: TeaserCard,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
 };
 export default meta;
 type Story = StoryObj<typeof TeaserCard>;
 
 export const ProductTiles: Story = {
+  parameters: {
+    viewport: {
+      width: 650,
+      height: 653,
+    },
+  },
   args: pack({
     headline: "Castaway",
     text: "Transforming Ideas into Code",
@@ -31,6 +39,12 @@ export const ProductTiles: Story = {
 };
 
 export const PageNavigation: Story = {
+  parameters: {
+    viewport: {
+      width: 650,
+      height: 678,
+    },
+  },
   args: pack({
     headline: "Design System Services",
     text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
@@ -44,6 +58,12 @@ export const PageNavigation: Story = {
 };
 
 export const ShowcasePreview: Story = {
+  parameters: {
+    viewport: {
+      width: 650,
+      height: 750,
+    },
+  },
   args: pack({
     label: "Tech",
     layout: "row",

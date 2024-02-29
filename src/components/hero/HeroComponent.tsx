@@ -30,9 +30,9 @@ export const Hero: FC<HeroProps> = ({
       <Container name="visual">
         <VisualContextDefault
           className={classnames(
-            `c-hero c-hero--content-${textPosition}`,
-            highlightText ? `c-hero--highlight-text` : "",
-            colorNeutral ? `c-hero--color-neutral` : ""
+            `dsa-hero dsa-hero--content-${textPosition}`,
+            highlightText ? `dsa-hero--highlight-text` : "",
+            colorNeutral ? `dsa-hero--color-neutral` : ""
           )}
           height={height}
           overlay={overlay}

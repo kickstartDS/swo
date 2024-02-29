@@ -1,14 +1,13 @@
-import { HTMLAttributes, FC } from "react";
+import classnames from "classnames";
+import { forwardRef, createContext, useContext } from "react";
 import { PostAside } from "@kickstartds/blog/lib/post-aside";
 import { BlogAsideProps } from "./BlogAsideProps";
 import "./blog-aside.scss";
 
-export const BlogAside: FC<BlogAsideProps & HTMLAttributes<HTMLElement>> = ({
-  author,
-  socialSharing,
-  readingTime,
-  date,
-}) => {
+export const BlogAsideContextDefault = forwardRef<
+  HTMLDivElement,
+  BlogAsideProps
+>(({ author, socialSharing, readingTime, date, className }, ref) => {
   const socialLinks = socialSharing?.map((link) => {
     return {
       icon: link.icon,
@@ -32,7 +31,7 @@ export const BlogAside: FC<BlogAsideProps & HTMLAttributes<HTMLElement>> = ({
 
   const authorLinks = [];
 
-  if (author.twitter)
+  if (author?.twitter)
     authorLinks.push({
       href: `https://twitter.com/${author.twitter}`,
       icon: "twitter",
@@ -40,7 +39,7 @@ export const BlogAside: FC<BlogAsideProps & HTMLAttributes<HTMLElement>> = ({
       label: `@${author.twitter}`,
     });
 
-  if (author.email)
+  if (author?.email)
     authorLinks.push({
       href: `mailto:${author.email}`,
       icon: "email",
@@ -50,10 +49,11 @@ export const BlogAside: FC<BlogAsideProps & HTMLAttributes<HTMLElement>> = ({
 
   return (
     <PostAside
+      className={classnames(className, "dsa-blog-aside")}
       author={{
-        title: author.name,
-        image: author.image && { src: author.image },
-        copy: author.byline,
+        title: author?.name,
+        image: author?.image && { src: author.image },
+        copy: author?.byline,
         links: authorLinks,
       }}
       shareBar={{
@@ -66,6 +66,15 @@ export const BlogAside: FC<BlogAsideProps & HTMLAttributes<HTMLElement>> = ({
       meta={{
         items: metaItems,
       }}
+      ref={ref}
     />
   );
-};
+});
+
+export const BlogAsideContext = createContext(BlogAsideContextDefault);
+export const BlogAside = forwardRef<HTMLDivElement, BlogAsideProps>(
+  (props, ref) => {
+    const Component = useContext(BlogAsideContext);
+    return <Component {...props} ref={ref} />;
+  }
+);

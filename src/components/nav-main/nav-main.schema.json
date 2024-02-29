@@ -9,6 +9,7 @@
     },
     "logoHref": {
       "type": "string",
+      "format": "uri",
       "default": "/"
     },
     "items": {
@@ -16,8 +17,9 @@
       "items": {
         "type": "object",
         "properties": {
-          "href": { "type": "string" },
-          "label": { "type": "string" }
+          "href": { "type": "string", "format": "uri" },
+          "label": { "type": "string" },
+          "active": { "type": "boolean" }
         },
         "additionalProperties": false,
         "required": ["href", "label"]
@@ -25,24 +27,25 @@
       "examples": [
         [
           {
-            "href": "#about",
-            "label": "About us"
+            "label": "Nav Item",
+            "href": "#"
           },
           {
-            "href": "#services",
-            "label": "Our Services"
+            "label": "Active Item",
+            "href": "#",
+            "active": true
           },
           {
-            "href": "#project",
-            "label": "Project"
+            "label": "Another Item",
+            "href": "#"
           },
           {
-            "href": "#showcase",
-            "label": "Showcase"
+            "label": "One more Item",
+            "href": "#"
           },
           {
-            "href": "#blog",
-            "label": "Blog"
+            "label": "Last Item",
+            "href": "#"
           }
         ]
       ]

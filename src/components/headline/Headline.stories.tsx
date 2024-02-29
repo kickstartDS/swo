@@ -3,6 +3,7 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
 import { Headline } from "./HeadlineComponent";
 import schema from "./headline.schema.dereffed.json";
+import cssprops from "./headline-tokens.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
@@ -12,6 +13,7 @@ const meta: Meta = {
   component: Headline,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
 };
 type Story = StoryObj<typeof Headline>;
@@ -19,6 +21,12 @@ type Story = StoryObj<typeof Headline>;
 export default meta;
 
 export const H1: Story = {
+  parameters: {
+    viewport: {
+      width: 800,
+      height: 218,
+    },
+  },
   args: pack({
     level: "h1",
     style: "h1",
@@ -27,6 +35,12 @@ export const H1: Story = {
 };
 
 export const H2: Story = {
+  parameters: {
+    viewport: {
+      width: 800,
+      height: 206,
+    },
+  },
   args: pack({
     level: "h2",
     style: "h2",
@@ -35,6 +49,12 @@ export const H2: Story = {
 };
 
 export const H3: Story = {
+  parameters: {
+    viewport: {
+      width: 800,
+      height: 195,
+    },
+  },
   args: pack({
     level: "h3",
     style: "h3",
@@ -43,6 +63,12 @@ export const H3: Story = {
 };
 
 export const H4: Story = {
+  parameters: {
+    viewport: {
+      width: 800,
+      height: 189,
+    },
+  },
   args: pack({
     level: "h4",
     style: "h4",
@@ -51,6 +77,12 @@ export const H4: Story = {
 };
 
 export const WithSubheadline: Story = {
+  parameters: {
+    viewport: {
+      width: 800,
+      height: 252,
+    },
+  },
   args: pack({
     text: "Design System Services",
     sub: "Crafting Consistency, Fostering Growth",
@@ -58,6 +90,12 @@ export const WithSubheadline: Story = {
 };
 
 export const OrderSwapped: Story = {
+  parameters: {
+    viewport: {
+      width: 800,
+      height: 252,
+    },
+  },
   args: pack({
     text: "Design System Services",
     sub: "Crafting Consistency, Fostering Growth",
@@ -66,6 +104,12 @@ export const OrderSwapped: Story = {
 };
 
 export const WithMarkdown: Story = {
+  parameters: {
+    viewport: {
+      width: 800,
+      height: 252,
+    },
+  },
   args: pack({
     text: "**Design System** Services",
     sub: "Crafting Consistency, Fostering Growth",

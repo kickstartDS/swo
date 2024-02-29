@@ -1,9 +1,8 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
-
 import { BlogAside } from "./BlogAsideComponent";
-import schema from "./blog-aside.schema.json";
+import schema from "./blog-aside.schema.dereffed.json";
 
 const meta: Meta<typeof BlogAside> = {
   title: "Blog/ Blog Aside",
@@ -16,7 +15,14 @@ const meta: Meta<typeof BlogAside> = {
 export default meta;
 type Story = StoryObj<typeof BlogAside>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  parameters: {
+    viewport: {
+      width: 390,
+      height: 646,
+    },
+  },
+};
 Default.args = pack({
   author: {
     name: "Jane Smith",

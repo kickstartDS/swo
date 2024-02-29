@@ -3,6 +3,7 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
 import { ImageText } from "./ImageTextComponent";
 import schema from "./image-text.schema.dereffed.json";
+import cssprops from "./image-text-tokens.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
@@ -12,6 +13,7 @@ const meta: Meta = {
   component: ImageText,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
 };
 type Story = StoryObj<typeof ImageText>;
@@ -19,6 +21,12 @@ type Story = StoryObj<typeof ImageText>;
 export default meta;
 
 export const BesideRightLayout: Story = {
+  parameters: {
+    viewport: {
+      width: 1240,
+      height: 515,
+    },
+  },
   args: pack({
     text: `We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).
 
@@ -34,6 +42,12 @@ _Experience the power of streamlined development and see the difference it can m
 };
 
 export const AboveLayout: Story = {
+  parameters: {
+    viewport: {
+      width: 760,
+      height: 829,
+    },
+  },
   args: pack({
     text: `We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).
 

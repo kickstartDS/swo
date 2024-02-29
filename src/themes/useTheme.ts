@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import "./themes.scss";
 
 export const useTheme = (themeName: string) => {
   useEffect(() => {
