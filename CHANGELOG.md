@@ -1,3 +1,16 @@
+# v1.2.12 (Thu Feb 29 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: attempt fix for main ([@julrich](https://github.com/julrich))
+- fix: further alignment with ds-agency ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.2.11 (Thu Feb 29 2024)
 
 #### ⚠️ Pushed to `main`
