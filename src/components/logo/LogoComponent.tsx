@@ -6,7 +6,7 @@ export const LogoContextDefault = forwardRef<
   HTMLDivElement,
   LogoProps & HTMLAttributes<HTMLDivElement>
 >(({ src, ...rest }, ref) => (
-  <div {...rest} ref={ref} className="c-logos__logo">
+  <div {...rest} ref={ref} className="dsa-logos__logo">
     <Picture src={src} />
   </div>
 ));
