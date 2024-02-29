@@ -1,3 +1,15 @@
+# v1.2.11 (Thu Feb 29 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: align with ds-agency ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.2.10 (Thu Feb 29 2024)
 
 #### 🐛 Bug Fix
