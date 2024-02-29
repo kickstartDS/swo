@@ -1,3 +1,16 @@
+# v1.2.10 (Thu Feb 29 2024)
+
+#### 🐛 Bug Fix
+
+- Add component tokens [#5](https://github.com/kickstartDS/ds-agency-premium/pull/5) ([@fleven-kds](https://github.com/fleven-kds) [@julrich](https://github.com/julrich))
+
+#### Authors: 2
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.2.9 (Wed Feb 07 2024)
 
 #### ⚠️ Pushed to `main`
