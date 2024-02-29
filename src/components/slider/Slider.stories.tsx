@@ -1,20 +1,20 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
-import { Slider } from "./SliderComponent";
-import schema from "./slider.schema.dereffed.json";
-import { TeaserCard } from "../teaser-card/TeaserCardComponent";
+import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
-const { args, argTypes } = getArgsShared(schema as JSONSchema7);
+import { Slider } from "./SliderComponent";
+import { TeaserCard } from "../teaser-card/TeaserCardComponent";
+import schema from "./slider.schema.dereffed.json";
+import cssprops from "./slider-tokens.json";
+
 const meta: Meta = {
   title: "Layout/Slider",
-  ...getArgsShared(schema as JSONSchema7),
-  args,
-  argTypes,
   component: Slider,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
+  ...getArgsShared(schema as JSONSchema7),
   render: (args) => (
     <Slider {...args}>
       <TeaserCard
@@ -56,10 +56,18 @@ const meta: Meta = {
     </Slider>
   ),
 };
+
 export default meta;
+
 type Story = StoryObj<typeof Slider>;
 
 export const WithArrows: Story = {
+  parameters: {
+    viewport: {
+      width: 1110,
+      height: 400,
+    },
+  },
   args: pack({
     gap: 15,
     arrows: true,
@@ -67,6 +75,12 @@ export const WithArrows: Story = {
 };
 
 export const WithTeasedNeighbours: Story = {
+  parameters: {
+    viewport: {
+      width: 1110,
+      height: 400,
+    },
+  },
   args: pack({
     gap: 15,
     teaseNeighbours: true,
@@ -76,6 +90,12 @@ export const WithTeasedNeighbours: Story = {
 };
 
 export const WithNav: Story = {
+  parameters: {
+    viewport: {
+      width: 1110,
+      height: 400,
+    },
+  },
   args: pack({
     gap: 15,
     arrows: true,
@@ -84,6 +104,12 @@ export const WithNav: Story = {
 };
 
 export const WithAutoplay: Story = {
+  parameters: {
+    viewport: {
+      width: 1110,
+      height: 400,
+    },
+  },
   args: pack({
     gap: 15,
     nav: true,

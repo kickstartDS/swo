@@ -1,24 +1,32 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
+import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
+
 import { Cta } from "./CtaComponent";
+import cssprops from "./cta-tokens.json";
 import schema from "./cta.schema.dereffed.json";
 
-const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
-  title: "Components/CTA",
-  args,
-  argTypes,
+  title: "Components/Cta",
   component: Cta,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
+  ...getArgsShared(schema as JSONSchema7),
 };
-type Story = StoryObj<typeof Cta>;
 
 export default meta;
 
+type Story = StoryObj<typeof Cta>;
+
 export const Banner: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 472,
+    },
+  },
   args: pack({
     headline: "Ready to Transform Your Development Process?",
     sub: "Start your journey today.",
@@ -40,6 +48,12 @@ export const Banner: Story = {
 };
 
 export const Highlighted: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 551,
+    },
+  },
   args: pack({
     headline: "Why Choose Our Design System?",
     sub: "Built for consistency and speed.",
@@ -57,6 +71,12 @@ export const Highlighted: Story = {
 };
 
 export const LeftAligned: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 443,
+    },
+  },
   args: pack({
     headline: "Experience Our Design System",
     sub: "Efficient, scalable, seamless.",
@@ -72,6 +92,12 @@ export const LeftAligned: Story = {
 };
 
 export const ProductAdvertisement: Story = {
+  parameters: {
+    viewport: {
+      width: 1400,
+      height: 660,
+    },
+  },
   args: pack({
     headline: "Experience Immersive Sound",
     sub: "With Our Premium Over-Ear Headphones",
@@ -104,6 +130,12 @@ export const ProductAdvertisement: Story = {
 };
 
 export const ContactBanner: Story = {
+  parameters: {
+    viewport: {
+      width: 1600,
+      height: 560,
+    },
+  },
   args: pack({
     headline: "Get in touch",
     sub: "Chat with us about getting your product or platform to market faster",
@@ -133,6 +165,12 @@ export const ContactBanner: Story = {
 };
 
 export const SplitBanner: Story = {
+  parameters: {
+    viewport: {
+      width: 1680,
+      height: 850,
+    },
+  },
   args: pack({
     headline: "Design System Services",
     text: "Here at Systemics, we bring a range of design system services that can make a difference.",
@@ -158,6 +196,12 @@ export const SplitBanner: Story = {
 };
 
 export const AngledImage: Story = {
+  parameters: {
+    viewport: {
+      width: 1670,
+      height: 910,
+    },
+  },
   args: pack({
     headline: "Our **Approach** to Design Systems",
     text: `We value efficiency without compromising quality. Our secret weapon? kickstartDS, a revolutionary code-first and open source framework for creating design systems.
@@ -188,6 +232,12 @@ This tool accelerates our development, saving you valuable time and helping us d
 };
 
 export const ColoredBanner: Story = {
+  parameters: {
+    viewport: {
+      width: 1350,
+      height: 500,
+    },
+  },
   args: pack({
     headline: "Expertise in Scalable Solutions",
     text: "Leverage our expertise in creating scalable and robust applications using modern technologies.",
@@ -208,6 +258,12 @@ export const ColoredBanner: Story = {
 };
 
 export const AlignBottom: Story = {
+  parameters: {
+    viewport: {
+      width: 1680,
+      height: 1040,
+    },
+  },
   args: pack({
     headline: "Custom Solutions",
     text: `At Systemics, we believe in the power of technology to transform businesses. Our team of experienced professionals is dedicated to providing innovative solutions that meet the unique needs of your business.

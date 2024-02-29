@@ -3,22 +3,32 @@ import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Logos } from "./LogosComponent";
-import schema from "./logos.schema.json";
+import schema from "./logos.schema.dereffed.json";
+import cssprops from "./logos-tokens.json";
 
 const meta: Meta<typeof Logos> = {
   title: "Components/Logos",
   component: Logos,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
   ...getArgsShared(schema as JSONSchema7),
 };
+
 export default meta;
+
 type Story = StoryObj<typeof Logos>;
 
 export const CenteredWithButton: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 598,
+    },
+  },
   args: pack({
-    logos: [
+    logo: [
       {
         src: "img/logos/logoipsum-212.svg",
         alt: "Logo 1",
@@ -52,8 +62,14 @@ export const CenteredWithButton: Story = {
 };
 
 export const LeftAlignedWithTextLink: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 517,
+    },
+  },
   args: pack({
-    logos: [
+    logo: [
       {
         src: "img/logos/logoipsum-212.svg",
         alt: "Logo 1",
@@ -87,9 +103,15 @@ export const LeftAlignedWithTextLink: Story = {
 };
 
 export const LogoWall: Story = {
+  parameters: {
+    viewport: {
+      width: 1080,
+      height: 860,
+    },
+  },
   args: pack({
     logosPerRow: 4,
-    logos: [
+    logo: [
       {
         src: "img/logos/logoipsum-212.svg",
         alt: "Logo 1",
@@ -147,9 +169,15 @@ export const LogoWall: Story = {
 };
 
 export const LogoRow: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 450,
+    },
+  },
   args: pack({
     logosPerRow: 6,
-    logos: [
+    logo: [
       {
         src: "img/logos/logoipsum-212.svg",
         alt: "Logo 1",

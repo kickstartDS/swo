@@ -1,24 +1,32 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
+import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
+
 import { ImageStory } from "./ImageStoryComponent";
 import schema from "./image-story.schema.dereffed.json";
+import cssprops from "./image-story-tokens.json";
 
-const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
   title: "Components/Image Story",
-  args,
-  argTypes,
   component: ImageStory,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
+  ...getArgsShared(schema as JSONSchema7),
 };
-type Story = StoryObj<typeof ImageStory>;
 
 export default meta;
 
+type Story = StoryObj<typeof ImageStory>;
+
 export const StickyImageNextToScrollingText: Story = {
+  parameters: {
+    viewport: {
+      width: 1160,
+      height: 960,
+    },
+  },
   args: pack({
     headline: "The Sanity & Next.js Experts",
     text: `

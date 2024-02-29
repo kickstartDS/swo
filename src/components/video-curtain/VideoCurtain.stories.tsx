@@ -1,24 +1,32 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
+import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
+
 import { VideoCurtain } from "./VideoCurtainComponent";
 import schema from "./video-curtain.schema.dereffed.json";
+import cssprops from "./video-curtain-tokens.json";
 
-const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
   title: "Components/Video Curtain",
-  args,
-  argTypes,
   component: VideoCurtain,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
+  ...getArgsShared(schema as JSONSchema7),
 };
-type Story = StoryObj<typeof VideoCurtain>;
 
 export default meta;
 
+type Story = StoryObj<typeof VideoCurtain>;
+
 export const AtmosphericVideoWithOverlay: Story = {
+  parameters: {
+    viewport: {
+      width: 1559,
+      height: 720,
+    },
+  },
   args: pack({
     headline: "Step into Our Innovative Workspace",
     sub: "Where Creativity Meets Technology",
@@ -39,6 +47,12 @@ export const AtmosphericVideoWithOverlay: Story = {
 };
 
 export const ColorNeutralText: Story = {
+  parameters: {
+    viewport: {
+      width: 1559,
+      height: 720,
+    },
+  },
   args: pack({
     headline: "Join Our Creative Journey",
     sub: "Where Every Idea Matters",
@@ -61,6 +75,12 @@ export const ColorNeutralText: Story = {
 };
 
 export const ColorNeutralVideo: Story = {
+  parameters: {
+    viewport: {
+      width: 1559,
+      height: 720,
+    },
+  },
   args: pack({
     headline: "Welcome to Our Collaborative Space",
     sub: "Where Ideas Come to Life",

@@ -1,23 +1,32 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
+import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
+
 import { Hero } from "./HeroComponent";
 import schema from "./hero.schema.dereffed.json";
+import cssprops from "./hero-tokens.json";
 
-const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
   title: "Components/Hero",
-  args,
-  argTypes,
   component: Hero,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
+  ...getArgsShared(schema as JSONSchema7),
 };
-type Story = StoryObj<typeof Hero>;
 
 export default meta;
+
+type Story = StoryObj<typeof Hero>;
+
 export const TextBelowImage: Story = {
+  parameters: {
+    viewport: {
+      width: 1165,
+      height: 780,
+    },
+  },
   args: pack({
     headline: "Welcome to Our Dynamic Workplace",
     highlightText: true,
@@ -43,6 +52,12 @@ export const TextBelowImage: Story = {
 };
 
 export const TextOnImageWithOverlay: Story = {
+  parameters: {
+    viewport: {
+      width: 1165,
+      height: 780,
+    },
+  },
   args: pack({
     headline: "Master Scalable Solutions",
     text: "Harness our expertise in crafting scalable and robust applications using cutting-edge technologies.",
@@ -73,6 +88,12 @@ export const TextOnImageWithOverlay: Story = {
 };
 
 export const TextBoxOnFullScreen: Story = {
+  parameters: {
+    viewport: {
+      width: 1160,
+      height: 1080,
+    },
+  },
   args: pack({
     headline: "Discover Our Design System",
     sub: "Scalable. Efficient. Seamless.",

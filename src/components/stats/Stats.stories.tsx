@@ -3,24 +3,30 @@ import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Stats } from "./StatsComponent";
-
 import schema from "./stats.schema.json";
+import cssprops from "./stats-tokens.json";
 
-const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
   title: "Components/Stats",
-  args,
-  argTypes,
   component: Stats,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
+  ...getArgsShared(schema as JSONSchema7),
 };
 
 export default meta;
+
 type Story = StoryObj<typeof Stats>;
 
 export const CountUpWithIcons: Story = {
+  parameters: {
+    viewport: {
+      width: 790,
+      height: 480,
+    },
+  },
   args: pack({
     stats: [
       { number: 1500, title: "Users", icon: "person" },
@@ -31,6 +37,12 @@ export const CountUpWithIcons: Story = {
 };
 
 export const CountUpWithDescription: Story = {
+  parameters: {
+    viewport: {
+      width: 700,
+      height: 480,
+    },
+  },
   args: pack({
     stats: [
       {

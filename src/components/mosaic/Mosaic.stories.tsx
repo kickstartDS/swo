@@ -1,23 +1,32 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
+import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
+
 import { Mosaic } from "./MosaicComponent";
 import schema from "./mosaic.schema.dereffed.json";
+import cssprops from "./mosaic-tokens.json";
 
-const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
   title: "Components/Mosaic",
-  args,
-  argTypes,
   component: Mosaic,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
+  ...getArgsShared(schema as JSONSchema7),
 };
-type Story = StoryObj<typeof Mosaic>;
+
 export default meta;
 
+type Story = StoryObj<typeof Mosaic>;
+
 export const ColorfulTiles: Story = {
+  parameters: {
+    viewport: {
+      width: 1010,
+      height: 1520,
+    },
+  },
   args: pack({
     layout: "alternate",
     tiles: [
@@ -50,6 +59,12 @@ export const ColorfulTiles: Story = {
 };
 
 export const ColorfulTextWithIllustrations: Story = {
+  parameters: {
+    viewport: {
+      width: 1010,
+      height: 1520,
+    },
+  },
   args: pack({
     layout: "textLeft",
     tiles: [
