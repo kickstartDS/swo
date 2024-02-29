@@ -4,7 +4,7 @@ import "./mosaic.scss";
 import { Storytelling } from "@kickstartds/content/lib/storytelling";
 
 export const Mosaic: FC<MosaicProps> = ({ layout, largeHeadlines, tiles }) => (
-  <div className="c-mosaic">
+  <div className="dsa-mosaic">
     {tiles.map((tile, index) => (
       <Storytelling
         key={index}
