@@ -1,30 +1,48 @@
 @use "testimonials-tokens.scss";
 
-.c-testimonials {
+.dsa-testimonials {
+  .c-quote {
+    --c-quote_source--font: var(--dsa-testimonial__source--font, var(--ks-font-copy-m));
+
+    --c-quote_icon--font-family: var(--dsa-testimonial__icon--font-family, var(--ks-font-family-copy));
+    --c-quote_icon--font-size: var(--dsa-testimonial__icon--font-size, 3em);
+    --c-quote_icon--color: var(--dsa-testimonial__icon--color, var(--ks-text-color-primary));
+
+    --c-quote_byline--font: var(--dsa-testimonial__byline--font, var(--ks-font-copy-m));
+    --c-quote_byline--font-weight: var(--dsa-testimonial__byline--font-weight, var(--ks-font-weight-regular));
+
+    --c-quote_image--max-width: var(--dsa-testimonial__image--max-width, 40%);
+  }
+
+  .c-slider-main {
+    --c-slider_bullet--outline-color-active: var(--ks-text-color-primary);
+    --c-slider_bullet--size: 1rem;
+  }
+
   &--list {
     display: flex;
     flex-direction: column;
-    gap: var(--ks-spacing-stack-xl);
+    gap: var(--dsa-testimonial__list--gap, var(--ks-spacing-stack-xl));
   }
 
   .c-quote {
     &__source {
-      color: var(--c-quote_source--color);
+      color: var(--dsa-testimonial__source--color, var(--ks-text-color-default));
     }
 
     &__byline {
-      color: var(--c-quote_byline--color);
+      color: var(--dsa-testimonial__byline--color, var(--ks-text-color-copy));
     }
 
     &__text {
-      margin-bottom: var(--ks-spacing-stack-s);
+      margin-bottom: var(--testimonials__copy--margin-bottom, var(--ks-spacing-stack-s));
     }
 
     &--reverse {
       flex-direction: row-reverse;
 
       .c-quote__content {
-        padding-right: var(--c-quote_content--padding-left);
+        padding-right: var(--dsa-testimonial--padding-left, var(--ks-spacing-xl));
         padding-left: unset;
 
         &:before {
@@ -36,7 +54,7 @@
     }
 
     .c-quote__content {
-      font: var(--c-quote_text--font);
+      font: var(--dsa-testimonial__copy--font, var(--ks-font-copy-l));
 
       &::before {
         line-height: 0.7;
