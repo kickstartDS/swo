@@ -1,3 +1,15 @@
+# v1.2.14 (Thu Feb 29 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: theme switch behaviour ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.2.13 (Thu Feb 29 2024)
 
 #### 🐛 Bug Fix
