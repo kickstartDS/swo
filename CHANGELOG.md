@@ -1,3 +1,15 @@
+# v1.2.22 (Fri Mar 01 2024)
+
+#### ⚠️ Pushed to `main`
+
+- build: bring back cms components to bundle ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.2.21 (Fri Mar 01 2024)
 
 #### ⚠️ Pushed to `main`
