@@ -1,3 +1,15 @@
+# v1.2.21 (Fri Mar 01 2024)
+
+#### ⚠️ Pushed to `main`
+
+- build: add unique key prop to testimonials ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.2.19 (Fri Mar 01 2024)
 
 #### ⚠️ Pushed to `main`
