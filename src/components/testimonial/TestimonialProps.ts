@@ -25,6 +25,10 @@ export type Source = string;
  * The alt text of the image file
  */
 export type AltText = string;
+/**
+ * The rating of the testimonial, from 1 to 5
+ */
+export type Rating = number;
 
 /**
  * Testimonial entry of Testimonials component
@@ -37,4 +41,5 @@ export interface TestimonialProps {
     src?: Source;
     alt?: AltText;
   };
+  rating?: Rating;
 }

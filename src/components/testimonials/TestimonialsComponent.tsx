@@ -1,9 +1,9 @@
 import { HTMLAttributes, FC, PropsWithChildren } from "react";
 import { TestimonialsProps } from "./TestimonialsProps";
 import "./testimonials.scss";
-import { Quote } from "@kickstartds/content/lib/quote";
 import { Slider } from "../slider/SliderComponent";
 import { SliderProps } from "../slider/SliderProps";
+import { Testimonial } from "../testimonial/TestimonialComponent";
 
 interface ConditionalSliderProps extends SliderProps {
   layout: "slider" | "list" | "alternating";
@@ -34,37 +34,11 @@ export const ConditionalSlider: FC<
 
 export const Testimonials: FC<
   TestimonialsProps & HTMLAttributes<HTMLElement>
-> = ({ items, layout = "slider", ...props }) => {
+> = ({ testimonial, layout = "slider", ...props }) => {
   return (
     <ConditionalSlider layout={layout} arrows nav {...props}>
-      {items.map((item, index) => (
-        <Quote
-          className={
-            layout === "alternating" && index % 2 === 1
-              ? "c-quote--reverse"
-              : ""
-          }
-          key={index}
-          text={item.quote}
-          source={item.name}
-          byline={item.title}
-          image={item.image.src}
-          renderSource={() => (
-            <>
-              {item?.rating &&
-                (item?.rating ? (
-                  <div>
-                    {[...Array(item?.rating)].map((_, index) => (
-                      <span key={index}>★</span>
-                    ))}
-                  </div>
-                ) : (
-                  ""
-                ))}
-              <div className="c-quote__source">{item.name}</div>
-            </>
-          )}
-        />
+      {testimonial.map((testimonial, index) => (
+        <Testimonial {...testimonial} index={index} layout={layout} />
       ))}
     </ConditionalSlider>
   );

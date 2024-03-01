@@ -73,7 +73,7 @@ export const ListLayout: Story = {
   },
   args: pack({
     layout: "list",
-    testimonials: [
+    testimonial: [
       {
         quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
         image: {
@@ -116,7 +116,7 @@ export const SliderLayout: Story = {
     },
   },
   args: pack({
-    testimonials: [
+    testimonial: [
       {
         quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
         image: {
@@ -156,7 +156,7 @@ export const WithRating: Story = {
     },
   },
   args: pack({
-    testimonials: [
+    testimonial: [
       {
         quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
         image: {
@@ -200,7 +200,7 @@ export const AlternatingLayout: Story = {
   },
   args: pack({
     layout: "alternating",
-    testimonials: [
+    testimonial: [
       {
         quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
         image: {
