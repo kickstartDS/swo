@@ -5,40 +5,12 @@
   "description": "Component used to display stats with a number upcounter",
   "type": "object",
   "properties": {
-    "items": {
-      "title": "Items",
+    "stat": {
+      "title": "Stats",
       "type": "array",
       "description": "The stats to display with a number upcounter",
       "items": {
-        "type": "object",
-        "title": "Stat",
-        "properties": {
-          "number": {
-            "title": "Number",
-            "description": "The number of the stat",
-            "type": "integer",
-            "examples": [1, 2, 3, 4]
-          },
-          "description": {
-            "title": "Description",
-            "description": "Optional description of the stat",
-            "type": "string"
-          },
-          "title": {
-            "title": "Title",
-            "description": "Title of the stat",
-            "type": "string",
-            "examples": ["Stat 1", "Stat 2", "Stat 3", "Stat 4"]
-          },
-          "icon": {
-            "title": "Icon",
-            "description": "Optional icon of the stat",
-            "type": "string",
-            "examples": ["person", "home", "map"]
-          }
-        },
-        "additionalProperties": false,
-        "required": ["number", "title"]
+        "$ref": "http://schema.mydesignsystem.com/stat.schema.json"
       },
       "minItems": 1,
       "maxItems": 4

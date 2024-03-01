@@ -23,6 +23,12 @@
       "type": "string",
       "format": "markdown",
       "examples": ["Stat 1", "Stat 2", "Stat 3", "Stat 4"]
+    },
+    "icon": {
+      "title": "Icon",
+      "description": "Optional icon of the stat",
+      "type": "string",
+      "examples": ["person", "home", "map"]
     }
   },
   "additionalProperties": false,

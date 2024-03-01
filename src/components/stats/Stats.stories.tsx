@@ -28,7 +28,7 @@ export const CountUpWithIcons: Story = {
     },
   },
   args: pack({
-    stats: [
+    stat: [
       { number: 1500, title: "Users", icon: "person" },
       { number: 350, title: "Subscribers", icon: "star" },
       { number: 125, title: "Locations", icon: "map" },
@@ -44,7 +44,7 @@ export const CountUpWithDescription: Story = {
     },
   },
   args: pack({
-    stats: [
+    stat: [
       {
         number: 1500,
         title: "Users",

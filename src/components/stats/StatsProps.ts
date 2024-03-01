@@ -5,39 +5,23 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {StatProps} from "../stat/StatProps";
+
 /**
  * The stats to display with a number upcounter
  *
  * @minItems 1
  * @maxItems 4
  */
-export type Items = [Stat] | [Stat, Stat] | [Stat, Stat, Stat] | [Stat, Stat, Stat, Stat];
-/**
- * The number of the stat
- */
-export type Number = number;
-/**
- * Optional description of the stat
- */
-export type Description = string;
-/**
- * Title of the stat
- */
-export type Title = string;
-/**
- * Optional icon of the stat
- */
-export type Icon = string;
+export type Stats =
+  | [StatProps]
+  | [StatProps, StatProps]
+  | [StatProps, StatProps, StatProps]
+  | [StatProps, StatProps, StatProps, StatProps];
 
 /**
  * Component used to display stats with a number upcounter
  */
 export interface StatsProps {
-  items?: Items;
-}
-export interface Stat {
-  number: Number;
-  description?: Description;
-  title: Title;
-  icon?: Icon;
+  stat?: Stats;
 }

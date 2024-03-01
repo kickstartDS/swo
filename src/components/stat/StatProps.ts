@@ -17,6 +17,10 @@ export type Description = string;
  * Title of the stat
  */
 export type Title = string;
+/**
+ * Optional icon of the stat
+ */
+export type Icon = string;
 
 /**
  * Stat entry of Stats component
@@ -25,4 +29,5 @@ export interface StatProps {
   number: Number;
   description?: Description;
   title?: Title;
+  icon?: Icon;
 }

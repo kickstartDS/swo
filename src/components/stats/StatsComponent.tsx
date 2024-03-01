@@ -1,24 +1,15 @@
 import { HTMLAttributes, FC } from "react";
 import { StatsProps } from "./StatsProps";
 import "./stats.scss";
-import { CountUp } from "@kickstartds/content/lib/count-up";
+import { Stat } from "../stat/StatComponent";
 
 export const Stats: FC<StatsProps & HTMLAttributes<HTMLElement>> = ({
-  items = [],
+  stat: stats = [],
 }) => {
   return (
     <div className="dsa-stats">
-      {items.map((item, index) => (
-        <CountUp
-          className="dsa-stats__item"
-          key={index}
-          to={item.number}
-          icon={{
-            icon: item?.icon,
-          }}
-          text={item?.description}
-          topic={item.title}
-        />
+      {stats.map((item, index) => (
+        <Stat {...item} key={index} />
       ))}
     </div>
   );

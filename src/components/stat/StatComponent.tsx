@@ -1,17 +1,22 @@
 import { forwardRef, createContext, useContext, HTMLAttributes } from "react";
 import { StatProps } from "./StatProps";
+import { CountUp } from "@kickstartds/content/lib/count-up";
 
 export const StatContextDefault = forwardRef<
   HTMLDivElement,
   StatProps & HTMLAttributes<HTMLDivElement>
->(({ number, title, description, ...rest }, ref) => (
-  <div {...rest} ref={ref} className="dsa-stats__stat">
-    <span className="dsa-stats__value">{number}</span>
-    <span className="dsa-stats__label">{title}</span>
-    {description && (
-      <span className="dsa-stats__description">{description}</span>
-    )}
-  </div>
+>(({ number, title, description, icon, ...rest }, ref) => (
+  <CountUp
+    {...rest}
+    ref={ref}
+    className="dsa-stats__item"
+    to={number}
+    icon={{
+      icon: icon,
+    }}
+    text={description}
+    topic={title}
+  />
 ));
 
 export const StatContext = createContext(StatContextDefault);
