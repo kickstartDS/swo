@@ -1,3 +1,20 @@
+# v1.2.19 (Fri Mar 01 2024)
+
+#### ⚠️ Pushed to `main`
+
+- build: clean up yarn.lock ([@lmestel](https://github.com/lmestel))
+- build: patch storybook-addon-playroom to unpack args in addon panel ([@lmestel](https://github.com/lmestel))
+- build: build theme tokens ([@lmestel](https://github.com/lmestel))
+- fix: remove import on now deleted file ([@julrich](https://github.com/julrich))
+- fix: modularization of features component, fix testimonials ([@julrich](https://github.com/julrich))
+
+#### Authors: 2
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.2.18 (Fri Mar 01 2024)
 
 #### ⚠️ Pushed to `main`
