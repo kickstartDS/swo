@@ -1,3 +1,15 @@
+# v1.2.23 (Fri Mar 01 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: finish component splitting and clean up ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.2.22 (Fri Mar 01 2024)
 
 #### ⚠️ Pushed to `main`
