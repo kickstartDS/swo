@@ -1,3 +1,16 @@
+# v1.2.24 (Fri Mar 01 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add missing props ([@julrich](https://github.com/julrich))
+- fix: finish refactoring on logos component ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.2.23 (Fri Mar 01 2024)
 
 #### ⚠️ Pushed to `main`
