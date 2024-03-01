@@ -13,7 +13,6 @@ export const TestimonialContextDefault = forwardRef<
     className={
       layout === "alternating" && index % 2 === 1 ? "c-quote--reverse" : ""
     }
-    key={index}
     text={quote}
     source={name}
     byline={title}

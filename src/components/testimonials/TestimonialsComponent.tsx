@@ -38,7 +38,12 @@ export const Testimonials: FC<
   return (
     <ConditionalSlider layout={layout} arrows nav {...props}>
       {testimonial.map((testimonial, index) => (
-        <Testimonial {...testimonial} index={index} layout={layout} />
+        <Testimonial
+          {...testimonial}
+          index={index}
+          layout={layout}
+          key={index}
+        />
       ))}
     </ConditionalSlider>
   );
