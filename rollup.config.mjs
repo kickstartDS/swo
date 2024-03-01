@@ -10,7 +10,6 @@ import scss from "./scripts/rollupPluginScss.js";
 const componentFiles = fg.sync([
   "src/components/**/*Component.(t|j)sx",
   "src/components/Providers.(t|j)sx",
-  "src/components/cms/index.ts",
 ]);
 const componentEntryPoints = Object.fromEntries(
   componentFiles.map((fileName) => [
@@ -37,6 +36,7 @@ export default {
   input: {
     ...componentEntryPoints,
     ...clientJsEntryPoints,
+    "tokens/themes.css": "src/themes/themes.scss",
   },
   output: {
     dir: "dist",
