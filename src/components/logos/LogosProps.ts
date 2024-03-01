@@ -5,7 +5,7 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type { LogoProps } from "../logo/LogoProps";
+import type {LogoProps} from "../logo/LogoProps";
 
 /**
  * A short tagline atop the logos
@@ -24,48 +24,10 @@ export type Logos =
   | [LogoProps, LogoProps, LogoProps, LogoProps]
   | [LogoProps, LogoProps, LogoProps, LogoProps, LogoProps]
   | [LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps]
-  | [
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps
-    ]
-  | [
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps
-    ]
-  | [
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps
-    ]
-  | [
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps
-    ]
+  | [LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps]
+  | [LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps]
+  | [LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps]
+  | [LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps]
   | [
       LogoProps,
       LogoProps,
