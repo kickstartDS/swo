@@ -8,7 +8,7 @@ import { Button } from "@kickstartds/base/lib/button";
 import { Link } from "@kickstartds/base/lib/link";
 
 export const Logos: FC<LogosProps & HTMLAttributes<HTMLElement>> = ({
-  items = [],
+  logo: logos = [],
   tagline,
   align,
   cta,
@@ -22,7 +22,7 @@ export const Logos: FC<LogosProps & HTMLAttributes<HTMLElement>> = ({
           className={classnames(
             `dsa-logo-tiles dsa-logo-tiles--cols-${logosPerRow}`
           )}
-          logos={items}
+          logos={logos}
         />
         {cta?.toggle ? (
           <div className="dsa-logos__cta">
