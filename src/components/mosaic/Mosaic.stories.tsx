@@ -4,14 +4,14 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Mosaic } from "./MosaicComponent";
 import schema from "./mosaic.schema.dereffed.json";
-import cssprops from "./mosaic-tokens.json";
+import customProperties from "./mosaic-tokens.json";
 
 const meta: Meta = {
   title: "Components/Mosaic",
   component: Mosaic,
   parameters: {
-    jsonschema: schema,
-    cssprops,
+    jsonschema: { schema },
+    cssprops: { customProperties },
   },
   ...getArgsShared(schema as JSONSchema7),
 };

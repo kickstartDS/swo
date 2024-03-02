@@ -4,14 +4,14 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Button } from "./ButtonComponent";
 import schema from "./button.schema.dereffed.json";
-import cssprops from "./button-tokens.json";
+import customProperties from "./button-tokens.json";
 
 const meta: Meta = {
   title: "Components/Button",
   component: Button,
   parameters: {
-    jsonschema: schema,
-    cssprops,
+    jsonschema: { schema },
+    cssprops: { customProperties },
   },
   ...getArgsShared(schema as JSONSchema7),
 };

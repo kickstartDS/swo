@@ -2320,10 +2320,10 @@
     object-traversal "^1.0.1"
     uuid "~9.0.0"
 
-"@kickstartds/storybook-addon-component-tokens@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/@kickstartds/storybook-addon-component-tokens/-/storybook-addon-component-tokens-1.0.0.tgz"
-  integrity sha512-gVUG3dZpfRSeijLbM6UU9wW1C9uBQ+nCcvT5ugzo+xUJMcGQ/4ZKcgZCwoBnJSR+cqXZyvAocvzvCsCi1ke1Cw==
+"@kickstartds/storybook-addon-component-tokens@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/storybook-addon-component-tokens/-/storybook-addon-component-tokens-2.0.0.tgz#30ddc3c516b218a82692af80ac90a27acabf6591"
+  integrity sha512-d5zdHdomZnq/3+RB0zS897RJRh/Kp5vBzUbBhmcmtqAOcIU23tAw7MmUawzwsiL8ktuUqCW93Ol/ePVVNfeVug==
 
 "@kickstartds/storybook-addon-html@^0.0.2":
   version "0.0.2"
@@ -2335,10 +2335,10 @@
     "@storybook/preview-api" "^7"
     "@storybook/theming" "^7"
 
-"@kickstartds/storybook-addon-jsonschema@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/@kickstartds/storybook-addon-jsonschema/-/storybook-addon-jsonschema-2.0.1.tgz"
-  integrity sha512-tjLeFipLK2haHDJ58yiWBpPJmZTjNW1/p3pyjZvrW/GDeiS/NosA9Ybn0gsdVB66ysiSxW8UT7KChuCfYNcLAg==
+"@kickstartds/storybook-addon-jsonschema@3.0.0--canary.24.ce201f4.0":
+  version "3.0.0--canary.24.ce201f4.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/storybook-addon-jsonschema/-/storybook-addon-jsonschema-3.0.0--canary.24.ce201f4.0.tgz#5ec2433faffb67f551955d61e60725b7e4976cec"
+  integrity sha512-yJia3ywN87GPhq9eHGbSerJrx9waPLCD+A9lZPBOhCXEczX0UfMlXid4CITqxqQbuPOgOd3fUhdRtz+irUv/TQ==
 
 "@kickstartds/style-dictionary@2.3.0-canary.1615.6674.0":
   version "2.3.0-canary.1615.6674.0"
