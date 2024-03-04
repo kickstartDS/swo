@@ -19,4 +19,11 @@
     font: var(--dsa-mosaic__copy--font, var(--dsa-rich-text--font, var(--ks-font-copy-m)));
     color: var(--dsa-mosaic__copy--color, var(--das-rich-text--color, var(--ks-text-color-copy)));
   }
+
+  .c-storytelling__box__content[style^=color] {
+    .dsa-headline__headline,
+    .dsa-headline__subheadline {
+      color: inherit;
+    }
+  }
 }
