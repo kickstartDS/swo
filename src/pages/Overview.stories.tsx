@@ -140,7 +140,7 @@ const Page = () => (
     >
       <Logos
         align="center"
-        items={[
+        logo={[
           {
             alt: "Logo 1",
             src: "img/logos/logoipsum-212.svg",

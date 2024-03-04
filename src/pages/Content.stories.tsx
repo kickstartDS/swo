@@ -93,7 +93,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
     </Section>
     <Section spaceBefore="none" width="wide">
       <Testimonials
-        items={[
+        testimonial={[
           {
             image: {
               src: "/img/people/author-emily.png",

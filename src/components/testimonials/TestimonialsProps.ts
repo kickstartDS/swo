@@ -21,5 +21,5 @@ export type Testimonials = TestimonialProps[];
  */
 export interface TestimonialsProps {
   layout?: Layout;
-  items?: Testimonials;
+  testimonial?: Testimonials;
 }

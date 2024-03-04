@@ -108,7 +108,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
     >
       <Testimonials
         layout="slider"
-        items={[
+        testimonial={[
           {
             image: {
               src: "/img/people/author-emily.png",

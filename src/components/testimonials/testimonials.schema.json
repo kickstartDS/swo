@@ -12,7 +12,7 @@
       "enum": ["slider", "list", "alternating"],
       "default": "slider"
     },
-    "items": {
+    "testimonial": {
       "type": "array",
       "title": "Testimonials",
       "description": "Add testimonials featuring an image, a quote, a source and a rating",
