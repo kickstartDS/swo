@@ -52,6 +52,7 @@ export const Cta: FC<CtaProps> = ({
             // @ts-expect-error
             buttons,
             colorNeutral: colorNeutral,
+            arrangement: textAlign,
           },
           headline: {
             text: headline,
