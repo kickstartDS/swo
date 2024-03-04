@@ -1,3 +1,15 @@
+# v1.2.28 (Mon Mar 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Revert "fix: fix testimonials schema" ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.2.27 (Mon Mar 04 2024)
 
 #### ⚠️ Pushed to `main`
