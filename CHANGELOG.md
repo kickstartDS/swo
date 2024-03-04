@@ -1,3 +1,15 @@
+# v1.2.32 (Mon Mar 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: clean up stories and story order ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.2.31 (Mon Mar 04 2024)
 
 #### ⚠️ Pushed to `main`
