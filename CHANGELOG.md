@@ -1,3 +1,15 @@
+# v1.2.30 (Mon Mar 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: minor style fixes ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.2.29 (Mon Mar 04 2024)
 
 #### ⚠️ Pushed to `main`
