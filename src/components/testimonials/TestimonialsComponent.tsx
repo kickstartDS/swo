@@ -34,10 +34,10 @@ export const ConditionalSlider: FC<
 
 export const Testimonials: FC<
   TestimonialsProps & HTMLAttributes<HTMLElement>
-> = ({ testimonial, layout = "slider", ...props }) => {
+> = ({ items = [], layout = "slider", ...props }) => {
   return (
     <ConditionalSlider layout={layout} arrows nav {...props}>
-      {testimonial.map((testimonial, index) => (
+      {items.map((testimonial, index) => (
         <Testimonial
           {...testimonial}
           index={index}

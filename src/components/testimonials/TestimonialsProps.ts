@@ -8,9 +8,9 @@
 import type {TestimonialProps} from "../testimonial/TestimonialProps";
 
 /**
- * The testimonial quote
+ * The testimonial layout
  */
-export type Quote = "slider" | "list" | "alternating";
+export type Layout = "slider" | "list" | "alternating";
 /**
  * Add testimonials featuring an image, a quote, a source and a rating
  */
@@ -20,6 +20,6 @@ export type Testimonials = TestimonialProps[];
  * Display testimonials with an optional image and rating
  */
 export interface TestimonialsProps {
-  layout?: Quote;
-  testimonial?: Testimonials;
+  layout?: Layout;
+  items?: Testimonials;
 }

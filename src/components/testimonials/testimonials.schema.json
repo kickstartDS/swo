@@ -6,13 +6,13 @@
   "type": "object",
   "properties": {
     "layout": {
-      "title": "Quote",
-      "description": "The testimonial quote",
+      "title": "Layout",
+      "description": "The testimonial layout",
       "type": "string",
       "enum": ["slider", "list", "alternating"],
       "default": "slider"
     },
-    "testimonial": {
+    "items": {
       "type": "array",
       "title": "Testimonials",
       "description": "Add testimonials featuring an image, a quote, a source and a rating",
@@ -21,6 +21,5 @@
       }
     }
   },
-  "additionalProperties": false,
-  "required": ["quote"]
+  "additionalProperties": false
 }
