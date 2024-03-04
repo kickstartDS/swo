@@ -1,3 +1,15 @@
+# v1.2.31 (Mon Mar 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: bring back colorful mosaic text ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.2.30 (Mon Mar 04 2024)
 
 #### ⚠️ Pushed to `main`
