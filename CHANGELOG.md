@@ -1,3 +1,15 @@
+# v1.2.29 (Mon Mar 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: use correct header height token ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.2.28 (Mon Mar 04 2024)
 
 #### ⚠️ Pushed to `main`
