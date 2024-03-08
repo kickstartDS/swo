@@ -1,3 +1,15 @@
+# v1.2.33 (Fri Mar 08 2024)
+
+#### ⚠️ Pushed to `main`
+
+- docs: update json-schema addon ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.2.32 (Mon Mar 04 2024)
 
 #### ⚠️ Pushed to `main`
