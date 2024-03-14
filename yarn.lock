@@ -2175,10 +2175,10 @@
   resolved "https://registry.npmjs.org/@juggle/resize-observer/-/resize-observer-3.4.0.tgz"
   integrity sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==
 
-"@kickstartds/base@2.3.0-canary.1615.6674.0":
-  version "2.3.0-canary.1615.6674.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-2.3.0-canary.1615.6674.0.tgz#1126a0aebd023e7ae2c81a3a90f295ae34087d6c"
-  integrity sha512-KvFZf1AgRqq0ffrDQkupatU4+Uv4t3FLE2ZsoI93+xyMgU3mhlhG3jPErXgyuqyDZnTuNC24PMmS9K5ib/GSeg==
+"@kickstartds/base@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-4.0.2.tgz#7a7067383139fc03208c873dab6bbfbfa6b84389"
+  integrity sha512-LLbLa9WmmiOx/mRGoTF0qdclu2KT3HVSX8cj/PL/qjcE9GheOR+iPNIZ6Xii8b0Q9cYkmm9SYcRlkkfzNNHpOQ==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
@@ -2187,29 +2187,29 @@
     photoswipe "^5.3.7"
     vhtml "^2.2.0"
 
-"@kickstartds/blog@2.3.0-canary.1615.6674.0":
-  version "2.3.0-canary.1615.6674.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-2.3.0-canary.1615.6674.0.tgz#1c67d11d403a8ef49f00e81249141e3122615215"
-  integrity sha512-SOySnQavFbihupYaNyO3eFvTrGLRjcRWeoaZzlXK//VtziDMow+yXfhWCt2oblB6xiHn/eHpONeuqZppLVRu5w==
+"@kickstartds/blog@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-4.0.2.tgz#760568f93e1c6aac966109534b03b4775a59bf5f"
+  integrity sha512-kqqPwsXgXnnZGPDh1BMvx6NMYTWrbKLn6C+H6rjDSuaewqHvfZW/s2wgAX72gcHev29pqYJcncXYCJuqFyUTAw==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
     date-fns "^2.30.0"
 
-"@kickstartds/content@3.0.0-next.7":
-  version "3.0.0-next.7"
-  resolved "https://registry.npmjs.org/@kickstartds/content/-/content-3.0.0-next.7.tgz"
-  integrity sha512-a1nhOW65DCW2G5GjCJzExoVVn/GTaqnwSMuWQ1etq/wJ+AZR7Ky35vIz6e7GSQF2rCuHJ4qyu9h4HnayEaLlSw==
+"@kickstartds/content@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/content/-/content-4.0.0.tgz#baba70f29ef591fe3149f4e4e32c25c53ce77b3c"
+  integrity sha512-JhHaDBwuYe5OYNFlyaNVoOmLZNlfwHGPXy7rpzmMsbjthIL3TjmLLJhc54OTHglQcvynQjaEfzMIRpibz/ZOiQ==
   dependencies:
     "@babel/runtime" "^7.21.0"
     "@glidejs/glide" "^3.6.0"
     classnames "^2.3.2"
     countup.js "^2.6.2"
 
-"@kickstartds/core@2.3.0-canary.1615.6674.0":
-  version "2.3.0-canary.1615.6674.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/core/-/core-2.3.0-canary.1615.6674.0.tgz#30c72ffde2895ebe825d1609466b9ed917a4ed18"
-  integrity sha512-lQ7kJBYeFiCr8uob6ln2eAe9VIGtl0Nj+7rCayiCbto5/d1heM8szq2CmltM1f86kYxelG1K9/TEkp4IeBDYpA==
+"@kickstartds/core@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@kickstartds/core/-/core-4.0.2.tgz#277744da0688cf09c1bb3898ae758bffd1c9f79a"
+  integrity sha512-xLTPOrM0ul2wYxgsUPd6nzqUHmCCiJm/MJqY/JAlIBYTdm0txsZKzItN6JnDRQNwniYcHcl5xPKlZ2NawEnsRQ==
   dependencies:
     "@babel/runtime" "^7.21.5"
     bourbon "^7.3.0"
@@ -2224,10 +2224,10 @@
     pubsub-js "^1.9.4"
     sass "^1.62.1"
 
-"@kickstartds/form@2.3.0-canary.1615.6674.0":
-  version "2.3.0-canary.1615.6674.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-2.3.0-canary.1615.6674.0.tgz#deec17aae0f7c9c31521eef285a86bbe8707382d"
-  integrity sha512-LYtCLzLyNbCly2xo4McAkENr0+6rnoIw5k/y5crgPsS6/LEbnrvrVF5dqm2KLpf3pejTcuAALRG6h1cju9LZKQ==
+"@kickstartds/form@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-4.0.2.tgz#e93bed38de608767e55a8ca1c85e9dfd783c6e5f"
+  integrity sha512-q5j5pDLFRE88/Di2fbUk9zwDH691/VpvUfyu6IXwMuCVvfNH5O8m8tQjHevmrVRM44+QhRl3FYM70ng+DCQGXA==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
@@ -2340,10 +2340,10 @@
   resolved "https://registry.yarnpkg.com/@kickstartds/storybook-addon-jsonschema/-/storybook-addon-jsonschema-3.1.0.tgz#5f413d2c695190c6d5020125ecc85bd4a2ce12e2"
   integrity sha512-hiYKP2JIyOfTXZ0wNlKbBOPYzEVp+rCqh7k5at2Jw9T2s0Dbdq2c/xWNn8sLJjDJqtOaAkUnuenGFk6+b/xBWA==
 
-"@kickstartds/style-dictionary@2.3.0-canary.1615.6674.0":
-  version "2.3.0-canary.1615.6674.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/style-dictionary/-/style-dictionary-2.3.0-canary.1615.6674.0.tgz#a187f41f9636cc74725d6684a5e810d20c074a69"
-  integrity sha512-mOR1MxDH0tG1/s8z5A7aZsMh8KNbhVS7KeljZQweP+a5Em+TlPTUzNuWw73nL0HO6BTfrMoqVwrwq8Fjp5a9pg==
+"@kickstartds/style-dictionary@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@kickstartds/style-dictionary/-/style-dictionary-4.0.2.tgz#1db0da500c0c37c4b7197dcdae523e23d1d7e4bc"
+  integrity sha512-y/oHzAwW3T24iunCC4oZYnAnWDqnRIVqYXBft2pKpLppAR/owtsslsNx7T/1zop2SqhgOBr0sGSaDqwjV1A38g==
   dependencies:
     "@babel/core" "^7.21.4"
     "@babel/preset-react" "^7.18.6"
