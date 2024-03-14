@@ -1,3 +1,15 @@
+# v1.2.34 (Thu Mar 14 2024)
+
+#### 🐛 Bug Fix
+
+- Update kickstartDS [#7](https://github.com/kickstartDS/ds-agency-premium/pull/7) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.2.33 (Fri Mar 08 2024)
 
 #### ⚠️ Pushed to `main`
