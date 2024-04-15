@@ -67,3 +67,4 @@ export const Cta: FC<CtaProps> = ({
     </ButtonContext.Provider>
   );
 };
+Cta.displayName = "Cta";

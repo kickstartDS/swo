@@ -1,10 +1,13 @@
-import { FC } from "react";
+import { HTMLAttributes, createContext, forwardRef, useContext } from "react";
 import { MosaicProps } from "./MosaicProps";
 import "./mosaic.scss";
 import { Storytelling } from "@kickstartds/content/lib/storytelling";
 
-export const Mosaic: FC<MosaicProps> = ({ layout, largeHeadlines, tiles }) => (
-  <div className="dsa-mosaic">
+export const MosaicContextDefault = forwardRef<
+  HTMLDivElement,
+  MosaicProps & HTMLAttributes<HTMLDivElement>
+>(({ layout, largeHeadlines, tiles, ...rest }, ref) => (
+  <div {...rest} ref={ref} className="dsa-mosaic">
     {tiles.map((tile, index) => (
       <Storytelling
         key={index}
@@ -43,4 +46,14 @@ export const Mosaic: FC<MosaicProps> = ({ layout, largeHeadlines, tiles }) => (
       />
     ))}
   </div>
-);
+));
+
+export const MosaicContext = createContext(MosaicContextDefault);
+export const Mosaic = forwardRef<
+  HTMLDivElement,
+  MosaicProps & HTMLAttributes<HTMLDivElement>
+>((props, ref) => {
+  const Component = useContext(MosaicContext);
+  return <Component {...props} ref={ref} />;
+});
+Mosaic.displayName = "Mosaic";
