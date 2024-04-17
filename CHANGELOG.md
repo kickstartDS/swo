@@ -1,3 +1,15 @@
+# v1.3.0 (Wed Apr 17 2024)
+
+#### 🚀 Enhancement
+
+- Upgrade Storybook to version 8 [#8](https://github.com/kickstartDS/ds-agency-premium/pull/8) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.2.34 (Thu Mar 14 2024)
 
 #### 🐛 Bug Fix
