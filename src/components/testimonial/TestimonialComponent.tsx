@@ -42,3 +42,4 @@ export const Testimonial = forwardRef<
   const Component = useContext(TestimonialContext);
   return <Component {...props} ref={ref} />;
 });
+Testimonial.displayName = "Testimonial";
