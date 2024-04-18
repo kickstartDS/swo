@@ -1,3 +1,20 @@
+# v1.3.4 (Thu Apr 18 2024)
+
+#### 🐛 Bug Fix
+
+- feat(section): update section [#10](https://github.com/kickstartDS/ds-agency-premium/pull/10) ([@fleven-kds](https://github.com/fleven-kds))
+
+#### ⚠️ Pushed to `main`
+
+- fix: add correct format to twitter card image ([@julrich](https://github.com/julrich))
+
+#### Authors: 2
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.3.3 (Thu Apr 18 2024)
 
 #### 🐛 Bug Fix
