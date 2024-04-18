@@ -14,6 +14,7 @@
 
 .c-storytelling.dsa-cta {
   --c-storytelling--padding-ratio: 2;
+  --c-storytelling--horizontal-padding: var(--l-section--content-padding);
 
   &--color-neutral {
     --dsa-cta__copy--color: var(--dsa-cta_color-neutral__copy--color, var(--ks-text-color-default));
@@ -32,6 +33,10 @@
 
   &.c-storytelling--full {
     --c-storytelling--padding-ratio: 1;
+  }
+
+  &.c-storytelling--full.c-storytelling--order-desktop-image-last .c-storytelling__box {
+    padding-left: var(--dsa-cta--horizontal-padding);
   }
 
   justify-content: center;
