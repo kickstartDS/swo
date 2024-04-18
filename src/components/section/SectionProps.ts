@@ -9,12 +9,17 @@ import type {CtaProps} from "../cta/CtaProps";
 import type {FaqProps} from "../faq/FaqProps";
 import type {FeaturesProps} from "../features/FeaturesProps";
 import type {GalleryProps} from "../gallery/GalleryProps";
+import type {HeroProps} from "../hero/HeroProps";
+import type {ImageStoryProps} from "../image-story/ImageStoryProps";
 import type {ImageTextProps} from "../image-text/ImageTextProps";
 import type {LogosProps} from "../logos/LogosProps";
+import type {MosaicProps} from "../mosaic/MosaicProps";
+import type {SliderProps} from "../slider/SliderProps";
 import type {StatsProps} from "../stats/StatsProps";
 import type {TeaserCardProps} from "../teaser-card/TeaserCardProps";
 import type {TestimonialsProps} from "../testimonials/TestimonialsProps";
 import type {TextProps} from "../text/TextProps";
+import type {VideoCurtainProps} from "../video-curtain/VideoCurtainProps";
 import type {ButtonProps} from "../button/ButtonProps";
 
 /**
@@ -112,12 +117,17 @@ export type Content = (
   | FaqProps
   | FeaturesProps
   | GalleryProps
+  | HeroProps
+  | ImageStoryProps
   | ImageTextProps
   | LogosProps
+  | MosaicProps
+  | SliderProps
   | StatsProps
   | TeaserCardProps
   | TestimonialsProps
   | TextProps
+  | VideoCurtainProps
 )[];
 /**
  * Buttons of the Button Group
