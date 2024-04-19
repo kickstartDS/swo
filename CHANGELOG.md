@@ -1,3 +1,17 @@
+# v1.3.6 (Fri Apr 19 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add header and footer options ([@julrich](https://github.com/julrich))
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@julrich](https://github.com/julrich))
+- fix: add components to slider schema ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.3.4 (Thu Apr 18 2024)
 
 #### 🐛 Bug Fix
