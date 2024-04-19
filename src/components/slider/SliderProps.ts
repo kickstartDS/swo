@@ -5,6 +5,17 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {CtaProps} from "../cta/CtaProps";
+import type {FeaturesProps} from "../features/FeaturesProps";
+import type {GalleryProps} from "../gallery/GalleryProps";
+import type {HeroProps} from "../hero/HeroProps";
+import type {ImageTextProps} from "../image-text/ImageTextProps";
+import type {LogosProps} from "../logos/LogosProps";
+import type {StatsProps} from "../stats/StatsProps";
+import type {TeaserCardProps} from "../teaser-card/TeaserCardProps";
+import type {TestimonialsProps} from "../testimonials/TestimonialsProps";
+import type {TextProps} from "../text/TextProps";
+
 /**
  * Automatically move to next slide after 4 seconds without user interaction
  */
@@ -31,6 +42,21 @@ export type Type = "slider" | "carousel";
  * Additional css classes attached to the wrapping element
  */
 export type Class = string;
+/**
+ * Allowed components for content
+ */
+export type Content = (
+  | CtaProps
+  | FeaturesProps
+  | GalleryProps
+  | HeroProps
+  | ImageTextProps
+  | LogosProps
+  | StatsProps
+  | TeaserCardProps
+  | TestimonialsProps
+  | TextProps
+)[];
 
 export interface SliderProps {
   autoplay?: AutoPlay;
@@ -41,4 +67,5 @@ export interface SliderProps {
   arrows?: ShowArrows;
   type?: Type;
   className?: Class;
+  components?: Content;
 }
