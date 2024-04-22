@@ -7,17 +7,20 @@
     "headline": {
       "title": "Headline",
       "description": "Headline for the visual",
-      "type": "string"
+      "type": "string",
+      "format": "markdown"
     },
     "sub": {
       "title": "Module Subheadline",
       "description": "Subheadline below the module headline",
-      "type": "string"
+      "type": "string",
+      "format": "markdown"
     },
     "text": {
       "title": "Module Text",
       "description": "Info text for the module element",
-      "type": "string"
+      "type": "string",
+      "format": "markdown"
     },
     "highlightText": {
       "type": "boolean",

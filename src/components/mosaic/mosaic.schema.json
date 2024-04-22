@@ -25,17 +25,20 @@
           "headline": {
             "title": "Headline",
             "description": "Headline for the tile",
-            "type": "string"
+            "type": "string",
+            "format": "markdown"
           },
           "sub": {
             "title": "Module Subheadline",
             "description": "Subheadline below the tile headline",
-            "type": "string"
+            "type": "string",
+            "format": "markdown"
           },
           "text": {
             "title": "Module Text",
             "description": "Text for tile",
-            "type": "string"
+            "type": "string",
+            "format": "markdown"
           },
           "image": {
             "type": "object",
