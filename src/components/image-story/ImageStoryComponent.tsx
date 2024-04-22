@@ -35,7 +35,7 @@ export const ImageStoryContextDefault = forwardRef<
         <Storytelling
           {...rest}
           ref={ref}
-          className={classnames("c-image-story")}
+          className={classnames("dsa-image-story")}
           full={padding === false ? true : false}
           image={{
             source: image?.src,

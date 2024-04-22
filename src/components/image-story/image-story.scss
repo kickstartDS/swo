@@ -1,12 +1,19 @@
 @import "./image-story-tokens.scss";
 
-.c-storytelling.c-image-story {
+.c-storytelling.dsa-image-story {
   gap: var(--c-storytelling--horizontal-padding);
+  --c-storytelling--horizontal-padding: var(--dsa-image-story--horizontal-padding, var(--l-section--content-padding));
+  --c-storytelling--vertical-padding: var(--dsa-image-story--vertical-padding, var(--ks-spacing-xl));
 
   .c-storytelling__box {
     &__content {
       max-width: var(--l-section--content-width-narrow);
     }
+  }
+
+  .c-rich-text {
+    font: var(--dsa-image-story__copy--font, var(--dsa-rich-text--font));
+    color: var(--dsa-image-story__copy--color, var(--dsa-rich-text--color));
   }
 
   .c-storytelling__box,
@@ -20,6 +27,8 @@
   }
 
   &.c-storytelling--full {
+    --c-storytelling--vertical-padding: 0px;
+
     .c-storytelling__image {
       img {
         padding-top: 0;

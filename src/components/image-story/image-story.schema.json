@@ -8,6 +8,7 @@
       "title": "Module Headline",
       "description": "Headline for the module element",
       "type": "string",
+      "format": "markdown",
       "examples": ["Headline"]
     },
     "largeHeadline": {
@@ -20,12 +21,14 @@
       "title": "Module Subheadline",
       "description": "Subheadline below the module headline",
       "type": "string",
+      "format": "markdown",
       "examples": ["Subheadline"]
     },
     "text": {
       "title": "Module Text",
       "description": "Info text for the module element",
-      "type": "string"
+      "type": "string",
+      "format": "markdown"
     },
     "layout": {
       "type": "string",
