@@ -1,3 +1,15 @@
+# v1.3.9 (Fri May 03 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: inverted attribute use in DOM ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.3.8 (Mon Apr 22 2024)
 
 #### 🐛 Bug Fix
