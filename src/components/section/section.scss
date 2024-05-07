@@ -22,10 +22,7 @@
 
   --l-section--background-default: var(--dsa-section--background-color_default, var(--ks-background-color-default));
   --l-section--background-accent: var(--dsa-section--background-color_accent, var(--ks-background-color-accent));
-  --l-section--background-bold: var(
-    --dsa-section--background-color_bold,
-    var(--ks-background-color-primary)
-  ); //TBD: Bold Background color
+  --l-section--background-bold: var(--dsa-section--background-color_bold, var(--ks-background-color-primary));
 
   --l-section--space-default: var(--dsa-section--space_default, var(--ks-spacing-xxl));
   --l-section--space-small: var(--dsa-section--space_small, calc(var(--l-section--space-default) / 2));
