@@ -1,3 +1,15 @@
+# v1.3.10 (Tue May 07 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(scss): remove annotations ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.3.9 (Fri May 03 2024)
 
 #### ⚠️ Pushed to `main`
