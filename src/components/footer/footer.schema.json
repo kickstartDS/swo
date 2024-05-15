@@ -55,34 +55,7 @@
       "default": false
     },
     "navItems": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "href": { "type": "string", "format": "uri" },
-          "label": { "type": "string" },
-          "target": { "type": "string" }
-        },
-        "additionalProperties": false,
-        "required": ["href", "label"]
-      },
-      "examples": [
-        [
-          {
-            "href": "#privacy-policy",
-            "label": "Privacy policy"
-          },
-          {
-            "href": "#changelog",
-            "label": "Changelog"
-          },
-          {
-            "href": "https://main--64f08cbba622af835d382b4f.chromatic.com/",
-            "label": "Storybook",
-            "target": "_blank"
-          }
-        ]
-      ]
+      "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/items"
     }
   },
   "required": ["logo"],

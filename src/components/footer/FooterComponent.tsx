@@ -21,7 +21,7 @@ export const Footer: FC<FooterProps> = ({
       {byline && <span className="c-footer__byline">{byline}</span>}
       {navItems.length > 0 ? (
         <div className="c-footer__links">
-          {navItems.map(({ label, ...linkProps }) => (
+          {navItems.map(({ label, active, ...linkProps }) => (
             <Link
               {...linkProps}
               className="c-footer__link"

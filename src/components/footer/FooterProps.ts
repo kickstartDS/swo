@@ -38,7 +38,7 @@ export interface FooterProps {
   navItems?: {
     href: string;
     label: string;
-    target?: string;
+    active?: boolean;
   }[];
 }
 export interface Logo {
