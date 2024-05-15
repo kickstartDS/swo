@@ -32,8 +32,8 @@ export const MosaicContextDefault = forwardRef<
           }),
         }}
         image={{
-          source: tile?.image.src,
-          alt: tile?.image.alt,
+          source: tile?.image?.src,
+          alt: tile?.image?.alt,
           order: {
             desktopImageLast:
               layout === "textLeft"
