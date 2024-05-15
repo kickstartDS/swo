@@ -1,3 +1,15 @@
+# v1.3.12 (Wed May 15 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: make image in mosaic tile required ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.3.11 (Wed May 15 2024)
 
 #### ⚠️ Pushed to `main`
