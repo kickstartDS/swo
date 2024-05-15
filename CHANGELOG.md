@@ -1,3 +1,15 @@
+# v1.3.11 (Wed May 15 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: split tile off from mosaic ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.3.10 (Tue May 07 2024)
 
 #### ⚠️ Pushed to `main`
