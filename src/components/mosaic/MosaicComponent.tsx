@@ -6,9 +6,9 @@ import { Storytelling } from "@kickstartds/content/lib/storytelling";
 export const MosaicContextDefault = forwardRef<
   HTMLDivElement,
   MosaicProps & HTMLAttributes<HTMLDivElement>
->(({ layout, largeHeadlines, tiles, ...rest }, ref) => (
+>(({ layout, largeHeadlines, tile, ...rest }, ref) => (
   <div {...rest} ref={ref} className="dsa-mosaic">
-    {tiles.map((tile, index) => (
+    {tile.map((tile, index) => (
       <Storytelling
         key={index}
         full

@@ -56,7 +56,7 @@ const Page = () => (
     <Section style="boldTransition" width="full">
       <Mosaic
         layout="alternate"
-        tiles={[
+        tile={[
           {
             headline: "Our Solution:",
             sub: "Design System end to end",

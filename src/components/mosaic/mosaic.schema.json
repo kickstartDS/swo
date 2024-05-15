@@ -17,72 +17,13 @@
       "description": "Make the headlines larger",
       "default": false
     },
-    "tiles": {
+    "tile": {
       "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "headline": {
-            "title": "Headline",
-            "description": "Headline for the tile",
-            "type": "string",
-            "format": "markdown"
-          },
-          "sub": {
-            "title": "Module Subheadline",
-            "description": "Subheadline below the tile headline",
-            "type": "string",
-            "format": "markdown"
-          },
-          "text": {
-            "title": "Module Text",
-            "description": "Text for tile",
-            "type": "string",
-            "format": "markdown"
-          },
-          "image": {
-            "type": "object",
-            "properties": {
-              "src": {
-                "$ref": "http://schema.mydesignsystem.com/image.schema.json#/properties/src"
-              },
-              "alt": {
-                "$ref": "http://schema.mydesignsystem.com/image.schema.json#/properties/alt"
-              }
-            }
-          },
-          "button": {
-            "type": "object",
-            "properties": {
-              "toggle": {
-                "title": "Button Toggle",
-                "description": "Toggle wether the Button is displayed or not",
-                "type": "boolean",
-                "default": true
-              },
-              "label": {
-                "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/label"
-              },
-              "target": {
-                "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/target"
-              },
-              "icon": {
-                "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/icon"
-              }
-            },
-            "additionalProperties": false
-          },
-          "backgroundColor": {
-            "$ref": "http://schema.kickstartds.com/content/storytelling.schema.json#/properties/backgroundColor"
-          },
-          "backgroundImage": {
-            "$ref": "http://schema.kickstartds.com/content/storytelling.schema.json#/properties/backgroundImage"
-          },
-          "textColor": {
-            "$ref": "http://schema.kickstartds.com/content/storytelling.schema.json#/properties/box/properties/textColor"
-          }
-        }
-      }
+      "title": "Tiles",
+      "description": "The tiles to display",
+      "items": { "$ref": "http://schema.mydesignsystem.com/tile.schema.json" },
+      "minItems": 1,
+      "maxItems": 20
     }
   },
   "additionalProperties": false

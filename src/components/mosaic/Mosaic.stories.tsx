@@ -29,7 +29,7 @@ export const ColorfulTiles: Story = {
   },
   args: pack({
     layout: "alternate",
-    tiles: [
+    tile: [
       {
         backgroundColor: "#81005a",
         headline: "Collaborative Environment",
@@ -67,7 +67,7 @@ export const ColorfulTextWithIllustrations: Story = {
   },
   args: pack({
     layout: "textLeft",
-    tiles: [
+    tile: [
       {
         textColor: "#FCFF7D",
         button: {

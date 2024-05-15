@@ -48,7 +48,7 @@ const Page = () => (
       width="max"
     >
       <Mosaic
-        tiles={[
+        tile={[
           {
             headline: "A Digital Transformation Love Story",
             sub: "TechFusion Enterprises",
