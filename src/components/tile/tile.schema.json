@@ -64,5 +64,6 @@
       "$ref": "http://schema.kickstartds.com/content/storytelling.schema.json#/properties/box/properties/textColor"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": ["headline", "image"]
 }

@@ -55,10 +55,10 @@ export type BackgroundImage = string;
 export type TextColor = string;
 
 export interface TileProps {
-  headline?: Headline;
+  headline: Headline;
   sub?: ModuleSubheadline;
   text?: ModuleText;
-  image?: {
+  image: {
     src?: Source;
     alt?: AltText;
   };
