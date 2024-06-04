@@ -8,6 +8,7 @@
 
   .dsa-headline__headline {
     font: var(--dsa-headline--font);
+    text-transform: var(--dsa-headline--text-transform);
   }
 
   .dsa-headline__subheadline {
@@ -96,7 +97,7 @@ h4,
 h5 {
   strong {
     font-weight: inherit;
-    background: var(--dsa-headline--higlight-gradient);
+    background: var(--dsa-headline--higlight-background);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

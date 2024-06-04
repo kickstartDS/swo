@@ -21,6 +21,7 @@ export const VideoCurtainContextDefault = forwardRef<
       textPosition,
       overlay,
       video,
+      className,
       buttons = [],
       ...rest
     },
@@ -41,7 +42,8 @@ export const VideoCurtainContextDefault = forwardRef<
             className={classnames(
               `dsa-video-curtain`,
               highlightText ? `dsa-video-curtain--highlight-text` : "",
-              colorNeutral ? `dsa-video-curtain--color-neutral` : ""
+              colorNeutral ? `dsa-video-curtain--color-neutral` : "",
+              className
             )}
             height="fullScreen"
             inbox
