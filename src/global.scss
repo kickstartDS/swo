@@ -5,6 +5,12 @@
 @use "./fonts-dsa";
 @use "./fonts-business";
 @use "./fonts-telekom";
+@use "./token/preview-pages";
+@use "./token/scaling-token";
+@use "./token/color-token";
+// @use "./token/font-token";
+@use "./token/font-size-token";
+@use "./token/spacing-token";
 @use "./fonts-google";
 @use "./components/rich-text/rich-text";
 @use "./selectors" as *;

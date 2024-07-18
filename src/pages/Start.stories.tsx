@@ -31,14 +31,15 @@ const Page = () => (
           },
         ]}
         headline="Simplify the process of building your Design System"
+        highlightText
         overlay
         sub="With your headless experts"
         text="Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture."
         textPosition="center"
         video={{
-          srcDesktop: "/img/videos/video-agency.mp4",
-          srcMobile: "/img/videos/video-agency.mp4",
-          srcTablet: "/img/videos/video-agency.mp4",
+          srcDesktop: "/img/videos/video-720.mp4",
+          srcMobile: "/img/videos/video-720.mp4",
+          srcTablet: "/img/videos/video-720.mp4",
         }}
       />
     </Section>
@@ -64,22 +65,22 @@ const Page = () => (
 
 ### 1. Design System **Consulting**
 Let's work side by side to shape a design system strategy that aligns perfectly with your goals. It's not just about tools; it's about guiding principles, stakeholder management und making the right decisions at the right time.
-<br/><br/>
+
 
 ### 2. Design System **Creation & Development**
 We'll bring your design system from concept to production, giving you consistent and engaging user experiences across different platforms. We will work together with your digital teams to transfer all complex Figma ideas into code using kickstartDS.
-<br/><br/>
+
 
 ### 3. Headless **CMS & Websites**
 We leverage the power of headless CMSs to provide scalable, flexible, and versatile websites that drive your online presence.
-<br/><br/>
+
 
 ### 4. Design System **Training**
 We empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.
-<br/><br/>
+
 
 **Ready to make your digital journey exceptional?**
-<br/><br/>`}
+`}
         image={{
           src: "/img/full-shot-different-people-working-together.png",
           alt: "Just a decorative illustration",

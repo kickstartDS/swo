@@ -6,6 +6,10 @@
   --c-button--font-weight: var(--dsa-button--font-weight, var(--ks-font-weight-semi-bold));
   --c-button--border-width: var(--dsa-button--border-width, var(--ks-border-width-default));
 
+  .icon {
+    margin-left: var(--ks-spacing-xxs);
+  }
+
   &.c-button--solid {
     --c-button--color: var(--dsa-button_primary--color, var(--dsa-text-color-on-primary));
     --c-button--color-hover: var(--dsa-button_primary--color_hover, var(--dsa-text-color-on-primary));
