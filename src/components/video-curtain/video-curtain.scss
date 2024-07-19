@@ -3,15 +3,14 @@
 @include container.wrapper("visual");
 
 .c-visual.dsa-video-curtain {
-  --c-visual_overlay--background: radial-gradient(
-    50% 126.2% at 100% 0%,
-    var(--ks-color-primary-alpha-5) 0%,
-    var(--ks-color-bg-alpha-4) 100%
+  --c-visual_overlay--background: var(
+    --dsa-video-curtain__overlay--background,
+    radial-gradient(50% 126.2% at 100% 0%, var(--ks-color-primary-alpha-5) 0%, var(--ks-color-bg-alpha-4) 100%)
   );
 
   &--highlight-text {
     .c-visual__box {
-      --c-visual_text--font: var(--ks-font-copy-l);
+      --c-visual_text--font: var(--dsa-video-curtain_highlight-text__copy--font, var(--ks-font-copy-l));
     }
   }
 

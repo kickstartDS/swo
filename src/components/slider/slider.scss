@@ -1,6 +1,38 @@
 @import "slider-tokens.scss";
 
-.c-slider {
+.dsa-slider.c-slider {
+  --c-slider_bullet--outline-color: var(
+    --dsa-slider__bullet--border-color,
+    var(--ks-border-color-interface-interactive)
+  );
+  --c-slider_bullet--outline-color-hover: var(
+    --dsa-slider__bullet--border-color_hover,
+    var(--ks-border-color-interface-interactive-hover)
+  );
+  --c-slider_bullet--outline-color-active: var(
+    --dsa-slider__bullet--border-color_active,
+    var(--ks-border-color-interface-interactive-active)
+  );
+
+  --c-slider_bullet--background: var(--dsa-slider__bullet--background-color, transparent);
+  --c-slider_bullet--background-color-hover: var(--dsa-slider__bullet--background-color_hover, transparent);
+  --c-slider_bullet--background-color-active: var(--dsa-slider__bullet--background-color_active, transparent);
+
+  --c-slider_arrow--background: var(
+    --dsa-slider__arrow--background-color,
+    var(--ks-background-color-interface-interactive)
+  );
+  --c-slider_arrow--background-hover: var(
+    --dsa-slider__arrow--background-color_hover,
+    var(--ks-background-color-interface-interactive-hover)
+  );
+  --c-slider_arrow--background-active: var(
+    --dsa-slider__arrow--background-color_active,
+    var(--ks-background-color-interface-interactive-active)
+  );
+
+  --c-slider_arrow--color: var(--dsa-slider__arrow--color, var(--ks-text-color-interface-interactive));
+
   &__nav {
     margin-top: var(--ks-spacing-stack-m);
   }

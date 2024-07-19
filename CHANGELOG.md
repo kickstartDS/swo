@@ -1,3 +1,29 @@
+# v1.3.14 (Tue Jun 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(token): fix component token integration ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.3.13 (Wed May 15 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@julrich](https://github.com/julrich))
+- fix: handle empty image in mosaic component ([@julrich](https://github.com/julrich))
+- fix: align header / footer navItems, handle active ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.3.12 (Wed May 15 2024)
 
 #### ⚠️ Pushed to `main`
