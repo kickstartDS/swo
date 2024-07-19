@@ -1,3 +1,15 @@
+# v1.3.16 (Fri Jul 19 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(teaser-card): fix faulty token ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.3.15 (Fri Jul 19 2024)
 
 #### ⚠️ Pushed to `main`
