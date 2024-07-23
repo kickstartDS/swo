@@ -1,3 +1,15 @@
+# v1.3.18 (Tue Jul 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: hero component ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.3.17 (Tue Jul 23 2024)
 
 #### ⚠️ Pushed to `main`
