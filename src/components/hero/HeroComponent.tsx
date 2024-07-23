@@ -23,6 +23,7 @@ export const HeroContextDefault = forwardRef<
       image,
       overlay,
       textbox,
+      className,
       buttons = [],
       ...rest
     },
@@ -42,7 +43,8 @@ export const HeroContextDefault = forwardRef<
             className={classnames(
               `dsa-hero dsa-hero--content-${textPosition}`,
               highlightText ? `dsa-hero--highlight-text` : "",
-              colorNeutral ? `dsa-hero--color-neutral` : ""
+              colorNeutral ? `dsa-hero--color-neutral` : "",
+              className
             )}
             height={height}
             overlay={overlay}
@@ -84,6 +86,7 @@ export const HeroContextDefault = forwardRef<
                 srcMobile: image.srcMobile,
                 srcTablet: image.srcTablet,
                 srcDesktop: image.srcDesktop,
+                src: image.src,
               },
             }}
           />
