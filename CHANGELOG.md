@@ -1,3 +1,15 @@
+# v1.3.21 (Wed Jul 24 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: header preloading behaviour ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.3.20 (Wed Jul 24 2024)
 
 #### ⚠️ Pushed to `main`
