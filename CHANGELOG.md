@@ -1,3 +1,15 @@
+# v1.3.20 (Wed Jul 24 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(header): add logo inversion ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.3.19 (Wed Jul 24 2024)
 
 #### ⚠️ Pushed to `main`
