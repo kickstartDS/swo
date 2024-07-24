@@ -1,3 +1,15 @@
+# v1.3.19 (Wed Jul 24 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(section): add new spotlight token ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.3.18 (Tue Jul 23 2024)
 
 #### ⚠️ Pushed to `main`
