@@ -1,3 +1,89 @@
+# v1.3.21 (Wed Jul 24 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: header preloading behaviour ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v1.3.20 (Wed Jul 24 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(header): add logo inversion ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.3.19 (Wed Jul 24 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(section): add new spotlight token ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.3.18 (Tue Jul 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: hero component ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v1.3.17 (Tue Jul 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(button): add button-token ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.3.16 (Fri Jul 19 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(teaser-card): fix faulty token ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.3.15 (Fri Jul 19 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@julrich](https://github.com/julrich))
+- fix: add missing, changed PageProps ([@julrich](https://github.com/julrich))
+- fix: change page header / footer toggle behaviour ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.3.14 (Tue Jun 04 2024)
 
 #### ⚠️ Pushed to `main`
