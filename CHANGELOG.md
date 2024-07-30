@@ -1,3 +1,16 @@
+# v1.3.24 (Tue Jul 30 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@fleven-kds](https://github.com/fleven-kds))
+- feat(header): add inversion to nav logo ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.3.23 (Tue Jul 30 2024)
 
 #### ⚠️ Pushed to `main`
