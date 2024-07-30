@@ -1,3 +1,15 @@
+# v1.3.25 (Tue Jul 30 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(logos): fix token integration ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.3.24 (Tue Jul 30 2024)
 
 #### ⚠️ Pushed to `main`
