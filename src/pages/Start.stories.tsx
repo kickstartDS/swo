@@ -14,14 +14,7 @@ import { Image } from "../components/image/ImageComponent";
 const Page = () => (
   <>
     <Header {...headerProps} floating />
-    <Section
-      spaceBefore="none"
-      spaceAfter="none"
-      width="full"
-      content={{
-        mode: "list",
-      }}
-    >
+    <Section spaceBefore="none" spaceAfter="none" width="full">
       <VideoCurtain
         buttons={[
           {
@@ -97,9 +90,6 @@ We empower your digital teams with the knowledge and skills to manage and evolve
     <Section
       width="wide"
       style="accentTransition"
-      content={{
-        mode: "list",
-      }}
       headline={{
         text: "No Agency site without some shiny happy Customer",
         sub: "AI-generated smiles, as you see them everywhere nowadays",
@@ -211,10 +201,6 @@ We empower your digital teams with the knowledge and skills to manage and evolve
 
     <Section
       width="wide"
-      content={{
-        align: "center",
-        width: "default",
-      }}
       headline={{
         text: "Design Systems, all you need to know",
         sub: "Design Systems have gained popularity due to the growing need for consistency, efficiency, and scalability in digital product development.",
@@ -266,15 +252,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
       />
     </Section>
 
-    <Section
-      width="wide"
-      spaceBefore="none"
-      spaceAfter="small"
-      content={{
-        width: "wide",
-        align: "center",
-      }}
-    >
+    <Section width="wide" spaceBefore="none" spaceAfter="small">
       <Image
         src="/img/office-divider-image.png"
         alt="Photorealistic image Super wide scale of a view into a hyper modern design & web development agency, glass walls, no people, wide angle, blade runner movie like aesthetics, neon-light, lens-flare, pink, blue, and cyan color tonality, wide angle, sharp, "
@@ -282,15 +260,10 @@ We empower your digital teams with the knowledge and skills to manage and evolve
     </Section>
 
     <Section
-      width="default"
-      content={{
-        width: "default",
-      }}
       headline={{
         text: "Headless CMS for the modern web",
         sub: "Frequently asked questions",
         align: "right",
-        width: "default",
       }}
     >
       <Faq

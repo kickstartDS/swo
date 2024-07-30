@@ -45,7 +45,6 @@ const Page = () => (
       }}
       spaceBefore="none"
       spaceAfter="small"
-      width="default"
     >
       <Text
         align="center"

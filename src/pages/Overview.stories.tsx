@@ -12,13 +12,7 @@ import { Cta } from "../components/cta/CtaComponent";
 const Page = () => (
   <>
     <Header {...headerProps} floating />
-    <Section
-      spaceBefore="none"
-      width="full"
-      content={{
-        mode: "list",
-      }}
-    >
+    <Section spaceBefore="none" width="full">
       <Hero
         height="fullScreen"
         image={{
