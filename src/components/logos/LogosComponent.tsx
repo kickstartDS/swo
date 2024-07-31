@@ -19,7 +19,8 @@ export const LogosContextDefault = forwardRef<
     <div {...rest} ref={ref}>
       <Container name="logos">
         <div className={classnames(`dsa-logos dsa-logos--align-${align}`)}>
-          <div className="dsa-logos__tagline">{tagline}</div>
+          {tagline && <div className="dsa-logos__tagline">{tagline}</div>}
+
           <LogoTiles
             className={classnames(
               `dsa-logo-tiles dsa-logo-tiles--cols-${logosPerRow}`
