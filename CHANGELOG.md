@@ -1,3 +1,16 @@
+# v1.3.31 (Wed Jul 31 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@fleven-kds](https://github.com/fleven-kds))
+- feat(logo): add logo story ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.3.30 (Wed Jul 31 2024)
 
 #### ⚠️ Pushed to `main`
