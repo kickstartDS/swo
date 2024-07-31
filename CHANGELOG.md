@@ -1,3 +1,16 @@
+# v1.3.30 (Wed Jul 31 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(nav-main + header): divide flyout and topbar nav + add individual inversion ([@fleven-kds](https://github.com/fleven-kds))
+- feat(logo): add logo component ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.3.29 (Wed Jul 31 2024)
 
 #### ⚠️ Pushed to `main`
