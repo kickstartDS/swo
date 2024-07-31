@@ -1,7 +1,7 @@
 @import "./cta-tokens.scss";
 
-.c-header--floating + .l-container--storytelling,
-.c-header--floating + .l-section .l-container--storytelling:first-child {
+.dsa-header--floating + .l-container--storytelling,
+.dsa-header--floating + .l-section .l-container--storytelling:first-child {
   @media (min-width: 640px) {
     .c-storytelling.dsa-cta {
       padding-top: calc(

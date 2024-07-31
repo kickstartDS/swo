@@ -4,6 +4,7 @@ export const dsa = {
   logo: {
     src: "/logo.svg",
     srcInverted: "/logo-inverted.svg",
+    homepageHref: "#",
     alt: "Systemics Logo",
     width: 176,
     height: 40,

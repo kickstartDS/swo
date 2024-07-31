@@ -11,16 +11,16 @@ export const Footer: FC<FooterProps> = ({
   inverted = false,
   navItems = [],
 }) => (
-  <div className={classnames("c-footer")} ks-inverted={inverted.toString()}>
-    <div className="c-footer__content">
-      <Logo {...logo} />
-      {byline && <span className="c-footer__byline">{byline}</span>}
+  <div className={classnames("dsa-footer")} ks-inverted={inverted.toString()}>
+    <div className="dsa-footer__content">
+      <Logo {...logo} inverted={inverted} />
+      {byline && <span className="dsa-footer__byline">{byline}</span>}
       {navItems.length > 0 ? (
-        <div className="c-footer__links">
+        <div className="dsa-footer__links">
           {navItems.map(({ label, active, ...linkProps }) => (
             <Link
               {...linkProps}
-              className="c-footer__link"
+              className="dsa-footer__link"
               key={linkProps.href + label}
             >
               {label}

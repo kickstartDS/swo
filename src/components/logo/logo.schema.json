@@ -16,15 +16,20 @@
       "type": "string",
       "format": "image"
     },
-    "inverted": {
-      "type": "boolean",
-      "title": "Inverted",
-      "description": "Toggle wether the inverted or default version of the logo is being displayed"
-    },
     "alt": {
       "title": "Alt text",
       "description": "Alt text to display for picture",
       "type": "string"
+    },
+    "homepageHref": {
+      "type": "string",
+      "format": "uri",
+      "default": "/"
+    },
+    "inverted": {
+      "type": "boolean",
+      "title": "Inverted",
+      "description": "Toggle wether the inverted or default version of the logo is being displayed"
     },
     "width": {
       "title": "Width",
@@ -40,10 +45,10 @@
       "minimum": 0,
       "examples": [300]
     },
-    "homepageHref": {
-      "type": "string",
-      "format": "uri",
-      "default": "/"
+    "className": {
+      "title": "Additional Classes",
+      "description": "Add additional css classes that should be applied to the logo",
+      "type": "string"
     }
   },
   "additionalProperties": false

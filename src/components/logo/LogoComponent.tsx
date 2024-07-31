@@ -1,3 +1,4 @@
+import classnames from "classnames";
 import { FC } from "react";
 import { LogoProps } from "./LogoProps";
 import { Picture } from "@kickstartds/base/lib/picture";
@@ -12,9 +13,10 @@ export const Logo: FC<LogoProps> = ({
   width,
   height,
   homepageHref,
+  className,
 }) => (
   <>
-    <Link className="dsa-logo" href={homepageHref}>
+    <Link className={classnames("dsa-logo", className)} href={homepageHref}>
       <Picture
         className="dsa-logo__img"
         src={inverted === false ? src : srcInverted}

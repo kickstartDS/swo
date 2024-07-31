@@ -12,6 +12,7 @@ export const footerProps = {
   logo: {
     src: "/logo.svg",
     srcInverted: "/logo-inverted.svg",
+    homepageHref: "#",
     alt: "Systemics Logo",
     width: 176,
     height: 40,

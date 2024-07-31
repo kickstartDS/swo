@@ -14,13 +14,13 @@ export type Source = string;
  */
 export type Source1 = string;
 /**
- * Toggle wether the inverted or default version of the logo is being displayed
- */
-export type Inverted = boolean;
-/**
  * Alt text to display for picture
  */
 export type AltText = string;
+/**
+ * Toggle wether the inverted or default version of the logo is being displayed
+ */
+export type Inverted = boolean;
 /**
  * Width of the picture
  */
@@ -29,13 +29,18 @@ export type Width = number;
  * Height of the picture
  */
 export type Height = number;
+/**
+ * Add additional css classes that should be applied to the logo
+ */
+export type AdditionalClasses = string;
 
 export interface LogoProps {
   src?: Source;
   srcInverted?: Source1;
-  inverted?: Inverted;
   alt?: AltText;
+  homepageHref?: string;
+  inverted?: Inverted;
   width?: Width;
   height?: Height;
-  homepageHref?: string;
+  className?: AdditionalClasses;
 }

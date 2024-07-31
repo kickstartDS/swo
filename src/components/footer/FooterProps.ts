@@ -5,8 +5,26 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {LogoProps} from "../logo/LogoProps";
-
+/**
+ * Picture source
+ */
+export type Source = string;
+/**
+ * Picture source
+ */
+export type Source1 = string;
+/**
+ * Alt text to display for picture
+ */
+export type AltText = string;
+/**
+ * Width of the picture
+ */
+export type Width = number;
+/**
+ * Height of the picture
+ */
+export type Height = number;
 /**
  * Small line of text displayed below the logo
  */
@@ -17,10 +35,7 @@ export type Byline = string;
 export type Inverted = boolean;
 
 export interface FooterProps {
-  /**
-   * Referenced component LogoProps
-   */
-  logo: LogoProps;
+  logo: Logo;
   byline?: Byline;
   inverted?: Inverted;
   navItems?: {
@@ -28,4 +43,12 @@ export interface FooterProps {
     label: string;
     active?: boolean;
   }[];
+}
+export interface Logo {
+  src?: Source;
+  srcInverted?: Source1;
+  alt?: AltText;
+  homepageHref?: string;
+  width?: Width;
+  height?: Height;
 }
