@@ -1,3 +1,15 @@
+# v1.3.29 (Wed Jul 31 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(logos): make tagline conditional ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.3.28 (Tue Jul 30 2024)
 
 #### ⚠️ Pushed to `main`
