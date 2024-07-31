@@ -66,25 +66,25 @@
 
   &-display {
     &-xxs {
-      font-size: var(--ks-font-size-display-xxs);
+      font: var(--ks-font-display-xxs);
     }
     &-xs {
-      font-size: var(--ks-font-size-display-xs);
+      font: var(--ks-font-display-xs);
     }
     &-s {
-      font-size: var(--ks-font-size-display-s);
+      font: var(--ks-font-display-s);
     }
     &-m {
-      font-size: var(--ks-font-size-display-m);
+      font: var(--ks-font-display-m);
     }
     &-l {
-      font-size: var(--ks-font-size-display-l);
+      font: var(--ks-font-display-l);
     }
     &-xl {
-      font-size: var(--ks-font-size-display-xl);
+      font: var(--ks-font-display-xl);
     }
     &-xxl {
-      font-size: var(--ks-font-size-display-xxl);
+      font: var(--ks-font-display-xxl);
     }
   }
 

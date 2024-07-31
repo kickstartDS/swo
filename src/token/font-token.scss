@@ -2,6 +2,7 @@
 [ks-inverted="true"],
 [ks-inverted="false"],
 [ks-theme] {
+  // Font Families
   --ks-font-family-display: Fredoka, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
   --ks-font-family-copy: Mulish, "Helvetica Neue", Helvetica, Arial, sans-serif;
   --ks-font-family-interface: Mulish, system-ui, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI",
@@ -9,189 +10,125 @@
     "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   --ks-font-family-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
 
+  // Font Weights
   --ks-font-weight-light: 300;
   --ks-font-weight-regular: 400;
   --ks-font-weight-medium: 500;
   --ks-font-weight-semi-bold: 600;
   --ks-font-weight-bold: 700;
 
-  --ks-font-size-display-bp-factor-phone: 1.125;
-  --ks-font-size-display-bp-factor-tablet: 1.25;
-  --ks-font-size-display-bp-factor-laptop: 1.5;
-  --ks-font-size-display-bp-factor-desktop: 1.75;
+  // Line Height Calculations
 
-  --ks-font-size-display-xxs-base: 0.68rem;
-  --ks-font-size-display-xs-base: 0.833rem;
-  --ks-font-size-display-s-base: 1.0204rem;
-  --ks-font-size-display-m-base: 1.25rem;
-  --ks-font-size-display-l-base: 1.5313rem;
-  --ks-font-size-display-xl-base: 1.8758rem;
-  --ks-font-size-display-xxl-base: 2.2978rem;
+  /// Line Height Display
+  --ks-line-height-display-base-factor: 1.15;
+  --ks-line-height-display-shrink-factor: 1;
+  --ks-line-height-display-grow-factor: 1;
 
-  --ks-font-size-copy-bp-factor-tablet: 1.125;
-  --ks-font-size-copy-xxs-base: 0.612rem;
-  --ks-font-size-copy-xs-base: 0.7497rem;
-  --ks-font-size-copy-s-base: 0.9184rem;
-  --ks-font-size-copy-m-base: 1.125rem;
-  --ks-font-size-copy-l-base: 1.3781rem;
-  --ks-font-size-copy-xl-base: 1.6882rem;
-  --ks-font-size-copy-xxl-base: 2.068rem;
+  --ks-line-height-display-xxs: calc(
+    var(--ks-line-height-display-xs) * calc(var(--ks-line-height-display-shrink-factor) * 1)
+  );
+  --ks-line-height-display-xs: calc(
+    var(--ks-line-height-display-s) * calc(var(--ks-line-height-display-shrink-factor) * 1)
+  );
+  --ks-line-height-display-s: calc(
+    var(--ks-line-height-display-m) * calc(var(--ks-line-height-display-shrink-factor) * 1)
+  );
+  --ks-line-height-display-m: var(--ks-line-height-display-base-factor);
+  --ks-line-height-display-l: calc(var(--ks-line-height-display-m) * var(--ks-line-height-display-grow-factor));
+  --ks-line-height-display-xl: calc(var(--ks-line-height-display-l) * var(--ks-line-height-display-grow-factor));
+  --ks-line-height-display-xxl: calc(var(--ks-line-height-display-xl) * var(--ks-line-height-display-grow-factor));
 
-  --ks-font-size-interface-bp-factor-tablet: 1.125;
-  --ks-font-size-interface-xxs-base: 0.544rem;
-  --ks-font-size-interface-xs-base: 0.6664rem;
-  --ks-font-size-interface-s-base: 0.8163rem;
-  --ks-font-size-interface-m-base: 1rem;
-  --ks-font-size-interface-l-base: 1.225rem;
-  --ks-font-size-interface-xl-base: 1.5006rem;
-  --ks-font-size-interface-xxl-base: 1.8383rem;
+  /// Line Height Copy
+  --ks-line-height-copy-base-factor: 1.5;
+  --ks-line-height-copy-shrink-factor: 1;
+  --ks-line-height-copy-grow-factor: 1;
 
-  --ks-font-size-mono-bp-factor-tablet: 1.125;
-  --ks-font-size-mono-xxs-base: 0.612rem;
-  --ks-font-size-mono-xs-base: 0.7497rem;
-  --ks-font-size-mono-s-base: 0.9184rem;
-  --ks-font-size-mono-m-base: 1.125rem;
-  --ks-font-size-mono-l-base: 1.3781rem;
-  --ks-font-size-mono-xl-base: 1.6882rem;
-  --ks-font-size-mono-xxl-base: 2.068rem;
+  --ks-line-height-copy-xxs: calc(var(--ks-line-height-copy-xs) * calc(var(--ks-line-height-copy-shrink-factor) * 1));
+  --ks-line-height-copy-xs: calc(var(--ks-line-height-copy-s) * calc(var(--ks-line-height-copy-shrink-factor) * 1));
+  --ks-line-height-copy-s: calc(var(--ks-line-height-copy-m) * calc(var(--ks-line-height-copy-shrink-factor) * 1));
+  --ks-line-height-copy-m: var(--ks-line-height-copy-base-factor);
+  --ks-line-height-copy-l: calc(var(--ks-line-height-copy-m) * var(--ks-line-height-copy-grow-factor));
+  --ks-line-height-copy-xl: calc(var(--ks-line-height-copy-l) * var(--ks-line-height-copy-grow-factor));
+  --ks-line-height-copy-xxl: calc(var(--ks-line-height-copy-xl) * var(--ks-line-height-copy-grow-factor));
 
-  --ks-line-height-display-xxs: 1.15;
-  --ks-line-height-display-xs: 1.15;
-  --ks-line-height-display-s: 1.15;
-  --ks-line-height-display-m: 1.15;
-  --ks-line-height-display-l: 1.15;
-  --ks-line-height-display-xl: 1.15;
-  --ks-line-height-display-xxl: 1.15;
+  /// Line Height Interface
+  --ks-line-height-copy-base-factor: 1.5;
+  --ks-line-height-interface-shrink-factor: 1;
+  --ks-line-height-interface-grow-factor: 1;
 
-  --ks-line-height-copy-xxs: 1.5;
-  --ks-line-height-copy-xs: 1.5;
-  --ks-line-height-copy-s: 1.5;
-  --ks-line-height-copy-m: 1.5;
-  --ks-line-height-copy-l: 1.5;
-  --ks-line-height-copy-xl: 1.5;
-  --ks-line-height-copy-xxl: 1.5;
+  --ks-line-height-interface-xxs: calc(
+    var(--ks-line-height-interface-xs) * calc(var(--ks-line-height-interface-shrink-factor) * 1)
+  );
+  --ks-line-height-interface-xs: calc(
+    var(--ks-line-height-interface-s) * calc(var(--ks-line-height-interface-shrink-factor) * 1)
+  );
+  --ks-line-height-interface-s: calc(
+    var(--ks-line-height-interface-m) * calc(var(--ks-line-height-interface-shrink-factor) * 1)
+  );
+  --ks-line-height-interface-m: var(--ks-line-height-interface-base-factor);
+  --ks-line-height-interface-l: calc(var(--ks-line-height-interface-m) * var(--ks-line-height-interface-grow-factor));
+  --ks-line-height-interface-xl: calc(var(--ks-line-height-interface-l) * var(--ks-line-height-interface-grow-factor));
+  --ks-line-height-interface-xxl: calc(
+    var(--ks-line-height-interface-xl) * var(--ks-line-height-interface-grow-factor)
+  );
 
-  --ks-line-height-interface-xxs: 1.5;
-  --ks-line-height-interface-xs: 1.5;
-  --ks-line-height-interface-s: 1.5;
-  --ks-line-height-interface-m: 1.5;
-  --ks-line-height-interface-l: 1.5;
-  --ks-line-height-interface-xl: 1.5;
-  --ks-line-height-interface-xxl: 1.5;
+  /// Line Height Mono
+  --ks-line-height-copy-base-factor: 1.5;
+  --ks-line-height-mono-shrink-factor: 1;
+  --ks-line-height-mono-grow-factor: 1;
 
-  --ks-line-height-mono-xxs: 1.5;
-  --ks-line-height-mono-xs: 1.5;
-  --ks-line-height-mono-s: 1.5;
-  --ks-line-height-mono-m: 1.5;
-  --ks-line-height-mono-l: 1.5;
-  --ks-line-height-mono-xl: 1.5;
-  --ks-line-height-mono-xxl: 1.5;
+  --ks-line-height-mono-xxs: calc(var(--ks-line-height-mono-xs) * calc(var(--ks-line-height-mono-shrink-factor) * 1));
+  --ks-line-height-mono-xs: calc(var(--ks-line-height-mono-s) * calc(var(--ks-line-height-mono-shrink-factor) * 1));
+  --ks-line-height-mono-s: calc(var(--ks-line-height-mono-m) * calc(var(--ks-line-height-mono-shrink-factor) * 1));
+  --ks-line-height-mono-m: var(--ks-line-height-mono-base-factor);
+  --ks-line-height-mono-l: calc(var(--ks-line-height-mono-m) * var(--ks-line-height-mono-grow-factor));
+  --ks-line-height-mono-xl: calc(var(--ks-line-height-mono-l) * var(--ks-line-height-mono-grow-factor));
+  --ks-line-height-mono-xxl: calc(var(--ks-line-height-mono-xl) * var(--ks-line-height-mono-grow-factor));
 
-  --ks-font-size-display-xxs: calc(var(--ks-font-size-display-xxs-base) * var(--ks-font-size-display-bp-factor, 1));
+  // Font Packagings
+
+  /// Font Packaging Display
   --ks-font-display-xxs: var(--ks-font-size-display-xxs) / var(--ks-line-height-display-xxs)
     var(--ks-font-family-display);
-  --ks-font-size-display-xs: calc(var(--ks-font-size-display-xs-base) * var(--ks-font-size-display-bp-factor, 1));
   --ks-font-display-xs: var(--ks-font-size-display-xs) / var(--ks-line-height-display-xs) var(--ks-font-family-display);
-  --ks-font-size-display-s: calc(var(--ks-font-size-display-s-base) * var(--ks-font-size-display-bp-factor, 1));
   --ks-font-display-s: var(--ks-font-size-display-s) / var(--ks-line-height-display-s) var(--ks-font-family-display);
-  --ks-font-size-display-m: calc(var(--ks-font-size-display-m-base) * var(--ks-font-size-display-bp-factor, 1));
   --ks-font-display-m: var(--ks-font-size-display-m) / var(--ks-line-height-display-m) var(--ks-font-family-display);
-  --ks-font-size-display-l: calc(var(--ks-font-size-display-l-base) * var(--ks-font-size-display-bp-factor, 1));
   --ks-font-display-l: var(--ks-font-size-display-l) / var(--ks-line-height-display-l) var(--ks-font-family-display);
-  --ks-font-size-display-xl: calc(var(--ks-font-size-display-xl-base) * var(--ks-font-size-display-bp-factor, 1));
   --ks-font-display-xl: var(--ks-font-size-display-xl) / var(--ks-line-height-display-xl) var(--ks-font-family-display);
-  --ks-font-size-display-xxl: calc(var(--ks-font-size-display-xxl-base) * var(--ks-font-size-display-bp-factor, 1));
   --ks-font-display-xxl: var(--ks-font-size-display-xxl) / var(--ks-line-height-display-xxl)
     var(--ks-font-family-display);
 
-  --ks-font-size-copy-xxs: calc(var(--ks-font-size-copy-xxs-base) * var(--ks-font-size-copy-bp-factor, 1));
+  /// Font Packaging Copy
   --ks-font-copy-xxs: var(--ks-font-size-copy-xxs) / var(--ks-line-height-copy-xxs) var(--ks-font-family-copy);
-  --ks-font-size-copy-xs: calc(var(--ks-font-size-copy-xs-base) * var(--ks-font-size-copy-bp-factor, 1));
   --ks-font-copy-xs: var(--ks-font-size-copy-xs) / var(--ks-line-height-copy-xs) var(--ks-font-family-copy);
-  --ks-font-size-copy-s: calc(var(--ks-font-size-copy-s-base) * var(--ks-font-size-copy-bp-factor, 1));
   --ks-font-copy-s: var(--ks-font-size-copy-s) / var(--ks-line-height-copy-s) var(--ks-font-family-copy);
-  --ks-font-size-copy-m: calc(var(--ks-font-size-copy-m-base) * var(--ks-font-size-copy-bp-factor, 1));
   --ks-font-copy-m: var(--ks-font-size-copy-m) / var(--ks-line-height-copy-m) var(--ks-font-family-copy);
-  --ks-font-size-copy-l: calc(var(--ks-font-size-copy-l-base) * var(--ks-font-size-copy-bp-factor, 1));
   --ks-font-copy-l: var(--ks-font-size-copy-l) / var(--ks-line-height-copy-l) var(--ks-font-family-copy);
-  --ks-font-size-copy-xl: calc(var(--ks-font-size-copy-xl-base) * var(--ks-font-size-copy-bp-factor, 1));
   --ks-font-copy-xl: var(--ks-font-size-copy-xl) / var(--ks-line-height-copy-xl) var(--ks-font-family-copy);
-  --ks-font-size-copy-xxl: calc(var(--ks-font-size-copy-xxl-base) * var(--ks-font-size-copy-bp-factor, 1));
   --ks-font-copy-xxl: var(--ks-font-size-copy-xxl) / var(--ks-line-height-copy-xxl) var(--ks-font-family-copy);
 
-  --ks-font-size-interface-xxs: calc(
-    var(--ks-font-size-interface-xxs-base) * var(--ks-font-size-interface-bp-factor, 1)
-  );
+  /// Font Packaging Interface
   --ks-font-interface-xxs: var(--ks-font-size-interface-xxs) / var(--ks-line-height-interface-xxs)
     var(--ks-font-family-interface);
-  --ks-font-size-interface-xs: calc(var(--ks-font-size-interface-xs-base) * var(--ks-font-size-interface-bp-factor, 1));
   --ks-font-interface-xs: var(--ks-font-size-interface-xs) / var(--ks-line-height-interface-xs)
     var(--ks-font-family-interface);
-  --ks-font-size-interface-s: calc(var(--ks-font-size-interface-s-base) * var(--ks-font-size-interface-bp-factor, 1));
   --ks-font-interface-s: var(--ks-font-size-interface-s) / var(--ks-line-height-interface-s)
     var(--ks-font-family-interface);
-  --ks-font-size-interface-m: calc(var(--ks-font-size-interface-m-base) * var(--ks-font-size-interface-bp-factor, 1));
   --ks-font-interface-m: var(--ks-font-size-interface-m) / var(--ks-line-height-interface-m)
     var(--ks-font-family-interface);
-  --ks-font-size-interface-l: calc(var(--ks-font-size-interface-l-base) * var(--ks-font-size-interface-bp-factor, 1));
   --ks-font-interface-l: var(--ks-font-size-interface-l) / var(--ks-line-height-interface-l)
     var(--ks-font-family-interface);
-  --ks-font-size-interface-xl: calc(var(--ks-font-size-interface-xl-base) * var(--ks-font-size-interface-bp-factor, 1));
   --ks-font-interface-xl: var(--ks-font-size-interface-xl) / var(--ks-line-height-interface-xl)
     var(--ks-font-family-interface);
-  --ks-font-size-interface-xxl: calc(
-    var(--ks-font-size-interface-xxl-base) * var(--ks-font-size-interface-bp-factor, 1)
-  );
   --ks-font-interface-xxl: var(--ks-font-size-interface-xxl) / var(--ks-line-height-interface-xxl)
     var(--ks-font-family-interface);
 
-  --ks-font-size-mono-xxs: calc(var(--ks-font-size-mono-xxs-base) * var(--ks-font-size-mono-bp-factor, 1));
+  /// Font Packaging Mono
   --ks-font-mono-xxs: var(--ks-font-size-mono-xxs) / var(--ks-line-height-mono-xxs) var(--ks-font-family-mono);
-  --ks-font-size-mono-xs: calc(var(--ks-font-size-mono-xs-base) * var(--ks-font-size-mono-bp-factor, 1));
   --ks-font-mono-xs: var(--ks-font-size-mono-xs) / var(--ks-line-height-mono-xs) var(--ks-font-family-mono);
-  --ks-font-size-mono-s: calc(var(--ks-font-size-mono-s-base) * var(--ks-font-size-mono-bp-factor, 1));
   --ks-font-mono-s: var(--ks-font-size-mono-s) / var(--ks-line-height-mono-s) var(--ks-font-family-mono);
-  --ks-font-size-mono-m: calc(var(--ks-font-size-mono-m-base) * var(--ks-font-size-mono-bp-factor, 1));
   --ks-font-mono-m: var(--ks-font-size-mono-m) / var(--ks-line-height-mono-m) var(--ks-font-family-mono);
-  --ks-font-size-mono-l: calc(var(--ks-font-size-mono-l-base) * var(--ks-font-size-mono-bp-factor, 1));
   --ks-font-mono-l: var(--ks-font-size-mono-l) / var(--ks-line-height-mono-l) var(--ks-font-family-mono);
-  --ks-font-size-mono-xl: calc(var(--ks-font-size-mono-xl-base) * var(--ks-font-size-mono-bp-factor, 1));
   --ks-font-mono-xl: var(--ks-font-size-mono-xl) / var(--ks-line-height-mono-xl) var(--ks-font-family-mono);
-  --ks-font-size-mono-xxl: calc(var(--ks-font-size-mono-xxl-base) * var(--ks-font-size-mono-bp-factor, 1));
   --ks-font-mono-xxl: var(--ks-font-size-mono-xxl) / var(--ks-line-height-mono-xxl) var(--ks-font-family-mono);
-}
-
-@media (min-width: 36em) {
-  :root,
-  [ks-inverted="true"],
-  [ks-inverted="false"] {
-    --ks-font-size-display-bp-factor: var(--ks-font-size-display-bp-factor-phone);
-  }
-}
-
-@media (min-width: 48em) {
-  :root,
-  [ks-inverted="true"],
-  [ks-inverted="false"] {
-    --ks-font-size-display-bp-factor: var(--ks-font-size-display-bp-factor-tablet);
-    --ks-font-size-copy-bp-factor: var(--ks-font-size-copy-bp-factor-tablet);
-    --ks-font-size-interface-bp-factor: var(--ks-font-size-interface-bp-factor-tablet);
-    --ks-font-size-mono-bp-factor: var(--ks-font-size-mono-bp-factor-tablet);
-  }
-}
-
-@media (min-width: 62em) {
-  :root,
-  [ks-inverted="true"],
-  [ks-inverted="false"] {
-    --ks-font-size-display-bp-factor: var(--ks-font-size-display-bp-factor-laptop);
-  }
-}
-
-@media (min-width: 75em) {
-  :root,
-  [ks-inverted="true"],
-  [ks-inverted="false"] {
-    --ks-font-size-display-bp-factor: var(--ks-font-size-display-bp-factor-desktop);
-  }
 }
