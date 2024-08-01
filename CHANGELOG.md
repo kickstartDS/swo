@@ -1,3 +1,15 @@
+# v1.3.32 (Thu Aug 01 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(header): center header-content ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.3.31 (Wed Jul 31 2024)
 
 #### ⚠️ Pushed to `main`
