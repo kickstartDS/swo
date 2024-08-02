@@ -1,3 +1,16 @@
+# v1.3.33 (Fri Aug 02 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(button): add font size token ([@fleven-kds](https://github.com/fleven-kds))
+- feat(breakpoints): make breakpoints consistent ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.3.32 (Thu Aug 01 2024)
 
 #### ⚠️ Pushed to `main`
