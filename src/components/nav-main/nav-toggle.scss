@@ -20,7 +20,7 @@ button.dsa-nav-toggle {
   transform: translateX(var(--dsa-header--spacing-horizontal));
 
   --nav-toggle__icon-bar--offset: 14px;
-  @media (min-width: 42em) {
+  @media (min-width: 48em) {
     --nav-toggle__icon-bar--offset: 18px;
   }
 
@@ -46,7 +46,7 @@ button.dsa-nav-toggle {
       color: var(--nav-toggle_floating--color);
     }
 
-    @media (min-width: 40rem) {
+    @media (min-width: 40em) {
       transform: scale(0.8) translate(2.5%, 2.5%);
     }
 
