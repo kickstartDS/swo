@@ -40,13 +40,17 @@ export type Buttons = ButtonProps[];
  */
 export type ImageSource = string;
 /**
- * Select an aspect ratio to use for cropping and displaying the image
+ * The aspect ratio of the image
  */
-export type ImageAspectRatio = "4:3" | "3:2" | "16:9" | "1:1" | "none";
+export type AspectRatio = "unset" | "square" | "wide" | "landscape";
 /**
  * Image description
  */
 export type AltText = string;
+/**
+ * Select a vertical alignment for the image
+ */
+export type ImageVerticalAlignment = "center" | "top" | "bottom";
 /**
  * Choose the alginment of the text
  */
@@ -68,6 +72,7 @@ export interface ImageStoryProps {
  */
 export interface Image {
   src?: ImageSource;
-  ratio?: ImageAspectRatio;
+  aspectRatio?: AspectRatio;
   alt?: AltText;
+  vAlign?: ImageVerticalAlignment;
 }

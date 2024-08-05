@@ -39,10 +39,20 @@ export const ImageStoryContextDefault = forwardRef<
           full={padding === false ? true : false}
           image={{
             source: image?.src,
+            ratio:
+              image?.aspectRatio === "square"
+                ? "1:1"
+                : image?.aspectRatio === "wide"
+                ? "4:3"
+                : image?.aspectRatio === "landscape"
+                ? "16:9"
+                : image?.aspectRatio === "unset"
+                ? "none"
+                : "none",
             order: {
               desktopImageLast: layout === "imageLeft" ? false : true,
             },
-            vAlign: "top",
+            vAlign: image?.vAlign,
           }}
           box={{
             text: text,
