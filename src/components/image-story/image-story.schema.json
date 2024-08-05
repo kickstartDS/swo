@@ -70,7 +70,7 @@
           "description": "Select a vertical alignment for the image",
           "type": "string",
           "enum": ["center", "top", "bottom"],
-          "default": "center"
+          "default": "top"
         }
       },
       "additionalProperties": false

@@ -76,6 +76,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
         image={{
           src: "/img/full-shot-different-people-working-together.png",
           alt: "Just a decorative illustration",
+          vAlign: "center",
         }}
         buttons={[
           {
