@@ -49,6 +49,8 @@ Ready to make your digital journey exceptional?
     largeHeadline: true,
     image: {
       src: "img/full-shot-different-people-working-together.png",
+      aspectRatio: "unset",
+      vAlign: "top",
     },
     buttons: [
       {

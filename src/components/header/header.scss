@@ -25,27 +25,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-  }
-
-  &__logo {
-    display: block;
-
-    &__img {
-      height: var(--dsa-header__logo--height);
-      width: auto;
-
-      [ks-inverted="true"] & {
-        display: none;
-      }
-
-      &--inverted {
-        display: none;
-
-        [ks-inverted="true"] & {
-          display: block;
-        }
-      }
-    }
+    align-items: center;
   }
 }
 

@@ -11,6 +11,29 @@
     }
   }
 
+  &.c-storytelling {
+    &--three-to-two {
+      img {
+        aspect-ratio: 3/2;
+      }
+    }
+    &--four-to-three {
+      img {
+        aspect-ratio: 4/3;
+      }
+    }
+    &--sixteen-to-nine {
+      img {
+        aspect-ratio: 16/9;
+      }
+    }
+    &--square {
+      img {
+        aspect-ratio: 1/1;
+      }
+    }
+  }
+
   .c-rich-text {
     font: var(--dsa-image-story__copy--font, var(--dsa-rich-text--font));
     color: var(--dsa-image-story__copy--color, var(--dsa-rich-text--color));
@@ -23,7 +46,8 @@
 
   .c-storytelling__image img {
     position: sticky;
-    top: calc(var(--c-storytelling--vertical-padding) * 2);
+    height: auto;
+    top: 0;
   }
 
   &.c-storytelling--full {

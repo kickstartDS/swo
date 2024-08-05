@@ -57,17 +57,20 @@
           "type": "string",
           "format": "image"
         },
-        "ratio": {
-          "title": "Image aspect ratio",
-          "description": "Select an aspect ratio to use for cropping and displaying the image",
-          "type": "string",
-          "enum": ["4:3", "3:2", "16:9", "1:1", "none"],
-          "default": "none"
+        "aspectRatio": {
+          "$ref": "http://schema.mydesignsystem.com/image.schema.json#/properties/aspectRatio"
         },
         "alt": {
           "title": "Alt text",
           "description": "Image description",
           "type": "string"
+        },
+        "vAlign": {
+          "title": "Image vertical alignment",
+          "description": "Select a vertical alignment for the image",
+          "type": "string",
+          "enum": ["center", "top", "bottom"],
+          "default": "top"
         }
       },
       "additionalProperties": false
