@@ -1,3 +1,15 @@
+# v1.3.34 (Mon Aug 05 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(image-story): add vAlign to imageStory ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.3.33 (Fri Aug 02 2024)
 
 #### ⚠️ Pushed to `main`
