@@ -1,3 +1,15 @@
+# v1.3.43 (Wed Aug 14 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(selectors): update selectors ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.3.42 (Wed Aug 14 2024)
 
 #### ⚠️ Pushed to `main`
