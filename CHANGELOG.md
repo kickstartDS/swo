@@ -1,3 +1,15 @@
+# v1.3.44 (Mon Aug 19 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: pass through rest props in blog components ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.3.43 (Wed Aug 14 2024)
 
 #### ⚠️ Pushed to `main`
