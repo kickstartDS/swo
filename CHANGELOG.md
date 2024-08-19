@@ -1,3 +1,15 @@
+# v1.3.48 (Mon Aug 19 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feature: add sections to blog post ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.3.47 (Mon Aug 19 2024)
 
 #### ⚠️ Pushed to `main`
