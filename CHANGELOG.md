@@ -1,3 +1,15 @@
+# v1.3.47 (Mon Aug 19 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(cta): fix faulty token declaration ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.3.45 (Mon Aug 19 2024)
 
 #### ⚠️ Pushed to `main`
