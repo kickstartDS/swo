@@ -1,0 +1,37 @@
+@import "./nav-dropdown-token";
+
+.dsa-nav-dropdown {
+  display: none;
+  padding: var(--dsa-nav-dropdown--padding);
+  position: absolute;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--dsa-nav-dropdown--background);
+  border-radius: var(--dsa-nav-dropdown--border-radius);
+  box-shadow: var(--dsa-nav-dropdown--box-shadow);
+  border: var(--dsa-nav-dropdown--border);
+
+  &:hover {
+    .dsa-nav-dropdown__link:not(:hover) {
+      opacity: var(--dsa-nav-dropdown__link_dimmed--opacity);
+    }
+  }
+
+  .dsa-nav-dropdown__link {
+    font: var(--dsa-nav-dropdown__link--font);
+    font-weight: var(--dsa-nav-dropdown__link--font-weight);
+    color: var(--dsa-nav-dropdown__link--color);
+    position: relative;
+    display: block;
+    padding: var(--dsa-nav-dropdown__link--padding);
+    text-align: left;
+
+    &:hover {
+      color: var(--dsa-nav-dropdown__link--color_hover);
+    }
+
+    &:active {
+      color: var(--dsa-nav-dropdown__link--color_active);
+    }
+  }
+}

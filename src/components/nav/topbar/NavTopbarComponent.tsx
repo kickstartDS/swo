@@ -34,12 +34,7 @@ export const NavTopbar = ({ items, active, dropdownInverted }) =>
               </Link>
 
               {subItems?.length ? (
-                <>
-                  <NavDropdown
-                    items={items}
-                    inverted={dropdownInverted?.toString()}
-                  />
-                </>
+                <NavDropdown items={subItems} inverted={dropdownInverted} />
               ) : null}
             </li>
           );

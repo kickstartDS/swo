@@ -9,12 +9,12 @@ export const NavFlyout = ({ items, inverted, logo, active }) =>
     <nav
       className="dsa-nav-flyout"
       ks-inverted={inverted.toString()}
-      id="dsa-nav-main"
+      id="dsa-nav-flyout"
       aria-label="Hauptnavigation"
     >
-      <Logo {...logo} className="dsa-nav-main__logo" />
+      <Logo {...logo} className="dsa-nav-flyout__logo" />
 
-      <ul className="dsa-nav-list">
+      <ul className="dsa-nav-flyout-list">
         {items.map(({ label, href, id, items: subItems }) => {
           const isActive =
             active === href ||
@@ -22,16 +22,16 @@ export const NavFlyout = ({ items, inverted, logo, active }) =>
           return (
             <li
               className={classnames(
-                "dsa-nav-item",
-                isActive && "dsa-nav-item--active"
+                "dsa-nav-flyout__item",
+                isActive && "dsa-nav-flyout__item--active"
               )}
               key={id}
             >
-              <Link href={href} className={`dsa-nav-item__link`}>
+              <Link href={href} className={`dsa-nav-flyout__link`}>
                 {label}
                 {subItems?.length ? (
                   <Icon
-                    className="dsa-nav-item__link__icon"
+                    className="dsa-nav-flyout__link__icon"
                     icon="chevron-down"
                   />
                 ) : (
@@ -39,9 +39,20 @@ export const NavFlyout = ({ items, inverted, logo, active }) =>
                 )}
               </Link>
               {subItems?.length ? (
-                <>
-                  <div className="dsa-nav-"></div>
-                </>
+                <ul className="dsa-nav-flyout__sublist">
+                  {subItems.map(({ label, href, id }) => {
+                    return (
+                      <li
+                        className={classnames("dsa-nav-flyout__item")}
+                        key={id}
+                      >
+                        <Link href={href} className={`dsa-nav-flyout__link `}>
+                          {label}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
               ) : null}
             </li>
           );

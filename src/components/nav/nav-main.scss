@@ -12,7 +12,6 @@
   flex-shrink: 1;
 
   ul {
-    /* critical:start */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -22,7 +21,6 @@
       display: block;
       margin: 0;
     }
-    /* critical:end */
   }
 
   &__logo {

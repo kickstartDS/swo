@@ -46,20 +46,8 @@
       "examples": [
         [
           {
-            "label": "Nav With Children",
-            "href": "#",
-            "items": [
-              {
-                "label": "TEST1",
-                "href": "#",
-                "id": "TEST1"
-              },
-              {
-                "label": "TEST2",
-                "href": "#",
-                "id": "TEST2"
-              }
-            ]
+            "label": "Navigation Item",
+            "href": "#"
           },
           {
             "label": "Active Item",
@@ -67,8 +55,20 @@
             "active": true
           },
           {
-            "label": "Another Item",
-            "href": "#"
+            "label": "Item With Children",
+            "href": "#",
+            "items": [
+              {
+                "label": "Level 2 Item",
+                "href": "#",
+                "id": ""
+              },
+              {
+                "label": "Another One",
+                "href": "#",
+                "id": ""
+              }
+            ]
           },
           {
             "label": "One more Item",
