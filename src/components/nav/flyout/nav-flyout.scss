@@ -1,0 +1,66 @@
+@use "sass:meta";
+@use "bourbon/core/bourbon";
+@use "./nav-flyout-tokens";
+
+.dsa-nav-flyout {
+  @media (max-width: "62rem") {
+    display: block;
+  }
+  display: none;
+
+  @media (max-width: "62em") {
+    display: block;
+    /* critical:start */
+    left: -100%;
+    /* critical:end */
+    height: 100vh;
+    overflow: hidden;
+
+    position: fixed;
+    width: 77vw;
+    max-width: 23rem;
+    transition: all var(--ks-duration-slow);
+    padding: 0 var(--l-section--content-padding);
+
+    right: 0;
+    bottom: 0;
+    top: 0;
+    overflow-y: auto;
+    background: var(--dsa-nav-main--background);
+    backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: 20px 0px 30px #00000000;
+
+    &__item {
+      &--icon {
+        @include bourbon.hide-visually;
+      }
+    }
+
+    .overlay-open & {
+      left: 0;
+      box-shadow: var(--dsa-nav-main--shadow);
+    }
+
+    > .dsa-nav-main__logo {
+      margin-top: var(--dsa-header--spacing-vertical);
+      margin-bottom: var(--dsa-header--spacing-vertical);
+    }
+
+    ul.dsa-nav-main__list {
+      padding-top: calc(var(--dsa-header--spacing-vertical) - var(--ks-spacing-s));
+
+      .dsa-nav-main--button {
+        margin-left: var(--dsa-header--spacing-horizontal);
+        margin-top: var(--dsa-header--spacing-vertical);
+
+        .button {
+          --button--font: var(--ks-font-interface-s);
+          .button__content {
+            --button--padding: 0.4rem 1rem;
+          }
+        }
+      }
+    }
+  }
+}
