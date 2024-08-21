@@ -1,3 +1,17 @@
+# v1.3.49 (Wed Aug 21 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(headline): add missing token prefix ([@fleven-kds](https://github.com/fleven-kds))
+- feat(image-token): update token prefix ([@fleven-kds](https://github.com/fleven-kds))
+- feat(class prefix): change outdated prefix to "dsa" ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.3.48 (Mon Aug 19 2024)
 
 #### ⚠️ Pushed to `main`
