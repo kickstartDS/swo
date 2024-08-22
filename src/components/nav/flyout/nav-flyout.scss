@@ -14,7 +14,7 @@
   height: 100vh;
   overflow: hidden;
   position: fixed;
-  width: 100vw;
+  width: 82vw;
   transition: all var(--ks-duration-slow);
   padding: var(--dsa-nav-flyout--padding);
   right: 0;
@@ -24,10 +24,7 @@
   background: var(--dsa-nav-flyout--background);
   backface-visibility: hidden;
   -webkit-overflow-scrolling: touch;
-
-  @media (min-width: 36em) {
-    max-width: var(--dsa-nav-flyout--max-width);
-  }
+  max-width: var(--dsa-nav-flyout--max-width);
 
   ul {
     padding: 0;
