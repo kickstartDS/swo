@@ -14,7 +14,7 @@ export const NavFlyout = ({ items, inverted, logo }) =>
     >
       <Logo {...logo} className="dsa-nav-flyout__logo" />
 
-      <ul className="dsa-nav-flyout-list">
+      <ul className="dsa-nav-flyout__list">
         {items.map(({ label, href, id, active, items: subItems }) => {
           const isActive =
             active === href ||
@@ -23,30 +23,47 @@ export const NavFlyout = ({ items, inverted, logo }) =>
             <li
               className={classnames(
                 "dsa-nav-flyout__item",
-                isActive && "dsa-nav-flyout__item--active"
+                isActive && "dsa-nav-flyout__item--active",
+                active && "dsa-nav-flyout__item--active"
               )}
               key={id}
             >
-              <Link href={href} className={`dsa-nav-flyout__link`}>
-                {label}
-                {subItems?.length ? (
-                  <Icon
-                    className="dsa-nav-flyout__link__icon"
-                    icon="chevron-down"
-                  />
-                ) : (
-                  ""
-                )}
-              </Link>
+              {subItems?.length ? (
+                <span tabIndex={0} className="dsa-nav-flyout__label">
+                  {label}
+                  {subItems?.length ? (
+                    <Icon
+                      className="dsa-nav-flyout__label__icon"
+                      icon="chevron-down"
+                    />
+                  ) : (
+                    ""
+                  )}
+                </span>
+              ) : (
+                <Link
+                  href={href}
+                  className={`dsa-nav-flyout__label dsa-nav-flyout__link`}
+                >
+                  {label}
+                </Link>
+              )}
               {subItems?.length ? (
                 <ul className="dsa-nav-flyout__sublist">
-                  {subItems.map(({ label, href, id }) => {
+                  {subItems.map(({ label, href, active, id }) => {
                     return (
                       <li
-                        className={classnames("dsa-nav-flyout__item")}
+                        className={classnames(
+                          "dsa-nav-flyout__item",
+                          active && "dsa-nav-flyout__item--active",
+                          isActive && "dsa-nav-flyout__item--active"
+                        )}
                         key={id}
                       >
-                        <Link href={href} className={`dsa-nav-flyout__link `}>
+                        <Link
+                          href={href}
+                          className={`dsa-nav-flyout__label dsa-nav-flyout__link`}
+                        >
                           {label}
                         </Link>
                       </li>

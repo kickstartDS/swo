@@ -34,7 +34,7 @@
         }
 
         .dsa-header--floating & {
-          opacity: var(--dsa-nav-topbar_floating__link_dimmed--opacity);
+          opacity: var(--dsa-nav-topbar_floating__label_dimmed--opacity);
         }
       }
     }
@@ -86,7 +86,7 @@
     }
 
     .dsa-header--floating & {
-      color: var(--dsa-nav-topbar_floating__link--color);
+      color: var(--dsa-nav-topbar_floating__label--color);
 
       &:hover {
         color: var(--dsa-nav-topbar__label--color_hover);

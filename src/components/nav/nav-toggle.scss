@@ -19,7 +19,7 @@ button.dsa-nav-toggle {
   padding: 0 var(--dsa-header--spacing-horizontal);
   transform: translateX(var(--dsa-header--spacing-horizontal));
 
-  --nav-toggle__icon-bar--offset: 14px;
+  --nav-toggle__icon-bar--offset: 16px;
   @media (min-width: 48em) {
     --nav-toggle__icon-bar--offset: 18px;
   }

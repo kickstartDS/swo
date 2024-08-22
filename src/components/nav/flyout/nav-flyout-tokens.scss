@@ -1,5 +1,7 @@
 .dsa-nav-flyout {
-  --dsa-nav-flyout--padding: 0 var(--l-section--content-padding);
+  --dsa-nav-flyout--padding: 0 var(--ks-spacing-inset-xl);
+  --dsa-nav-flyout--max-width: 30rem;
+
   --dsa-nav-flyout--background: linear-gradient(
     125deg,
     var(--ks-background-color-default),
@@ -7,13 +9,22 @@
   );
   --dsa-nav-flyout--shadow: 20px 0px 30px var(--ks-color-fg-inverted-base);
 
-  --dsa-nav-flyout__link--color: var(--ks-color-fg);
-  --dsa-nav-flyout__link--color_hover: var(--ks-text-color-interface-interactive-hover);
-  --dsa-nav-flyout__link--color_active: var(--ks-text-color-interface-interactive-active);
-  --dsa-nav-flyout__link--font: var(--ks-font-interface-l);
-  --dsa-nav-flyout__link--font-weight: var(--ks-font-weight-semi-bold);
-  --dsa-nav-flyout__link--font-weight_active: var(--ks-font-weight-semi-bold);
-  --dsa-nav-flyout__link--padding: 0.25em 0;
-  --dsa-nav-flyout__link_dimmed--opacity: 0.6;
-  --dsa-nav-flyout__sublist--padding-left: 1em;
+  --dsa-nav-flyout__label--color: var(--ks-color-fg);
+  --dsa-nav-flyout__label--color_hover: var(--ks-text-color-interface-interactive-hover);
+  --dsa-nav-flyout__label--color_active: var(--ks-text-color-interface-interactive-active);
+  --dsa-nav-flyout__label--font: var(--ks-font-interface-l);
+  --dsa-nav-flyout__label--font-weight: var(--ks-font-weight-semi-bold);
+  --dsa-nav-flyout__label--font-weight_active: var(--ks-font-weight-bold);
+  --dsa-nav-flyout__label--padding: 0.25em 0;
+  --dsa-nav-flyout__label_dimmed--opacity: 0.6;
+  --dsa-nav-flyout__label__icon--size: 1.5em;
+
+  --dsa-nav-flyout__sublist--padding: 0.25em 0 0.5em 0.75em;
+
+  --dsa-nav-flyout__sublist__label--color: var(--ks-color-fg);
+  --dsa-nav-flyout__sublist__label--color_hover: var(--ks-text-color-interface-interactive-hover);
+  --dsa-nav-flyout__sublist__label--color_active: var(--ks-text-color-interface-interactive-active);
+  --dsa-nav-flyout__sublist__label--font: var(--ks-font-interface-m);
+  --dsa-nav-flyout__sublist__label--font-weight: var(--ks-font-weight-semi-bold);
+  --dsa-nav-flyout__sublist__label--padding: 0.25em 0;
 }

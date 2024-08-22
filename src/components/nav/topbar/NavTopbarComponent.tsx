@@ -13,10 +13,14 @@ export const NavTopbar = ({ items, dropdownInverted }) =>
     >
       <ul className="dsa-nav-topbar__list">
         {items.map(({ label, href, id, active, items: subItems }) => {
+          const isActive =
+            active === href ||
+            subItems?.some((navItem) => active === navItem.href);
           return (
             <li
               className={classnames(
                 "dsa-nav-topbar__item",
+                isActive && "dsa-nav-topbar__item--active",
                 active && "dsa-nav-topbar__item--active",
                 subItems?.length && "dsa-nav-topbar__item--dropdown"
               )}

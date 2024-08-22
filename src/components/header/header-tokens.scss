@@ -2,8 +2,13 @@
 [ks-theme],
 [ks-inverted] {
   //Global token for calculation of header height
-  --dsa-header--spacing-vertical: var(--ks-spacing-stack-m);
-  --dsa-header--spacing-horizontal: var(--l-section--content-padding);
+  --dsa-header--spacing-vertical: var(--ks-spacing-inset-m);
+  --dsa-header--spacing-horizontal: var(--ks-spacing-inset-xl);
+
+  @media (min-width: 62em) {
+    --dsa-header--spacing-vertical: var(--ks-spacing-stack-s);
+    --dsa-header--spacing-horizontal: var(--l-section--content-padding);
+  }
 }
 
 .dsa-header {
