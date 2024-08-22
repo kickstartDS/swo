@@ -4,7 +4,7 @@ import { Icon } from "@kickstartds/base/lib/icon";
 import { Logo } from "../../logo/LogoComponent";
 import "./nav-flyout.scss";
 
-export const NavFlyout = ({ items, inverted, logo, active }) =>
+export const NavFlyout = ({ items, inverted, logo }) =>
   items && items.length > 0 ? (
     <nav
       className="dsa-nav-flyout"
@@ -15,7 +15,7 @@ export const NavFlyout = ({ items, inverted, logo, active }) =>
       <Logo {...logo} className="dsa-nav-flyout__logo" />
 
       <ul className="dsa-nav-flyout-list">
-        {items.map(({ label, href, id, items: subItems }) => {
+        {items.map(({ label, href, id, active, items: subItems }) => {
           const isActive =
             active === href ||
             subItems?.some((navItem) => active === navItem.href);

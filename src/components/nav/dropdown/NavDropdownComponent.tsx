@@ -9,10 +9,16 @@ export const NavDropdown: FC<NavDropdownProps> = ({ items, inverted }) => (
     className={classnames(`dsa-nav-dropdown`)}
     ks-inverted={inverted?.toString()}
   >
-    {items.map(({ label, href, id }) => {
+    {items.map(({ label, active, href, id }) => {
       return (
-        <li className={classnames("dsa-nav-dropdown__item")} key={id}>
-          <Link href={href} className={`dsa-nav-dropdown__link `}>
+        <li
+          className={classnames(
+            "dsa-nav-dropdown__item",
+            active && "dsa-nav-dropdown__item--active"
+          )}
+          key={id}
+        >
+          <Link href={href} className={`dsa-nav-dropdown__label`}>
             {label}
           </Link>
         </li>

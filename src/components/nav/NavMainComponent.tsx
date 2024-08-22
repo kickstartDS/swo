@@ -15,16 +15,7 @@ export const NavMain: FC<NavMainProps> = ({
   items && items.length > 0 ? (
     <div className="dsa-nav-main">
       <NavToggleComponent />
-      <NavTopbar
-        items={items}
-        dropdownInverted={dropdownInverted}
-        active={undefined}
-      />
-      <NavFlyout
-        items={items}
-        active={undefined}
-        inverted={flyoutInverted}
-        logo={logo}
-      />
+      <NavTopbar items={items} dropdownInverted={dropdownInverted} />
+      <NavFlyout items={items} inverted={flyoutInverted} logo={logo} />
     </div>
   ) : null;

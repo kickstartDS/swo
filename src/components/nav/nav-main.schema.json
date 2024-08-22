@@ -27,15 +27,16 @@
           "href": { "type": "string", "format": "uri" },
           "label": { "type": "string" },
           "active": { "type": "boolean" },
+          "id": { "type": "string" },
           "items": {
             "type": "array",
             "items": {
               "type": "object",
               "properties": {
                 "href": { "type": "string", "format": "uri" },
-                "id": { "type": "string" },
                 "label": { "type": "string" },
-                "active": { "type": "boolean" }
+                "active": { "type": "boolean" },
+                "id": { "type": "string" }
               }
             }
           }
@@ -46,16 +47,16 @@
       "examples": [
         [
           {
-            "label": "Navigation Item",
-            "href": "#"
-          },
-          {
             "label": "Active Item",
             "href": "#",
             "active": true
           },
           {
-            "label": "Item With Children",
+            "label": "Navigation Item",
+            "href": "#"
+          },
+          {
+            "label": "Dropdown",
             "href": "#",
             "items": [
               {
@@ -64,7 +65,18 @@
                 "id": ""
               },
               {
-                "label": "Another One",
+                "label": "Active Item",
+                "active": true,
+                "href": "#",
+                "id": ""
+              },
+              {
+                "label": "An Item with a longer Label",
+                "href": "#",
+                "id": ""
+              },
+              {
+                "label": "And One last one",
                 "href": "#",
                 "id": ""
               }

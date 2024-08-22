@@ -14,9 +14,9 @@ export interface NavDropdownProps {
   inverted?: DropdownInverted;
   items?: {
     href?: string;
-    id?: string;
     label?: string;
     active?: boolean;
+    id?: string;
   }[];
   className?: string;
 }
