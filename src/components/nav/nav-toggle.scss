@@ -19,10 +19,7 @@ button.dsa-nav-toggle {
   padding: 0 var(--dsa-header--spacing-horizontal);
   transform: translateX(var(--dsa-header--spacing-horizontal));
 
-  --nav-toggle__icon-bar--offset: 16px;
-  @media (min-width: 48em) {
-    --nav-toggle__icon-bar--offset: 18px;
-  }
+  --toggle__icon-bar--offset: 45%;
 
   @media (min-width: 62em) {
     display: none;
@@ -107,7 +104,7 @@ button.dsa-nav-toggle {
       }
 
       &::before {
-        top: var(--nav-toggle__icon-bar--offset);
+        top: var(--toggle__icon-bar--offset);
         transition:
           top $ease math.div($duration, 2),
           transform math.div($duration, 2) $ease math.div($duration, 2);
@@ -115,7 +112,7 @@ button.dsa-nav-toggle {
       }
 
       &::after {
-        bottom: var(--nav-toggle__icon-bar--offset);
+        bottom: var(--toggle__icon-bar--offset);
         transition:
           bottom $ease math.div($duration, 2),
           transform math.div($duration, 2) $ease math.div($duration, 2);
