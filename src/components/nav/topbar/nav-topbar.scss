@@ -3,12 +3,13 @@
 @use "./nav-topbar-tokens";
 
 .dsa-nav-topbar {
+  --g-link--text-decoration: none;
+  --g-link--text-decoration_hover: none;
+
   display: none;
   @media (min-width: "62rem") {
     display: flex;
   }
-  --g-link--text-decoration: none;
-  --g-link--text-decoration_hover: none;
   flex-direction: column;
   justify-content: flex-start;
 
@@ -78,11 +79,13 @@
     height: 100%;
     align-items: center;
     padding: var(--dsa-nav-topbar__label--padding);
+    text-decoration: var(--dsa-nav-topbar__label--text-decoration);
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
       color: var(--dsa-nav-topbar__label--color_hover);
-      opacity: 1;
+      text-decoration: var(--dsa-nav-topbar__label--text-decoration_hover);
     }
 
     .dsa-header--floating & {

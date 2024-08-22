@@ -76,6 +76,7 @@
   }
 
   .dsa-nav-flyout__label {
+    text-decoration: var(--dsa-nav-flyout__label--text-decoration);
     display: flex;
     font: var(--dsa-nav-flyout__label--font);
     font-weight: var(--dsa-nav-flyout__label--font-weight);
@@ -85,8 +86,10 @@
     padding: var(--dsa-nav-flyout__label--padding);
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
       color: var(--dsa-nav-flyout__label--color_hover);
+      text-decoration: var(--dsa-nav-flyout__label--text-decoration_hover);
     }
 
     &__icon {

@@ -13,8 +13,8 @@
   --dsa-link--color: var(--ks-text-color-default-interactive);
   --dsa-link--color_hover: var(--ks-text-color-default-interactive-hover);
 
-  --dsa-link--text-decoration: none;
-  --dsa-link--text-decoration_hover: none;
+  --dsa-link--text-decoration: underline;
+  --dsa-link--text-decoration_hover: underline;
 
   --dsa-header--height: calc(var(--dsa-logo--height) + var(--ks-spacing-stack-m) + var(--ks-spacing-stack-m));
 
