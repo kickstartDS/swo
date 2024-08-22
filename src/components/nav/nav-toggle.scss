@@ -33,14 +33,14 @@ button.dsa-nav-toggle {
     position: relative;
     display: block;
     cursor: pointer;
-    height: var(--dsa-logo--height);
-    width: var(--dsa-logo--height);
+    height: var(--dsa-nav-toggle--size);
+    width: var(--dsa-nav-toggle--size);
     transform: scale(0.7) translate(7.5%, 7.5%);
     transition: inherit;
-    color: var(--nav-toggle--color);
+    color: var(--dsa-nav-toggle--color);
 
     .dsa-header--floating & {
-      color: var(--nav-toggle_floating--color);
+      color: var(--dsa-nav-toggle_floating--color);
     }
 
     @media (min-width: 40em) {
@@ -49,18 +49,18 @@ button.dsa-nav-toggle {
 
     .overlay-open &,
     .overlay-open .header-is-scrolling & {
-      color: var(--nav-toggle--color_open);
+      color: var(--dsa-nav-toggle--color_open);
     }
 
     .dsa-header--floating & {
       .overlay-open &,
       .overlay-open .header-is-scrolling & {
-        color: var(--nav-toggle_floating--color_open);
+        color: var(--dsa-nav-toggle_floating--color_open);
       }
     }
 
     .header-is-scrolling-up & {
-      color: var(--nav-toggle--color_open);
+      color: var(--dsa-nav-toggle--color_open);
     }
 
     &::before,
