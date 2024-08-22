@@ -15,18 +15,14 @@ export const NavFlyout = ({ items, inverted, logo }) =>
       <Logo {...logo} className="dsa-nav-flyout__logo" />
 
       <ul className="dsa-nav-flyout__list">
-        {items.map(({ label, href, id, active, items: subItems }) => {
-          const isActive =
-            active === href ||
-            subItems?.some((navItem) => active === navItem.href);
+        {items.map(({ label, href, active, items: subItems }) => {
           return (
             <li
               className={classnames(
                 "dsa-nav-flyout__item",
-                isActive && "dsa-nav-flyout__item--active",
                 active && "dsa-nav-flyout__item--active"
               )}
-              key={id}
+              key={href}
             >
               {subItems?.length ? (
                 <span tabIndex={0} className="dsa-nav-flyout__label">
@@ -50,15 +46,14 @@ export const NavFlyout = ({ items, inverted, logo }) =>
               )}
               {subItems?.length ? (
                 <ul className="dsa-nav-flyout__sublist">
-                  {subItems.map(({ label, href, active, id }) => {
+                  {subItems.map(({ label, href, active }) => {
                     return (
                       <li
                         className={classnames(
                           "dsa-nav-flyout__item",
-                          active && "dsa-nav-flyout__item--active",
-                          isActive && "dsa-nav-flyout__item--active"
+                          active && "dsa-nav-flyout__item--active"
                         )}
-                        key={id}
+                        key={href}
                       >
                         <Link
                           href={href}

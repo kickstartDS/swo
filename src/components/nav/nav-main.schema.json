@@ -27,7 +27,6 @@
           "href": { "type": "string", "format": "uri" },
           "label": { "type": "string" },
           "active": { "type": "boolean" },
-          "id": { "type": "string" },
           "items": {
             "type": "array",
             "items": {
@@ -35,8 +34,7 @@
               "properties": {
                 "href": { "type": "string", "format": "uri" },
                 "label": { "type": "string" },
-                "active": { "type": "boolean" },
-                "id": { "type": "string" }
+                "active": { "type": "boolean" }
               }
             }
           }
@@ -61,24 +59,20 @@
             "items": [
               {
                 "label": "Level 2 Item",
-                "href": "#",
-                "id": ""
+                "href": "#"
               },
               {
                 "label": "Active Item",
                 "active": true,
-                "href": "#",
-                "id": ""
+                "href": "#"
               },
               {
                 "label": "An Item with a longer Label",
-                "href": "#",
-                "id": ""
+                "href": "#"
               },
               {
                 "label": "And One last one",
-                "href": "#",
-                "id": ""
+                "href": "#"
               }
             ]
           },

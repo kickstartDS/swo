@@ -12,19 +12,15 @@ export const NavTopbar = ({ items, dropdownInverted }) =>
       aria-label="Hauptnavigation"
     >
       <ul className="dsa-nav-topbar__list">
-        {items.map(({ label, href, id, active, items: subItems }) => {
-          const isActive =
-            active === href ||
-            subItems?.some((navItem) => active === navItem.href);
+        {items.map(({ label, href, active, items: subItems }) => {
           return (
             <li
               className={classnames(
                 "dsa-nav-topbar__item",
-                isActive && "dsa-nav-topbar__item--active",
                 active && "dsa-nav-topbar__item--active",
                 subItems?.length && "dsa-nav-topbar__item--dropdown"
               )}
-              key={id}
+              key={href}
             >
               {subItems?.length ? (
                 <span tabIndex={0} className="dsa-nav-topbar__label">
