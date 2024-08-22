@@ -1,12 +1,13 @@
 .dsa-nav-flyout {
   --dsa-nav-flyout--padding: 0 var(--ks-spacing-inset-xl);
   --dsa-nav-flyout--max-width: 30rem;
+  --dsa-nav-flyout--shadow: 20px 0px 30px var(--ks-color-fg-inverted-base);
+  --dsa-nav-flyout--gap: var(--ks-spacing-stack-m);
   --dsa-nav-flyout--background: linear-gradient(
     125deg,
     var(--ks-background-color-default),
     var(--ks-color-primary-to-bg-6)
   );
-  --dsa-nav-flyout--shadow: 20px 0px 30px var(--ks-color-fg-inverted-base);
 
   --dsa-nav-flyout__label--color: var(--ks-color-fg);
   --dsa-nav-flyout__label--color_hover: var(--ks-text-color-interface-interactive-hover);
