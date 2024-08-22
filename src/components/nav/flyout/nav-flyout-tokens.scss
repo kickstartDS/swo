@@ -1,7 +1,6 @@
 .dsa-nav-flyout {
   --dsa-nav-flyout--padding: 0 var(--ks-spacing-inset-xl);
   --dsa-nav-flyout--max-width: 30rem;
-
   --dsa-nav-flyout--background: linear-gradient(
     125deg,
     var(--ks-background-color-default),
@@ -22,8 +21,6 @@
   --dsa-nav-flyout__sublist--padding: 0.25em 0 0.5em 0.75em;
 
   --dsa-nav-flyout__sublist__label--color: var(--ks-color-fg);
-  --dsa-nav-flyout__sublist__label--color_hover: var(--ks-text-color-interface-interactive-hover);
-  --dsa-nav-flyout__sublist__label--color_active: var(--ks-text-color-interface-interactive-active);
   --dsa-nav-flyout__sublist__label--font: var(--ks-font-interface-m);
   --dsa-nav-flyout__sublist__label--font-weight: var(--ks-font-weight-semi-bold);
   --dsa-nav-flyout__sublist__label--padding: 0.25em 0;

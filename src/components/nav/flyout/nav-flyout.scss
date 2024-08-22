@@ -64,6 +64,7 @@
     &--active.dsa-nav-flyout__item {
       .dsa-nav-flyout__label {
         font-weight: var(--dsa-nav-flyout__label--font-weight_active);
+        color: var(--dsa-nav-flyout__label--color_active);
       }
     }
 
@@ -86,7 +87,6 @@
     &:hover,
     &:focus {
       color: var(--dsa-nav-flyout__label--color_hover);
-      opacity: 1;
     }
 
     &__icon {
@@ -103,6 +103,11 @@
       font: inherit;
       color: var(--dsa-nav-flyout__sublist__label--color);
       padding: var(--dsa-nav-flyout__sublist__label--padding);
+
+      &:hover,
+      &:focus {
+        color: var(--dsa-nav-flyout__label--color_hover);
+      }
     }
   }
 

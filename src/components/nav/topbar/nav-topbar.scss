@@ -89,11 +89,11 @@
       color: var(--dsa-nav-topbar_floating__label--color);
 
       &:hover {
-        color: var(--dsa-nav-topbar__label--color_hover);
+        color: var(--dsa-nav-topbar_floating__label--color_hover);
       }
 
       &:active {
-        color: var(--dsa-nav-topbar__label--color_active);
+        color: var(--dsa-nav-topbar_floating__label--color_active);
       }
     }
 
