@@ -5,13 +5,14 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-/**
- * Toggle the inversion of the dropdown navigation
- */
-export type DropdownInverted = boolean;
+import type {LogoProps} from "../logo/LogoProps";
 
-export interface NavMainProps {
-  dropdownInverted?: DropdownInverted;
+/**
+ * Toggle the inversion of the flyout navigation
+ */
+export type FlyoutInverted = boolean;
+
+export interface NavFlyoutProps {
   items?: {
     href: string;
     label: string;
@@ -22,4 +23,9 @@ export interface NavMainProps {
       active?: boolean;
     }[];
   }[];
+  inverted?: FlyoutInverted;
+  /**
+   * Referenced component LogoProps
+   */
+  logo: LogoProps;
 }

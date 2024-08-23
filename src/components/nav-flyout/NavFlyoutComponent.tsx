@@ -1,16 +1,22 @@
 import classnames from "classnames";
+import { NavFlyoutProps } from "./NavFlyoutProps";
 import { Link } from "@kickstartds/base/lib/link";
 import { Icon } from "@kickstartds/base/lib/icon";
-import { Logo } from "../../logo/LogoComponent";
+import { Logo } from "../logo/LogoComponent";
 import "./nav-flyout.scss";
+import { createContext, forwardRef, HTMLAttributes, useContext } from "react";
 
-export const NavFlyout = ({ items, inverted, logo }) =>
+export const NavFlyoutContextDefault = forwardRef<
+  HTMLDivElement,
+  NavFlyoutProps & HTMLAttributes<HTMLElement>
+>(({ items, inverted, logo }, ref) =>
   items && items.length > 0 ? (
     <nav
       className="dsa-nav-flyout"
       ks-inverted={inverted.toString()}
       id="dsa-nav-flyout"
       aria-label="Hauptnavigation"
+      ref={ref}
     >
       <Logo {...logo} className="dsa-nav-flyout__logo" />
 
@@ -71,4 +77,15 @@ export const NavFlyout = ({ items, inverted, logo }) =>
         })}
       </ul>
     </nav>
-  ) : null;
+  ) : null
+);
+
+export const NavFlyoutContext = createContext(NavFlyoutContextDefault);
+export const NavFlyout = forwardRef<
+  HTMLDivElement,
+  NavFlyoutProps & HTMLAttributes<HTMLElement>
+>((props, ref) => {
+  const Component = useContext(NavFlyoutContext);
+  return <Component {...props} ref={ref} />;
+});
+NavFlyout.displayName = "NavFlyout";

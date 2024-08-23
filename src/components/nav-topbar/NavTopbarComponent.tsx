@@ -1,15 +1,21 @@
 import classnames from "classnames";
 import { Link } from "@kickstartds/base/lib/link";
 import { Icon } from "@kickstartds/base/lib/icon";
-import { NavDropdown } from "../dropdown/NavDropdownComponent";
+import { NavDropdown } from "../nav-dropdown/NavDropdownComponent";
 import "./nav-topbar.scss";
+import { createContext, forwardRef, HTMLAttributes, useContext } from "react";
+import { NavTopbarProps } from "./NavTopbarProps";
 
-export const NavTopbar = ({ items, dropdownInverted }) =>
+export const NavTopbarContextDefault = forwardRef<
+  HTMLDivElement,
+  NavTopbarProps & HTMLAttributes<HTMLElement>
+>(({ items, inverted }, ref) =>
   items && items.length > 0 ? (
     <nav
       className="dsa-nav-topbar"
       id="dsa-nav-main"
       aria-label="Hauptnavigation"
+      ref={ref}
     >
       <ul className="dsa-nav-topbar__list">
         {items.map(({ label, href, active, items: subItems }) => {
@@ -44,11 +50,22 @@ export const NavTopbar = ({ items, dropdownInverted }) =>
               )}
 
               {subItems?.length ? (
-                <NavDropdown items={subItems} inverted={dropdownInverted} />
+                <NavDropdown items={subItems} inverted={inverted} />
               ) : null}
             </li>
           );
         })}
       </ul>
     </nav>
-  ) : null;
+  ) : null
+);
+
+export const NavTopbarContext = createContext(NavTopbarContextDefault);
+export const NavTopbar = forwardRef<
+  HTMLDivElement,
+  NavTopbarProps & HTMLAttributes<HTMLElement>
+>((props, ref) => {
+  const Component = useContext(NavTopbarContext);
+  return <Component {...props} ref={ref} />;
+});
+NavTopbar.displayName = "NavTopbar";
