@@ -1,3 +1,15 @@
+# v1.4.2 (Fri Aug 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: typing of header ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.4.1 (Fri Aug 23 2024)
 
 #### ⚠️ Pushed to `main`
