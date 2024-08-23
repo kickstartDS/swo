@@ -43,6 +43,7 @@
 
   .dsa-nav-flyout__list {
     padding-top: calc(var(--dsa-header--spacing-vertical) - var(--ks-spacing-s));
+    padding-bottom: 15vh;
 
     &:hover {
       .dsa-nav-flyout__item:not(:hover, .dsa-nav-flyout__item--active) {
