@@ -5,10 +5,15 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {SectionProps} from "../section/SectionProps";
 import type {BlogTeaserProps} from "../blog-teaser/BlogTeaserProps";
 import type {CtaProps} from "../cta/CtaProps";
 import type {SeoProps} from "../seo/SeoProps";
 
+/**
+ * Collection of sections (with their contents) to render as the blog overview intro
+ */
+export type OverviewIntro = SectionProps[];
 /**
  * Collection of posts to list on the page
  */
@@ -22,6 +27,7 @@ export type Posts1 = BlogTeaserProps[];
  * Abstracts a blog overview concept into JSON schema
  */
 export interface BlogOverviewProps {
+  section?: OverviewIntro;
   /**
    * Referenced component BlogTeaserProps
    */
