@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/contact.schema.json",
+  "title": "Contact",
+  "description": "Component used for user interaction",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Label",
+      "description": "Name of the contact",
+      "examples": ["John Doe"]
+    }
+  },
+  "additionalProperties": false,
+  "required": ["label"]
+}

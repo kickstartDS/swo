@@ -1,0 +1,12 @@
+@import "./contact-tokens";
+
+.dsa-contact {
+  .c-contact__links {
+    .c-contact__link {
+      color: var(--dsa-contact__link--color);
+    }
+    .icon {
+      color: var(--dsa-contact__link__icon--color);
+    }
+  }
+}
