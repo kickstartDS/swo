@@ -1,3 +1,16 @@
+# v1.4.4 (Fri Aug 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@julrich](https://github.com/julrich))
+- fix: add explicit titles to blog overview ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.4.3 (Fri Aug 23 2024)
 
 #### ⚠️ Pushed to `main`
