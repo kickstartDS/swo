@@ -46,6 +46,12 @@
     display: flex;
     align-items: stretch;
 
+    &--dropdown:last-child {
+      .dsa-nav-dropdown {
+        right: 0;
+      }
+    }
+
     .dsa-nav-dropdown {
       transition: all var(--ks-transition-fade);
       transform: translateY(-5%);

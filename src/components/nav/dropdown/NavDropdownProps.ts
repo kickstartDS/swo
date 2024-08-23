@@ -16,7 +16,6 @@ export interface NavDropdownProps {
     href?: string;
     label?: string;
     active?: boolean;
-    id?: string;
   }[];
   className?: string;
 }
