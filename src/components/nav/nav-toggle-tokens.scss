@@ -2,7 +2,9 @@
   --dsa-nav-toggle--size: var(--dsa-logo--height);
   --dsa-nav-toggle--color: var(--ks-text-color-default);
   --dsa-nav-toggle--color_open: var(--ks-text-color-default);
+  --dsa-nav-toggle--shadow: none;
 
+  --dsa-nav-toggle_floating--shadow: 0 0 20px 2px var(--ks-color-fg-inverted-alpha-5);
   --dsa-nav-toggle_floating--color: var(--ks-text-color-interface-interactive);
   --dsa-nav-toggle_floating--color_open: var(--ks-text-color-interface-interactive);
 }

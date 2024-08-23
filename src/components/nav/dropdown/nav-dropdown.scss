@@ -22,6 +22,15 @@
     }
   }
 
+  .dsa-nav-dropdown__item {
+    &--active {
+      .dsa-nav-dropdown__label {
+        color: var(--dsa-nav-dropdown__label--color_active);
+        font-weight: var(--dsa-nav-dropdown__label--font-weight_active);
+      }
+    }
+  }
+
   .dsa-nav-dropdown__label {
     text-decoration: var(--dsa-nav-dropdown__label--text-decoration);
     font: inherit;
@@ -37,10 +46,6 @@
     &:active {
       color: var(--dsa-nav-dropdown__label--color_hover);
       text-decoration: var(--dsa-nav-dropdown__label--text-decoration_hover);
-    }
-
-    &--active {
-      color: var(--dsa-nav-dropdown__label--color_active);
     }
   }
 }

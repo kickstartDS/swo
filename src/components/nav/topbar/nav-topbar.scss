@@ -7,11 +7,10 @@
   --g-link--text-decoration_hover: none;
 
   display: none;
+
   @media (min-width: "62rem") {
-    display: flex;
+    display: block;
   }
-  flex-direction: column;
-  justify-content: flex-start;
 
   ul {
     list-style: none;

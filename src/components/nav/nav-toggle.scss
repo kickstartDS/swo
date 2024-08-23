@@ -47,20 +47,20 @@ button.dsa-nav-toggle {
       transform: scale(0.8) translate(2.5%, 2.5%);
     }
 
-    .overlay-open &,
-    .overlay-open .header-is-scrolling & {
+    .overlay-open & {
       color: var(--dsa-nav-toggle--color_open);
     }
 
     .dsa-header--floating & {
-      .overlay-open &,
-      .overlay-open .header-is-scrolling & {
+      .dsa-nav-toggle__icon__middle,
+      &::before,
+      &::after {
+        box-shadow: var(--dsa-nav-toggle_floating--shadow);
+      }
+
+      .overlay-open & {
         color: var(--dsa-nav-toggle_floating--color_open);
       }
-    }
-
-    .header-is-scrolling-up & {
-      color: var(--dsa-nav-toggle--color_open);
     }
 
     &::before,
@@ -71,6 +71,7 @@ button.dsa-nav-toggle {
     .dsa-nav-toggle__icon__middle,
     &::before,
     &::after {
+      box-shadow: var(--dsa-nav-toggle--shadow);
       position: absolute;
       width: 100%;
       height: 3px;

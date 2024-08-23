@@ -7,7 +7,7 @@
     display: flex;
   }
   display: none;
-
+  font: var(--dsa-nav-flyout__label--font);
   flex-direction: column;
   gap: var(--dsa-nav-flyout--gap);
   left: -100%;

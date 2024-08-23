@@ -5,11 +5,6 @@
 .dsa-nav-main {
   --g-link--text-decoration: none;
   --g-link--text-decoration_hover: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-grow: 0;
-  flex-shrink: 1;
 
   ul {
     box-sizing: border-box;

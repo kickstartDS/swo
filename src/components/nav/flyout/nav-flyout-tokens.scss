@@ -1,7 +1,7 @@
 .dsa-nav-flyout {
   --dsa-nav-flyout--padding: 0 var(--ks-spacing-inset-xl);
-  --dsa-nav-flyout--max-width: 30rem;
-  --dsa-nav-flyout--shadow: 20px 0px 30px var(--ks-color-fg-inverted-base);
+  --dsa-nav-flyout--max-width: 18em;
+  --dsa-nav-flyout--shadow: 20px 0px 30px var(--ks-color-fg-inverted-alpha-5-base);
   --dsa-nav-flyout--gap: var(--ks-spacing-stack-m);
   --dsa-nav-flyout--background: linear-gradient(
     125deg,
@@ -18,7 +18,7 @@
   --dsa-nav-flyout__label--padding: 0.25em 0;
   --dsa-nav-flyout__label--text-decoration: none;
   --dsa-nav-flyout__label--text-decoration_hover: none;
-  --dsa-nav-flyout__label_dimmed--opacity: 0.6;
+  --dsa-nav-flyout__label_dimmed--opacity: 0.8;
   --dsa-nav-flyout__label__icon--size: 1.5em;
 
   --dsa-nav-flyout__sublist--padding: 0.25em 0 0.5em 0.75em;
