@@ -1,3 +1,16 @@
+# v1.4.0 (Fri Aug 23 2024)
+
+#### 🚀 Enhancement
+
+- Feature/develop dropdown nav [#14](https://github.com/kickstartDS/ds-agency-premium/pull/14) ([@fleven-kds](https://github.com/fleven-kds) [@julrich](https://github.com/julrich))
+
+#### Authors: 2
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.3.51 (Fri Aug 23 2024)
 
 #### ⚠️ Pushed to `main`
