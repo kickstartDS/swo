@@ -7,7 +7,7 @@ import { createContext, forwardRef, HTMLAttributes, useContext } from "react";
 import { NavTopbarProps } from "./NavTopbarProps";
 
 export const NavTopbarContextDefault = forwardRef<
-  HTMLDivElement,
+  HTMLElement,
   NavTopbarProps & HTMLAttributes<HTMLElement>
 >(({ items, inverted }, ref) =>
   items && items.length > 0 ? (
@@ -62,7 +62,7 @@ export const NavTopbarContextDefault = forwardRef<
 
 export const NavTopbarContext = createContext(NavTopbarContextDefault);
 export const NavTopbar = forwardRef<
-  HTMLDivElement,
+  HTMLElement,
   NavTopbarProps & HTMLAttributes<HTMLElement>
 >((props, ref) => {
   const Component = useContext(NavTopbarContext);

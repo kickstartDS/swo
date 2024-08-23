@@ -7,7 +7,7 @@ import "./nav-flyout.scss";
 import { createContext, forwardRef, HTMLAttributes, useContext } from "react";
 
 export const NavFlyoutContextDefault = forwardRef<
-  HTMLDivElement,
+  HTMLElement,
   NavFlyoutProps & HTMLAttributes<HTMLElement>
 >(({ items, inverted, logo }, ref) =>
   items && items.length > 0 ? (
@@ -82,7 +82,7 @@ export const NavFlyoutContextDefault = forwardRef<
 
 export const NavFlyoutContext = createContext(NavFlyoutContextDefault);
 export const NavFlyout = forwardRef<
-  HTMLDivElement,
+  HTMLElement,
   NavFlyoutProps & HTMLAttributes<HTMLElement>
 >((props, ref) => {
   const Component = useContext(NavFlyoutContext);
