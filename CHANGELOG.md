@@ -1,3 +1,17 @@
+# v1.3.51 (Fri Aug 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: section layout for blog cta ([@julrich](https://github.com/julrich))
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@julrich](https://github.com/julrich))
+- fix: only render sections in blog when content empty ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.3.49 (Wed Aug 21 2024)
 
 #### ⚠️ Pushed to `main`
