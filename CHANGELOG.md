@@ -1,3 +1,15 @@
+# v1.4.1 (Fri Aug 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(flyout): add padding to accomodate for mobile browser bottom bars ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.4.0 (Fri Aug 23 2024)
 
 #### 🚀 Enhancement
