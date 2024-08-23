@@ -13,7 +13,7 @@ import { Image } from "../components/image/ImageComponent";
 
 const Page = () => (
   <>
-    <Header {...headerProps} floating />
+    <Header {...headerProps} dropdownInverted floating flyoutInverted />
     <Section spaceBefore="none" spaceAfter="none" width="full">
       <VideoCurtain
         buttons={[

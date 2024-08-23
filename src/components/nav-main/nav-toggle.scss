@@ -38,9 +38,11 @@ button.dsa-nav-toggle {
     transform: scale(0.7) translate(7.5%, 7.5%);
     transition: inherit;
     color: var(--dsa-nav-toggle--color);
+    filter: drop-shadow(var(--dsa-nav-toggle--shadow));
 
     .dsa-header--floating & {
       color: var(--dsa-nav-toggle_floating--color);
+      filter: drop-shadow(var(--dsa-nav-toggle_floating--shadow));
     }
 
     @media (min-width: 40em) {
@@ -49,18 +51,6 @@ button.dsa-nav-toggle {
 
     .overlay-open & {
       color: var(--dsa-nav-toggle--color_open);
-    }
-
-    .dsa-header--floating & {
-      .dsa-nav-toggle__icon__middle,
-      &::before,
-      &::after {
-        box-shadow: var(--dsa-nav-toggle_floating--shadow);
-      }
-
-      .overlay-open & {
-        color: var(--dsa-nav-toggle_floating--color_open);
-      }
     }
 
     &::before,
