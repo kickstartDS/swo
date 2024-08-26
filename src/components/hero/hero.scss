@@ -15,7 +15,7 @@
   }
 
   &--highlight-text.c-visual {
-    --dsa-hero__copy--font: var(--dsa-hero_highlight-text__box--font, var(--ks-font-copy-l));
+    --dsa-hero__copy--font: var(--dsa-hero_highlight-text__copy--font, var(--ks-font-copy-l));
   }
 
   &--color-neutral.c-visual {

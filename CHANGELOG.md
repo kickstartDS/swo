@@ -1,3 +1,66 @@
+# v1.4.4 (Fri Aug 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@julrich](https://github.com/julrich))
+- fix: add explicit titles to blog overview ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v1.4.3 (Fri Aug 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@julrich](https://github.com/julrich))
+- feature: add more flexibility to blog overview ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v1.4.2 (Fri Aug 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: typing of header ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v1.4.1 (Fri Aug 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(flyout): add padding to accomodate for mobile browser bottom bars ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.4.0 (Fri Aug 23 2024)
+
+#### 🚀 Enhancement
+
+- Feature/develop dropdown nav [#14](https://github.com/kickstartDS/ds-agency-premium/pull/14) ([@fleven-kds](https://github.com/fleven-kds) [@julrich](https://github.com/julrich))
+
+#### Authors: 2
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.3.51 (Fri Aug 23 2024)
 
 #### ⚠️ Pushed to `main`
