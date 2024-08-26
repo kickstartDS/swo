@@ -23,17 +23,17 @@
         }
       }
     },
-    "name": {
-      "title": "Name",
-      "description": "Name, company name, etc.",
-      "type": "string",
-      "examples": ["Jane Smith"]
-    },
     "title": {
       "title": "Title",
+      "description": "Name, company name, etc.",
+      "type": "string",
+      "examples": ["Max Mütze"]
+    },
+    "subtitle": {
+      "title": "Subtitle",
       "description": "Position, profession, department, location, etc.",
       "type": "string",
-      "examples": ["CEO at Company"]
+      "examples": ["Geschäftsführer"]
     },
     "links": {
       "type": "array",

@@ -22,16 +22,16 @@
     gap: var(--dsa-contact__header--gap);
   }
 
-  &__name {
-    font: var(--dsa-contact__name--font);
-    color: var(--dsa-contact__name--color);
-    font-weight: var(--dsa-contact__name--font-weight);
-  }
-
   &__title {
     font: var(--dsa-contact__title--font);
     color: var(--dsa-contact__title--color);
     font-weight: var(--dsa-contact__title--font-weight);
+  }
+
+  &__subtitle {
+    font: var(--dsa-contact__subtitle--font);
+    color: var(--dsa-contact__subtitle--color);
+    font-weight: var(--dsa-contact__subtitle--font-weight);
   }
 
   &__image {

@@ -17,11 +17,11 @@ export type AltText = string;
 /**
  * Name, company name, etc.
  */
-export type Name = string;
+export type Title = string;
 /**
  * Position, profession, department, location, etc.
  */
-export type Title = string;
+export type Subtitle = string;
 /**
  * Open link in new Tab
  */
@@ -44,8 +44,8 @@ export interface ContactProps {
     src?: ImageSource;
     alt?: AltText;
   };
-  name: Name;
   title?: Title;
+  subtitle?: Subtitle;
   links?: {
     icon?: string;
     label?: string;

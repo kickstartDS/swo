@@ -10,7 +10,7 @@ import { RichText } from "@kickstartds/base/lib/rich-text";
 export const Contact = forwardRef<
   HTMLAnchorElement,
   ContactProps & HTMLAttributes<HTMLElement>
->(({ name, title, image, links, copy, className, ...props }, ref) => (
+>(({ title, subtitle, image, links, copy, className, ...props }, ref) => (
   <address
     className={classnames("dsa-contact", className)}
     ref={ref}
@@ -26,8 +26,8 @@ export const Contact = forwardRef<
     <div className="dsa-contact__body">
       {title && (
         <div className="dsa-contact__header">
-          <span className="dsa-contact__name">{name}</span>
           <span className="dsa-contact__title">{title}</span>
+          <span className="dsa-contact__subtitle">{subtitle}</span>
         </div>
       )}
       {links.length ? (
