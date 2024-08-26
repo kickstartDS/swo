@@ -6,13 +6,52 @@
  */
 
 /**
- * Name of the contact
+ * URL of the image to display
  */
-export type Label = string;
+export type ImageSource = string;
+/**
+ * Alt text of the image
+ */
+export type AltText = string;
+/**
+ * Name, company name, etc.
+ */
+export type Name = string;
+/**
+ * Position, profession, department, location, etc.
+ */
+export type Title = string;
+/**
+ * Open link in new Tab
+ */
+export type OpenLinkInNewTab = boolean;
+export type CopyText = string;
+/**
+ * Additional css classes attached to the wrapping element
+ */
+export type Class = string;
+/**
+ * Optional custom component identifier
+ */
+export type KsComponentAttribute = string;
 
 /**
  * Component used for user interaction
  */
 export interface ContactProps {
-  name?: Label;
+  image?: {
+    src?: ImageSource;
+    alt?: AltText;
+  };
+  name: Name;
+  title?: Title;
+  links?: {
+    icon?: string;
+    label?: string;
+    href?: string;
+    newTab?: OpenLinkInNewTab;
+  }[];
+  copy?: CopyText;
+  className?: Class;
+  component?: KsComponentAttribute;
 }

@@ -20,7 +20,7 @@ export default meta;
 
 type Story = StoryObj<typeof Contact>;
 
-export const Default: Story = {
+export const Person: Story = {
   parameters: {
     viewport: {
       width: 770,
@@ -28,28 +28,24 @@ export const Default: Story = {
     },
   },
   args: pack({
+    name: "CEO at Company",
+    title: "Jane Smith",
     image: {
-      height: 300,
-      lazy: true,
-      noscript: true,
-      src: "https://picsum.photos/seed/kdspicture/300/300",
+      src: "img/people/author-emily.png",
       width: 300,
     },
     links: [
       {
-        href: "tel:+4922868896620",
-        icon: "phone",
-        label: "0228 / 688 966 20",
-        newTab: false,
+        icon: "twitter",
+        href: "#",
+        label: "@jane_smith",
       },
       {
         href: "mailto:mail@example.com",
         icon: "email",
-        label: "mail@example.com",
+        label: "jane.smith@example.com",
         newTab: false,
       },
     ],
-    subtitle: "Geschäftsführer",
-    title: "Max Mütze",
   }),
 };

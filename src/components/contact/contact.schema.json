@@ -5,13 +5,90 @@
   "description": "Component used for user interaction",
   "type": "object",
   "properties": {
+    "image": {
+      "type": "object",
+      "properties": {
+        "src": {
+          "type": "string",
+          "format": "image",
+          "title": "Image Source",
+          "description": "URL of the image to display",
+          "examples": ["img/people/author-emily.png"]
+        },
+        "alt": {
+          "type": "string",
+          "title": "Alt Text",
+          "description": "Alt text of the image",
+          "examples": ["Picture of Jane Smith"]
+        }
+      }
+    },
     "name": {
+      "title": "Name",
+      "description": "Name, company name, etc.",
       "type": "string",
-      "title": "Label",
-      "description": "Name of the contact",
-      "examples": ["John Doe"]
+      "examples": ["Jane Smith"]
+    },
+    "title": {
+      "title": "Title",
+      "description": "Position, profession, department, location, etc.",
+      "type": "string",
+      "examples": ["CEO at Company"]
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "icon": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "href": {
+            "type": "string",
+            "format": "uri"
+          },
+          "newTab": {
+            "title": "Open link in new Tab",
+            "description": "Open link in new Tab",
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "additionalProperties": false
+      },
+      "examples": [
+        [
+          {
+            "icon": "phone",
+            "label": "0228 / 688 966 20",
+            "href": "tel:+4922868896620"
+          },
+          {
+            "icon": "email",
+            "label": "mail@example.com",
+            "href": "mailto:mail@example.com"
+          }
+        ]
+      ]
+    },
+    "copy": {
+      "title": "Copy text",
+      "type": "string"
+    },
+    "className": {
+      "title": "Class",
+      "description": "Additional css classes attached to the wrapping element",
+      "type": "string"
+    },
+    "component": {
+      "title": "`ks-component` attribute",
+      "description": "Optional custom component identifier",
+      "type": "string"
     }
   },
   "additionalProperties": false,
-  "required": ["label"]
+  "required": ["name"]
 }
