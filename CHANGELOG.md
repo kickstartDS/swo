@@ -1,3 +1,18 @@
+# v1.4.5 (Mon Aug 26 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: blog tag schema ([@julrich](https://github.com/julrich))
+- feat(hero): correct typo ([@fleven-kds](https://github.com/fleven-kds))
+- feat(cta): up token selector specifity to enable overwriting ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 2
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.4.4 (Fri Aug 23 2024)
 
 #### ⚠️ Pushed to `main`
