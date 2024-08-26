@@ -30,7 +30,9 @@ export const Default: Story = {
   args: pack({
     author: {
       name: "Jane Smith",
-      image: "img/people/author-emily.png",
+      image: {
+        src: "img/people/author-emily.png",
+      },
       twitter: "jane_smith",
       email: "jane.smith@example.com",
     },

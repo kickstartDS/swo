@@ -14,9 +14,13 @@ export type Name = string;
  */
 export type Byline = string;
 /**
- * The image URL of the author
+ * URL of the image to display
  */
-export type Image = string;
+export type ImageSource = string;
+/**
+ * Alt text of the image
+ */
+export type AltText = string;
 /**
  * The Twitter name of the author
  */
@@ -70,7 +74,10 @@ export interface BlogAsideProps {
 export interface Author {
   name: Name;
   byline?: Byline;
-  image?: Image;
+  image?: {
+    src?: ImageSource;
+    alt?: AltText;
+  };
   twitter?: Twitter;
   email?: Email;
 }

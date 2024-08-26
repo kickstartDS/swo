@@ -53,8 +53,8 @@ export const BlogAsideContextDefault = forwardRef<
       className={classnames(className, "dsa-blog-aside")}
       author={{
         title: author?.name,
-        image: author?.image && { src: author.image },
-        copy: author?.byline,
+        subtitle: author?.byline,
+        image: author?.image,
         links: authorLinks,
       }}
       shareBar={{

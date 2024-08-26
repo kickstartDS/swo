@@ -1,8 +1,9 @@
-import { HTMLAttributes, forwardRef } from "react";
+import { HTMLAttributes, FC, PropsWithChildren, forwardRef } from "react";
 import classnames from "classnames";
 import { ContactProps } from "./ContactProps";
 import "./contact.scss";
 import { Picture } from "@kickstartds/base/lib/picture";
+import { ContactContext } from "@kickstartds/base/lib/contact";
 import { Link } from "@kickstartds/base/lib/link";
 import { Icon } from "@kickstartds/base/lib/icon";
 import { RichText } from "@kickstartds/base/lib/rich-text";
@@ -53,3 +54,7 @@ export const Contact = forwardRef<
   </address>
 ));
 Contact.displayName = "Contact";
+
+export const ContactProvider: FC<PropsWithChildren> = (props) => (
+  <ContactContext.Provider {...props} value={Contact} />
+);
