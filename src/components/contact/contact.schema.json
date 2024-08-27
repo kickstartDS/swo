@@ -27,13 +27,13 @@
       "title": "Title",
       "description": "Name, company name, etc.",
       "type": "string",
-      "examples": ["Max Mütze"]
+      "examples": ["Jane Smith"]
     },
     "subtitle": {
       "title": "Subtitle",
       "description": "Position, profession, department, location, etc.",
       "type": "string",
-      "examples": ["Geschäftsführer"]
+      "examples": ["CEO at Company"]
     },
     "links": {
       "type": "array",

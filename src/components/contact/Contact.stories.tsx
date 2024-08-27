@@ -28,7 +28,7 @@ export const Person: Story = {
     },
   },
   args: pack({
-    name: "CEO at Company",
+    subtitle: "CEO at Company",
     title: "Jane Smith",
     image: {
       src: "img/people/author-emily.png",
