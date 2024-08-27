@@ -1,4 +1,8 @@
 .dsa-blog-aside {
+  --dsa-blog-aside__meta__item--font: var(--ks-font-interface-s);
+  --dsa-blog-aside__meta__item--color: var(--ks-text-color-interface);
+  --dsa-blog-aside__meta__item__icon--size: 1.2em;
+
   --dsa-blog-aside__title--color: var(--dsa-headline--color);
   --dsa-blog-aside__title--font: var(--dsa-headline_h3--font);
 
