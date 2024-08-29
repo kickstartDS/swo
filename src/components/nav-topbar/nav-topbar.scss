@@ -39,9 +39,12 @@
     display: flex;
     align-items: stretch;
 
-    &--dropdown:last-of-type {
-      .dsa-nav-dropdown {
-        right: 0;
+    &--dropdown {
+      &:last-child,
+      &:nth-last-child(2) {
+        .dsa-nav-dropdown {
+          right: 0;
+        }
       }
     }
 
