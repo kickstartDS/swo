@@ -3,7 +3,8 @@
 @use "./nav-main-tokens";
 
 .dsa-nav-main {
-  .dsa-nav-flyout {
+  .dsa-nav-flyout,
+  .dsa-nav-toggle {
     @media (min-width: "62rem") {
       display: none;
     }

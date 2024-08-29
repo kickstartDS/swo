@@ -40,8 +40,8 @@
     align-items: stretch;
 
     &--dropdown {
-      &:last-child,
-      &:nth-last-child(2) {
+      &:last-of-type,
+      &:nth-last-of-type(2) {
         .dsa-nav-dropdown {
           right: 0;
         }
