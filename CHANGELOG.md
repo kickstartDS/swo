@@ -1,3 +1,15 @@
+# v1.4.10 (Thu Aug 29 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(nav-main): add toggle to nav-main breakpoint toggle ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.4.9 (Thu Aug 29 2024)
 
 #### ⚠️ Pushed to `main`
