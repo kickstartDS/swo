@@ -5,6 +5,7 @@ import "./js/navMainEvents.client";
 import { NavToggle } from "./NavToggleComponent";
 import { NavTopbar } from "../nav-topbar/NavTopbarComponent";
 import { NavFlyout } from "../nav-flyout/NavFlyoutComponent";
+import "./nav-main.scss";
 
 export const NavMainContextDefault = forwardRef<
   HTMLDivElement,

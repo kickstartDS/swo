@@ -3,28 +3,15 @@
 @use "./nav-main-tokens";
 
 .dsa-nav-main {
-  --g-link--text-decoration: none;
-  --g-link--text-decoration_hover: none;
-
-  ul {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    li {
-      display: block;
-      margin: 0;
+  .dsa-nav-flyout {
+    @media (min-width: "62rem") {
+      display: none;
     }
   }
 
-  &__logo {
-    padding: var(--dsa-header--spacing-v) 0;
-  }
-}
-
-.dsa-nav-main-toggle {
-  &[aria-expanded="true"] + .dsa-nav-main {
-    display: block;
+  .dsa-nav-topbar {
+    @media (max-width: "62rem") {
+      display: none;
+    }
   }
 }

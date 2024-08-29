@@ -6,12 +6,6 @@
   --g-link--text-decoration: none;
   --g-link--text-decoration_hover: none;
 
-  display: none;
-
-  @media (min-width: "62rem") {
-    display: block;
-  }
-
   ul {
     list-style: none;
   }
