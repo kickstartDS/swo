@@ -33,7 +33,6 @@ export const WideImage: Story = {
     image: {
       src: "img/people/portrait-young-girl-smiling.jpg",
       aspectRatio: "wide",
-      fullWidth: true,
     },
     links: [
       {
