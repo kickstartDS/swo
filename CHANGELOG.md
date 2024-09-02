@@ -1,3 +1,16 @@
+# v1.4.12 (Mon Sep 02 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feature: add page component ([@julrich](https://github.com/julrich))
+- fix: make head in blog post required ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.4.11 (Mon Sep 02 2024)
 
 #### ⚠️ Pushed to `main`
