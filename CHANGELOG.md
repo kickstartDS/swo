@@ -1,3 +1,15 @@
+# v1.4.11 (Mon Sep 02 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(blogStories): update story to new tag entry schema ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.4.10 (Thu Aug 29 2024)
 
 #### ⚠️ Pushed to `main`
