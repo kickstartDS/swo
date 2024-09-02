@@ -23,7 +23,14 @@ export const BlogPost: Story = {
   args: pack({
     head: {
       date: "12/30/2022",
-      tags: ["Technology", "AI"],
+      tags: [
+        {
+          entry: "Technology",
+        },
+        {
+          entry: "AI",
+        },
+      ],
       headline: "The Future of AI: A Glimpse into the Unseen",
       image: "img/close-up-young-business-team-working.png",
     },
