@@ -1,20 +1,59 @@
+@use "@kickstartds/core/source/core/container";
 @import "./contact-tokens";
+@include container.wrapper("contact");
 
 .dsa-contact {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--dsa-contact--gap);
-  justify-content: center;
+  gap: var(--dsa-contact--gap-horizontal) var(--dsa-contact--gap-vertical);
 
-  &__image,
+  &__image-wrap,
   &__body {
     flex-grow: 1;
   }
 
   &__body {
     display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
     flex-direction: column;
     gap: var(--dsa-contact__body--gap);
+    flex-basis: var(--dsa-contact__body--flex-basis);
+  }
+
+  &__copy {
+    font: var(--dsa-contact__copy--font);
+    color: var(--dsa-contact__copy--color);
+  }
+
+  &__image-wrap {
+    flex: none;
+    flex-basis: var(--dsa-contact__image--flex-basis);
+    height: 100%;
+    width: 100%;
+
+    .dsa-contact--image-full-width & {
+      flex-grow: 1;
+    }
+
+    .dsa-contact--image-square & {
+      aspect-ratio: 1/1;
+    }
+
+    .dsa-contact--image-wide & {
+      aspect-ratio: 4/3;
+    }
+
+    .dsa-contact--image-vertical & {
+      aspect-ratio: 3/4;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: var(--dsa-contact__image--border-radius);
   }
 
   &__header {
@@ -35,24 +74,30 @@
     font-weight: var(--dsa-contact__subtitle--font-weight);
   }
 
-  &__image {
-    text-align: center;
-  }
-
   &__links {
     display: flex;
     flex-direction: column;
     gap: var(--dsa-contact__links--gap);
-    font: var(--dsa-contact__links--font);
+
     list-style: none;
     padding: 0;
     margin: 0;
+  }
+
+  a.dsa-contact__link {
+    color: var(--dsa-contact__link--color);
+    font: var(--dsa-contact__link--font);
+    font-weight: var(--dsa-contact__link--font-weight);
 
     .icon {
-      width: var(--dsa-contact__links__icon--size);
-      height: var(--dsa-contact__links__icon--size);
-      color: var(--dsa-contact__links__icon--color);
-      margin-right: var(--dsa-contact__links__icon--margin-right);
+      width: var(--dsa-contact__link__icon--size);
+      height: var(--dsa-contact__link__icon--size);
+      color: var(--dsa-contact__link__icon--color);
+      margin-right: var(--dsa-contact__link__icon--margin-right);
+    }
+
+    &:hover {
+      color: var(--dsa-contact__link--color_hover);
     }
   }
 

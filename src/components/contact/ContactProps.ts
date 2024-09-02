@@ -14,6 +14,14 @@ export type ImageSource = string;
  */
 export type AltText = string;
 /**
+ * Image uses all the horizontal space vailable
+ */
+export type FullWidth = boolean;
+/**
+ * Aspect Ratio of the Images
+ */
+export type AspectRatio = "wide" | "square" | "vertical";
+/**
  * Name, company name, etc.
  */
 export type Title = string;
@@ -42,6 +50,8 @@ export interface ContactProps {
   image?: {
     src?: ImageSource;
     alt?: AltText;
+    fullWidth?: FullWidth;
+    aspectRatio?: AspectRatio;
   };
   title?: Title;
   subtitle?: Subtitle;

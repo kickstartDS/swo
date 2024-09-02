@@ -20,6 +20,19 @@
           "title": "Alt Text",
           "description": "Alt text of the image",
           "examples": ["Picture of Jane Smith"]
+        },
+        "fullWidth": {
+          "type": "boolean",
+          "title": "Full Width",
+          "description": "Image uses all the horizontal space vailable",
+          "default": false
+        },
+        "aspectRatio": {
+          "type": "string",
+          "title": "aspectRatio",
+          "description": "Aspect Ratio of the Images",
+          "enum": ["wide", "square", "vertical"],
+          "default": "square"
         }
       }
     },
