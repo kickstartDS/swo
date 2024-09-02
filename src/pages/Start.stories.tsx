@@ -10,85 +10,10 @@ import { Testimonials } from "../components/testimonials/TestimonialsComponent";
 import { Cta } from "../components/cta/CtaComponent";
 import { ImageStory } from "../components/image-story/ImageStoryComponent";
 import { Image } from "../components/image/ImageComponent";
-import { Contact } from "../components/contact/ContactComponent";
 
 const Page = () => (
   <>
-    <Header {...headerProps} dropdownInverted flyoutInverted />
-    <Section
-      width="narrow"
-      content={{
-        mode: "list",
-      }}
-    >
-      <Contact
-        title="Jane Valeria Isabelle Smith"
-        subtitle="CEO at Company"
-        image={{
-          src: "img/people/author-emily.png",
-          aspectRatio: "square",
-        }}
-        copy="Daniel Ley ist UX-Stratege und Geschäftsführer bei ruhmesmeile. Mehr als 20 Jahre Erfahrung Erfahrung rund um UX und Design!"
-        links={[
-          {
-            icon: "twitter",
-            href: "#",
-            label: "@jane_smith",
-          },
-          {
-            href: "mailto:mail@example.com",
-            icon: "email",
-            label: "jane.smith@example.com",
-            newTab: false,
-          },
-        ]}
-      />
-
-      <Contact
-        title="Daniel Ley"
-        subtitle="UX-Stratege und Geschäftsführer"
-        image={{
-          src: "https://ruhmesmeile.com/fileadmin/_processed_/d/d/csm_rm-Daniel-Ley-quer__c6d32d8113.jpg",
-          aspectRatio: "vertical",
-        }}
-        copy="Daniel Ley ist UX-Stratege und Geschäftsführer bei ruhmesmeile. Mehr als 20 Jahre Erfahrung Erfahrung rund um UX und Design!"
-        links={[
-          {
-            icon: "twitter",
-            href: "#",
-            label: "@jane_smith",
-          },
-          {
-            href: "mailto:mail@example.com",
-            icon: "email",
-            label: "jane.smith@example.com",
-            newTab: false,
-          },
-        ]}
-      />
-      <Contact
-        title="Daniel Ley"
-        subtitle="UX-Stratege und Geschäftsführer"
-        image={{
-          src: "https://ruhmesmeile.com/fileadmin/_processed_/d/d/csm_rm-Daniel-Ley-quer__c6d32d8113.jpg",
-          aspectRatio: "wide",
-        }}
-        copy="Daniel Ley ist UX-Stratege und Geschäftsführer bei ruhmesmeile. Mehr als 20 Jahre Erfahrung Erfahrung rund um UX und Design!"
-        links={[
-          {
-            icon: "twitter",
-            href: "#",
-            label: "@jane_smith",
-          },
-          {
-            href: "mailto:mail@example.com",
-            icon: "email",
-            label: "jane.smith@example.com",
-            newTab: false,
-          },
-        ]}
-      />
-    </Section>
+    <Header {...headerProps} dropdownInverted floating flyoutInverted />
 
     <Section spaceBefore="none" spaceAfter="none" width="full">
       <VideoCurtain
