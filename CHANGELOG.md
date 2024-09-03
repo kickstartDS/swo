@@ -1,3 +1,15 @@
+# v1.5.1 (Tue Sep 03 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feature: extract blog author to its own component ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.5.0 (Tue Sep 03 2024)
 
 #### 🚀 Enhancement
