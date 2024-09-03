@@ -1,13 +1,17 @@
 import classnames from "classnames";
 import { forwardRef, createContext, useContext } from "react";
-import { PostAside } from "@kickstartds/blog/lib/post-aside";
+import { PostMeta } from "@kickstartds/blog/lib/post-meta";
+import { PostShareBar } from "@kickstartds/blog/lib/post-share-bar";
+import { Container } from "@kickstartds/core/lib/container";
 import { BlogAsideProps } from "./BlogAsideProps";
 import "./blog-aside.scss";
+import { Contact } from "../contact/ContactComponent";
+import { Headline } from "../headline/HeadlineComponent";
 
 export const BlogAsideContextDefault = forwardRef<
   HTMLDivElement,
   BlogAsideProps
->(({ author, socialSharing, readingTime, date, className, ...rest }, ref) => {
+>(({ author, socialSharing, readingTime, date, className }) => {
   const socialLinks = socialSharing?.map((link) => {
     return {
       icon: link.icon,
@@ -29,46 +33,37 @@ export const BlogAsideContextDefault = forwardRef<
       text: readingTime,
     });
 
-  const authorLinks = [];
-
-  if (author?.twitter)
-    authorLinks.push({
-      href: `https://twitter.com/${author.twitter}`,
-      icon: "twitter",
-      newTab: true,
-      label: `@${author.twitter}`,
-    });
-
-  if (author?.email)
-    authorLinks.push({
-      href: `mailto:${author.email}`,
-      icon: "email",
-      newTab: false,
-      label: author.email,
-    });
-
   return (
-    <PostAside
-      {...rest}
-      className={classnames(className, "dsa-blog-aside")}
-      author={{
-        title: author?.name,
-        image: author?.image && { src: author.image },
-        copy: author?.byline,
-        links: authorLinks,
-      }}
-      shareBar={{
-        headline: {
-          text: "Share this post",
-          level: "h3",
-        },
-        links: socialLinks,
-      }}
-      meta={{
-        items: metaItems,
-      }}
-      ref={ref}
-    />
+    <Container name="blog-aside">
+      <div className={classnames(className, "dsa-blog-aside")}>
+        <Contact
+          className="dsa-blog-aside__author"
+          title={author?.name}
+          subtitle={author?.byline}
+          image={author?.image}
+          links={author?.links}
+        />
+        {metaItems && (
+          <>
+            <PostMeta className="dsa-blog-aside__meta" items={metaItems} />
+          </>
+        )}
+        {socialLinks && (
+          <div>
+            <Headline
+              text="Share this Article"
+              level="p"
+              style="p"
+              spaceAfter="minimum"
+            />
+            <PostShareBar
+              className="dsa-blog-aside__share-bar"
+              links={socialLinks}
+            />
+          </div>
+        )}
+      </div>
+    </Container>
   );
 });
 

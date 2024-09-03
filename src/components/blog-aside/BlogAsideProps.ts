@@ -14,17 +14,25 @@ export type Name = string;
  */
 export type Byline = string;
 /**
- * The image URL of the author
+ * URL of the image to display
  */
-export type Image = string;
+export type ImageSource = string;
 /**
- * The Twitter name of the author
+ * Alt text of the image
  */
-export type Twitter = string;
+export type AltText = string;
 /**
- * The Email of the author
+ * Image uses all the horizontal space vailable
  */
-export type Email = string;
+export type FullWidth = boolean;
+/**
+ * Aspect Ratio of the Images
+ */
+export type AspectRatio = "wide" | "square" | "vertical";
+/**
+ * Open link in new Tab
+ */
+export type OpenLinkInNewTab = boolean;
 /**
  * The icon name for the social link
  */
@@ -70,7 +78,16 @@ export interface BlogAsideProps {
 export interface Author {
   name: Name;
   byline?: Byline;
-  image?: Image;
-  twitter?: Twitter;
-  email?: Email;
+  image?: {
+    src?: ImageSource;
+    alt?: AltText;
+    fullWidth?: FullWidth;
+    aspectRatio?: AspectRatio;
+  };
+  links?: {
+    icon?: string;
+    label?: string;
+    href?: string;
+    newTab?: OpenLinkInNewTab;
+  }[];
 }
