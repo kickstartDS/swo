@@ -1,3 +1,15 @@
+# v1.5.2 (Tue Sep 03 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(blog-teaser): adjust token ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.5.1 (Tue Sep 03 2024)
 
 #### ⚠️ Pushed to `main`
