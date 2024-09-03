@@ -1,3 +1,15 @@
+# v1.4.13 (Mon Sep 02 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(teaser-card): fix syntax error ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.4.12 (Mon Sep 02 2024)
 
 #### ⚠️ Pushed to `main`
