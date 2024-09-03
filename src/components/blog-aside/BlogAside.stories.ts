@@ -33,9 +33,18 @@ export const Default: Story = {
       name: "Jane Smith",
       image: {
         src: "img/people/author-emily.png",
+        aspectRatio: "square",
       },
-      twitter: "jane_smith",
-      email: "jane.smith@example.com",
+      links: [
+        {
+          icon: "twitter",
+          label: "jane_smith",
+        },
+        {
+          icon: "email",
+          label: "jane.smith@example.com",
+        },
+      ],
     },
     socialSharing: [
       {

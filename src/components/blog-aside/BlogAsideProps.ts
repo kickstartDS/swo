@@ -22,13 +22,17 @@ export type ImageSource = string;
  */
 export type AltText = string;
 /**
- * The Twitter name of the author
+ * Image uses all the horizontal space vailable
  */
-export type Twitter = string;
+export type FullWidth = boolean;
 /**
- * The Email of the author
+ * Aspect Ratio of the Images
  */
-export type Email = string;
+export type AspectRatio = "wide" | "square" | "vertical";
+/**
+ * Open link in new Tab
+ */
+export type OpenLinkInNewTab = boolean;
 /**
  * The icon name for the social link
  */
@@ -77,7 +81,13 @@ export interface Author {
   image?: {
     src?: ImageSource;
     alt?: AltText;
+    fullWidth?: FullWidth;
+    aspectRatio?: AspectRatio;
   };
-  twitter?: Twitter;
-  email?: Email;
+  links?: {
+    icon?: string;
+    label?: string;
+    href?: string;
+    newTab?: OpenLinkInNewTab;
+  }[];
 }

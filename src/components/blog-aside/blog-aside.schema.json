@@ -23,35 +23,10 @@
           "examples": ["CEO at Company"]
         },
         "image": {
-          "type": "object",
-          "properties": {
-            "src": {
-              "type": "string",
-              "format": "image",
-              "title": "Image Source",
-              "description": "URL of the image to display",
-              "examples": ["img/people/author-emily.png"]
-            },
-            "alt": {
-              "type": "string",
-              "title": "Alt Text",
-              "description": "Alt text of the image",
-              "examples": ["Picture of Jane Smith"]
-            }
-          }
+          "$ref": "http://schema.mydesignsystem.com/contact.schema.json#/properties/image"
         },
-        "twitter": {
-          "title": "Twitter",
-          "description": "The Twitter name of the author",
-          "type": "string",
-          "examples": ["johndoe"]
-        },
-        "email": {
-          "title": "Email",
-          "description": "The Email of the author",
-          "type": "string",
-          "pattern": "^[A-Za-z0-9_!#$%&'*+/=?`{|}~^.-]+@[A-Za-z0-9.-]+$",
-          "examples": ["johndoe@example.com"]
+        "links": {
+          "$ref": "http://schema.mydesignsystem.com/contact.schema.json#/properties/links"
         }
       },
       "additionalProperties": false,

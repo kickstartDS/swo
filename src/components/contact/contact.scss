@@ -88,6 +88,7 @@
     color: var(--dsa-contact__link--color);
     font: var(--dsa-contact__link--font);
     font-weight: var(--dsa-contact__link--font-weight);
+    text-decoration: var(--dsa-contact__link--text-decoration);
 
     .icon {
       width: var(--dsa-contact__link__icon--size);
@@ -98,6 +99,7 @@
 
     &:hover {
       color: var(--dsa-contact__link--color_hover);
+      text-decoration: var(--dsa-contact__link--text-decoration_hover);
     }
   }
 

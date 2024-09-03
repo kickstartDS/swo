@@ -35,8 +35,9 @@
       flex-basis: var(--dsa-split__side--flex-basis, 210px);
       position: -webkit-sticky;
       position: sticky;
-      top: var(--dsa-split__side--top-margin, var(--ks-spacing-stack-l));
+      top: var(--dsa-split__side--top-offset, var(--ks-spacing-stack-l));
       height: fit-content;
+      margin-top: var(--dsa-split__side-top-margin, var(--ks-spacing-stack-l));
     }
   }
 
@@ -51,6 +52,7 @@
       position: sticky;
       top: var(--dsa-split__side--top-margin, var(--ks-spacing-stack-l));
       height: fit-content;
+      margin-top: var(--dsa-split__side-top-margin, var(--ks-spacing-stack-l));
     }
   }
 }
