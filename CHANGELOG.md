@@ -1,3 +1,15 @@
+# v1.4.15 (Tue Sep 03 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(Start): remove br tags from template ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.4.14 (Tue Sep 03 2024)
 
 #### ⚠️ Pushed to `main`
