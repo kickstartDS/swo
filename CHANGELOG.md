@@ -1,3 +1,15 @@
+# v1.5.0 (Tue Sep 03 2024)
+
+#### 🚀 Enhancement
+
+- Add contact component [#15](https://github.com/kickstartDS/ds-agency-premium/pull/15) ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.4.16 (Tue Sep 03 2024)
 
 #### ⚠️ Pushed to `main`
