@@ -68,7 +68,7 @@ export const BlogTeaserContextDefault = forwardRef<
           title={headline}
           body={teaserText}
           categories={tags.map((tag) => {
-            return { label: tag };
+            return { label: tag.entry };
           })}
           ref={ref}
         />

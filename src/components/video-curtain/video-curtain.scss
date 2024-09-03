@@ -62,10 +62,7 @@
 .c-visual.dsa-video-curtain {
   .dsa-headline {
     .dsa-headline__headline {
-      color: var(
-        --dsa-video-curtain__headline--color,
-        var(--dsa-headline__headline--color, var(--ks-text-color-display))
-      );
+      color: var(--dsa-video-curtain__headline--color, var(--dsa-headline--color, var(--ks-text-color-display)));
     }
     .dsa-headline__subheadline {
       color: var(

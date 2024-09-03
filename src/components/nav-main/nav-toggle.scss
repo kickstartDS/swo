@@ -21,10 +21,6 @@ button.dsa-nav-toggle {
 
   --toggle__icon-bar--offset: 45%;
 
-  @media (min-width: 62em) {
-    display: none;
-  }
-
   .dsa-nav-toggle__label {
     @include bourbon.hide-visually;
   }

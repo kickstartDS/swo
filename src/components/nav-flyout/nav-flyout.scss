@@ -3,10 +3,7 @@
 @use "./nav-flyout-tokens";
 
 .dsa-nav-flyout {
-  @media (max-width: "62rem") {
-    display: flex;
-  }
-  display: none;
+  display: flex;
   font: var(--dsa-nav-flyout__label--font);
   flex-direction: column;
   gap: var(--dsa-nav-flyout--gap);

@@ -1,3 +1,130 @@
+# v1.4.15 (Tue Sep 03 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(Start): remove br tags from template ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.4.14 (Tue Sep 03 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branches 'main' and 'main' of github.com:kickstartDS/ds-agency-premium ([@fleven-kds](https://github.com/fleven-kds))
+- feat(section-token): fix token mapping ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.4.13 (Mon Sep 02 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(teaser-card): fix syntax error ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.4.12 (Mon Sep 02 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feature: add page component ([@julrich](https://github.com/julrich))
+- fix: make head in blog post required ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v1.4.11 (Mon Sep 02 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(blogStories): update story to new tag entry schema ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.4.10 (Thu Aug 29 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(nav-main): add toggle to nav-main breakpoint toggle ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.4.9 (Thu Aug 29 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branches 'main' and 'main' of github.com:kickstartDS/ds-agency-premium ([@fleven-kds](https://github.com/fleven-kds))
+- feat(topbar): increase selector for right aligned dropdown ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.4.8 (Thu Aug 29 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@fleven-kds](https://github.com/fleven-kds))
+- feat(nav-main): move breakpoint for display of nav components to nav-main ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.4.7 (Tue Aug 27 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(nav-topbar): adjust selector ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.4.5 (Mon Aug 26 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: blog tag schema ([@julrich](https://github.com/julrich))
+- feat(hero): correct typo ([@fleven-kds](https://github.com/fleven-kds))
+- feat(cta): up token selector specifity to enable overwriting ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 2
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.4.4 (Fri Aug 23 2024)
 
 #### ⚠️ Pushed to `main`
