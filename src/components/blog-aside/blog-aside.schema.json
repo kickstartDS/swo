@@ -6,31 +6,7 @@
   "type": "object",
   "properties": {
     "author": {
-      "type": "object",
-      "title": "Author",
-      "description": "The author of the blog post",
-      "properties": {
-        "name": {
-          "title": "Name",
-          "description": "The name of the author",
-          "type": "string",
-          "examples": ["John Doe"]
-        },
-        "byline": {
-          "title": "Byline",
-          "description": "The byline of the author",
-          "type": "string",
-          "examples": ["CEO at Company"]
-        },
-        "image": {
-          "$ref": "http://schema.mydesignsystem.com/contact.schema.json#/properties/image"
-        },
-        "links": {
-          "$ref": "http://schema.mydesignsystem.com/contact.schema.json#/properties/links"
-        }
-      },
-      "additionalProperties": false,
-      "required": ["name"]
+      "$ref": "http://schema.mydesignsystem.com/blog-author.schema.json"
     },
     "socialSharing": {
       "type": "array",

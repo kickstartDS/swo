@@ -5,7 +5,7 @@ import { PostShareBar } from "@kickstartds/blog/lib/post-share-bar";
 import { Container } from "@kickstartds/core/lib/container";
 import { BlogAsideProps } from "./BlogAsideProps";
 import "./blog-aside.scss";
-import { Contact } from "../contact/ContactComponent";
+import { BlogAuthor } from "../blog-author/BlogAuthorComponent";
 import { Headline } from "../headline/HeadlineComponent";
 
 export const BlogAsideContextDefault = forwardRef<
@@ -36,13 +36,7 @@ export const BlogAsideContextDefault = forwardRef<
   return (
     <Container name="blog-aside">
       <div className={classnames(className, "dsa-blog-aside")}>
-        <Contact
-          className="dsa-blog-aside__author"
-          title={author?.name}
-          subtitle={author?.byline}
-          image={author?.image}
-          links={author?.links}
-        />
+        <BlogAuthor {...author} />
         {metaItems && (
           <>
             <PostMeta className="dsa-blog-aside__meta" items={metaItems} />
