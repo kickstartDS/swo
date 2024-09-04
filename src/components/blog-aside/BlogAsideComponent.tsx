@@ -1,5 +1,5 @@
 import classnames from "classnames";
-import { forwardRef, createContext, useContext } from "react";
+import { forwardRef, createContext, useContext, HTMLAttributes } from "react";
 import { PostMeta } from "@kickstartds/blog/lib/post-meta";
 import { PostShareBar } from "@kickstartds/blog/lib/post-share-bar";
 import { Container } from "@kickstartds/core/lib/container";
@@ -10,8 +10,8 @@ import { Headline } from "../headline/HeadlineComponent";
 
 export const BlogAsideContextDefault = forwardRef<
   HTMLDivElement,
-  BlogAsideProps
->(({ author, socialSharing, readingTime, date, className }) => {
+  BlogAsideProps & HTMLAttributes<HTMLDivElement>
+>(({ author, socialSharing, readingTime, date, className }, ref) => {
   const socialLinks = socialSharing?.map((link) => {
     return {
       icon: link.icon,
@@ -35,7 +35,7 @@ export const BlogAsideContextDefault = forwardRef<
 
   return (
     <Container name="blog-aside">
-      <div className={classnames(className, "dsa-blog-aside")}>
+      <div ref={ref} className={classnames(className, "dsa-blog-aside")}>
         <BlogAuthor {...author} />
         {metaItems && (
           <>
