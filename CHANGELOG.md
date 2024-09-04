@@ -1,3 +1,15 @@
+# v1.5.10 (Wed Sep 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add ref to blog aside ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.5.9 (Wed Sep 04 2024)
 
 #### ⚠️ Pushed to `main`
