@@ -1,3 +1,16 @@
+# v1.5.3 (Wed Sep 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@fleven-kds](https://github.com/fleven-kds))
+- feat(blog): refactor blog compnents ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.5.2 (Tue Sep 03 2024)
 
 #### ⚠️ Pushed to `main`
