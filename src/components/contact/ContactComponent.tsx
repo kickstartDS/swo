@@ -33,7 +33,11 @@ export const ContactContextDefault = forwardRef<
     >
       {image && image.src ? (
         <div className="dsa-contact__image-wrap">
-          <Picture {...image} className="dsa-contact__image" />
+          <Picture
+            src={image?.src}
+            alt={image?.alt}
+            className="dsa-contact__image"
+          />
         </div>
       ) : (
         ""
