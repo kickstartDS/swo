@@ -1,13 +1,14 @@
-import { forwardRef, createContext, useContext } from "react";
+import { forwardRef, createContext, useContext, HTMLAttributes } from "react";
 import { BlogAuthorProps } from "./BlogAuthorProps";
 import { Contact } from "../contact/ContactComponent";
 
 export const BlogAuthorContextDefault = forwardRef<
   HTMLDivElement,
-  BlogAuthorProps
->(({ name, byline, image, links }) => {
+  BlogAuthorProps & HTMLAttributes<HTMLDivElement>
+>(({ name, byline, image, links }, ref) => {
   return (
     <Contact
+      ref={ref}
       className="dsa-blog-aside__author"
       title={name}
       subtitle={byline}
