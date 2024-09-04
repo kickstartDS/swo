@@ -101,5 +101,23 @@ The future of AI is exciting and full of potential. However, it's important that
       ],
       copy: "Leads with a vision for innovative, user-centric web designs, ensuring each project merges creativity with functionality to deliver outstanding digital experiences.",
     },
+    cta: {
+      headline: "Ready to Transform Your Development Process?",
+      sub: "Start your journey today.",
+      buttons: [
+        {
+          label: "Contact Us",
+          target: "#",
+          icon: "person",
+        },
+        {
+          label: "Learn More",
+          target: "#",
+          icon: "date",
+        },
+      ],
+      textAlign: "center",
+      text: "Get started with our design system today and experience a new level of efficiency and consistency in your projects.",
+    },
   }),
 };
