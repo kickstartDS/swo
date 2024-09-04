@@ -1,3 +1,15 @@
+# v1.5.4 (Wed Sep 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add undefined guard to links in contact ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.5.3 (Wed Sep 04 2024)
 
 #### ⚠️ Pushed to `main`
