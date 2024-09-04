@@ -2,12 +2,13 @@ import { Section } from "../../section/SectionComponent";
 import { BlogTeaser } from "../../blog-teaser/BlogTeaserComponent";
 import { BlogOverviewProps } from "../BlogOverviewProps";
 import { FC, PropsWithChildren } from "react";
-import { Cta } from "../../cta/CtaComponent";
+import { Contact } from "../../contact/ContactComponent";
+import { Divider } from "@kickstartds/base/lib/divider";
 
 export const BlogOverview: FC<PropsWithChildren<BlogOverviewProps>> = ({
   latestTitle,
   latest,
-  cta,
+  contact,
   listTitle,
   list,
   children,
@@ -29,7 +30,9 @@ export const BlogOverview: FC<PropsWithChildren<BlogOverviewProps>> = ({
           ))}
         </Section>
       )}
-      <hr />
+      <Section spaceAfter="none" spaceBefore="none">
+        <Divider />
+      </Section>
       {more && more.length > 0 && (
         <Section headline={{ text: moreTitle }}>
           {more.map((article) => (
@@ -37,10 +40,16 @@ export const BlogOverview: FC<PropsWithChildren<BlogOverviewProps>> = ({
           ))}
         </Section>
       )}
-      {cta && (
-        <Section content={{ mode: "list" }}>
-          <Cta {...cta} />
-        </Section>
+
+      {contact && (
+        <>
+          <Section spaceAfter="none" spaceBefore="none">
+            <Divider />
+          </Section>
+          <Section content={{ mode: "list" }}>
+            <Contact {...contact} />
+          </Section>
+        </>
       )}
     </>
   );

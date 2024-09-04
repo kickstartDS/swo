@@ -2,6 +2,7 @@
 @use "./global-token";
 @use "./components/blog-teaser/blog-teaser";
 @use "./components/form/form";
+@use "./components/divider/divider";
 @use "./fonts-dsa";
 @use "./fonts-business";
 @use "./fonts-telekom";
@@ -27,6 +28,10 @@ body.sb-show-main.sb-main-padded {
 
 body {
   background: var(--ks-background-color-default);
+}
+
+hr.c-divider {
+  --c-divider--background: var(--ks-border-color-accent);
 }
 
 #{$selectors} {

@@ -31,7 +31,7 @@ export const WideImage: Story = {
     title: "Isabella Doe",
     subtitle: "Creative Director",
     image: {
-      src: "img/people/portrait-young-girl-smiling.jpg",
+      src: "img/people/contact-isabella.png",
       aspectRatio: "wide",
     },
     links: [
