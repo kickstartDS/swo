@@ -1,3 +1,17 @@
+# v1.5.7 (Wed Sep 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(contact): manually give props to picture component ([@fleven-kds](https://github.com/fleven-kds))
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@fleven-kds](https://github.com/fleven-kds))
+- feat(blog): replace contact element with cta ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.5.5 (Wed Sep 04 2024)
 
 #### ⚠️ Pushed to `main`
