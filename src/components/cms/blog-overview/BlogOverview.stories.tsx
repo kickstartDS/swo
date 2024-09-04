@@ -147,30 +147,36 @@ export const BlogOverview: Story = {
         },
       },
     ],
-    contact: {
-      image: {
-        src: "img/people/contact-john.png",
-        alt: "Picture of Jane Smith",
-        fullWidth: false,
-        aspectRatio: "vertical",
-      },
-      title: "John Smith",
-      subtitle: "Sales Representative",
-      links: [
+    cta: {
+      headline: "Get in touch",
+      sub: "Chat with us about getting your product or platform to market faster",
+      highlightText: false,
+      colorNeutral: false,
+      fullWidth: true,
+      buttons: [
         {
-          icon: "xing",
-          label: "john.smith",
-          href: "mailto:mail@example.com",
-          newTab: false,
+          label: "Contact us",
+          icon: "person",
+          target: "#",
         },
         {
-          icon: "twitter",
-          label: "@john_smith",
-          href: "#",
-          newTab: false,
+          label: "Book a meeting",
+          icon: "date",
+          target: "#",
         },
       ],
-      copy: "Leads with a vision for innovative, user-centric web designs, ensuring each project merges creativity with functionality to deliver outstanding digital experiences.",
+      image: {
+        padding: false,
+        src: "img/contact-person.png",
+      },
+      order: {
+        mobileImageLast: false,
+        desktopImageLast: false,
+      },
+      textAlign: "left",
+      contentAlign: "center",
+      text: "Our modular design approach allows for flexibility and scalability in your application's architecture.",
+      width: "wide",
     },
   }),
 };

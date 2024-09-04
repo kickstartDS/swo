@@ -2,13 +2,13 @@ import { Section } from "../../section/SectionComponent";
 import { BlogTeaser } from "../../blog-teaser/BlogTeaserComponent";
 import { BlogOverviewProps } from "../BlogOverviewProps";
 import { FC, PropsWithChildren } from "react";
-import { Contact } from "../../contact/ContactComponent";
+import { Cta } from "../../cta/CtaComponent";
 import { Divider } from "@kickstartds/base/lib/divider";
 
 export const BlogOverview: FC<PropsWithChildren<BlogOverviewProps>> = ({
   latestTitle,
   latest,
-  contact,
+  cta,
   listTitle,
   list,
   children,
@@ -41,15 +41,10 @@ export const BlogOverview: FC<PropsWithChildren<BlogOverviewProps>> = ({
         </Section>
       )}
 
-      {contact && (
-        <>
-          <Section spaceAfter="none" spaceBefore="none">
-            <Divider />
-          </Section>
-          <Section content={{ mode: "list" }}>
-            <Contact {...contact} />
-          </Section>
-        </>
+      {cta && (
+        <Section width="wide">
+          <Cta {...cta} />
+        </Section>
       )}
     </>
   );

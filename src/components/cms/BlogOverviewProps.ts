@@ -7,7 +7,7 @@
 
 import type {SectionProps} from "../section/SectionProps";
 import type {BlogTeaserProps} from "../blog-teaser/BlogTeaserProps";
-import type {ContactProps} from "../contact/ContactProps";
+import type {CtaProps} from "../cta/CtaProps";
 import type {SeoProps} from "../seo/SeoProps";
 
 /**
@@ -50,9 +50,9 @@ export interface BlogOverviewProps {
   moreTitle?: MoreTitle;
   more?: Posts1;
   /**
-   * Referenced component ContactProps
+   * Referenced component CtaProps
    */
-  contact?: ContactProps;
+  cta?: CtaProps;
   /**
    * Referenced component SeoProps
    */

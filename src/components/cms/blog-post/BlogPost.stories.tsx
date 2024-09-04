@@ -76,23 +76,30 @@ The future of AI is exciting and full of potential. However, it's important that
       readingTime: "5 min read",
       date: "12/30/2022",
     },
-    cta: {
-      headline: "Ready to Transform Your Development Process?",
-      sub: "Start your journey today.",
-      text: "Get started with our design system today and experience a new level of efficiency and consistency in your projects.",
-      textAlign: "center",
-      buttons: [
+    contact: {
+      image: {
+        src: "img/people/contact-john.png",
+        alt: "Picture of Jane Smith",
+        fullWidth: false,
+        aspectRatio: "vertical",
+      },
+      title: "John Smith",
+      subtitle: "Sales Representative",
+      links: [
         {
-          label: "Contact Us",
-          target: "#",
-          icon: "person",
+          icon: "xing",
+          label: "john.smith",
+          href: "mailto:mail@example.com",
+          newTab: false,
         },
         {
-          label: "Learn More",
-          target: "#",
-          icon: "date",
+          icon: "twitter",
+          label: "@john_smith",
+          href: "#",
+          newTab: false,
         },
       ],
+      copy: "Leads with a vision for innovative, user-centric web designs, ensuring each project merges creativity with functionality to deliver outstanding digital experiences.",
     },
   }),
 };

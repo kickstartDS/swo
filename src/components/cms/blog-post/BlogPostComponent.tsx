@@ -3,15 +3,16 @@ import { BlogHead } from "../../blog-head/BlogHeadComponent";
 import { Section } from "../../section/SectionComponent";
 import { BlogAside } from "../../blog-aside/BlogAsideComponent";
 import { Text } from "../../text/TextComponent";
-import { Cta } from "../../cta/CtaComponent";
+import { Contact } from "../../contact/ContactComponent";
 import { BlogPostProps } from "../BlogPostProps";
 import { FC, PropsWithChildren } from "react";
+import { Divider } from "@kickstartds/base/lib/divider";
 
 export const BlogPost: FC<PropsWithChildren<BlogPostProps>> = ({
   head,
   content,
   aside,
-  cta,
+  contact,
   children,
 }) => (
   <>
@@ -24,10 +25,15 @@ export const BlogPost: FC<PropsWithChildren<BlogPostProps>> = ({
         <BlogAside {...aside} />
       </Split>
     </Section>
-    {cta && (
-      <Section content={{ mode: "list" }}>
-        <Cta {...cta} />
-      </Section>
+    {contact && (
+      <>
+        <Section spaceAfter="none" spaceBefore="none">
+          <Divider />
+        </Section>
+        <Section content={{ mode: "list" }}>
+          <Contact {...contact} />
+        </Section>
+      </>
     )}
   </>
 );

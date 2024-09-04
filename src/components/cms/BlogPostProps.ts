@@ -8,7 +8,7 @@
 import type {BlogHeadProps} from "../blog-head/BlogHeadProps";
 import type {BlogAsideProps} from "../blog-aside/BlogAsideProps";
 import type {SectionProps} from "../section/SectionProps";
-import type {CtaProps} from "../cta/CtaProps";
+import type {ContactProps} from "../contact/ContactProps";
 import type {SeoProps} from "../seo/SeoProps";
 
 /**
@@ -35,9 +35,9 @@ export interface BlogPostProps {
   content?: Text;
   section?: BlogSections;
   /**
-   * Referenced component CtaProps
+   * Referenced component ContactProps
    */
-  cta?: CtaProps;
+  contact?: ContactProps;
   /**
    * Referenced component SeoProps
    */

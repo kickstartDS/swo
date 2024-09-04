@@ -26,8 +26,8 @@
         "$ref": "http://schema.mydesignsystem.com/section.schema.json"
       }
     },
-    "cta": {
-      "$ref": "http://schema.mydesignsystem.com/cta.schema.json"
+    "contact": {
+      "$ref": "http://schema.mydesignsystem.com/contact.schema.json"
     },
     "seo": {
       "$ref": "http://schema.mydesignsystem.com/cms/seo.schema.json"
