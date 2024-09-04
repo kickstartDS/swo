@@ -1,3 +1,16 @@
+# v1.5.11 (Wed Sep 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@julrich](https://github.com/julrich))
+- fix: pass through rest props in new blog components ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.5.10 (Wed Sep 04 2024)
 
 #### ⚠️ Pushed to `main`
