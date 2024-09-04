@@ -5,10 +5,11 @@ import { Contact } from "../contact/ContactComponent";
 export const BlogAuthorContextDefault = forwardRef<
   HTMLDivElement,
   BlogAuthorProps & HTMLAttributes<HTMLDivElement>
->(({ name, byline, image, links }, ref) => {
+>(({ name, byline, image, links, ...props }, ref) => {
   return (
     <Contact
       ref={ref}
+      {...props}
       className="dsa-blog-aside__author"
       title={name}
       subtitle={byline}

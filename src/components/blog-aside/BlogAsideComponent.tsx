@@ -11,7 +11,7 @@ import { Headline } from "../headline/HeadlineComponent";
 export const BlogAsideContextDefault = forwardRef<
   HTMLDivElement,
   BlogAsideProps & HTMLAttributes<HTMLDivElement>
->(({ author, socialSharing, readingTime, date, className }, ref) => {
+>(({ author, socialSharing, readingTime, date, className, ...props }, ref) => {
   const socialLinks = socialSharing?.map((link) => {
     return {
       icon: link.icon,
@@ -35,7 +35,11 @@ export const BlogAsideContextDefault = forwardRef<
 
   return (
     <Container name="blog-aside">
-      <div ref={ref} className={classnames(className, "dsa-blog-aside")}>
+      <div
+        ref={ref}
+        className={classnames(className, "dsa-blog-aside")}
+        {...props}
+      >
         <BlogAuthor {...author} />
         {metaItems && (
           <>
