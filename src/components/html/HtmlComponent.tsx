@@ -1,17 +1,25 @@
-import { ForwardRefRenderFunction, HTMLAttributes } from 'react';
-import classNames from 'classnames';
-import type { HTMLProps } from './typing';
+import { createContext, forwardRef, HTMLAttributes, useContext } from "react";
+import classNames from "classnames";
+import { HTMLProps } from "./HtmlProps";
 
-export { HTMLProps };
-export const HtmlComponent: ForwardRefRenderFunction<
+export const HtmlContextDefault = forwardRef<
   HTMLDivElement,
   HTMLProps & HTMLAttributes<HTMLDivElement>
-> = ({ html, className, component, ...props }, ref) => (
-  <div
-    className={classNames('c-html', className)}
-    dangerouslySetInnerHTML={{ __html: html }}
-    ks-component={component}
-    ref={ref}
-    {...props}
-  />
-);
+>(({ html, className, component, ...props }, ref) => {
+  return (
+    <div
+      ref={ref}
+      className={classNames("c-html", className)}
+      dangerouslySetInnerHTML={{ __html: html }}
+      ks-component={component}
+      {...props}
+    />
+  );
+});
+
+export const HtmlContext = createContext(HtmlContextDefault);
+export const Html = forwardRef<HTMLDivElement, HTMLProps>((props, ref) => {
+  const Component = useContext(HtmlContext);
+  return <Component {...props} ref={ref} />;
+});
+Html.displayName = "Html";

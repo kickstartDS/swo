@@ -1,16 +1,23 @@
-import { HTMLAttributes, FC, PropsWithChildren, forwardRef } from "react";
+import {
+  HTMLAttributes,
+  FC,
+  PropsWithChildren,
+  forwardRef,
+  createContext,
+  useContext,
+} from "react";
 import classnames from "classnames";
 import { ContactProps } from "./ContactProps";
 import "./contact.scss";
 import { Picture } from "@kickstartds/base/lib/picture";
-import { ContactContext } from "@kickstartds/base/lib/contact";
+import { ContactContext as KdsContactContext } from "@kickstartds/base/lib/contact";
 import { Link } from "@kickstartds/base/lib/link";
 import { Icon } from "@kickstartds/base/lib/icon";
 import { RichText } from "@kickstartds/base/lib/rich-text";
 import { Container } from "@kickstartds/core/lib/container";
 
-export const Contact = forwardRef<
-  HTMLAnchorElement,
+export const ContactContextDefault = forwardRef<
+  HTMLElement,
   ContactProps & HTMLAttributes<HTMLElement>
 >(({ title, subtitle, image, links, copy, className, ...props }, ref) => (
   <Container name="contact">
@@ -62,8 +69,16 @@ export const Contact = forwardRef<
     </address>
   </Container>
 ));
+
+export const ContactContext = createContext(ContactContextDefault);
+export const Contact = forwardRef<HTMLDivElement, ContactProps>(
+  (props, ref) => {
+    const Component = useContext(ContactContext);
+    return <Component {...props} ref={ref} />;
+  }
+);
 Contact.displayName = "Contact";
 
 export const ContactProvider: FC<PropsWithChildren> = (props) => (
-  <ContactContext.Provider {...props} value={Contact} />
+  <KdsContactContext.Provider {...props} value={Contact} />
 );
