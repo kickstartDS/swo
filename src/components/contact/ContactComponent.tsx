@@ -40,7 +40,7 @@ export const Contact = forwardRef<
         )}
         {copy && <RichText text={copy} className="dsa-contact__copy" />}
 
-        {links.length ? (
+        {links && links.length ? (
           <ul className="dsa-contact__links">
             {links.map(({ icon, href, label, newTab }, i) => (
               <li key={i}>
