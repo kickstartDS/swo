@@ -1,7 +1,6 @@
 import classnames from "classnames";
 import { NavFlyoutProps } from "./NavFlyoutProps";
 import { Link } from "@kickstartds/base/lib/link";
-import { Icon } from "@kickstartds/base/lib/icon";
 import { Logo } from "../logo/LogoComponent";
 import "./nav-flyout.scss";
 import { createContext, forwardRef, HTMLAttributes, useContext } from "react";
@@ -33,14 +32,6 @@ export const NavFlyoutContextDefault = forwardRef<
               {subItems?.length ? (
                 <span tabIndex={0} className="dsa-nav-flyout__label">
                   {label}
-                  {subItems?.length ? (
-                    <Icon
-                      className="dsa-nav-flyout__label__icon"
-                      icon="chevron-down"
-                    />
-                  ) : (
-                    ""
-                  )}
                 </span>
               ) : (
                 <Link
