@@ -1,3 +1,15 @@
+# v1.5.14 (Thu Sep 05 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: update component previews ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.5.12 (Thu Sep 05 2024)
 
 #### ⚠️ Pushed to `main`
