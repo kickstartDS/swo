@@ -1,3 +1,30 @@
+# v1.5.14 (Thu Sep 05 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: update component previews ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v1.5.12 (Thu Sep 05 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(section-token): replace section token with global content spacing ([@fleven-kds](https://github.com/fleven-kds))
+- feat(flyout): remove chevron icon from sublist items ([@fleven-kds](https://github.com/fleven-kds))
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@fleven-kds](https://github.com/fleven-kds))
+- feat(nav-flyout): make active state selector more specific ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.5.11 (Wed Sep 04 2024)
 
 #### ⚠️ Pushed to `main`
