@@ -2,7 +2,7 @@
 
 .dsa-cta.c-storytelling {
   --c-storytelling--padding-ratio: 2;
-  --c-storytelling--horizontal-padding: var(--l-section--content-padding);
+  --c-storytelling--horizontal-padding: var(--dsa-content--spacing);
 
   &.dsa-cta--color-neutral {
     --dsa-cta__copy--color: var(--dsa-cta_color-neutral__copy--color, var(--ks-text-color-default));
@@ -42,7 +42,7 @@
   .c-storytelling__box {
     width: 100%;
     padding: var(--dsa-cta--vertical-padding, var(--l-section--space-default))
-      var(--dsa-cta--horizontal-padding, var(--l-section--content-padding));
+      var(--dsa-cta--horizontal-padding, var(--dsa-content--spacing));
 
     @container storytelling (max-width: 640px) {
       padding-top: calc(
@@ -56,7 +56,7 @@
 
     &:only-child {
       padding: var(--dsa-cta--vertical-padding, var(--l-section--space-default))
-        var(--dsa-cta--horizontal-padding, var(--l-section--content-padding));
+        var(--dsa-cta--horizontal-padding, var(--dsa-content--spacing));
     }
 
     &__content {
@@ -83,7 +83,7 @@
     }
 
     &:only-child {
-      --dsa-cta--horizontal-padding: var(--l-section--content-padding);
+      --dsa-cta--horizontal-padding: var(--dsa-content--spacing);
     }
   }
 
@@ -95,20 +95,20 @@
     &.c-storytelling--order-desktop-image-last {
       .c-storytelling__image {
         padding-left: calc(
-          var(--dsa-cta--horizontal-padding, var(--l-section--content-padding)) / var(--c-storytelling--padding-ratio)
+          var(--dsa-cta--horizontal-padding, var(--dsa-content--spacing)) / var(--c-storytelling--padding-ratio)
         );
       }
 
       .c-storytelling__box {
         padding-right: calc(
-          var(--dsa-cta--horizontal-padding, var(--l-section--content-padding)) / var(--c-storytelling--padding-ratio)
+          var(--dsa-cta--horizontal-padding, var(--dsa-content--spacing)) / var(--c-storytelling--padding-ratio)
         );
       }
     }
 
     .c-storytelling__box {
       padding-left: calc(
-        var(--dsa-cta--horizontal-padding, var(--l-section--content-padding)) / var(--c-storytelling--padding-ratio)
+        var(--dsa-cta--horizontal-padding, var(--dsa-content--spacing)) / var(--c-storytelling--padding-ratio)
       );
 
       &__content {
@@ -124,15 +124,15 @@
       width: 100%;
       max-width: calc(
         var(--l-section--content-width-default) -
-          calc(var(--l-section--content-padding) * var(--c-storytelling--padding-ratio))
+          calc(var(--dsa-content--spacing) * var(--c-storytelling--padding-ratio))
       );
     }
 
     > .c-storytelling__image {
       padding: var(--dsa-cta--vertical-padding, var(--l-section--space-default))
-        var(--dsa-cta--horizontal-padding, var(--l-section--content-padding));
+        var(--dsa-cta--horizontal-padding, var(--dsa-content--spacing));
       padding-right: calc(
-        var(--dsa-cta--horizontal-padding, var(--l-section--content-padding)) / var(--c-storytelling--padding-ratio)
+        var(--dsa-cta--horizontal-padding, var(--dsa-content--spacing)) / var(--c-storytelling--padding-ratio)
       );
     }
 
@@ -160,9 +160,7 @@
 .dsa-header--floating + .l-section .l-container--storytelling:first-child {
   @media (min-width: 640px) {
     .c-storytelling.dsa-cta {
-      padding-top: calc(
-        var(--dsa-header--height) + var(--dsa-cta--horizontal-padding, var(--l-section--content-padding))
-      );
+      padding-top: calc(var(--dsa-header--height) + var(--dsa-cta--horizontal-padding, var(--dsa-content--spacing)));
       z-index: 1;
     }
   }

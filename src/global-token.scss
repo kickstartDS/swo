@@ -19,10 +19,10 @@
 
   --dsa-gradient--higlight: linear-gradient(135deg, var(--ks-color-primary) 0%, var(--ks-color-secondary) 100%);
 
-  --dsa-section__content--padding: var(--ks-spacing-inset-l);
+  --dsa-content--spacing: var(--ks-spacing-inset-l);
 
   @media (min-width: 48em) {
-    --dsa-section__content--padding: var(--ks-spacing-inset-xl);
+    --dsa-content--spacing: var(--ks-spacing-inset-xl);
   }
 
   --dsa-section__content_wide--width: 1440px;
