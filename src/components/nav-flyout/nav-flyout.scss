@@ -57,7 +57,7 @@
     outline: 0;
 
     &--active.dsa-nav-flyout__item {
-      .dsa-nav-flyout__label {
+      > .dsa-nav-flyout__label {
         font-weight: var(--dsa-nav-flyout__label--font-weight_active);
         color: var(--dsa-nav-flyout__label--color_active);
       }
