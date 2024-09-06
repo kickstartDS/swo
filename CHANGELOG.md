@@ -1,3 +1,15 @@
+# v1.5.17 (Fri Sep 06 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(button-token): add missing token, remove superflous ones ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.5.16 (Thu Sep 05 2024)
 
 #### ⚠️ Pushed to `main`
