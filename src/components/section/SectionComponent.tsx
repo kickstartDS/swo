@@ -54,7 +54,8 @@ export const SectionContextDefault = forwardRef<
         {...componentProps}
         className={classnames(
           "dsa-section",
-          style !== "default" &&
+          style &&
+            style !== "default" &&
             `dsa-section-style--${
               style === "verticalGradient"
                 ? "vertical-gradient"
