@@ -1,3 +1,15 @@
+# v1.5.18 (Fri Sep 06 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(section): make style class conditional ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.5.17 (Fri Sep 06 2024)
 
 #### ⚠️ Pushed to `main`
