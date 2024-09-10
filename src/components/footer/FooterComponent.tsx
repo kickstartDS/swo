@@ -7,7 +7,7 @@ import { createContext, forwardRef, HTMLAttributes, useContext } from "react";
 
 export const FooterContextDefault = forwardRef<
   HTMLDivElement,
-  FooterProps & HTMLAttributes<HTMLElement>
+  FooterProps & HTMLAttributes<HTMLDivElement>
 >(({ byline, navItems, inverted, logo }, ref) =>
   navItems && navItems.length > 0 ? (
     <div
@@ -39,7 +39,7 @@ export const FooterContextDefault = forwardRef<
 export const FooterContext = createContext(FooterContextDefault);
 export const Footer = forwardRef<
   HTMLDivElement,
-  FooterProps & HTMLAttributes<HTMLElement>
+  FooterProps & HTMLAttributes<HTMLDivElement>
 >((props, ref) => {
   const Component = useContext(FooterContext);
   return <Component {...props} ref={ref} />;
