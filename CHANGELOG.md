@@ -1,3 +1,15 @@
+# v1.5.26 (Tue Sep 10 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: html attributes for HTML component ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.5.25 (Tue Sep 10 2024)
 
 #### ⚠️ Pushed to `main`
