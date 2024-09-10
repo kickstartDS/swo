@@ -1,3 +1,15 @@
+# v1.5.20 (Mon Sep 09 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(contact): center links vertically ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.5.19 (Fri Sep 06 2024)
 
 #### ⚠️ Pushed to `main`
