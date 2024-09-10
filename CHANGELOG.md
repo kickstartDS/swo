@@ -1,3 +1,15 @@
+# v1.5.24 (Tue Sep 10 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(Footer): fix HTMLDivElement declaration ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.5.23 (Tue Sep 10 2024)
 
 #### ⚠️ Pushed to `main`
