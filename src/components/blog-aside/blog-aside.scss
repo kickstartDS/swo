@@ -8,8 +8,8 @@
   gap: var(--dsa-blog-aside--gap);
 
   .dsa-contact {
-    --dsa-contact--gap-vertical: var(--dsa-blog-asde__author--gap-vertical, var(--ks-spacing-stack-xs));
-    --dsa-contact--gap-horizontal: var(--dsa-blog-asde__author--gap-horizontal, var(--ks-spacing-inline-xs));
+    --dsa-contact--gap-vertical: var(--dsa-blog-aside__author--gap-vertical, var(--ks-spacing-stack-xs));
+    --dsa-contact--gap-horizontal: var(--dsa-blog-aside__author--gap-horizontal, var(--ks-spacing-inline-xs));
     --dsa-contact__image--flex-basis: var(--dsa-blog-aside__author__image--flex-basis, 200px);
     --dsa-contact__body--flex-basis: var(--dsa-blog-aside__author__body--flex-basis, 300px);
     --dsa-contact__title--font: var(--dsa-blog-aside__author__title--font, var(--ks-font-copy-m));
