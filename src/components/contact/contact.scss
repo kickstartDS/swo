@@ -85,6 +85,8 @@
   }
 
   a.dsa-contact__link {
+    display: flex;
+    align-items: center;
     color: var(--dsa-contact__link--color);
     font: var(--dsa-contact__link--font);
     font-weight: var(--dsa-contact__link--font-weight);

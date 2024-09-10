@@ -1,3 +1,76 @@
+# v1.5.25 (Tue Sep 10 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(footer): fix token typos ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.5.24 (Tue Sep 10 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(Footer): fix HTMLDivElement declaration ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.5.23 (Tue Sep 10 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(footer): add footerContext ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.5.22 (Tue Sep 10 2024)
+
+#### 🐛 Bug Fix
+
+- Feature/add divider [#16](https://github.com/kickstartDS/ds-agency-premium/pull/16) ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.5.21 (Tue Sep 10 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@fleven-kds](https://github.com/fleven-kds))
+- feat(blogAside): fix token typo ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.5.20 (Mon Sep 09 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(contact): center links vertically ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.5.19 (Fri Sep 06 2024)
 
 #### ⚠️ Pushed to `main`
