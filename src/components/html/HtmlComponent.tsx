@@ -18,7 +18,10 @@ export const HtmlContextDefault = forwardRef<
 });
 
 export const HtmlContext = createContext(HtmlContextDefault);
-export const Html = forwardRef<HTMLDivElement, HTMLProps>((props, ref) => {
+export const Html = forwardRef<
+  HTMLDivElement,
+  HTMLProps & HTMLAttributes<HTMLDivElement>
+>((props, ref) => {
   const Component = useContext(HtmlContext);
   return <Component {...props} ref={ref} />;
 });
