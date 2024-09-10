@@ -2,13 +2,13 @@ import { Meta, StoryObj } from "@storybook/react";
 import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
-import { Divider } from "./DividerComponent";
+import { DividerContextDefault } from "./DividerComponent";
 import schema from "./divider.schema.dereffed.json";
 import customProperties from "./divider-tokens.json";
 
 const meta: Meta = {
   title: "Components/Divider",
-  component: Divider,
+  component: DividerContextDefault,
   parameters: {
     jsonschema: { schema },
     cssprops: { customProperties },
@@ -18,7 +18,7 @@ const meta: Meta = {
 
 export default meta;
 
-type Story = StoryObj<typeof Divider>;
+type Story = StoryObj<typeof DividerContextDefault>;
 
 export const Accent: Story = {
   parameters: {
