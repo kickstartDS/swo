@@ -1,3 +1,15 @@
+# v1.5.27 (Wed Sep 11 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(blogTeaser): remove link label property ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.5.26 (Tue Sep 10 2024)
 
 #### ⚠️ Pushed to `main`
