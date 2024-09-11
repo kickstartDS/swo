@@ -58,7 +58,6 @@ export const BlogTeaserContextDefault = forwardRef<
           link={
             link
               ? {
-                  label: link.label || "Read more",
                   // @ts-expect-error
                   target: link.url,
                 }

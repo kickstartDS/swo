@@ -32,10 +32,6 @@ export type Image = string;
  */
 export type URL = string;
 /**
- * The label to use for the link
- */
-export type Label = string;
-/**
  * Time to read for the blog post
  */
 export type ReadingTime = string;
@@ -71,7 +67,6 @@ export interface BlogTeaserProps {
  */
 export interface Link {
   url: URL;
-  label?: Label;
 }
 /**
  * The author of the blog post
