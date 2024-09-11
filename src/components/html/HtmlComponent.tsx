@@ -1,64 +1,65 @@
-import {
-  createContext,
-  forwardRef,
-  HTMLAttributes,
-  useContext,
-  useEffect,
-  useImperativeHandle,
-  useRef,
-} from "react";
+import { createContext, forwardRef, HTMLAttributes, useContext } from "react";
 import classNames from "classnames";
+import { Button } from "@kickstartds/base/lib/button";
 import { HtmlProps } from "./HtmlProps";
+import { RichText } from "@kickstartds/base/lib/rich-text";
+import "./Html.client";
+import "./html.scss";
 
 export type { HtmlProps };
-
-const copyScriptTag = (original: Element) => {
-  if (original.tagName !== "SCRIPT") {
-    return original;
-  }
-
-  const copy = document.createElement("script");
-  for (const attr of original.attributes) {
-    copy.setAttribute(attr.name, attr.value);
-  }
-  copy.textContent = original.textContent;
-
-  return copy;
-};
 
 export const HtmlContextDefault = forwardRef<
   HTMLDivElement,
   HtmlProps & HTMLAttributes<HTMLDivElement>
->(({ html, className, component, ...props }, forwardedRef) => {
-  const ref = useRef<HTMLDivElement>(null);
-  useImperativeHandle(forwardedRef, () => ref.current);
-
-  useEffect(() => {
-    if (html && ref.current) {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(html, "text/html");
-      const elements = [...doc.head.children, ...doc.body.children];
-      const insertedElements = elements.map((element) =>
-        ref.current.appendChild(copyScriptTag(element))
-      );
-
-      return () => {
-        for (const insertedElement of insertedElements) {
-          insertedElement?.remove();
-        }
-      };
-    }
-  }, [html, ref.current]);
-
-  return (
-    <div
-      ref={ref}
-      className={classNames("c-html", className)}
-      ks-component={component}
-      {...props}
-    />
-  );
-});
+>(
+  (
+    {
+      html,
+      consent,
+      consentText,
+      consentBackgroundImage,
+      consentButtonLabel,
+      consentAspectRatio = "16:9",
+      className,
+      component = "dsa.html",
+      ...props
+    },
+    ref
+  ) => {
+    return (
+      <div
+        ref={ref}
+        className={classNames("c-html", className)}
+        ks-component={component}
+        {...props}
+      >
+        <template dangerouslySetInnerHTML={{ __html: html }} />
+        {consent && (
+          <div
+            style={{
+              backgroundImage: consentBackgroundImage
+                ? `url(${consentBackgroundImage})`
+                : undefined,
+            }}
+            className={classNames("c-html__consent", {
+              "c-html__consent--sixteen-to-nine": consentAspectRatio === "16:9",
+              "c-html__consent--sixteen-to-ten": consentAspectRatio === "16:10",
+              "c-html__consent--four-to-three": consentAspectRatio === "4:3",
+              "c-html__consent--square": consentAspectRatio === "1:1",
+            })}
+          >
+            {consentText && <RichText text={consentText} />}
+            <Button
+              type="button"
+              label={consentButtonLabel}
+              className="c-html__consent-button"
+            />
+          </div>
+        )}
+      </div>
+    );
+  }
+);
 
 export const HtmlContext = createContext(HtmlContextDefault);
 export const Html = forwardRef<
