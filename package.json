@@ -81,7 +81,7 @@
     "@auto-it/released": "^11.0.1",
     "@kickstartds/base": "^4.0.2",
     "@kickstartds/blog": "^4.0.2",
-    "@kickstartds/cambria": "^1.0.4",
+    "@kickstartds/cambria": "^1.0.5",
     "@kickstartds/content": "^4.0.0",
     "@kickstartds/core": "^4.0.2",
     "@kickstartds/form": "^4.0.2",
