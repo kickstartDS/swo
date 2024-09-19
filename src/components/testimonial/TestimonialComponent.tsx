@@ -16,7 +16,7 @@ export const TestimonialContextDefault = forwardRef<
     text={quote}
     source={name}
     byline={title}
-    image={image.src}
+    image={image && image.src}
     renderSource={() => (
       <>
         {rating ? (
