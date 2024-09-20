@@ -1,9 +1,20 @@
-import { FC, PropsWithChildren, useMemo, useRef, useState } from "react";
+import {
+  FC,
+  Fragment,
+  PropsWithChildren,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { traverse as objectTraverse } from "object-traversal";
 import { defaultObjectForSchema } from "@kickstartds/cambria";
 import { unpack, getArgsShared } from "@kickstartds/core/lib/storybook";
+import { SelectField } from "@kickstartds/form/lib/select-field";
 import { JSONSchema } from "json-schema-typed/draft-07";
 import { JSONSchema7 } from "json-schema";
+import { InfinitySpin } from "react-loader-spinner";
+import Browser, { Chrome } from "react-browser-ui";
 import schemaTraverse from "json-schema-traverse";
 import merge from "deepmerge";
 
@@ -18,9 +29,9 @@ import { Cta } from "../components/cta/CtaComponent";
 import { Features } from "../components/features/FeaturesComponent";
 import { Stats } from "../components/stats/StatsComponent";
 import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
+import { Testimonials } from "../components/testimonials/TestimonialsComponent";
 import { Text } from "../components/text/TextComponent";
 import { Hero } from "../components/hero/HeroComponent";
-import { TextArea } from "@kickstartds/form/lib/text-area";
 import { Header } from "../components/header/HeaderComponent";
 import { Footer } from "../components/footer/FooterComponent";
 
@@ -29,7 +40,9 @@ import * as themes from "../themes";
 import pageSchema from "../components/cms/page.schema.dereffed.json";
 import headerSchema from "../components/header/header.schema.dereffed.json";
 import footerSchema from "../components/footer/footer.schema.dereffed.json";
-import { Testimonials } from "../components/testimonials/TestimonialsComponent";
+import { VideoCurtain } from "../components/video-curtain/VideoCurtainComponent";
+
+const { Tab, Divider, AddButton } = Chrome;
 
 const { args: headerArgs } = getArgsShared(headerSchema as JSONSchema7);
 const headerProps = {
@@ -51,10 +64,7 @@ const footerProps = {
 // import { VideoCurtain } from "../components/video-curtain/VideoCurtainComponent";
 
 const systemPrompt =
-  "You are a Design System marketing specialist. You excel in creating engaging and informative content for your audience. You are using a page schema to generate content for your website. You answer with a page containing at least 5 sections, which themselves should have an average of 2 components (1-3) added to them.";
-
-const userPrompt =
-  "Detail the 5 key reasons to use a Design System, include examples and benefits for each key reason. Where possible, add a call to action to encourage further engagement with the content.";
+  "You are a Design System marketing specialist. You excel in creating engaging and informative content for your audience. You are using a page schema to generate content for your website. You answer with a page containing at least 4 sections, which themselves should have an average of 2 components (1-3) added to them.";
 
 const demoResponse = `
 {
@@ -268,12 +278,6 @@ const demoResponse = `
   }
 }
 `;
-
-const demoResponse2 = `
-{"type__page":"page","section":[{"type__section":"section","style":"stagelights","headline":{"text":"Introduction to MACH Architecture and Design Systems","large":true,"sub":"Unlocking the power of modern web development"},"components":[{"type__text":"text","text":"MACH architecture is an approach to software development that stands for Microservices, API-first, Cloud-native, and Headless. This architecture enables organizations to create flexible, scalable, and rapid digital experiences. At the heart of this model lies the design system, which acts as a blueprint for creating cohesive and consistent user interfaces. By integrating a design system into a MACH architecture, companies can effectively streamline the design and development process, ensuring that all components are built on a shared foundation of styles and guidelines." ,"layout":"singleColumn"},{"type__faq":"faq","questions":[{"question":"What is a Design System?","answer":"A design system is a comprehensive guide or set of standards used by developers and designers to ensure consistency and quality in the user interface and experience. It typically includes guidelines on typography, color palettes, components, and more."},{"question":"Why is MACH architecture important?","answer":"MACH architecture allows businesses to adapt swiftly to new technologies and user demands by decoupling front-end and back-end operations. It supports quick updates and improvements without disrupting overall functionality."}]}] ,"buttons":[{"type__button":"button","label":"Learn More","variant":"secondary","size":"medium","disabled":false}]},{"type__section":"section","style":"horizontalGradient","headline":{"text":"Streamlining Development with Design Systems","large":false,"sub":"Boost efficiency and maintain consistency"},"components":[{"type__features":"features","layout":"largeTiles","style":"centered","ctas":{"toggle":true,"style":"button"},"feature":[{"type__feature":"feature","title":"Consistency Across Platforms","text":"Design systems ensure that all digital products hold a consistent look and feel, regardless of the technology stack or team working on them. This consistency is crucial in maintaining brand identity across multiple platforms.","style":"stack","cta":{"label":"Explore Consistency","toggle":true,"style":"link"}},{"type__feature":"feature","title":"Reduced Time to Market","text":"By using predefined components from a design system, developers can significantly reduce the time it takes to bring a product to market. This allows for rapid deployment of features and updates across all digital channels.","style":"stack","cta":{"label":"See How","toggle":true,"style":"link"}}]}] ,"buttons":[{"type__button":"button","label":"Get Started","variant":"primary","size":"large","disabled":false}]},{"type__section":"section","style":"verticalGradient","headline":{"text":"The Role of Headless CMS in MACH","large":false,"sub":"Decoupled power for seamless experiences"},"components":[{"type__teaser-card":"teaser-card","headline":"Decoupling Content Management","text":"A headless CMS allows for content to be managed independently of how it is displayed. This separation empowers developers to use modern frameworks and techniques to present content, improving flexibility and scalability.","label":"Headless CMS","layout":"row","button":{"label":"Discover Headless","chevron":true,"hidden":false}},{"type__features":"features","layout":"smallTiles","style":"centered","ctas":{"toggle":false,"style":"link"},"feature":[{"type__feature":"feature","title":"Tailored User Experiences","text":"With a headless CMS, content delivery is flexible and adaptable, allowing for personalized and dynamic user experiences tailored to individual users' needs.","style":"intext","cta":{"label":"Learn More","toggle":false,"style":"button"}},{"type__feature":"feature","title":"Scalability at Core","text":"Headless CMS can efficiently scale as the business grows, supporting a wide array of digital touchpoints without bottlenecks.","style":"intext","cta":{"label":"Get Insights","toggle":false,"style":"button"}}]}] ,"buttons":[{"type__button":"button","label":"Contact Us","variant":"secondary","size":"medium","disabled":false}]},{"type__section":"section","style":"accentTransition","headline":{"text":"Testimonials from Industry Experts","large":false,"sub":"Hear from the best in the field"},"components":[{"type__testimonials":"testimonials","layout":"slider","testimonial":[{"type__testimonial":"testimonial","quote":"Implementing a robust design system within our MACH architecture has drastically improved our product development cycles and ensured consistency across our platforms.","name":"John Doe","title":"CTO, Tech Innovations","rating":5},{"type__testimonial":"testimonial","quote":"The switch to a headless CMS was transformative, allowing our team to focus on delivering unmatched user experiences using the latest technologies.","name":"Jane Smith","title":"Product Manager, Digital Solutions","rating":4}]}] ,"buttons":[{"type__button":"button","label":"View More","variant":"tertiary","size":"small","disabled":false}]},{"type__section":"section","style":"boldTransition","headline":{"text":"Ready to Revolutionize Your Tech Stack?","large":true,"sub":"Explore the next steps in your digital transformation"},"components":[{"type__cta":"cta","headline":"Embrace MACH Architecture","sub":"Future-proof your business","text":"Adopt MACH architecture to enable agility, promote innovation, and scale your digital offerings effortlessly. Begin by integrating a design system into your development process and discover how a headless CMS can elevate your content management strategies. Join the growing community of businesses moving towards more flexible, modern solutions.","buttons":[{"label":"Start Your Journey"},{"label":"Talk to an Expert"}]},{"type__stats":"stats","stat":[{"type__stat":"stat","number":85,"description":"Average reduction in UI/UX development time","title":"Efficient Development"},{"type__stat":"stat","number":100,"description":"Customer satisfaction improvement","title":"Incredible Impact"},{"type__stat":"stat","number":75,"description":"Increase in business agility and adaptiveness","title":"Enhanced Agility"}]}] ,"buttons":[{"type__button":"button","label":"Join Us","variant":"primary","size":"large","disabled":false}]}],"seo":{"type__seo":"seo","title":"Advantages of Design Systems in MACH Architectures","description":"Explore the advantages of integrating Design Systems within MACH architectures, particularly focusing on headless CMS applications.","keywords":"Design Systems, MACH Architecture, Headless CMS, Flexibility, Scalability, Consistency"}}`;
-
-const demoResponse3 = `
-{"type__page":"page","section":[{"type__section":"section","style":"stagelights","headline":{"text":"Introduction to MACH Architecture and Design Systems","large":true,"sub":"Unlocking the power of modern web development"},"components":[{"type__text":"text","text":"MACH architecture is an approach to software development that stands for Microservices, API-first, Cloud-native, and Headless. This architecture enables organizations to create flexible, scalable, and rapid digital experiences. At the heart of this model lies the design system, which acts as a blueprint for creating cohesive and consistent user interfaces. By integrating a design system into a MACH architecture, companies can effectively streamline the design and development process, ensuring that all components are built on a shared foundation of styles and guidelines." ,"layout":"singleColumn"},{"type__faq":"faq","questions":[{"question":"What is a Design System?","answer":"A design system is a comprehensive guide or set of standards used by developers and designers to ensure consistency and quality in the user interface and experience. It typically includes guidelines on typography, color palettes, components, and more."},{"question":"Why is MACH architecture important?","answer":"MACH architecture allows businesses to adapt swiftly to new technologies and user demands by decoupling front-end and back-end operations. It supports quick updates and improvements without disrupting overall functionality."}]}] ,"buttons":[{"type__button":"button","label":"Learn More","variant":"secondary","size":"medium","disabled":false}]},{"type__section":"section","style":"horizontalGradient","headline":{"text":"Streamlining Development with Design Systems","large":false,"sub":"Boost efficiency and maintain consistency"},"components":[{"type__features":"features","layout":"largeTiles","style":"centered","ctas":{"toggle":true,"style":"button"},"feature":[{"type__feature":"feature","title":"Consistency Across Platforms","text":"Design systems ensure that all digital products hold a consistent look and feel, regardless of the technology stack or team working on them. This consistency is crucial in maintaining brand identity across multiple platforms.","style":"stack","cta":{"label":"Explore Consistency","toggle":true,"style":"link"}},{"type__feature":"feature","title":"Reduced Time to Market","text":"By using predefined components from a design system, developers can significantly reduce the time it takes to bring a product to market. This allows for rapid deployment of features and updates across all digital channels.","style":"stack","cta":{"label":"See How","toggle":true,"style":"link"}}]}] ,"buttons":[{"type__button":"button","label":"Get Started","variant":"primary","size":"large","disabled":false}]},{"type__section":"section","style":"verticalGradient","headline":{"text":"The Role of Headless CMS in MACH","large":false,"sub":"Decoupled power for seamless experiences"},"components":[{"type__teaser-card":"teaser-card","headline":"Decoupling Content Management","text":"A headless CMS allows for content to be managed independently of how it is displayed. This separation empowers developers to use modern frameworks and techniques to present content, improving flexibility and scalability.","label":"Headless CMS","layout":"row","button":{"label":"Discover Headless","chevron":true,"hidden":false}},{"type__features":"features","layout":"smallTiles","style":"centered","ctas":{"toggle":false,"style":"link"},"feature":[{"type__feature":"feature","title":"Tailored User Experiences","text":"With a headless CMS, content delivery is flexible and adaptable, allowing for personalized and dynamic user experiences tailored to individual users' needs.","style":"intext","cta":{"label":"Learn More","toggle":false,"style":"button"}},{"type__feature":"feature","title":"Scalability at Core","text":"Headless CMS can efficiently scale as the business grows, supporting a wide array of digital touchpoints without bottlenecks.","style":"intext","cta":{"label":"Get Insights","toggle":false,"style":"button"}}]}] ,"buttons":[{"type__button":"button","label":"Contact Us","variant":"secondary","size":"medium","disabled":false}]},{"type__section":"section","style":"accentTransition","headline":{"text":"Testimonials from Industry Experts","large":false,"sub":"Hear from the best in the field"},"components":[{"type__testimonials":"testimonials","layout":"slider","testimonial":[{"type__testimonial":"testimonial","quote":"Implementing a robust design system within our MACH architecture has drastically improved our product development cycles and ensured consistency across our platforms.","name":"John Doe","title":"CTO, Tech Innovations","rating":5},{"type__testimonial":"testimonial","quote":"The switch to a headless CMS was transformative, allowing our team to focus on delivering unmatched user experiences using the latest technologies.","name":"Jane Smith","title":"Product Manager, Digital Solutions","rating":4}]}] ,"buttons":[{"type__button":"button","label":"View More","variant":"tertiary","size":"small","disabled":false}]},{"type__section":"section","style":"boldTransition","headline":{"text":"Ready to Revolutionize Your Tech Stack?","large":true,"sub":"Explore the next steps in your digital transformation"},"components":[{"type__cta":"cta","headline":"Embrace MACH Architecture","sub":"Future-proof your business","text":"Adopt MACH architecture to enable agility, promote innovation, and scale your digital offerings effortlessly. Begin by integrating a design system into your development process and discover how a headless CMS can elevate your content management strategies. Join the growing community of businesses moving towards more flexible, modern solutions.","buttons":[{"label":"Start Your Journey"},{"label":"Talk to an Expert"}]},{"type__stats":"stats","stat":[{"type__stat":"stat","number":85,"description":"Average reduction in UI/UX development time","title":"Efficient Development"},{"type__stat":"stat","number":100,"description":"Customer satisfaction improvement","title":"Incredible Impact"},{"type__stat":"stat","number":75,"description":"Increase in business agility and adaptiveness","title":"Enhanced Agility"}]}] ,"buttons":[{"type__button":"button","label":"Join Us","variant":"primary","size":"large","disabled":false}]}],"seo":{"type__seo":"seo","title":"Advantages of Design Systems in MACH Architectures","description":"Explore the advantages of integrating Design Systems within MACH architectures, particularly focusing on headless CMS applications.","keywords":"Design Systems, MACH Architecture, Headless CMS, Flexibility, Scalability, Consistency"}}`;
 
 const unsupportedKeywords = [
   "format",
@@ -692,18 +696,47 @@ const PrompterFrame = () => {
     };
   }, []);
 
-  const [system] = useState(systemPrompt);
-  const [user] = useState(userPrompt);
+  const [ideas, setIdeas] = useState([]);
+  const [idea, setIdea] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
-  const systemTextareaRef = useRef(null);
-  const userTextareaRef = useRef(null);
+  const ideaSelectRef = useRef(null);
+
+  const createPrompt = (idea) => {
+    const prompt = [];
+
+    objectTraverse(
+      ideas.find((object) => object.id === idea),
+      ({ value }) => {
+        if (value && value.type && value.type === "text" && value.text)
+          prompt.push(value.text);
+      }
+    );
+
+    return `Create a page for the following content idea, include at least 4 sections and 2-3 components per section: ${prompt.join(
+      " "
+    )}`;
+  };
+
+  useEffect(() => {
+    fetch("https://deploy-preview-8--ruhmesmeile.netlify.app/api/ideas")
+      .then((response) => {
+        response.json().then((json) => {
+          console.log(json.response.data.ideas);
+          setIdeas(json.response.data.ideas);
+        });
+      })
+      .catch((error) => console.error(error));
+  }, []);
 
   const handleGenerate = async () => {
+    setLoading(true);
     fetch("https://pzdzoelitkqizxopmwfg.supabase.co/functions/v1/content", {
       method: "POST",
       body: JSON.stringify({
-        system: systemTextareaRef.current.value,
-        prompt: userTextareaRef.current.value,
+        system: systemPrompt,
+        prompt: createPrompt(idea),
         schema,
       }),
       headers: {
@@ -721,11 +754,13 @@ const PrompterFrame = () => {
 
           const storyblokProps = processPage(structuredClone(pageProps));
           setStoryblokContent(storyblokProps);
+
+          setLoading(false);
         });
       })
       .catch((error) => console.error(error));
 
-    // const pageProps = processResponse(JSON.parse(demoResponse3));
+    // const pageProps = processResponse(JSON.parse(demoResponse));
     // setGeneratedContent(pageProps);
 
     // const storyblokProps = processPage(structuredClone(pageProps));
@@ -749,27 +784,148 @@ const PrompterFrame = () => {
     })
       .then((response) => {
         response.json().then((json) => {
-          console.log("STORYBLOK RESPONSE", json);
+          console.log("Story submitted successfully", json);
+          setSubmitted(true);
         });
       })
       .catch((error) => console.error(error));
   };
 
+  const tabEnd = (
+    <Fragment>
+      <AddButton />
+    </Fragment>
+  );
+
   return (
     <main>
       <Section
-        width="full"
+        width="default"
         spaceAfter="small"
-        spaceBefore="none"
-        content={{ mode: "list" }}
+        spaceBefore="default"
+        content={{ mode: "list", width: "narrow" }}
+        headline={{
+          text: `🤖 Welcome to your kickstartDS<br> **Content Prompter** ✨`,
+          sub: "Generate complete Storyblok Stories from your Storyblok Ideas in a pinch 🤏",
+          width: "default",
+          align: "left",
+        }}
       >
-        <TextArea ref={systemTextareaRef} rows={10} value={system} />
-        <TextArea ref={userTextareaRef} rows={10} value={user} />
-        <Button label="Generate Content" onClick={handleGenerate} />
-        <Button label="Submit Story" onClick={submitStory} />
+        <Text
+          text={`
+Create content based off your existing [Storyblok Ideas](https://www.storyblok.com/docs/guide/in-depth/ideation-room). Start Ideas collaboratively with your team inside Storyblok, and when you are ready let our Prompter generate a Story based on that idea.<br>
+Using our **Design Systems** inherent **JSON Schema** use (for component APIs) we specifically query **Open AI** with [Structured Output](https://platform.openai.com/docs/guides/structured-outputs) to create compatible content. And if you like what's been generated, **submit it as a Story to Storyblok in a simple click of a button!**`}
+        />
+        {!loading && !submitted && !idea && ideas && ideas.length > 0 && (
+          <>
+            <Text
+              text={"Please select one of your existing Storyblok Ideas:"}
+            />
+            <SelectField
+              ref={ideaSelectRef}
+              value={idea}
+              onChange={(e) => setIdea(e.target.value)}
+              options={[
+                { label: "Choose Idea...", value: "", disabled: true },
+              ].concat(
+                ideas.map((idea) => {
+                  return { value: idea.id, label: idea.name, disabled: false };
+                })
+              )}
+            />
+          </>
+        )}
+        {idea && !loading && !generatedContent && (
+          <>
+            <Text
+              text={`💡 **Selected**: ${
+                ideas.find((object) => object.id === idea)?.name
+              }`}
+            />
+            <Button label="Generate Content" onClick={handleGenerate} />
+          </>
+        )}
+        {storyblokContent && (
+          <Button label="Submit Story" onClick={submitStory} />
+        )}
       </Section>
-      {generatedContent && <Page {...generatedContent} />}
-      {generatedContent && (
+      {loading && (
+        <Section
+          width="narrow"
+          spaceAfter="small"
+          spaceBefore="none"
+          content={{ mode: "list", width: "narrow" }}
+        >
+          <div style={{ marginLeft: "auto", marginRight: "auto" }}>
+            <InfinitySpin width="200" color="var(--ks-text-color-secondary)" />
+          </div>
+          <Text text="**Stay tuned, your content is being generated..., a good time to skim what this is all about** ☝️" />
+        </Section>
+      )}
+      {submitted && (
+        <Section
+          width="narrow"
+          spaceAfter="small"
+          spaceBefore="default"
+          content={{ mode: "list", width: "narrow" }}
+        >
+          <VideoCurtain
+            buttons={[
+              {
+                label: "Start from a new idea",
+              },
+            ]}
+            overlay
+            video={{
+              srcDesktop: "img/videos/video-720.mp4",
+              srcMobile: "img/videos/video-720.mp4",
+              srcTablet: "img/videos/video-720.mp4",
+            }}
+            textPosition="center"
+            headline="Your Story was successfully submitted to Storyblok 🚀"
+            sub="...feel free to check over there, and add some images or other content to make it even more engaging!"
+            text="Read more about this Prompter on a blog post soon 🧐"
+          />
+          <Text text="Story submitted successfully!" />
+        </Section>
+      )}
+      {generatedContent && !submitted && (
+        <Section
+          width="wide"
+          spaceAfter="small"
+          spaceBefore="default"
+          content={{ mode: "list", width: "unset" }}
+          headline={{
+            text: "Your page has been generated...",
+            width: "wide",
+            sub: "...feel free to review it below, before sending it off to Storyblok",
+          }}
+        >
+          <div
+            style={{
+              boxShadow:
+                "0 0 100px -12px var(--ks-background-color-accent-inverted)",
+            }}
+          >
+            <Browser
+              type={"chrome"}
+              showHeader={false}
+              activeTabKey={"green"}
+              tabEnd={tabEnd}
+            >
+              <Tab
+                key={"green"}
+                imageUrl={""}
+                imageAlt={"green tab image"}
+                title={"Generated page"}
+              >
+                <Page {...generatedContent} />
+              </Tab>
+            </Browser>
+          </div>
+        </Section>
+      )}
+      {/* {generatedContent && (
         <Section width="full" spaceAfter="small" spaceBefore="none">
           <Html
             style={{ background: "white" }}
@@ -792,7 +948,7 @@ const PrompterFrame = () => {
             )}</code></pre>`}
           />
         </Section>
-      )}
+      )} */}
     </main>
   );
 };
