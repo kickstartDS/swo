@@ -5,6 +5,8 @@ import { Logo } from "../logo/LogoComponent";
 import "./footer.scss";
 import { createContext, forwardRef, HTMLAttributes, useContext } from "react";
 
+export { FooterProps };
+
 export const FooterContextDefault = forwardRef<
   HTMLDivElement,
   FooterProps & HTMLAttributes<HTMLDivElement>

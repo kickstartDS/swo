@@ -6,6 +6,8 @@ import { ButtonContext } from "@kickstartds/base/lib/button";
 import classnames from "classnames";
 import { useButtonGroup } from "../button-group/ButtonGroupComponent";
 
+export { CtaProps };
+
 export const CtaContextDefault = forwardRef<
   HTMLDivElement,
   CtaProps & HTMLAttributes<HTMLDivElement>

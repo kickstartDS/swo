@@ -15,6 +15,8 @@ import {
 import { DividerProps } from "./DividerProps";
 import "./divider.scss";
 
+export { DividerProps };
+
 export const DividerContextDefault = forwardRef<
   HTMLHRElement,
   DividerProps & HTMLAttributes<HTMLHRElement>

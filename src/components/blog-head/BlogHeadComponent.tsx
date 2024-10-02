@@ -3,6 +3,8 @@ import { PostHead } from "@kickstartds/blog/lib/post-head";
 import { BlogHeadProps } from "./BlogHeadProps";
 import "./blog-head.scss";
 
+export { BlogHeadProps };
+
 export const BlogHeadContextDefault = forwardRef<HTMLDivElement, BlogHeadProps>(
   ({ date, tags = [], headline, image, ...rest }, ref) => {
     return (

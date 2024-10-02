@@ -3,6 +3,8 @@ import { StatsProps } from "./StatsProps";
 import "./stats.scss";
 import { Stat } from "../stat/StatComponent";
 
+export { StatsProps };
+
 export const StatsContextDefault = forwardRef<
   HTMLDivElement,
   StatsProps & HTMLAttributes<HTMLDivElement>

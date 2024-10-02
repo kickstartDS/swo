@@ -2,6 +2,8 @@ import { forwardRef, createContext, useContext, HTMLAttributes } from "react";
 import { TestimonialProps } from "./TestimonialProps";
 import { Quote } from "@kickstartds/content/lib/quote";
 
+export { TestimonialProps };
+
 export const TestimonialContextDefault = forwardRef<
   HTMLDivElement,
   { layout: string; index: number } & TestimonialProps &

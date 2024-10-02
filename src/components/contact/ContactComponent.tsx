@@ -16,6 +16,8 @@ import { Icon } from "@kickstartds/base/lib/icon";
 import { RichText } from "@kickstartds/base/lib/rich-text";
 import { Container } from "@kickstartds/core/lib/container";
 
+export { ContactProps };
+
 export const ContactContextDefault = forwardRef<
   HTMLElement,
   ContactProps & HTMLAttributes<HTMLElement>

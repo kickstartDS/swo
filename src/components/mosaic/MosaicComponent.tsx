@@ -3,6 +3,8 @@ import { MosaicProps } from "./MosaicProps";
 import "./mosaic.scss";
 import { Storytelling } from "@kickstartds/content/lib/storytelling";
 
+export { MosaicProps };
+
 export const MosaicContextDefault = forwardRef<
   HTMLDivElement,
   MosaicProps & HTMLAttributes<HTMLDivElement>

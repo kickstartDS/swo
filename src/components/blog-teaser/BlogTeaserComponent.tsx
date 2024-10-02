@@ -5,6 +5,8 @@ import { BlogTeaserProps } from "./BlogTeaserProps";
 import "./blog-teaser.scss";
 import { Container } from "@kickstartds/core/lib/container";
 
+export { BlogTeaserProps };
+
 export const BlogTeaserContextDefault = forwardRef<
   HTMLDivElement,
   BlogTeaserProps & HTMLAttributes<HTMLElement>

@@ -2,6 +2,8 @@ import { createContext, forwardRef, HTMLAttributes, useContext } from "react";
 import classNames from "classnames";
 import { HTMLProps } from "./HtmlProps";
 
+export { HTMLProps };
+
 export const HtmlContextDefault = forwardRef<
   HTMLDivElement,
   HTMLProps & HTMLAttributes<HTMLDivElement>

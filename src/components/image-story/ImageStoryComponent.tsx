@@ -6,6 +6,8 @@ import { ButtonContext } from "@kickstartds/base/lib/button";
 import classnames from "classnames";
 import { useButtonGroup } from "../button-group/ButtonGroupComponent";
 
+export { ImageStoryProps };
+
 export const ImageStoryContextDefault = forwardRef<
   HTMLDivElement,
   ImageStoryProps & HTMLAttributes<HTMLDivElement>

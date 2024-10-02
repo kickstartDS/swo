@@ -8,6 +8,8 @@ import "./blog-aside.scss";
 import { BlogAuthor } from "../blog-author/BlogAuthorComponent";
 import { Headline } from "../headline/HeadlineComponent";
 
+export { BlogAsideProps };
+
 export const BlogAsideContextDefault = forwardRef<
   HTMLDivElement,
   BlogAsideProps & HTMLAttributes<HTMLDivElement>

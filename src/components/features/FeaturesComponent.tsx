@@ -4,6 +4,8 @@ import { FeaturesProps } from "./FeaturesProps";
 import "./features.scss";
 import { Feature } from "../feature/FeatureComponent";
 
+export { FeaturesProps };
+
 export const FeaturesContextDefault = forwardRef<
   HTMLDivElement,
   FeaturesProps & Omit<HTMLAttributes<HTMLDivElement>, "style">

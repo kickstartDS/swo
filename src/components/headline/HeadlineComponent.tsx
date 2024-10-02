@@ -8,6 +8,8 @@ import { defaultRenderFn } from "@kickstartds/core/lib/core";
 import { HeadlineProps } from "./HeadlineProps";
 import "./headline.scss";
 
+export { HeadlineProps };
+
 interface RenderFunctions {
   renderContent?: typeof defaultRenderFn;
   renderSubheadline?: typeof defaultRenderFn;

@@ -6,6 +6,8 @@ import "./nav-topbar.scss";
 import { createContext, forwardRef, HTMLAttributes, useContext } from "react";
 import { NavTopbarProps } from "./NavTopbarProps";
 
+export { NavTopbarProps };
+
 export const NavTopbarContextDefault = forwardRef<
   HTMLElement,
   NavTopbarProps & HTMLAttributes<HTMLElement>
