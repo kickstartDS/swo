@@ -1,3 +1,18 @@
+# v1.5.29 (Wed Oct 02 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add prop type exports to components ([@lmestel](https://github.com/lmestel))
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@julrich](https://github.com/julrich))
+- fix: add prop type exports to components ([@julrich](https://github.com/julrich))
+
+#### Authors: 2
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.5.28 (Thu Sep 19 2024)
 
 #### ⚠️ Pushed to `main`
