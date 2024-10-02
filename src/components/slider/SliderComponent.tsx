@@ -4,7 +4,7 @@ import { SliderProps } from "./SliderProps";
 import { Slider as KickstartSlider } from "@kickstartds/content/lib/slider";
 import "./slider.scss";
 
-export { SliderProps };
+export type { SliderProps };
 
 export const Slider = forwardRef<
   HTMLDivElement,

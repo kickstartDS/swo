@@ -2,7 +2,7 @@ import { forwardRef, createContext, useContext, HTMLAttributes } from "react";
 import { StatProps } from "./StatProps";
 import { CountUp } from "@kickstartds/content/lib/count-up";
 
-export { StatProps };
+export type { StatProps };
 
 export const StatContextDefault = forwardRef<
   HTMLDivElement,

@@ -3,7 +3,7 @@ import { FaqProps } from "./FaqProps";
 import "./faq.scss";
 import { CollapsibleBox } from "@kickstartds/base/lib/collapsible-box";
 
-export { FaqProps };
+export type { FaqProps };
 
 export const FaqContextDefault = forwardRef<
   HTMLDivElement,

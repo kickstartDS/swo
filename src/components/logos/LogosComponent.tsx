@@ -8,7 +8,7 @@ import { Button } from "@kickstartds/base/lib/button";
 import { Link } from "@kickstartds/base/lib/link";
 import { Container } from "@kickstartds/core/lib/container";
 
-export { LogosProps };
+export type { LogosProps };
 
 export const LogosContextDefault = forwardRef<
   HTMLDivElement,

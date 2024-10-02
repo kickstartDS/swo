@@ -6,7 +6,7 @@ import {
 } from "@kickstartds/base/lib/button-group";
 import { ButtonGroupProps } from "./ButtonGroupProps";
 
-export { ButtonGroupProps };
+export type { ButtonGroupProps };
 
 export const ButtonGroup = forwardRef<HTMLDivElement, ButtonGroupProps>(
   ({ buttons, colorNeutral, size, ...props }, ref) => {

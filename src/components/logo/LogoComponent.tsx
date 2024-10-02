@@ -10,7 +10,7 @@ import { Picture } from "@kickstartds/base/lib/picture";
 import { Link } from "@kickstartds/base/lib/link";
 import "./logo.scss";
 
-export { LogoProps };
+export type { LogoProps };
 
 export const LogoContextDefault = forwardRef<
   HTMLImageElement,

@@ -5,7 +5,7 @@ import { Slider } from "../slider/SliderComponent";
 import { SliderProps } from "../slider/SliderProps";
 import { Testimonial } from "../testimonial/TestimonialComponent";
 
-export { TestimonialsProps };
+export type { TestimonialsProps };
 
 interface ConditionalSliderProps extends SliderProps {
   layout: "slider" | "list" | "alternating";

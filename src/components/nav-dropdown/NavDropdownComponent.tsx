@@ -4,7 +4,7 @@ import { FC } from "react";
 import { NavDropdownProps } from "./NavDropdownProps";
 import "./nav-dropdown.scss";
 
-export { NavDropdownProps };
+export type { NavDropdownProps };
 
 export const NavDropdown: FC<NavDropdownProps> = ({ items, inverted }) => (
   <ul

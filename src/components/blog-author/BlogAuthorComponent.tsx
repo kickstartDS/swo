@@ -2,7 +2,7 @@ import { forwardRef, createContext, useContext, HTMLAttributes } from "react";
 import { BlogAuthorProps } from "./BlogAuthorProps";
 import { Contact } from "../contact/ContactComponent";
 
-export { BlogAuthorProps };
+export type { BlogAuthorProps };
 
 export const BlogAuthorContextDefault = forwardRef<
   HTMLDivElement,
