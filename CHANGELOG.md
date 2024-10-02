@@ -1,3 +1,15 @@
+# v1.5.28 (Thu Sep 19 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: empty images in testimonial ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.5.27 (Wed Sep 11 2024)
 
 #### ⚠️ Pushed to `main`
