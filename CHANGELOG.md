@@ -1,3 +1,16 @@
+# v1.5.30 (Tue Oct 08 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'feature/add-divider' ([@fleven-kds](https://github.com/fleven-kds))
+- feat(DividerStory): move divider to layout category ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.5.29 (Wed Oct 02 2024)
 
 #### ⚠️ Pushed to `main`
