@@ -7,7 +7,7 @@
 
   .pswp__caption {
     background-color: var(--das-lightbox__caption--background-color, var(--ks-color-bg-alpha-5));
-    color: var(--dsa-lightbox__caption-color, var(--ks-color-fg));
+    color: var(--dsa-lightbox__caption--color, var(--ks-color-fg));
   }
 
   .pswp__counter {
