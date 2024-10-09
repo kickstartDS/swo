@@ -1,3 +1,15 @@
+# v1.5.32 (Wed Oct 09 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(lightbox): add lightbox component token ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.5.31 (Wed Oct 09 2024)
 
 #### ⚠️ Pushed to `main`
