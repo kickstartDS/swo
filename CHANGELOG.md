@@ -1,3 +1,16 @@
+# v1.5.33 (Wed Oct 09 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@fleven-kds](https://github.com/fleven-kds))
+- feat(lightbox): fix token typo ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.5.32 (Wed Oct 09 2024)
 
 #### ⚠️ Pushed to `main`
