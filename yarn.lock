@@ -2325,10 +2325,10 @@
     mkdirp "^1.0.4"
     prettier "^2.6.2"
 
-"@kickstartds/jsonschema-utils@3.0.11":
-  version "3.0.11"
-  resolved "https://registry.npmjs.org/@kickstartds/jsonschema-utils/-/jsonschema-utils-3.0.11.tgz#c98a1e42fe1548d2e069e60d813d3960f287a6b0"
-  integrity sha512-miE3/MJDpbItVKcpeG9xnPgzDtmB/1sL7I5h1pU9BGVa4su1vLeOBAtl+vneOFYQkxOwvKzuHeZaJiCWS8nIww==
+"@kickstartds/jsonschema-utils@3.4.2", "@kickstartds/jsonschema-utils@^3.4.2":
+  version "3.4.2"
+  resolved "https://registry.npmjs.org/@kickstartds/jsonschema-utils/-/jsonschema-utils-3.4.2.tgz#b0e5dffaf9026a4aa2d3636016c581df4f882468"
+  integrity sha512-Iu35LxN+RCLGY7H5cwamWFS7RF4YMbW6oYuIWVATV5REbSCAQyhTZe6dcCPTJHbWV92DeguFF7quJPvgHfTqOA==
   dependencies:
     "@bcherny/json-schema-ref-parser" "10.0.5-fork"
     ajv "^8.12.0"
@@ -2339,27 +2339,13 @@
     json-schema-traverse "^1.0.0"
     jsonpointer "~5.0.1"
 
-"@kickstartds/jsonschema-utils@^3.0.13":
-  version "3.0.13"
-  resolved "https://registry.npmjs.org/@kickstartds/jsonschema-utils/-/jsonschema-utils-3.0.13.tgz#bab1d983a52f75e09cfeeb58757738a5314438ef"
-  integrity sha512-IJ4x3Nstun4FKL8UqQ0w6vCwr/s3SsYkH95dljxh+Wb9eYTd69DUM1l6XcGucCbJucQ2qvW1AlI9gznLBVG8mA==
-  dependencies:
-    "@bcherny/json-schema-ref-parser" "10.0.5-fork"
-    ajv "^8.12.0"
-    change-case "^5.0.2"
-    directed-graph-typed "~1.52.0"
-    fast-glob "^3.2.12"
-    import-meta-resolve "~3.0.0"
-    json-schema-traverse "^1.0.0"
-    jsonpointer "~5.0.1"
-
-"@kickstartds/jsonschema2types@^1.1.37":
-  version "1.1.37"
-  resolved "https://registry.npmjs.org/@kickstartds/jsonschema2types/-/jsonschema2types-1.1.37.tgz#91b820d94c5dbec49ebe99788334c5c2f476eb64"
-  integrity sha512-aSrfryJeHywO2sQh+M/Pr60tvl+CGqs59Irq8+EhNkZ/nIeMZDdjYltqDy1jG+5/Tbth0yi95+0d6Cx/qOkkdA==
+"@kickstartds/jsonschema2types@^1.1.51":
+  version "1.1.53"
+  resolved "https://registry.npmjs.org/@kickstartds/jsonschema2types/-/jsonschema2types-1.1.53.tgz#7415517c4f98c87f6c7fdc749ac147549d93c509"
+  integrity sha512-1KlDIXmCludz7J8G+v2JAYK/dGMr+9/nVepcQcnhMUul/iGy3lh/1/QQeAkHI1d0P1isWiKZLhPV9CQkaiBe4A==
   dependencies:
     "@kickstartds/json-schema-to-typescript" "~13.1.20"
-    "@kickstartds/jsonschema-utils" "3.0.11"
+    "@kickstartds/jsonschema-utils" "3.4.2"
     ajv "^8.12.0"
     object-traversal "^1.0.1"
 

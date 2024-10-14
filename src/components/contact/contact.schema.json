@@ -54,7 +54,8 @@
         "type": "object",
         "properties": {
           "icon": {
-            "type": "string"
+            "type": "string",
+            "format": "icon"
           },
           "label": {
             "type": "string"

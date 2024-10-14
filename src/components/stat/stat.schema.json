@@ -28,6 +28,7 @@
       "title": "Icon",
       "description": "Optional icon of the stat",
       "type": "string",
+      "format": "icon",
       "examples": ["person", "home", "map"]
     }
   },

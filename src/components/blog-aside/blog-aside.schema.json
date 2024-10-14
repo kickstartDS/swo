@@ -19,6 +19,7 @@
             "title": "Icon",
             "description": "The icon name for the social link",
             "type": "string",
+            "format": "icon",
             "examples": ["twitter", "facebook"]
           },
           "href": {
