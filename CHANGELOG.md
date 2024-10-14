@@ -1,3 +1,16 @@
+# v1.5.34 (Mon Oct 14 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@julrich](https://github.com/julrich))
+- fix: add linked h2 headlines ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.5.33 (Wed Oct 09 2024)
 
 #### ⚠️ Pushed to `main`
