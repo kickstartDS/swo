@@ -7,7 +7,7 @@ import { Container } from "@kickstartds/core/lib/container";
 import { ButtonContext } from "@kickstartds/base/lib/button";
 import { useButtonGroup } from "../button-group/ButtonGroupComponent";
 
-export { VideoCurtainProps };
+export type { VideoCurtainProps };
 
 export const VideoCurtainContextDefault = forwardRef<
   HTMLDivElement,

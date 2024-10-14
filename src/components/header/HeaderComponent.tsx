@@ -5,7 +5,7 @@ import { NavMain } from "../nav-main/NavMainComponent";
 import { Logo } from "../logo/LogoComponent";
 import "./header.scss";
 
-export { HeaderProps };
+export type { HeaderProps };
 
 export const HeaderContextDefault = forwardRef<
   HTMLDivElement,

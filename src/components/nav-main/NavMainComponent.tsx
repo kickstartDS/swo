@@ -7,7 +7,7 @@ import { NavTopbar } from "../nav-topbar/NavTopbarComponent";
 import { NavFlyout } from "../nav-flyout/NavFlyoutComponent";
 import "./nav-main.scss";
 
-export { NavMainProps };
+export type { NavMainProps };
 
 export const NavMainContextDefault = forwardRef<
   HTMLDivElement,

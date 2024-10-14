@@ -1,3 +1,68 @@
+# v1.5.33 (Wed Oct 09 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@fleven-kds](https://github.com/fleven-kds))
+- feat(lightbox): fix token typo ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.5.32 (Wed Oct 09 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(lightbox): add lightbox component token ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.5.31 (Wed Oct 09 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(slider): increase control nav margin ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.5.30 (Tue Oct 08 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'feature/add-divider' ([@fleven-kds](https://github.com/fleven-kds))
+- feat(DividerStory): move divider to layout category ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.5.29 (Wed Oct 02 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add prop type exports to components ([@lmestel](https://github.com/lmestel))
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@julrich](https://github.com/julrich))
+- fix: add prop type exports to components ([@julrich](https://github.com/julrich))
+
+#### Authors: 2
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.5.28 (Thu Sep 19 2024)
 
 #### ⚠️ Pushed to `main`

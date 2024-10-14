@@ -7,7 +7,7 @@ import { Cta } from "../../cta/CtaComponent";
 import { BlogPostProps } from "../BlogPostProps";
 import { FC, PropsWithChildren } from "react";
 
-export { BlogPostProps };
+export type { BlogPostProps };
 
 export const BlogPost: FC<PropsWithChildren<BlogPostProps>> = ({
   head,

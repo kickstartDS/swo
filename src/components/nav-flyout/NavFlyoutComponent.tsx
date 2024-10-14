@@ -5,7 +5,7 @@ import { Logo } from "../logo/LogoComponent";
 import "./nav-flyout.scss";
 import { createContext, forwardRef, HTMLAttributes, useContext } from "react";
 
-export { NavFlyoutProps };
+export type { NavFlyoutProps };
 
 export const NavFlyoutContextDefault = forwardRef<
   HTMLElement,

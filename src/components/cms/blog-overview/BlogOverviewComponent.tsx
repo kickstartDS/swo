@@ -5,7 +5,7 @@ import { FC, PropsWithChildren } from "react";
 import { Cta } from "../../cta/CtaComponent";
 import { Divider } from "@kickstartds/base/lib/divider";
 
-export { BlogOverviewProps };
+export type { BlogOverviewProps };
 
 export const BlogOverview: FC<PropsWithChildren<BlogOverviewProps>> = ({
   latestTitle,

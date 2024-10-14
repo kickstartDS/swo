@@ -7,7 +7,7 @@ import schema from "./divider.schema.dereffed.json";
 import customProperties from "./divider-tokens.json";
 
 const meta: Meta = {
-  title: "Components/Divider",
+  title: "Layout/Divider",
   component: DividerContextDefault,
   parameters: {
     jsonschema: { schema },

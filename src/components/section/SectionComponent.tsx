@@ -18,7 +18,7 @@ import { SectionProps } from "./SectionProps";
 import "./section.scss";
 import { identifier } from "./js/Section.client";
 
-export { SectionProps };
+export type { SectionProps };
 
 export const SectionContextDefault = forwardRef<
   HTMLDivElement,

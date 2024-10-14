@@ -8,7 +8,7 @@ import {
 import { ButtonProps } from "./ButtonProps";
 import "./button.scss";
 
-export { ButtonProps };
+export type { ButtonProps };
 
 export const Button = forwardRef<
   HTMLAnchorElement | HTMLButtonElement,

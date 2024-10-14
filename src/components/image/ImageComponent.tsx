@@ -7,7 +7,7 @@ import {
 import { ImageProps } from "./ImageProps";
 import "./image.scss";
 
-export { ImageProps };
+export type { ImageProps };
 
 export const Image = forwardRef<
   HTMLImageElement,
