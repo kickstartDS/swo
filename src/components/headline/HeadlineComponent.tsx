@@ -55,9 +55,18 @@ export const Headline = forwardRef<
         {sub && switchOrder && (
           <p className="dsa-headline__subheadline">{renderSubheadline(sub)}</p>
         )}
-        <TagName className={classnames("dsa-headline__headline")}>
-          {renderContent(text)}
-        </TagName>
+        {props.id && level === "h2" ? (
+          <a href={`#${props.id}`} className="dsa-headline__anchor">
+            <TagName className={classnames("dsa-headline__headline")}>
+              {renderContent(text)}
+            </TagName>
+          </a>
+        ) : (
+          <TagName className={classnames("dsa-headline__headline")}>
+            {renderContent(text)}
+          </TagName>
+        )}
+
         {sub && !switchOrder && (
           <p className="dsa-headline__subheadline">{renderSubheadline(sub)}</p>
         )}
