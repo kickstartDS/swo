@@ -1,3 +1,15 @@
+# v1.5.35 (Mon Oct 14 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feature: add icon picker capabilities ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.5.34 (Mon Oct 14 2024)
 
 #### ⚠️ Pushed to `main`
