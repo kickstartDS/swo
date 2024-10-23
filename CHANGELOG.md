@@ -1,3 +1,15 @@
+# v1.5.36 (Wed Oct 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add new components divider and html to section ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.5.35 (Mon Oct 14 2024)
 
 #### ⚠️ Pushed to `main`
