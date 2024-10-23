@@ -1,3 +1,15 @@
+# v1.5.37 (Wed Oct 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add missing and updated component previews ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.5.36 (Wed Oct 23 2024)
 
 #### ⚠️ Pushed to `main`
