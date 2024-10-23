@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://schema.kickstartds.com/base/html.schema.json",
-  "title": "HTML",
+  "$id": "http://schema.mydesignsystem.com/html.schema.json",
+  "title": "Html",
   "description": "Display raw HTML.",
   "type": "object",
   "properties": {

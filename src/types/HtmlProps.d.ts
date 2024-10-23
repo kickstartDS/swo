@@ -19,7 +19,7 @@ export type KsComponentAttribute = string;
 /**
  * Display raw HTML.
  */
-export interface HTMLProps {
+export interface HtmlProps {
   html?: HTMLString;
   className?: AdditionalClasses;
   component?: KsComponentAttribute;

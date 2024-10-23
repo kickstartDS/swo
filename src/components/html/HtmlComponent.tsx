@@ -1,12 +1,12 @@
 import { createContext, forwardRef, HTMLAttributes, useContext } from "react";
 import classNames from "classnames";
-import { HTMLProps } from "./HtmlProps";
+import { HtmlProps } from "./HtmlProps";
 
-export type { HTMLProps };
+export type { HtmlProps };
 
 export const HtmlContextDefault = forwardRef<
   HTMLDivElement,
-  HTMLProps & HTMLAttributes<HTMLDivElement>
+  HtmlProps & HTMLAttributes<HTMLDivElement>
 >(({ html, className, component, ...props }, ref) => {
   return (
     <div
@@ -22,7 +22,7 @@ export const HtmlContextDefault = forwardRef<
 export const HtmlContext = createContext(HtmlContextDefault);
 export const Html = forwardRef<
   HTMLDivElement,
-  HTMLProps & HTMLAttributes<HTMLDivElement>
+  HtmlProps & HTMLAttributes<HTMLDivElement>
 >((props, ref) => {
   const Component = useContext(HtmlContext);
   return <Component {...props} ref={ref} />;

@@ -6,10 +6,12 @@
  */
 
 import type {CtaProps} from "../cta/CtaProps";
+import type {DividerProps} from "../divider/DividerProps";
 import type {FaqProps} from "../faq/FaqProps";
 import type {FeaturesProps} from "../features/FeaturesProps";
 import type {GalleryProps} from "../gallery/GalleryProps";
 import type {HeroProps} from "../hero/HeroProps";
+import type {HtmlProps} from "../html/HtmlProps";
 import type {ImageStoryProps} from "../image-story/ImageStoryProps";
 import type {ImageTextProps} from "../image-text/ImageTextProps";
 import type {LogosProps} from "../logos/LogosProps";
@@ -114,10 +116,12 @@ export type TileWidth = "smallest" | "default" | "medium" | "large" | "largest";
  */
 export type Content = (
   | CtaProps
+  | DividerProps
   | FaqProps
   | FeaturesProps
   | GalleryProps
   | HeroProps
+  | HtmlProps
   | ImageStoryProps
   | ImageTextProps
   | LogosProps
