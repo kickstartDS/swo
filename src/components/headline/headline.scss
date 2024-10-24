@@ -15,7 +15,7 @@
 
     visibility: hidden;
     position: absolute;
-    left: calc(100% + var(--ks-spacing-inline-s));
+    margin: 0 var(--ks-spacing-inline-s);
   }
 
   &:hover {
@@ -117,8 +117,8 @@
     }
 
     .dsa-headline__anchor {
-      left: auto;
-      right: calc(100% + var(--ks-spacing-inline-s));
+      top: 0;
+      right: 100%;
     }
   }
 }
