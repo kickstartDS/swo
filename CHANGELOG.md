@@ -1,3 +1,15 @@
+# v1.5.41 (Thu Oct 24 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: fix headline link position ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.5.40 (Thu Oct 24 2024)
 
 #### ⚠️ Pushed to `main`
