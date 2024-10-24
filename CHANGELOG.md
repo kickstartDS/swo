@@ -1,3 +1,16 @@
+# v1.5.38 (Thu Oct 24 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: remove obsolete typescript files ([@julrich](https://github.com/julrich))
+- fix: make header semantic ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.5.37 (Wed Oct 23 2024)
 
 #### ⚠️ Pushed to `main`
