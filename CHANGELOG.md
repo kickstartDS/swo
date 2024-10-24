@@ -1,3 +1,16 @@
+# v1.5.39 (Thu Oct 24 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@julrich](https://github.com/julrich))
+- fix: divider default token ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.5.38 (Thu Oct 24 2024)
 
 #### ⚠️ Pushed to `main`
