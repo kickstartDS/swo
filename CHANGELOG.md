@@ -1,3 +1,16 @@
+# v1.6.0 (Fri Oct 25 2024)
+
+#### 🚀 Enhancement
+
+- Execute scripts in html component & add consent [#19](https://github.com/kickstartDS/ds-agency-premium/pull/19) ([@lmestel](https://github.com/lmestel) [@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 2
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.5.42 (Fri Oct 25 2024)
 
 #### ⚠️ Pushed to `main`
