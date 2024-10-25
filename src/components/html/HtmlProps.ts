@@ -6,6 +6,7 @@
  */
 
 export type HTMLString = string;
+export type ShowHTMLAfterConsent = boolean;
 /**
  * Add additional css classes that should be applied to the element
  */
@@ -20,6 +21,11 @@ export type KsComponentAttribute = string;
  */
 export interface HtmlProps {
   html?: HTMLString;
+  consent?: ShowHTMLAfterConsent;
+  consentText?: string;
+  consentButtonLabel?: string;
+  consentBackgroundImage?: string;
+  consentAspectRatio?: "16:9" | "16:10" | "4:3" | "1:1";
   className?: AdditionalClasses;
   component?: KsComponentAttribute;
 }
