@@ -1,12 +1,41 @@
-.c-html {
+@use "./html-tokens.scss";
+
+.dsa-html {
   &__consent {
-    color: var(--ks-text-color-default);
-    font: var(--ks-font-interface-m);
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    gap: var(--ks-spacing-stack-s);
 
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    background-position: center;
+    background-size: cover;
+
+    .c-rich-text {
+      color: var(--dsa-html__consent--color, var(--ks-text-color-display));
+      font: var(--dsa-html__consent--font, var(--ks-font-interface-m));
+    }
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      background-color: var(--dsa-html__consent--background, var(--ks-color-fg-inverted-alpha-6));
+    }
+
+    > * {
+      z-index: 1;
+    }
+
+    .l-container {
+      container-type: normal;
+    }
 
     &--sixteen-to-nine {
       aspect-ratio: 16 / 9;

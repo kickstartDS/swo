@@ -29,7 +29,7 @@ export const HtmlContextDefault = forwardRef<
     return (
       <div
         ref={ref}
-        className={classNames("c-html", className)}
+        className={classNames("dsa-html", className)}
         ks-component={component}
         {...props}
       >
@@ -41,18 +41,21 @@ export const HtmlContextDefault = forwardRef<
                 ? `url(${consentBackgroundImage})`
                 : undefined,
             }}
-            className={classNames("c-html__consent", {
-              "c-html__consent--sixteen-to-nine": consentAspectRatio === "16:9",
-              "c-html__consent--sixteen-to-ten": consentAspectRatio === "16:10",
-              "c-html__consent--four-to-three": consentAspectRatio === "4:3",
-              "c-html__consent--square": consentAspectRatio === "1:1",
+            className={classNames("dsa-html__consent", {
+              "dsa-html__consent--sixteen-to-nine":
+                consentAspectRatio === "16:9",
+              "dsa-html__consent--sixteen-to-ten":
+                consentAspectRatio === "16:10",
+              "dsa-html__consent--four-to-three": consentAspectRatio === "4:3",
+              "dsa-html__consent--square": consentAspectRatio === "1:1",
             })}
           >
             {consentText && <RichText text={consentText} />}
             <Button
               type="button"
               label={consentButtonLabel}
-              className="c-html__consent-button"
+              className="dsa-html__consent-button"
+              variant="tertiary"
             />
           </div>
         )}

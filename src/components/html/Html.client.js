@@ -1,6 +1,6 @@
 import { Component, define } from "@kickstartds/core/lib/component";
 
-const consentButtonSelector = ".c-html__consent-button";
+const consentButtonSelector = ".dsa-html__consent-button";
 
 const copyScriptTag = (original) => {
   if (original.tagName === "SCRIPT") {
