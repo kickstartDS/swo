@@ -6,7 +6,7 @@
   gap: var(--dsa-stats--gap-vertical, var(--ks-spacing-stack-l))
     var(--dsa-stats--gap-horizontal, var(--ks-spacing-inline-m));
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
 
   .l-container--rich-text {
     width: 100%;
