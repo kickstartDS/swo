@@ -37,7 +37,19 @@ export const FeaturesContextDefault = forwardRef<
       )}
     >
       {features.map((feature, index) => (
-        <Feature key={index} {...feature} style={style} />
+        <Feature
+          key={index}
+          icon={feature.icon}
+          style={style}
+          title={feature.title}
+          text={feature.text}
+          cta={{
+            label: feature.cta?.label,
+            target: feature.cta?.target,
+            style: ctas.style,
+            toggle: ctas.toggle,
+          }}
+        />
       ))}
     </div>
   )
