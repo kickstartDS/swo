@@ -1,3 +1,15 @@
+# v1.6.2 (Wed Nov 06 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(icons): add new icon set ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.1 (Wed Nov 06 2024)
 
 #### ⚠️ Pushed to `main`
