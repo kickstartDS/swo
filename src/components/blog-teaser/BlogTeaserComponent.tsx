@@ -62,6 +62,7 @@ export const BlogTeaserContextDefault = forwardRef<
               ? {
                   // @ts-expect-error
                   target: link.url,
+                  label: "Read more",
                 }
               : undefined
           }
