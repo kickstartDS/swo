@@ -1,3 +1,15 @@
+# v1.6.5 (Thu Nov 07 2024)
+
+#### ⚠️ Pushed to `main`
+
+- build: update markdown-to-jsx dependency ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.6.4 (Thu Nov 07 2024)
 
 #### ⚠️ Pushed to `main`
