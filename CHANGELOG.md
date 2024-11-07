@@ -1,3 +1,16 @@
+# v1.6.6 (Thu Nov 07 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add iconSprite to settings schema ([@julrich](https://github.com/julrich))
+- fix: add alt tags to blog teaser and blog head images ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.6.5 (Thu Nov 07 2024)
 
 #### ⚠️ Pushed to `main`
