@@ -1,3 +1,15 @@
+# v1.6.4 (Thu Nov 07 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: features rendering ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.6.3 (Wed Nov 06 2024)
 
 #### ⚠️ Pushed to `main`
