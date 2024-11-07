@@ -12,7 +12,7 @@ export const BlogHeadContextDefault = forwardRef<HTMLDivElement, BlogHeadProps>(
         {...rest}
         date={date}
         headline={{ text: headline, level: "h1", align: "left" }}
-        image={{ src: image }}
+        image={{ src: image, alt: headline }}
         categories={tags.map((tag) => {
           return { label: tag.entry };
         })}
