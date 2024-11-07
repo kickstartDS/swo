@@ -1,3 +1,15 @@
+# v1.6.7 (Thu Nov 07 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add label to blog teaser links ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.6.6 (Thu Nov 07 2024)
 
 #### ⚠️ Pushed to `main`
