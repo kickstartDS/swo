@@ -9,7 +9,7 @@ import { VideoCurtain } from "../components/video-curtain/VideoCurtainComponent"
 import { Testimonials } from "../components/testimonials/TestimonialsComponent";
 import { Cta } from "../components/cta/CtaComponent";
 import { ImageStory } from "../components/image-story/ImageStoryComponent";
-import { Image } from "../components/image/ImageComponent";
+import { ImageText } from "../components/image-text/ImageTextComponent";
 
 const Page = () => (
   <>
@@ -250,9 +250,13 @@ We empower your digital teams with the knowledge and skills to manage and evolve
     </Section>
 
     <Section width="wide" spaceBefore="none" spaceAfter="small">
-      <Image
-        src="/img/office-divider-image.png"
-        alt="Photorealistic image Super wide scale of a view into a hyper modern design & web development agency, glass walls, no people, wide angle, blade runner movie like aesthetics, neon-light, lens-flare, pink, blue, and cyan color tonality, wide angle, sharp, "
+      <ImageText
+        image={{
+          src: "/img/office-divider-image.png",
+          alt: "Photorealistic image Super wide scale of a view into a hyper modern design & web development agency, glass walls, no people, wide angle, blade runner movie like aesthetics, neon-light, lens-flare, pink, blue, and cyan color tonality, wide angle, sharp, ",
+        }}
+        text={""}
+        layout={"above"}
       />
     </Section>
 
