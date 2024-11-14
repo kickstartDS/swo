@@ -1,3 +1,15 @@
+# v1.6.8 (Thu Nov 14 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(tokens): fix typo ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.7 (Thu Nov 07 2024)
 
 #### ⚠️ Pushed to `main`
