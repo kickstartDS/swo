@@ -34,7 +34,7 @@
   --c-visual_overlay--background-size: 100%;
 
   .c-visual__box {
-    --c-visual_box--background: var(--dsa-video-curtain__texbox--background-color, var(--ks-color-bg-alpha-2));
+    --c-visual_box--background: var(--dsa-video-curtain__textbox--background-color, var(--ks-color-bg-alpha-2));
     --c-visual_box--color: var(--dsa-video-curtain__copy--color, var(--ks-text-color-default));
     --c-visual_box--border-radius: var(--dsa-video-curtain__textbox--border-radius, var(--ks-border-radius-surface));
     --c-visual_box--padding: var(--dsa-video-curtain__textbox--padding, var(--ks-spacing-inset-squish-xl));
