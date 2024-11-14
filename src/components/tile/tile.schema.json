@@ -26,10 +26,16 @@
       "type": "object",
       "properties": {
         "src": {
-          "$ref": "http://schema.mydesignsystem.com/image.schema.json#/properties/src"
+          "title": "Source",
+          "description": "Picture source",
+          "type": "string",
+          "format": "image",
+          "examples": ["img/close-up-young-business-team-working.png"]
         },
         "alt": {
-          "$ref": "http://schema.mydesignsystem.com/image.schema.json#/properties/alt"
+          "title": "Alt text",
+          "description": "Alt text to display for picture",
+          "type": "string"
         }
       }
     },
