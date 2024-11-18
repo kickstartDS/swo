@@ -1,4 +1,25 @@
+@use "@kickstartds/core/source/core/container";
+@include container.wrapper("hero");
+
 .dsa-hero {
+  --dsa-hero--min-height: 18rem;
+  --dsa-hero--min-height_small: 13.2rem;
+
+  @include container.size("≥", 640px, "hero") {
+    --dsa-hero--min-height: 21rem;
+    --dsa-hero--min-height_small: 13.35rem;
+  }
+
+  @include container.size("≥", 960px, "hero") {
+    --dsa-hero--min-height: 31.5rem;
+    --dsa-hero--min-height_small: 15.8rem;
+  }
+
+  @include container.size("≥", 1024px, "hero") {
+    --dsa-hero--min-height: 35rem;
+    --dsa-hero--min-height_small: 20rem;
+  }
+
   --dsa-hero__headline--color: var(--dsa-headline--color);
   --dsa-hero__subheadline--color: var(--dsa-headline__subheadline--color);
 

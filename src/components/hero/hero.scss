@@ -26,6 +26,12 @@
 
   --c-visual_overlay--background: transparent;
 
+  min-height: var(--dsa-hero--min-height);
+
+  &.c-visual--small {
+    min-height: var(--dsa-hero--min-height_small);
+  }
+
   @container visual (min-width: 640px) {
     --c-visual_overlay--background: radial-gradient(
       50% 125% at 100% 0%,

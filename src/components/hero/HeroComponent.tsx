@@ -38,7 +38,7 @@ export const HeroContextDefault = forwardRef<
         // @ts-expect-error
         value={ButtonGroup}
       >
-        <Container name="visual">
+        <Container name="hero">
           <VisualContextDefault
             {...rest}
             ref={ref}
