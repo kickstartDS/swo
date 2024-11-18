@@ -1,3 +1,15 @@
+# v1.6.10 (Mon Nov 18 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(hero): add component token for hero min width ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.9 (Thu Nov 14 2024)
 
 #### ⚠️ Pushed to `main`
