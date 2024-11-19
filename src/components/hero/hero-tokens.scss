@@ -1,21 +1,21 @@
 @use "@kickstartds/core/source/core/container";
-@include container.wrapper("hero");
+@include container.wrapper("visual");
 
 .dsa-hero {
   --dsa-hero--min-height: 18rem;
   --dsa-hero--min-height_small: 13.2rem;
 
-  @include container.size("≥", 640px, "hero") {
+  @include container.size("≥", 640px, "visual") {
     --dsa-hero--min-height: 21rem;
     --dsa-hero--min-height_small: 13.35rem;
   }
 
-  @include container.size("≥", 960px, "hero") {
+  @include container.size("≥", 960px, "visual") {
     --dsa-hero--min-height: 31.5rem;
     --dsa-hero--min-height_small: 15.8rem;
   }
 
-  @include container.size("≥", 1024px, "hero") {
+  @include container.size("≥", 1024px, "visual") {
     --dsa-hero--min-height: 35rem;
     --dsa-hero--min-height_small: 20rem;
   }

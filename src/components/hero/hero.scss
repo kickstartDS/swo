@@ -32,7 +32,7 @@
     min-height: var(--dsa-hero--min-height_small);
   }
 
-  @container visual (min-width: 640px) {
+  @include container.size("≥", 640px, "visual") {
     --c-visual_overlay--background: radial-gradient(
       50% 125% at 100% 0%,
       var(--ks-color-primary-alpha-5) 0%,
