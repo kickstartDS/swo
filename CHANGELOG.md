@@ -1,3 +1,15 @@
+# v1.6.11 (Tue Nov 19 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(hero): fix container name ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.10 (Mon Nov 18 2024)
 
 #### ⚠️ Pushed to `main`
