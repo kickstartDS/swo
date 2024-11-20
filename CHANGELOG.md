@@ -1,3 +1,15 @@
+# v1.6.14 (Wed Nov 20 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(section): fix spotlight ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.13 (Wed Nov 20 2024)
 
 #### ⚠️ Pushed to `main`
