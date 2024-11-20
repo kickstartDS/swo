@@ -71,7 +71,9 @@ hr.c-divider {
   --c-rich-text_headline--margin: var(--dsa-rich-text__headline--margin, 0.75em 0 0.5em);
 }
 
-[ks-inverted="false"] {
+[ks-inverted="false"],
+:root,
+#root {
   --dsa-text-color-on-primary: var(--dsa-text-color-on-primary-base);
   --dsa-text-color-on-primary-inverted: var(--dsa-text-color-on-primary-inverted-base);
 }

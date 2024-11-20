@@ -1,4 +1,3 @@
-import { addSpotlightEffect } from "./js/spotlight.client";
 import {
   HTMLAttributes,
   FC,
@@ -6,7 +5,6 @@ import {
   forwardRef,
   createContext,
   useContext,
-  useEffect,
 } from "react";
 import classnames from "classnames";
 import { useKsComponent } from "@kickstartds/core/lib/react";
@@ -52,13 +50,6 @@ export const SectionContextDefault = forwardRef<
       spotlight,
       content?.mode === "slider",
     ]);
-
-    useEffect(() => {
-      if (spotlight) {
-        addSpotlightEffect();
-      }
-    }, [spotlight]);
-
     return (
       <KdsSectionContextDefault
         {...props}
