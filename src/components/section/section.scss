@@ -147,7 +147,8 @@
       height: 100%;
       position: absolute;
       background-image: radial-gradient(
-        var(--dsa-section__spotlight--size) circle,
+        var(--dsa-section__spotlight--size) circle at var(--dsa-section__spotlight--position-x)
+          var(--dsa-section__spotlight--position-y),
         var(--dsa-section__spotlight--color) 0%,
         var(--dsa-section__spotlight--color) calc(100% - var(--dsa-section__spotlight--blur)),
         transparent 100%,
