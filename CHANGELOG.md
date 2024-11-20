@@ -1,3 +1,16 @@
+# v1.6.15 (Wed Nov 20 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@fleven-kds](https://github.com/fleven-kds))
+- feat(section): revert previous change ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.14 (Wed Nov 20 2024)
 
 #### ⚠️ Pushed to `main`
