@@ -1,3 +1,15 @@
+# v1.6.16 (Wed Nov 20 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(footer): adjust footer border colo ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.15 (Wed Nov 20 2024)
 
 #### ⚠️ Pushed to `main`
