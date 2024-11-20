@@ -1,8 +1,8 @@
 @use "./selectors" as *;
 
 #{$selectors} {
-  --dsa-text-color-on-primary: var(--ks-color-fg);
-  --dsa-text-color-on-primary-inverted: var(--ks-color-fg-inverted);
+  --dsa-text-color-on-primary-base: var(--ks-color-fg);
+  --dsa-text-color-on-primary-inverted-base: var(--ks-color-fg-inverted);
 
   --dsa-topic--font: var(--ks-font-display-m);
   --dsa-topic--font-weight: var(--ks-font-weight-medium);

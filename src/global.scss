@@ -71,13 +71,12 @@ hr.c-divider {
   --c-rich-text_headline--margin: var(--dsa-rich-text__headline--margin, 0.75em 0 0.5em);
 }
 
-[ks-inverted="false"],
-#root {
-  --dsa-text-color-on-primary-base: var(--dsa-text-color-on-primary);
-  --dsa-text-color-on-primary-inverted-base: var(--dsa-text-color-on-primary-inverted);
+[ks-inverted="false"] {
+  --dsa-text-color-on-primary: var(--dsa-text-color-on-primary-base);
+  --dsa-text-color-on-primary-inverted: var(--dsa-text-color-on-primary-inverted-base);
 }
 
 [ks-inverted="true"] {
-  --dsa-text-color-on-primary-base: var(--dsa-text-color-on-primary-inverted);
-  --dsa-text-color-on-primary-inverted-base: var(--dsa-text-color-on-primary);
+  --dsa-text-color-on-primary: var(--dsa-text-color-on-primary-inverted-base);
+  --dsa-text-color-on-primary-inverted: var(--dsa-text-color-on-primary-base);
 }
