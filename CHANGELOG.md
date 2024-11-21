@@ -1,3 +1,16 @@
+# v1.6.20 (Thu Nov 21 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@fleven-kds](https://github.com/fleven-kds))
+- feat(section): improve z-index behaviour ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.19 (Thu Nov 21 2024)
 
 #### ⚠️ Pushed to `main`
