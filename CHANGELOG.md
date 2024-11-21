@@ -1,3 +1,15 @@
+# v1.6.18 (Wed Nov 20 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: bring back spotlight in section ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.6.17 (Wed Nov 20 2024)
 
 #### ⚠️ Pushed to `main`
