@@ -42,7 +42,7 @@ export const BlogTeaserContextDefault = forwardRef<
       });
 
     return (
-      <Container name="post-teaser">
+      <Container name="blog-teaser">
         <PostTeaserContextDefault
           {...rest}
           className={classnames(className, "dsa-blog-teaser")}
