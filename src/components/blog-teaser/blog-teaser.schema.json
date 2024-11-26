@@ -52,6 +52,13 @@
           "type": "string",
           "format": "uri",
           "examples": ["https://example.com"]
+        },
+        "text": {
+          "title": "Text",
+          "description": "The text for the link",
+          "type": "string",
+          "default": "Read article",
+          "examples": ["Read article"]
         }
       },
       "additionalProperties": false,

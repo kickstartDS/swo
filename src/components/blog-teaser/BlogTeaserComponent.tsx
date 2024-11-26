@@ -9,7 +9,7 @@ export type { BlogTeaserProps };
 
 export const BlogTeaserContextDefault = forwardRef<
   HTMLDivElement,
-  BlogTeaserProps & HTMLAttributes<HTMLElement>
+  BlogTeaserProps & HTMLAttributes<HTMLDivElement>
 >(
   (
     {
@@ -62,7 +62,7 @@ export const BlogTeaserContextDefault = forwardRef<
               ? {
                   // @ts-expect-error
                   target: link.url,
-                  label: "Read more",
+                  label: link.text || "Read article",
                 }
               : undefined
           }
@@ -79,10 +79,11 @@ export const BlogTeaserContextDefault = forwardRef<
 );
 
 export const BlogTeaserContext = createContext(BlogTeaserContextDefault);
-export const BlogTeaser = forwardRef<HTMLDivElement, BlogTeaserProps>(
-  (props, ref) => {
-    const Component = useContext(BlogTeaserContext);
-    return <Component {...props} ref={ref} />;
-  }
-);
+export const BlogTeaser = forwardRef<
+  HTMLDivElement,
+  BlogTeaserProps & HTMLAttributes<HTMLDivElement>
+>((props, ref) => {
+  const Component = useContext(BlogTeaserContext);
+  return <Component {...props} ref={ref} />;
+});
 BlogTeaser.displayName = "BlogTeaser";
