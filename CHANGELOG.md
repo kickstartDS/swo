@@ -1,3 +1,15 @@
+# v1.6.21 (Tue Nov 26 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add better label to blog teasers ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.6.20 (Thu Nov 21 2024)
 
 #### ⚠️ Pushed to `main`
