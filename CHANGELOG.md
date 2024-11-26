@@ -1,3 +1,17 @@
+# v1.6.23 (Tue Nov 26 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(icons): remove custom icons ([@fleven-kds](https://github.com/fleven-kds))
+- feat(sd.config): fix icon sprite generation ([@fleven-kds](https://github.com/fleven-kds))
+- feat(package): update kickstartDS-content ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.22 (Tue Nov 26 2024)
 
 #### ⚠️ Pushed to `main`
