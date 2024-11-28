@@ -56,10 +56,12 @@ export const CtaContextDefault = forwardRef<
           image={{
             source: image?.src,
             order: order,
+            vAlign: contentAlign,
           }}
           box={{
             text: text,
             textAlign: textAlign,
+            vAlign: contentAlign,
             link: {
               // @ts-expect-error
               buttons,
