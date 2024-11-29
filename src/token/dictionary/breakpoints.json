@@ -17,8 +17,8 @@
         "value": "75em",
         "private": true
       },
-      "largescreen": {
-        "value": "130em",
+      "tv": {
+        "value": "122em",
         "private": true
       }
     }

@@ -2,7 +2,7 @@
 
 #### ⚠️ Pushed to `main`
 
-- feat(section): add largescreen support ([@fleven-kds](https://github.com/fleven-kds))
+- feat(section): add tv support ([@fleven-kds](https://github.com/fleven-kds))
 
 #### Authors: 1
 

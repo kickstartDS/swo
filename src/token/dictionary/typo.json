@@ -82,7 +82,7 @@
           "desktop": {
             "value": 1.75
           },
-          "largescreen": {
+          "tv": {
             "value": 2.25
           }
         },
@@ -162,7 +162,7 @@
           "tablet": {
             "value": 1.125
           },
-          "largescreen": {
+          "tv": {
             "value": 1.35
           }
         },
@@ -242,7 +242,7 @@
           "tablet": {
             "value": 1.125
           },
-          "largescreen": {
+          "tv": {
             "value": 1.35
           }
         },
@@ -322,7 +322,7 @@
           "tablet": {
             "value": 1.125
           },
-          "largescreen": {
+          "tv": {
             "value": 1.35
           }
         },
