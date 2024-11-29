@@ -1,3 +1,15 @@
+# v1.6.30 (Fri Nov 29 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(breakpoints): rename 4k breakpoint ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.29 (Fri Nov 29 2024)
 
 #### ⚠️ Pushed to `main`
