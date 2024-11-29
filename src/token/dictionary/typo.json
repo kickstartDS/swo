@@ -74,13 +74,16 @@
             "value": 1.125
           },
           "tablet": {
-            "value": 1.25
+            "value": 1.5
           },
           "laptop": {
             "value": 1.5
           },
           "desktop": {
             "value": 1.75
+          },
+          "largescreen": {
+            "value": 2.25
           }
         },
         "xxs-base": {
@@ -158,6 +161,9 @@
         "bp-factor": {
           "tablet": {
             "value": 1.125
+          },
+          "largescreen": {
+            "value": 1.35
           }
         },
         "xxs-base": {
@@ -235,6 +241,9 @@
         "bp-factor": {
           "tablet": {
             "value": 1.125
+          },
+          "largescreen": {
+            "value": 1.35
           }
         },
         "xxs-base": {
@@ -312,6 +321,9 @@
         "bp-factor": {
           "tablet": {
             "value": 1.125
+          },
+          "largescreen": {
+            "value": 1.35
           }
         },
         "xxs-base": {

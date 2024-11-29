@@ -16,6 +16,10 @@
       "desktop": {
         "value": "75em",
         "private": true
+      },
+      "largescreen": {
+        "value": "130em",
+        "private": true
       }
     }
   }
