@@ -44,7 +44,7 @@
   position: relative;
 
   .l-section__content {
-    max-width: var(--dsa-section__content--max-width, 120em);
+    max-width: var(--dsa-section__content--max-width, unset);
   }
 
   &.l-section--gutter {
