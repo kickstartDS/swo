@@ -4,6 +4,8 @@
   --c-storytelling--padding-ratio: 2;
   --c-storytelling--horizontal-padding: var(--dsa-content--spacing);
 
+  justify-content: center;
+  align-items: stretch;
   padding: 0;
 
   &.dsa-cta--color-neutral {
@@ -27,6 +29,14 @@
 
   &.c-storytelling--full.c-storytelling--order-desktop-image-last .c-storytelling__box {
     padding-left: var(--dsa-cta--horizontal-padding);
+  }
+
+  &.dsa-cta--align-top {
+    align-items: flex-start;
+  }
+
+  &.dsa-cta--align-bottom {
+    align-items: flex-end;
   }
 
   .c-storytelling__box {
