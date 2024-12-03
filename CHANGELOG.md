@@ -1,3 +1,15 @@
+# v1.6.33 (Tue Dec 03 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(icons): add missing built-in icons ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.32 (Mon Dec 02 2024)
 
 #### ⚠️ Pushed to `main`
