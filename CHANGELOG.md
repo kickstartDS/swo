@@ -1,3 +1,15 @@
+# v1.6.35 (Tue Dec 03 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(author): add docs for author ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.34 (Tue Dec 03 2024)
 
 #### ⚠️ Pushed to `main`
