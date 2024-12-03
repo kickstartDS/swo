@@ -28,7 +28,6 @@ export const Default: Story = {
     },
   },
   args: pack({
-    title: "Blog Post",
     author: {
       name: "Jane Smith",
       image: {
