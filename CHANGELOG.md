@@ -1,3 +1,15 @@
+# v1.6.39 (Wed Dec 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add markdown capabilities to teaser card headline ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.6.36 (Tue Dec 03 2024)
 
 #### ⚠️ Pushed to `main`
