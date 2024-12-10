@@ -1,3 +1,27 @@
+# v1.6.42 (Tue Dec 10 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(features:) add min-width to icons ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.6.41 (Mon Dec 09 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(features): fix feature icon layout ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.40 (Thu Dec 05 2024)
 
 #### ⚠️ Pushed to `main`
