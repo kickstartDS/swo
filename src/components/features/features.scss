@@ -114,6 +114,8 @@
       color: var(--dsa-feature__icon--color, var(--ks-text-color-primary));
       width: var(--dsa-feature__icon--size);
       height: var(--dsa-feature__icon--size);
+      min-width: var(--dsa-feature__icon--size);
+      min-height: var(--dsa-feature__icon--size);
       flex-basis: var(--dsa-feature__icon--size);
       align-self: flex-start;
     }
