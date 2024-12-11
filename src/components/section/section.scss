@@ -43,22 +43,20 @@
   --l-section--space-small: var(--dsa-section--space_small, calc(var(--l-section--space-default) / 2));
 
   background-image: var(--dsa-section--background-image);
-
+  background-color: var(--dsa-section--background-color_default, var(--ks-color-bg));
   position: relative;
 
-  &.l-section--gutter {
-    &-large {
-      --l-section--gutter: var(--dsa-section--gutter_large);
-    }
-    &-small {
-      --l-section--gutter: var(--dsa-section--gutter_small);
-    }
-    &-none {
-      --l-section--gutter: var(--dsa-section--gutter_none);
-    }
+  &.l-section--gutter-large {
+    --l-section--gutter: var(--dsa-section--gutter_large);
   }
 
-  background-color: var(--dsa-section--background-color_default, var(--ks-color-bg));
+  &.l-section--gutter-small {
+    --l-section--gutter: var(--dsa-section--gutter_small);
+  }
+
+  &.l-section--gutter-none {
+    --l-section--gutter: var(--dsa-section--gutter_none);
+  }
 
   &.l-section--accent {
     background-color: var(--dsa-section--background-color_accent, var(--ks-background-color-accent));
