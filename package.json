@@ -56,7 +56,7 @@
     "prepare": "patch-package && husky install",
     "prepublishOnly": "rm -rf dist && yarn build-tokens && yarn schema && rollup -c && yarn build-storybook",
     "schema": "run-p schema:*",
-    "schema:dereference-schemas": "kickstartDS schema dereference --schema-domain schema.mydesignsystem.com",
+    "schema:dereference-schemas": "kickstartDS schema dereference",
     "schema:generate-props": "kickstartDS schema types",
     "schema:layer-types": "kickstartDS schema layer",
     "start": "run-p watch:* storybook",

@@ -25,7 +25,17 @@
     --dsa-content--spacing: var(--ks-spacing-inset-xl);
   }
 
-  --dsa-section__content_wide--width: 1440px;
+  --dsa-content--width_narrow: 46.5rem;
+  --dsa-content--width_default: 62rem;
+  --dsa-content--width_wide: 75rem;
+  --dsa-content--width_max: 100vw;
+  --dsa-content--width_full: 100vw;
+
+  @media (min-width: 122em) {
+    --dsa-content--width_narrow: 55.8rem;
+    --dsa-content--width_default: 74.4rem;
+    --dsa-content--width_wide: 90rem;
+  }
 
   --dsa-logo--height: 2.25rem;
 
