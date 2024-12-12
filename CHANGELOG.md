@@ -1,3 +1,15 @@
+# v1.6.44 (Thu Dec 12 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(hero): add "corner" variant to textPosition ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.43 (Tue Dec 10 2024)
 
 #### ⚠️ Pushed to `main`
