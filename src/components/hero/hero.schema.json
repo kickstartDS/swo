@@ -73,7 +73,7 @@
     "textPosition": {
       "title": "Module aligment",
       "description": "Choose the alginment of the module content",
-      "enum": ["center", "below", "left", "right"],
+      "enum": ["center", "below", "left", "right", "corner"],
       "type": "string",
       "default": "bottom"
     }

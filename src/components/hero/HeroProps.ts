@@ -73,7 +73,7 @@ export type AltText = string;
 /**
  * Choose the alginment of the module content
  */
-export type ModuleAligment = "center" | "below" | "left" | "right";
+export type ModuleAligment = "center" | "below" | "left" | "right" | "corner";
 
 export interface HeroProps {
   headline?: Headline;
