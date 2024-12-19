@@ -1,3 +1,15 @@
+# v1.6.47 (Thu Dec 19 2024)
+
+#### 🐛 Bug Fix
+
+- Optimise for large screen resolutions [#39](https://github.com/kickstartDS/ds-agency-premium/pull/39) ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.46 (Thu Dec 19 2024)
 
 #### ⚠️ Pushed to `main`
