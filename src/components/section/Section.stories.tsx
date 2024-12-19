@@ -255,6 +255,26 @@ export const Inverted: Story = {
   }),
 };
 
+export const BackgroundImage: Story = {
+  parameters: {
+    viewport: {
+      width: 1440,
+      height: 928,
+    },
+  },
+  args: pack({
+    backgroundImage: "/img/bg_dot-carpet-blue.svg",
+    headline: {
+      text: "Happy Customers Showcases",
+      sub: "We can create something shining for you too!",
+    },
+    content: {
+      mode: "default",
+    },
+    buttons: [],
+  }),
+};
+
 export const Spotlight: Story = {
   parameters: {
     viewport: {

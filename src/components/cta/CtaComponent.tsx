@@ -63,7 +63,6 @@ export const CtaContextDefault = forwardRef<
             textAlign: textAlign,
             vAlign: contentAlign,
             link: {
-              // @ts-expect-error
               buttons,
               colorNeutral: colorNeutral,
               arrangement: textAlign,
