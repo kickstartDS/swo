@@ -53,9 +53,12 @@ export const HeroContextDefault = forwardRef<
             box={{
               background: textbox === true ? "solid" : "transparent",
               enabled: true,
-              vertical: textPosition === "below" ? "bottom" : "center",
+              vertical:
+                textPosition === "below" || textPosition === "corner"
+                  ? "bottom"
+                  : "center",
               horizontal:
-                textPosition === "left"
+                textPosition === "left" || textPosition === "corner"
                   ? "left"
                   : textPosition === "right"
                   ? "right"

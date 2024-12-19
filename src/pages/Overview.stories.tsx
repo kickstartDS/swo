@@ -193,7 +193,7 @@ const Page = () => (
 );
 
 export default {
-  title: "Pages/Archetypes",
+  title: "Page Archetypes/Overview",
   render: Page,
   parameters: {
     layout: "fullscreen",

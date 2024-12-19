@@ -173,11 +173,11 @@ The implementation of the new **Design System** and migration to **Storyblok** t
 );
 
 export default {
-  title: "Pages/Archetypes",
+  title: "Page Archetypes/Showcase",
   render: Page,
   parameters: {
     layout: "fullscreen",
   },
 };
 
-export const Content = {};
+export const Showcase = {};

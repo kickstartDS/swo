@@ -321,11 +321,11 @@ We empower your digital teams with the knowledge and skills to manage and evolve
 );
 
 export default {
-  title: "Pages/Archetypes",
+  title: "Page Archetypes/Landingpage",
   render: Page,
   parameters: {
     layout: "fullscreen",
   },
 };
 
-export const Start = {};
+export const Landingpage = {};
