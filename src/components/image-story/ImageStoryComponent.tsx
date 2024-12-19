@@ -60,7 +60,6 @@ export const ImageStoryContextDefault = forwardRef<
             text: text,
             textAlign: textAlign,
             vAlign: "top",
-            // @ts-expect-error
             link: { buttons },
             headline: {
               text: headline,
