@@ -1,3 +1,15 @@
+# v1.6.50 (Fri Dec 20 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(breakpoints): add widescreen breakpoint ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.49 (Fri Dec 20 2024)
 
 #### ⚠️ Pushed to `main`
