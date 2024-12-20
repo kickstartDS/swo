@@ -29,17 +29,18 @@
   }
 
   // Content width options
-  --dsa-content--width_narrow: 42rem;
-  --dsa-content--width_default: 62rem;
-  --dsa-content--width_wide: 82rem;
+
+  --dsa-content--width_narrow: 34em;
+  --dsa-content--width_default: 50em;
+  --dsa-content--width_wide: 64em;
   --dsa-content--width_max: 100vw;
   --dsa-content--width_full: 100vw;
 
-  @media (min-width: 122em) {
-    --dsa-content--width_narrow: 35vw;
-    --dsa-content--width_default: 45vw;
-    --dsa-content--width_wide: 55vw;
-  }
+  // @media (min-width: 122em) {
+  //   --dsa-content--width_narrow: 35vw;
+  //   --dsa-content--width_default: 45vw;
+  //   --dsa-content--width_wide: 55vw;
+  // }
 
   // Logo height
   --dsa-logo--height: 2.25rem;

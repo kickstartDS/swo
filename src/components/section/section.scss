@@ -47,6 +47,10 @@
   background-color: var(--dsa-section--background-color_default, var(--ks-color-bg));
   position: relative;
 
+  .l-section__container {
+    font: var(--ks-font-copy-m);
+  }
+
   &.l-section--gutter-large {
     --l-section--gutter: var(--dsa-section--gutter_large);
   }

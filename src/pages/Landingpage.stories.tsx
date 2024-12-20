@@ -13,7 +13,7 @@ import { ImageText } from "../components/image-text/ImageTextComponent";
 
 const Page = () => (
   <>
-    <Header {...headerProps} dropdownInverted floating flyoutInverted />
+    <Header {...headerProps} floating flyoutInverted />
 
     <Section spaceBefore="none" spaceAfter="none" width="full">
       <VideoCurtain
@@ -85,7 +85,6 @@ We empower your digital teams with the knowledge and skills to manage and evolve
     </Section>
 
     <Section
-      width="wide"
       style="accentTransition"
       headline={{
         text: "No Agency site without some shiny happy Customer",
