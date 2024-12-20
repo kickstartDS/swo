@@ -29,10 +29,9 @@
   }
 
   // Content width options
-
-  --dsa-content--width_narrow: 34em;
-  --dsa-content--width_default: 50em;
-  --dsa-content--width_wide: 64em;
+  --dsa-content--width_narrow: calc(var(--ks-font-size-copy-m) * 34);
+  --dsa-content--width_default: calc(var(--ks-font-size-copy-m) * 50);
+  --dsa-content--width_wide: calc(var(--ks-font-size-copy-m) * 64);
   --dsa-content--width_max: 100vw;
   --dsa-content--width_full: 100vw;
 
