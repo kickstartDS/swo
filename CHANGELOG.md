@@ -1,3 +1,15 @@
+# v1.6.53 (Fri Dec 20 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(section): add global tile-width token ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.52 (Fri Dec 20 2024)
 
 #### ⚠️ Pushed to `main`
