@@ -1,3 +1,16 @@
+# v1.6.49 (Fri Dec 20 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@fleven-kds](https://github.com/fleven-kds))
+- feat(global-token): Increase the default value of content-width_wide #78 ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.48 (Thu Dec 19 2024)
 
 #### ⚠️ Pushed to `main`
