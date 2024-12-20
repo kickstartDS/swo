@@ -28,8 +28,11 @@
           "desktop": {
             "value": "2.2519"
           },
-          "tv": {
+          "widescreen": {
             "value": "2.5"
+          },
+          "tv": {
+            "value": "3"
           }
         }
       },
@@ -60,8 +63,11 @@
           "desktop": {
             "value": "2.2519"
           },
-          "tv": {
+          "widescreen": {
             "value": "2.5"
+          },
+          "tv": {
+            "value": "3"
           }
         }
       },
@@ -92,8 +98,11 @@
           "desktop": {
             "value": "2.2519"
           },
-          "tv": {
+          "widescreen": {
             "value": "2.5"
+          },
+          "tv": {
+            "value": "3"
           }
         }
       },
@@ -124,8 +133,11 @@
           "desktop": {
             "value": "2.2519"
           },
-          "tv": {
+          "widescreen": {
             "value": "2.5"
+          },
+          "tv": {
+            "value": "3"
           }
         }
       },
@@ -156,8 +168,11 @@
           "desktop": {
             "value": "2.2519"
           },
-          "tv": {
+          "widescreen": {
             "value": "2.5"
+          },
+          "tv": {
+            "value": "3"
           }
         }
       },
@@ -220,8 +235,11 @@
           "desktop": {
             "value": "2.2519"
           },
-          "tv": {
+          "widescreen": {
             "value": "2.5"
+          },
+          "tv": {
+            "value": "3"
           }
         }
       },
