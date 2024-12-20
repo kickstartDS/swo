@@ -28,12 +28,19 @@
     --dsa-content--spacing: var(--ks-spacing-inset-xl);
   }
 
-  // Content width options
+  // Content width options (for content displayed in a width constrained container)
   --dsa-content--width_narrow: calc(var(--ks-font-size-copy-m) * 34);
   --dsa-content--width_default: calc(var(--ks-font-size-copy-m) * 50);
   --dsa-content--width_wide: calc(var(--ks-font-size-copy-m) * 64);
   --dsa-content--width_max: 100vw;
   --dsa-content--width_full: 100vw;
+
+  // Tile width options (for content displayed in a grid of flex layout)
+  --dsa-tile-width_smallest: calc(var(--ks-font-size-copy-m) * 10);
+  --dsa-tile-width_small: calc(var(--ks-font-size-copy-m) * 20);
+  --dsa-tile-width_medium: calc(var(--ks-font-size-copy-m) * 30);
+  --dsa-tile-width_large: calc(var(--ks-font-size-copy-m) * 40);
+  --dsa-tile-width_largest: calc(var(--ks-font-size-copy-m) * 50);
 
   // Logo height
   --dsa-logo--height: 2.25rem;
