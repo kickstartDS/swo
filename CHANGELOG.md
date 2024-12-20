@@ -1,3 +1,16 @@
+# v1.6.51 (Fri Dec 20 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(global-token): remove annotations ([@fleven-kds](https://github.com/fleven-kds))
+- feat(token): make content-width em based ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.50 (Fri Dec 20 2024)
 
 #### ⚠️ Pushed to `main`
