@@ -96,7 +96,7 @@
         position: relative;
 
         .c-visual__box {
-          --c-visual_box--max-width: var(--dsa-content--width_default);
+          --c-visual_box--max-width: var(--dsa-hero_below__textbox--max-width, var(--dsa-content--width_default));
         }
       }
     }
