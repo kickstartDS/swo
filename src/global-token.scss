@@ -36,11 +36,11 @@
   --dsa-content--width_full: 100vw;
 
   // Tile width options (for content displayed in a grid of flex layout)
-  --dsa-tile--width_smallest: calc(var(--ks-font-size-copy-m) * 12);
-  --dsa-tile--width_small: calc(var(--ks-font-size-copy-m) * 20);
-  --dsa-tile--width_medium: calc(var(--ks-font-size-copy-m) * 28);
-  --dsa-tile--width_large: calc(var(--ks-font-size-copy-m) * 38);
-  --dsa-tile--width_largest: calc(var(--ks-font-size-copy-m) * 50);
+  --dsa-tile--width_smallest: calc(var(--ks-font-size-copy-m) * 10);
+  --dsa-tile--width_small: calc(var(--ks-font-size-copy-m) * 14);
+  --dsa-tile--width_medium: calc(var(--ks-font-size-copy-m) * 20);
+  --dsa-tile--width_large: calc(var(--ks-font-size-copy-m) * 28);
+  --dsa-tile--width_largest: calc(var(--ks-font-size-copy-m) * 38);
 
   // Logo height
   --dsa-logo--height: 2.25rem;
