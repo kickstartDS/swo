@@ -4,7 +4,6 @@
 
 .dsa-section {
   //Columns
-  --dsa-section__col--min-width: var(--dsa-section_tile-width--default);
   --dsa-section__col--max-width: 1fr;
   --dsa-section__col--repeat: auto-fit;
 
@@ -13,16 +12,16 @@
   --dsa-section--space_small: calc(var(--ks-spacing-xxl) / 2);
 
   //Tile Width
-  --dsa-section__tile--width_smallest: var(--dsa-tile-width_smallest);
-  --dsa-section__tile--width_small: var(--dsa-tile-width_small);
-  --dsa-section__tile--width_medium: var(--dsa-tile-width_medium);
-  --dsa-section__tile--width_large: var(--dsa-tile-width_large);
-  --dsa-section__tile--width_largest: var(--dsa-tile-width_largest);
+  --dsa-section__tile--width_smallest: var(--dsa-tile--width_smallest);
+  --dsa-section__tile--width_small: var(--dsa-tile--width_small);
+  --dsa-section__tile--width_medium: var(--dsa-tile--width_medium);
+  --dsa-section__tile--width_large: var(--dsa-tile--width_large);
+  --dsa-section__tile--width_largest: var(--dsa-tile--width_largest);
 
   //Gutter
-  --dsa-section--gutter_small: var(--ks-spacing-xs);
+  --dsa-section--gutter_small: var(--ks-spacing-s);
   --dsa-section--gutter_default: var(--ks-spacing-m);
-  --dsa-section--gutter_large: var(--ks-spacing-xl);
+  --dsa-section--gutter_large: var(--ks-spacing-l);
 
   //Buttons
   --dsa-section__buttons--space-before: var(--ks-spacing-stack-m);
