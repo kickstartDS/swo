@@ -141,7 +141,6 @@ export const ContactBanner: Story = {
     sub: "Chat with us about getting your product or platform to market faster",
     text: "Our modular design approach allows for flexibility and scalability in your application's architecture.",
     width: "wide",
-    fullWidth: true,
     image: {
       src: "img/contact-person.png",
       padding: false,
@@ -177,7 +176,6 @@ export const SplitBanner: Story = {
     colorNeutral: true,
     backgroundColor: "#001856",
     width: "wide",
-    fullWidth: true,
     order: {
       desktopImageLast: false,
     },
@@ -208,7 +206,6 @@ export const AngledImage: Story = {
 
 This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster.`,
     width: "wide",
-    fullWidth: true,
     image: {
       src: "img/angled-image.png",
       padding: false,
@@ -271,7 +268,6 @@ export const AlignBottom: Story = {
 We understand that every business is different, and that's why we offer custom solutions tailored to your specific business needs and requirements.`,
     backgroundImage: "img/grid-bg.svg",
     width: "wide",
-    fullWidth: true,
     contentAlign: "bottom",
     image: {
       src: "img/offset-image.png",

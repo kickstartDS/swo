@@ -25,7 +25,6 @@ export const CtaContextDefault = forwardRef<
       colorNeutral,
       contentAlign,
       order,
-      fullWidth = false,
       buttons = [],
       ...rest
     },
@@ -43,7 +42,6 @@ export const CtaContextDefault = forwardRef<
           ref={ref}
           className={classnames(
             "dsa-cta",
-            fullWidth ? `dsa-cta--full-width` : "",
             highlightText ? `dsa-cta--highlight-text` : "",
             colorNeutral ? `dsa-cta--color-neutral` : "",
             contentAlign && contentAlign !== "center"

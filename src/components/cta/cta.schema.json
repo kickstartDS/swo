@@ -36,12 +36,6 @@
       "default": false,
       "type": "boolean"
     },
-    "fullWidth": {
-      "title": "Width",
-      "description": "Set the width of the content to the full width of the element",
-      "type": "boolean",
-      "default": false
-    },
     "buttons": {
       "type": "array",
       "items": {

@@ -26,10 +26,6 @@ export type HighlightText = boolean;
  */
 export type ColorNeutral = boolean;
 /**
- * Set the width of the content to the full width of the element
- */
-export type Width = boolean;
-/**
  * Text content to display inside the button
  */
 export type Label = string;
@@ -84,7 +80,6 @@ export interface CtaProps {
   text?: ComponentText;
   highlightText?: HighlightText;
   colorNeutral?: ColorNeutral;
-  fullWidth?: Width;
   buttons?: Button[];
   backgroundColor?: BackgroundColor;
   backgroundImage?: BackgroundImage;
