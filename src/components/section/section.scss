@@ -163,11 +163,11 @@
   }
 
   .l-section__content {
-    --l-section_tile-width--smallest: var(--dsa-section__tile--width_smallest, var(--dsa-tile--width_smallest));
-    --l-section_tile-width--default: var(--dsa-section__tile--width_small, var(--dsa-tile--width_small));
-    --l-section_tile-width--medium: var(--dsa-section__tile--width_medium, var(--dsa-tile--width_medium));
-    --l-section_tile-width--large: var(--dsa-section__tile--width_large, var(--dsa-tile--width_large));
-    --l-section_tile-width--largest: var(--dsa-section__tile--width_largest, var(--dsa-tile--width_largest));
+    --l-section_tile-width--smallest: var(--dsa-section__col--min-width_smallest, var(--dsa-tile--width_smallest));
+    --l-section_tile-width--default: var(--dsa-section__col--min-width_small, var(--dsa-tile--width_small));
+    --l-section_tile-width--medium: var(--dsa-section__col--min-width_medium, var(--dsa-tile--width_medium));
+    --l-section_tile-width--large: var(--dsa-section__col--min-width_large, var(--dsa-tile--width_large));
+    --l-section_tile-width--largest: var(--dsa-section__col--min-width_largest, var(--dsa-tile--width_largest));
     --l-section_buttons--space-before: var(--dsa-section__buttons--space-before, var(--l-section--gutter));
 
     &--slider {

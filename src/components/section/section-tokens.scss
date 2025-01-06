@@ -4,19 +4,17 @@
 
 .dsa-section {
   //Columns
-  --dsa-section__col--max-width: 1fr;
   --dsa-section__col--repeat: auto-fit;
+  --dsa-section__col--max-width: 1fr;
+  --dsa-section__col--min-width_smallest: var(--dsa-tile--width_smallest);
+  --dsa-section__col--min-width_small: var(--dsa-tile--width_small);
+  --dsa-section__col--min-width_medium: var(--dsa-tile--width_medium);
+  --dsa-section__col--min-width_large: var(--dsa-tile--width_large);
+  --dsa-section__col--min-width_largest: var(--dsa-tile--width_largest);
 
-  //Space After & Before
+  //Vertical Space After & Before
   --dsa-section--space_default: var(--ks-spacing-xxl);
   --dsa-section--space_small: calc(var(--ks-spacing-xxl) / 2);
-
-  //Tile Width
-  --dsa-section__tile--width_smallest: var(--dsa-tile--width_smallest);
-  --dsa-section__tile--width_small: var(--dsa-tile--width_small);
-  --dsa-section__tile--width_medium: var(--dsa-tile--width_medium);
-  --dsa-section__tile--width_large: var(--dsa-tile--width_large);
-  --dsa-section__tile--width_largest: var(--dsa-tile--width_largest);
 
   //Gutter
   --dsa-section--gutter_small: var(--ks-spacing-s);
