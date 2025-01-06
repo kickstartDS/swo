@@ -1,3 +1,15 @@
+# v1.6.55 (Mon Jan 06 2025)
+
+#### ⚠️ Pushed to `main`
+
+- feat(global-token): update default value of tile-widths ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.54 (Mon Jan 06 2025)
 
 #### ⚠️ Pushed to `main`
