@@ -81,6 +81,13 @@
           "title": "Alt text",
           "description": "Image description",
           "type": "string"
+        },
+        "align": {
+          "title": "Vertical alignment of the image",
+          "description": "Select a vertical alignment for the image",
+          "type": "string",
+          "enum": ["center", "top", "bottom"],
+          "default": "center"
         }
       },
       "additionalProperties": false
@@ -112,9 +119,9 @@
       "type": "string",
       "default": "left"
     },
-    "contentAlign": {
+    "align": {
       "title": "Vertical alignment of the content",
-      "description": "Select a vertical alignment for the image",
+      "description": "Select a vertical alignment for the content",
       "type": "string",
       "enum": ["center", "top", "bottom"],
       "default": "center"

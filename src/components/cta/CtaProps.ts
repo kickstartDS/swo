@@ -58,6 +58,10 @@ export type Padding = boolean;
  */
 export type AltText = string;
 /**
+ * Select a vertical alignment for the image
+ */
+export type VerticalAlignmentOfTheImage = "center" | "top" | "bottom";
+/**
  * Switch to displaying the image after the text on mobile
  */
 export type MobileImageAfterText = boolean;
@@ -70,7 +74,7 @@ export type DesktopImageAfterText = boolean;
  */
 export type TextAlignment = "left" | "center";
 /**
- * Select a vertical alignment for the image
+ * Select a vertical alignment for the content
  */
 export type VerticalAlignmentOfTheContent = "center" | "top" | "bottom";
 
@@ -86,7 +90,7 @@ export interface CtaProps {
   image?: Image;
   order?: Order;
   textAlign?: TextAlignment;
-  contentAlign?: VerticalAlignmentOfTheContent;
+  align?: VerticalAlignmentOfTheContent;
 }
 export interface Button {
   label?: Label;
@@ -100,6 +104,7 @@ export interface Image {
   src?: ImageSource;
   padding?: Padding;
   alt?: AltText;
+  align?: VerticalAlignmentOfTheImage;
 }
 /**
  * Choose what comes first on mobile and desktop: image or text
