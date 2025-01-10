@@ -1,3 +1,15 @@
+# v1.6.57 (Tue Jan 07 2025)
+
+#### ⚠️ Pushed to `main`
+
+- feat(docs): add missing docs page ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.56 (Mon Jan 06 2025)
 
 #### ⚠️ Pushed to `main`
