@@ -10,7 +10,7 @@
   --dsa-headline--space-after_small: var(--ks-spacing-stack-m);
   --dsa-headline--space-after_minimum: var(--ks-spacing-stack-s);
 
-  --dsa-headline--higlight-background: linear-gradient(90deg, var(--ks-color-secondary), var(--ks-color-primary));
+  --dsa-headline--higlight-background: var(--dsa-typo--highlight);
 
   --dsa-headline__subheadline--color: var(--ks-text-color-primary);
   --dsa-headline__subheadline--font-weight: var(--ks-font-weight-semi-bold);

@@ -1,6 +1,6 @@
 @use "./selectors" as *;
 
-#{$selectors} {
+:root {
   // Text color on primary backgrounds (e.g., buttons)
   --dsa-text-color-on-primary-base: var(--ks-color-fg);
   --dsa-text-color-on-primary-inverted-base: var(--ks-color-fg-inverted);
@@ -18,8 +18,8 @@
   --dsa-link--text-decoration: underline;
   --dsa-link--text-decoration_hover: underline;
 
-  // Highlight gradient for text (e.g., headlines)
-  --dsa-gradient--highlight: linear-gradient(135deg, var(--ks-color-primary) 0%, var(--ks-color-secondary) 100%);
+  // Highlight typography (e.g., gradients in text)
+  --dsa-typo--highlight: linear-gradient(90deg, var(--ks-color-primary) 0%, var(--ks-color-secondary) 100%);
 
   // Outer padding for content
   --dsa-content--horizontal-spacing: var(--ks-spacing-inset-l);
