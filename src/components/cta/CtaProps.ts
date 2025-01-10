@@ -77,6 +77,10 @@ export type TextAlignment = "left" | "center";
  * Select a vertical alignment for the content
  */
 export type VerticalAlignmentOfTheContent = "center" | "top" | "bottom";
+/**
+ * Toggle padding of the content
+ */
+export type Padding1 = boolean;
 
 export interface CtaProps {
   headline?: ComponentHeadline;
@@ -91,6 +95,7 @@ export interface CtaProps {
   order?: Order;
   textAlign?: TextAlignment;
   align?: VerticalAlignmentOfTheContent;
+  padding?: Padding1;
 }
 export interface Button {
   label?: Label;

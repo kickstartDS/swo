@@ -125,6 +125,12 @@
       "type": "string",
       "enum": ["center", "top", "bottom"],
       "default": "center"
+    },
+    "padding": {
+      "title": "Padding",
+      "description": "Toggle padding of the content",
+      "type": "boolean",
+      "default": false
     }
   },
   "additionalProperties": false

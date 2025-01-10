@@ -31,7 +31,8 @@
 
   &.dsa-cta--image-padding {
     .c-storytelling__image {
-      padding: var(--dsa-cta__image--padding, var(--ks-spacing-inset-m));
+      padding: var(--dsa-cta__content--vertical-padding, var(--dsa-content--vertical-spacing))
+        var(--dsa-cta__content--horizontal-padding, var(--dsa-content--horizontal-spacing));
     }
   }
 

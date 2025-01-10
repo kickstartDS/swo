@@ -24,6 +24,7 @@ export const CtaContextDefault = forwardRef<
       backgroundColor,
       colorNeutral,
       align,
+      padding,
       order,
       buttons = [],
       ...rest
@@ -45,7 +46,7 @@ export const CtaContextDefault = forwardRef<
             highlightText ? `dsa-cta--highlight-text` : "",
             colorNeutral ? `dsa-cta--color-neutral` : "",
             image?.padding ? `dsa-cta--image-padding` : "",
-            !backgroundImage && !backgroundColor ? `dsa-cta--no-padding` : "",
+            !padding ? `dsa-cta--no-padding` : "",
             align && align !== "center" ? `dsa-cta--align-${align}` : ""
           )}
           backgroundImage={backgroundImage}
