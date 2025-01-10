@@ -40,9 +40,14 @@
     &__content {
       max-width: var(--dsa-cta__content--max-width, var(--dsa-content--width_narrow));
     }
+
     &:only-child {
-      .c-storytelling__box__content {
-        max-width: 100%;
+      --c-storytelling--horizontal-padding: var(--dsa-cta__content--horizontal-padding);
+
+      .c-storytelling__box {
+        &__content {
+          max-width: 100%;
+        }
       }
     }
 
@@ -90,7 +95,7 @@
 
   @container storytelling (min-width: 640px) {
     &.c-storytelling--order-desktop-image-last {
-      .c-storytelling__box {
+      .c-storytelling__box:not(:only-child) {
         padding-right: 0;
       }
 

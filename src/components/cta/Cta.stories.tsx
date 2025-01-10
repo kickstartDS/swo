@@ -104,6 +104,7 @@ export const ProductAdvertisement: Story = {
     text: "Our over-ear headphones provide an immersive audio experience. With noise-cancellation technology and high-quality sound.",
     backgroundImage: "img/bg_dot-carpet-blue.svg",
     highlightText: true,
+    padding: true,
     order: {
       desktopImageLast: false,
     },
@@ -137,6 +138,7 @@ export const ContactBanner: Story = {
     headline: "Get in touch",
     sub: "Chat with us about getting your product or platform to market faster",
     text: "Our modular design approach allows for flexibility and scalability in your application's architecture.",
+    padding: true,
     image: {
       src: "img/contact-person.png",
       padding: false,
@@ -171,6 +173,7 @@ export const SplitBanner: Story = {
     text: "Here at Systemics, we bring a range of design system services that can make a difference.",
     colorNeutral: true,
     backgroundColor: "#001856",
+    padding: true,
     order: {
       desktopImageLast: false,
     },
@@ -200,9 +203,9 @@ export const AngledImage: Story = {
     text: `We value efficiency without compromising quality. Our secret weapon? kickstartDS, a revolutionary code-first and open source framework for creating design systems.
 
 This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster.`,
+    padding: true,
     image: {
       src: "img/angled-image.png",
-      padding: false,
     },
     order: {
       desktopImageLast: true,
@@ -235,6 +238,7 @@ export const ColoredBanner: Story = {
     highlightText: true,
     colorNeutral: true,
     backgroundColor: "#a30051",
+    padding: true,
     buttons: [
       {
         label: "Learn More",
@@ -261,7 +265,7 @@ export const AlignBottom: Story = {
 
 We understand that every business is different, and that's why we offer custom solutions tailored to your specific business needs and requirements.`,
     backgroundImage: "img/grid-bg.svg",
-    contentAlign: "bottom",
+    align: "bottom",
     image: {
       src: "img/offset-image.png",
     },
