@@ -1,6 +1,8 @@
 @use "./selectors" as *;
 
-:root {
+:root,
+[ks-inverted],
+[ks-theme] {
   // Text color on primary backgrounds (e.g., buttons)
   --dsa-text-color-on-primary-base: var(--ks-color-fg);
   --dsa-text-color-on-primary-inverted-base: var(--ks-color-fg-inverted);
