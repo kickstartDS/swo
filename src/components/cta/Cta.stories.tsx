@@ -206,6 +206,7 @@ This tool accelerates our development, saving you valuable time and helping us d
     padding: true,
     image: {
       src: "img/angled-image.png",
+      padding: false,
     },
     order: {
       desktopImageLast: true,
