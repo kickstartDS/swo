@@ -1,3 +1,17 @@
+# v1.6.58 (Fri Jan 10 2025)
+
+#### ⚠️ Pushed to `main`
+
+- feat(global-token): up selector specificity ([@fleven-kds](https://github.com/fleven-kds))
+- feat(global-tokens): reduce selector specificity ([@fleven-kds](https://github.com/fleven-kds))
+- feat(token): change global typo gradient to highlight ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.57 (Tue Jan 07 2025)
 
 #### ⚠️ Pushed to `main`
