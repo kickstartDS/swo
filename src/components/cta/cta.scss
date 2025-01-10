@@ -36,10 +36,13 @@
   }
 
   .c-storytelling__box {
-    width: 100%;
-
     &__content {
       max-width: var(--dsa-cta__content--max-width, var(--dsa-content--width_narrow));
+    }
+    &:only-child {
+      .c-storytelling__box__content {
+        max-width: 100%;
+      }
     }
 
     .dsa-headline {
