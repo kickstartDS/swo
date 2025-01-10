@@ -27,10 +27,7 @@
   }
 
   .c-count-up__number {
-    background: var(
-      --dsa-stats__number--backgroud,
-      linear-gradient(135deg, var(--ks-color-primary-base) 0%, var(--ks-color-secondary-base) 100%)
-    );
+    background: var(--dsa-stats__number--background, var(--dsa-typo--highlight));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font: var(--dsa-stats__number--font, var(--ks-font-display-xl));

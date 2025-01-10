@@ -18,8 +18,8 @@
   --dsa-link--text-decoration: underline;
   --dsa-link--text-decoration_hover: underline;
 
-  // Highlight gradient for text (e.g., headlines)
-  --dsa-gradient--highlight: linear-gradient(135deg, var(--ks-color-primary) 0%, var(--ks-color-secondary) 100%);
+  // Highlight typography (e.g., gradients in text)
+  --dsa-typo--highlight: linear-gradient(90deg, var(--ks-color-primary) 0%, var(--ks-color-secondary) 100%);
 
   // Outer padding for content
   --dsa-content--spacing: var(--ks-spacing-inset-l);
