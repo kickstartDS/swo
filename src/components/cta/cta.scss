@@ -71,6 +71,10 @@
     }
   }
 
+  > .c-storytelling__image {
+    margin: 0;
+  }
+
   @container storytelling (max-width: 639.9px) {
     &.c-storytelling--order-mobile-image-last {
       .c-storytelling__box {
@@ -82,8 +86,8 @@
       }
     }
 
-    &:not(.c-storytelling--order-mobil-image-last) {
-      .c-storytelling__box {
+    &:not(.c-storytelling--order-mobile-image-last) {
+      .c-storytelling__box:not(:only-child) {
         padding-top: 0;
       }
 
