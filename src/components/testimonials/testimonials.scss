@@ -2,7 +2,7 @@
 
 .dsa-testimonials {
   .c-quote {
-    --c-quote_source--font: var(--dsa-testimonial__source--font, var(--ks-font-copy-m));
+    --c-quote_text--font: var(--dsa-testimonial__source--font, var(--ks-font-copy-m));
 
     --c-quote_icon--font-family: var(--dsa-testimonial__icon--font-family, var(--ks-font-family-copy));
     --c-quote_icon--font-size: var(--dsa-testimonial__icon--font-size, 3em);
