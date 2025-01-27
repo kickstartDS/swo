@@ -1,3 +1,15 @@
+# v1.6.61 (Mon Jan 27 2025)
+
+#### ⚠️ Pushed to `main`
+
+- feat(hero): remove min-height from no-crop setting ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.60 (Fri Jan 10 2025)
 
 #### ⚠️ Pushed to `main`
