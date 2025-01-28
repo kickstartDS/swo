@@ -2,8 +2,9 @@
   --dsa-testimonials--padding-left: calc(var(--dsa-testimonials__icon--font-size) / 6);
   --dsa-testimonials--padding-top: 0.5em;
 
-  --dsa-testimonials__copy--font: var(--ks-font-copy-l);
-  --dsa-testimonials__copy--margin-bottom: var(--ks-spacing-stack-s);
+  --dsa-testimonials__quote--font: var(--ks-font-copy-l);
+  --dsa-testimonials__quote--font-weight: var(--ks-font-weight-regular);
+  --dsa-testimonials__quote--margin-bottom: var(--ks-spacing-stack-s);
 
   --dsa-testimonials__source--font: var(--ks-font-copy-m);
   --dsa-testimonials__source--font-style: normal;

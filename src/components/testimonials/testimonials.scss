@@ -2,8 +2,8 @@
 
 .dsa-testimonials {
   .c-quote {
-    --c-quote_text--font: var(--dsa-testimonials__copy--font, var(--ks-font-copy-l));
-    --c-quote_text--margin-bottom: var(--dsa-testimonials__copy--margin-bottom, var(--ks-spacing-stack-s));
+    --c-quote_text--font: var(--dsa-testimonials__quote--font, var(--ks-font-copy-l));
+    --c-quote_text--margin-bottom: var(--dsa-testimonials__quote--margin-bottom, var(--ks-spacing-stack-s));
 
     --c-quote_source--font: var(--dsa-testimonials__source--font, (--ks-font-copy-s));
     --c-quote_source--font-style: var(--dsa-testimonials__source--font-style, normal);
@@ -46,9 +46,10 @@
     }
 
     &__text {
+      font-weight: var(--dsa-testimonials__quote--font-weight, var(--ks-font-weight-regular));
       position: relative;
       z-index: 1;
-      margin-bottom: var(--dsa-testimonials__copy--margin-bottom, var(--ks-spacing-stack-s));
+      margin-bottom: var(--dsa-testimonials__quote--margin-bottom, var(--ks-spacing-stack-s));
     }
 
     &--reverse {
@@ -76,7 +77,7 @@
     }
 
     .c-quote__content {
-      font: var(--dsa-testimonials__copy--font, var(--ks-font-copy-l));
+      font: var(--dsa-testimonials__quote--font, var(--ks-font-copy-l));
       padding-top: var(--dsa-testimonials--padding-top, 0.5em);
 
       &::before {
