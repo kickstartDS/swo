@@ -43,20 +43,31 @@ export const ConditionalSlider = forwardRef<
 export const TestimonialsContextDefault = forwardRef<
   HTMLDivElement,
   TestimonialsProps & HTMLAttributes<HTMLDivElement>
->(({ testimonial: testimonials = [], layout = "slider", ...props }, ref) => {
-  return (
-    <ConditionalSlider layout={layout} arrows nav {...props} ref={ref}>
-      {testimonials.map((testimonial, index) => (
-        <Testimonial
-          {...testimonial}
-          index={index}
-          layout={layout}
-          key={index}
-        />
-      ))}
-    </ConditionalSlider>
-  );
-});
+>(
+  (
+    {
+      testimonial: testimonials = [],
+      layout = "slider",
+      quoteSigns = "normal",
+      ...props
+    },
+    ref
+  ) => {
+    return (
+      <ConditionalSlider layout={layout} arrows nav {...props} ref={ref}>
+        {testimonials.map((testimonial, index) => (
+          <Testimonial
+            {...testimonial}
+            quoteSigns={quoteSigns}
+            index={index}
+            layout={layout}
+            key={index}
+          />
+        ))}
+      </ConditionalSlider>
+    );
+  }
+);
 
 export const TestimonialsContext = createContext(TestimonialsContextDefault);
 export const Testimonials = forwardRef<

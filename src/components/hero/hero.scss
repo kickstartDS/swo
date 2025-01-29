@@ -100,12 +100,14 @@
         }
       }
     }
+    &.c-visual--no-crop {
+      --c-visual--min-height: 0;
+    }
     &.dsa-hero--content-below.c-visual--no-crop {
       .c-visual__media {
         .c-visual__image {
           @include container.size("≥", 640px, "visual") {
             height: fit-content;
-
             img {
               object-fit: contain;
               height: auto;
