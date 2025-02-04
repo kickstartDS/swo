@@ -20,6 +20,7 @@ export const HtmlContextDefault = forwardRef<
       consentBackgroundImage,
       consentButtonLabel,
       consentAspectRatio = "16:9",
+      inverted,
       className,
       component = "dsa.html",
       ...props
@@ -31,6 +32,7 @@ export const HtmlContextDefault = forwardRef<
         ref={ref}
         className={classNames("dsa-html", className)}
         ks-component={component}
+        ks-inverted={inverted ? "true" : undefined}
         {...props}
       >
         <template dangerouslySetInnerHTML={{ __html: html }} />
