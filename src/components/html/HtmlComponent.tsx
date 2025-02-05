@@ -57,7 +57,7 @@ export const HtmlContextDefault = forwardRef<
               type="button"
               label={consentButtonLabel}
               className="dsa-html__consent-button"
-              variant="tertiary"
+              variant="primary"
             />
           </div>
         )}
