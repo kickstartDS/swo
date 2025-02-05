@@ -1,3 +1,15 @@
+# v1.6.67 (Wed Feb 05 2025)
+
+#### ⚠️ Pushed to `main`
+
+- feat(hmtl): increase readability of consent message ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.66 (Tue Feb 04 2025)
 
 #### ⚠️ Pushed to `main`
