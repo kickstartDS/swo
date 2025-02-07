@@ -9,6 +9,10 @@ declare module "@kickstartds/base/lib/html/typing" {
 export type HTMLString = string;
 export type ShowHTMLAfterConsent = boolean;
 /**
+ * Invert the colors of the HTML
+ */
+export type Inverted = boolean;
+/**
  * Add additional css classes that should be applied to the element
  */
 export type AdditionalClasses = string;
@@ -27,6 +31,7 @@ export interface HtmlProps {
   consentButtonLabel?: string;
   consentBackgroundImage?: string;
   consentAspectRatio?: "16:9" | "16:10" | "4:3" | "1:1";
+  inverted?: Inverted;
   className?: AdditionalClasses;
   component?: KsComponentAttribute;
 }

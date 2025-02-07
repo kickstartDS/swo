@@ -1,3 +1,40 @@
+# v1.6.67 (Wed Feb 05 2025)
+
+#### ⚠️ Pushed to `main`
+
+- feat(hmtl): increase readability of consent message ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.6.66 (Tue Feb 04 2025)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency-premium ([@fleven-kds](https://github.com/fleven-kds))
+- feat(html): add inverted property ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.6.65 (Tue Feb 04 2025)
+
+#### ⚠️ Pushed to `main`
+
+- feat(html): style consent ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.6.64 (Tue Jan 28 2025)
 
 #### ⚠️ Pushed to `main`

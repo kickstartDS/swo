@@ -29,13 +29,14 @@
     },
     "consentAspectRatio": {
       "type": "string",
-      "enum": [
-        "16:9",
-        "16:10",
-        "4:3",
-        "1:1"
-      ],
+      "enum": ["16:9", "16:10", "4:3", "1:1"],
       "default": "16:9"
+    },
+    "inverted": {
+      "title": "Inverted",
+      "description": "Invert the colors of the HTML",
+      "type": "boolean",
+      "default": false
     },
     "className": {
       "title": "Additional Classes",
