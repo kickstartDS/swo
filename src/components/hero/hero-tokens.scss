@@ -16,7 +16,7 @@
   }
 
   @include container.size("≥", 1024px, "visual") {
-    --dsa-hero--min-height: 35rem;
+    --dsa-hero--min-height: 42rem;
     --dsa-hero--min-height_small: 20rem;
   }
 

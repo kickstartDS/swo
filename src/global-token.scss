@@ -4,8 +4,14 @@
 [ks-inverted],
 [ks-theme] {
   // Text color on primary backgrounds (e.g., buttons)
-  --dsa-text-color-on-primary-base: var(--ks-color-fg);
-  --dsa-text-color-on-primary-inverted-base: var(--ks-color-fg-inverted);
+  --dsa-text-color-on-primary-base: var(--ks-color-fg-inverted);
+  --dsa-text-color-on-primary-inverted-base: var(--ks-color-fg);
+
+  // Overlay styles
+  --dsa-overlay-background-color: var(--ks-color-bg-inverted-alpha-2);
+  --dsa-overlay-background-color-inverted: var(--ks-color-bg-alpha-2);
+  --dsa-overlay-text-color: var(--ks-color-fg);
+  --dsa-overlay-text-color-inverted: var(--ks-color-fg-inverted);
 
   // Topic font styles
   --dsa-topic--font: var(--ks-font-display-m);
@@ -21,7 +27,7 @@
   --dsa-link--text-decoration_hover: underline;
 
   // Highlight typography (e.g., gradients in text)
-  --dsa-typo--highlight: linear-gradient(90deg, var(--ks-color-primary) 0%, var(--ks-color-secondary) 100%);
+  --dsa-typo--highlight: var(--ks-color-primary);
 
   // Outer padding for content
   --dsa-content--spacing: var(--ks-spacing-inset-l);
@@ -33,7 +39,7 @@
   // Content width options (for content displayed in a width constrained container)
   --dsa-content--width_narrow: calc(var(--ks-font-size-copy-m) * 34);
   --dsa-content--width_default: calc(var(--ks-font-size-copy-m) * 50);
-  --dsa-content--width_wide: calc(var(--ks-font-size-copy-m) * 64);
+  --dsa-content--width_wide: calc(var(--ks-font-size-copy-m) * 72);
   --dsa-content--width_max: 100vw;
   --dsa-content--width_full: 100vw;
 

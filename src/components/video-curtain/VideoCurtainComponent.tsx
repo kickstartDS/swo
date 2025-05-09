@@ -50,6 +50,7 @@ export const VideoCurtainContextDefault = forwardRef<
             height="fullScreen"
             inbox
             box={{
+              inverted: true,
               background: "transparent",
               enabled: true,
               vertical: "center",

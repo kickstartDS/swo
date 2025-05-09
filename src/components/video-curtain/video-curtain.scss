@@ -85,4 +85,9 @@
     max-width: var(--c-visual_box--max-width);
     padding: var(--c-visual_box--padding);
   }
+
+  .c-visual__continue-btn {
+    color: var(--dsa-overlay-text-color, var(--ks-color-fg-inverted));
+    filter: drop-shadow(0 2px 6px var(--dsa-overlay-text-color-inverted));
+  }
 }
