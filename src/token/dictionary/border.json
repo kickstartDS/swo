@@ -24,7 +24,7 @@
         }
       },
       "surface": {
-        "value": "32px 32px 32px 96px",
+        "value": "32px",
         "token": {
           "category": "Border Radius",
           "presenter": "BorderRadius"

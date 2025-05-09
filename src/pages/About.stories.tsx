@@ -38,7 +38,6 @@ const Page = () => (
           srcTablet: "img/people-brainstorming-work-meeting.png",
           srcDesktop: "img/people-brainstorming-work-meeting.png",
           src: "https://picsum.photos/seed/kdsvisual/640/270",
-          indent: "none",
         }}
       />
     </Section>
@@ -142,8 +141,6 @@ We bring you [CMS starter](/starter) to help setup your next professional websit
     </Section>
 
     <Section
-      spaceBefore="small"
-      spaceAfter="none"
       width="wide"
       content={{
         mode: "list",
@@ -194,6 +191,7 @@ For a more enhanced experience, check out the Premium Experience Demo. It demons
     </Section>
 
     <Section
+      style="accentTransition"
       width="wide"
       headline={{
         width: "default",
@@ -237,7 +235,7 @@ For a more enhanced experience, check out the Premium Experience Demo. It demons
       />
     </Section>
 
-    <Section width="wide">
+    <Section spaceBefore="none" style="framed" width="wide">
       <ImageText
         image={{
           src: "/img/about/purpose.png",
@@ -261,19 +259,17 @@ While we've strived to provide a comprehensive demonstration, please bear in min
       />
     </Section>
 
-    <Section spaceBefore="none" width="wide">
+    <Section inverted width="wide">
       <Cta
         inverted
-        backgroundColor="var(--ks-background-color-bold)"
-        padding
         headline="Want to know more?"
         sub="Intrigued by what a kickstartDS-driven website can do for your brand?"
         text="Let's explore how we can shape your digital journey. Get in touch today!"
         order={{
-          desktopImageLast: true,
+          desktopImageLast: false,
         }}
         image={{
-          src: "img/about/angled-image.png",
+          src: "img/about/cutout.png",
         }}
         buttons={[
           {

@@ -1,6 +1,7 @@
 .dsa-cta {
   --dsa-cta--gap: var(--ks-spacing-stack-l) var(--ks-spacing-inline-l);
-  --dsa-cta--border-radius: var(--ks-border-radius-surface);
+  --dsa-cta--border-radius: var(--ks-border-radius-surface) var(--ks-border-radius-surface)
+    var(--ks-border-radius-surface) calc(var(--ks-border-radius-surface) * 3);
 
   --dsa-cta__content--vertical-padding: var(--dsa-content--vertical-spacing);
   --dsa-cta__content--horizontal-padding: var(--dsa-content--horizontal-spacing);
