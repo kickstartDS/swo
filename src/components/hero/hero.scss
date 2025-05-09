@@ -8,7 +8,7 @@
   .c-visual__box {
     --c-visual_box--background: var(--dsa-hero__textbox--background-color, var(--ks-color-bg-alpha-2));
     --c-visual_box--color: var(--dsa-hero__copy--color, var(--ks-text-color-default));
-    --c-visual_box--border-radius: var(--dsa-hero__textbox--border-radius, var(--ks-border-radius-surface));
+    --c-visual_box--border-radius: var(--dsa-hero__textbox--border-radius, var(--ks-border-radius-card));
     --c-visual_box--padding: var(--dsa-hero__textbox--padding, var(--ks-spacing-inset-squish-xl));
 
     --c-visual_text--font: var(--dsa-hero__copy--font, var(--dsa-rich-text--font));

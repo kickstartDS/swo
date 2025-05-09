@@ -17,14 +17,14 @@
         }
       },
       "card": {
-        "value": "8px",
+        "value": "8px 8px 8px 24px",
         "token": {
           "category": "Border Radius",
           "presenter": "BorderRadius"
         }
       },
       "surface": {
-        "value": "16px",
+        "value": "32px 32px 32px 96px",
         "token": {
           "category": "Border Radius",
           "presenter": "BorderRadius"

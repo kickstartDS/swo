@@ -239,19 +239,22 @@ For a more enhanced experience, check out the Premium Experience Demo. It demons
       />
     </Section>
 
-    <Section width="narrow">
+    <Section width="wide">
       <Text
         text={`
 ### The purpose of this demo
 This demo is intended to provide a firsthand experience of the capabilities of [**kickstartDS**](https://www.kickstartds.com). It's not just a website; it's a demonstration of how we can transform your digital landscape. Please note that while this demo represents a **Design System Agency**, the principles and techniques showcased are applicable to a wide range of industries and use cases.
-
+        `}
+      />
+      <Text
+        text={`
 ### Important disclaimer
 While we've strived to provide a comprehensive demonstration, please bear in mind that this is a simplified showcase of the potential of [**kickstartDS**](https://www.kickstartds.com). The actual implementation of a **Design System** and **headless CMS** like **Storyblok** or **Netlify Create** can be tailored to your specific needs and goals, ensuring a custom solution that drives your digital success.
         `}
       />
     </Section>
 
-    <Section width="wide">
+    <Section spaceBefore="none" width="wide">
       <Cta
         padding
         backgroundColor="var(--ks-background-color-accent)"
