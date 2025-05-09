@@ -46,9 +46,7 @@ const Page = () => (
 
     <Section
       id="starthere"
-      spaceBefore="none"
-      spaceAfter="none"
-      width="full"
+      width="default"
       content={{
         mode: "list",
         align: "center",
@@ -68,8 +66,6 @@ We bring you [CMS starter](/starter) to help setup your next professional websit
             target: "/starter",
           },
         ]}
-        textAlign="center"
-        contentAlign="center"
       />
     </Section>
     <Section
@@ -173,8 +169,6 @@ For a more enhanced experience, check out the Premium Experience Demo. It demons
     </Section>
 
     <Section
-      spaceBefore="small"
-      spaceAfter="small"
       content={{
         mode: "list",
         align: "center",
