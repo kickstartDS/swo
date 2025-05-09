@@ -663,7 +663,7 @@
       },
       "primary-inverted": {
         "base": {
-          "value": "{ks.color.primary-inverted.base}",
+          "value": "{ks.color.primary.to-bg.5.base}",
           "attributes": {
             "category": "color"
           },

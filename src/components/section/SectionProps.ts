@@ -31,14 +31,7 @@ export type Width = "full" | "max" | "wide" | "default" | "narrow";
 /**
  * Style of background
  */
-export type Style =
-  | "stagelights"
-  | "horizontalGradient"
-  | "verticalGradient"
-  | "accentTransition"
-  | "boldTransition"
-  | "symmetricGlow"
-  | "anchorGlow";
+export type Style = "framed" | "eye-candy" | "colorful" | "accentTransition" | "boldTransition";
 /**
  * Color of background
  */

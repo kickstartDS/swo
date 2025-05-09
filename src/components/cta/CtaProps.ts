@@ -81,6 +81,10 @@ export type VerticalAlignmentOfTheContent = "center" | "top" | "bottom";
  * Toggle padding of the content
  */
 export type Padding1 = boolean;
+/**
+ * Toggle inversion of the component
+ */
+export type Inverted = boolean;
 
 export interface CtaProps {
   headline?: ComponentHeadline;
@@ -96,6 +100,7 @@ export interface CtaProps {
   textAlign?: TextAlignment;
   align?: VerticalAlignmentOfTheContent;
   padding?: Padding1;
+  inverted?: Inverted;
 }
 export interface Button {
   label?: Label;

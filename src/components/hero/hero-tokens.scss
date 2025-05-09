@@ -33,7 +33,7 @@
 
   --dsa-hero__textbox--background-color: var(--ks-color-bg-alpha-3);
   --dsa-hero__textbox--backdrop-filter: blur(10px);
-  --dsa-hero__textbox--box-shadow: var(--ks-box-shadow-card);
+  --dsa-hero__textbox--box-shadow: none;
   --dsa-hero__textbox--border-radius: var(--ks-border-radius-card);
   --dsa-hero__textbox--max-width: calc(var(--dsa-content--width_narrow) * 1.15);
   --dsa-hero_below__textbox--max-width: var(--dsa-content--width_default);

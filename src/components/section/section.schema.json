@@ -17,15 +17,12 @@
       "title": "Style",
       "description": "Style of background",
       "enum": [
-        "stagelights",
-        "horizontalGradient",
-        "verticalGradient",
+        "framed",
+        "eye-candy",
+        "colorful",
         "accentTransition",
-        "boldTransition",
-        "symmetricGlow",
-        "anchorGlow"
-      ],
-      "default": "default"
+        "boldTransition"
+      ]
     },
     "backgroundColor": {
       "type": "string",

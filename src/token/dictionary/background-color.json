@@ -350,7 +350,7 @@
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.bg.base}",
+            "value": "{ks.color.fg.to-bg.9.base}",
             "attributes": {
               "category": "color"
             },

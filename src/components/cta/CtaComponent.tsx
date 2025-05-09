@@ -27,6 +27,7 @@ export const CtaContextDefault = forwardRef<
       padding,
       order,
       buttons = [],
+      inverted = false,
       ...rest
     },
     ref
@@ -41,6 +42,7 @@ export const CtaContextDefault = forwardRef<
         <Storytelling
           {...rest}
           ref={ref}
+          inverted={inverted}
           className={classnames(
             "dsa-cta",
             highlightText ? `dsa-cta--highlight-text` : "",

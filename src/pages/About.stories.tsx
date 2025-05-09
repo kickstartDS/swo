@@ -6,7 +6,6 @@ import { Section } from "../components/section/SectionComponent";
 import { Cta } from "../components/cta/CtaComponent";
 import { ImageStory } from "../components/image-story/ImageStoryComponent";
 import { ImageText } from "../components/image-text/ImageTextComponent";
-import { Text } from "../components/text/TextComponent";
 import { Slider } from "../components/slider/SliderComponent";
 import { Hero } from "../components/hero/HeroComponent";
 import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
@@ -172,7 +171,7 @@ For a more enhanced experience, check out the Premium Experience Demo. It demons
 
     <Section width="wide">
       <Cta
-        backgroundColor="var(--ks-background-color-accent)"
+        backgroundColor="var(--ks-background-color-bold)"
         padding
         headline="Spoiler Alert!"
         image={{
@@ -196,7 +195,6 @@ For a more enhanced experience, check out the Premium Experience Demo. It demons
 
     <Section
       width="wide"
-      backgroundColor="accent"
       headline={{
         width: "default",
         align: "left",
@@ -240,24 +238,34 @@ For a more enhanced experience, check out the Premium Experience Demo. It demons
     </Section>
 
     <Section width="wide">
-      <Text
+      <ImageText
+        image={{
+          src: "/img/about/purpose.png",
+        }}
         text={`
 ### The purpose of this demo
 This demo is intended to provide a firsthand experience of the capabilities of [**kickstartDS**](https://www.kickstartds.com). It's not just a website; it's a demonstration of how we can transform your digital landscape. Please note that while this demo represents a **Design System Agency**, the principles and techniques showcased are applicable to a wide range of industries and use cases.
         `}
+        layout={"above"}
       />
-      <Text
+      <ImageText
         text={`
 ### Important disclaimer
 While we've strived to provide a comprehensive demonstration, please bear in mind that this is a simplified showcase of the potential of [**kickstartDS**](https://www.kickstartds.com). The actual implementation of a **Design System** and **headless CMS** like **Storyblok** or **Netlify Create** can be tailored to your specific needs and goals, ensuring a custom solution that drives your digital success.
         `}
+        image={{
+          src: "/img/about/disclaimer.png",
+          alt: "",
+        }}
+        layout={"above"}
       />
     </Section>
 
     <Section spaceBefore="none" width="wide">
       <Cta
+        inverted
+        backgroundColor="var(--ks-background-color-bold)"
         padding
-        backgroundColor="var(--ks-background-color-accent)"
         headline="Want to know more?"
         sub="Intrigued by what a kickstartDS-driven website can do for your brand?"
         text="Let's explore how we can shape your digital journey. Get in touch today!"
@@ -282,7 +290,7 @@ While we've strived to provide a comprehensive demonstration, please bear in min
       />
     </Section>
 
-    <Footer {...footerProps} inverted />
+    <Footer {...footerProps} />
   </>
 );
 
