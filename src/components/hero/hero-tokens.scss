@@ -31,9 +31,11 @@
   --dsa-hero_highlight-text__copy--font: var(--ks-font-copy-l);
   --dsa-hero_color-neutral__copy--color: var(--ks-text-color-default);
 
-  --dsa-hero__textbox--background-color: var(--ks-color-bg-alpha-2);
+  --dsa-hero__textbox--background-color: var(--ks-color-bg-alpha-3);
+  --dsa-hero__textbox--backdrop-filter: blur(10px);
+  --dsa-hero__textbox--box-shadow: var(--ks-box-shadow-card);
   --dsa-hero__textbox--border-radius: var(--ks-border-radius-surface);
-  --dsa-hero__textbox--max-width: var(--dsa-content--width_narrow);
+  --dsa-hero__textbox--max-width: calc(var(--dsa-content--width_narrow) * 1.15);
   --dsa-hero_below__textbox--max-width: var(--dsa-content--width_default);
   --dsa-hero__textbox--padding: var(--ks-spacing-inset-squish-xl);
 

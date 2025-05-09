@@ -326,7 +326,7 @@
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.fg.alpha.7.base}",
+            "value": "{ks.color.fg.alpha.8.base}",
             "attributes": {
               "category": "color"
             },

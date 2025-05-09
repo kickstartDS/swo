@@ -48,6 +48,11 @@
 
     .c-visual__box {
       --c-visual_box--max-width: var(--dsa-hero__textbox--max-width, var(--dsa-content--width_narrow));
+
+      &:not(.c-visual__box--transparent) {
+        backdrop-filter: var(--dsa-hero__textbox--backdrop-filter, blur(0px));
+        box-shadow: var(--dsa-hero__textbox--box-shadow, var(--ks-box-shadow-card));
+      }
     }
   }
 }

@@ -7,6 +7,11 @@
   justify-content: center;
   align-items: stretch;
   gap: var(--dsa-cta--gap, var(--ks-spacing-inline-m));
+  border-radius: var(--dsa-cta--border-radius, var(--ks-border-radius-surface));
+
+  &:not(.dsa-cta--no-padding) {
+    overflow: hidden;
+  }
 
   &.dsa-cta--color-neutral {
     --dsa-cta__copy--color: var(--dsa-cta_color-neutral__copy--color, var(--ks-text-color-default));
@@ -33,6 +38,12 @@
     .c-storytelling__image {
       padding: var(--dsa-cta__content--vertical-padding, var(--dsa-content--vertical-spacing))
         var(--dsa-cta__content--horizontal-padding, var(--dsa-content--horizontal-spacing));
+    }
+  }
+
+  .c-storytelling__image {
+    img {
+      width: auto;
     }
   }
 

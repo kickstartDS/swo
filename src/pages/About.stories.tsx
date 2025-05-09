@@ -8,8 +8,8 @@ import { ImageStory } from "../components/image-story/ImageStoryComponent";
 import { ImageText } from "../components/image-text/ImageTextComponent";
 import { Text } from "../components/text/TextComponent";
 import { Slider } from "../components/slider/SliderComponent";
-import { Features } from "../components/features/FeaturesComponent";
 import { Hero } from "../components/hero/HeroComponent";
+import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
 
 const Page = () => (
   <>
@@ -46,15 +46,21 @@ const Page = () => (
 
     <Section
       id="starthere"
-      width="default"
+      width="wide"
+      headline={{
+        text: "A Design System is nothing without a system applying it",
+        sub: "Take off with our Starters 🚀",
+        width: "default",
+        align: "left",
+        large: true,
+      }}
       content={{
         mode: "list",
         align: "center",
       }}
     >
       <Cta
-        headline="A Design System is nothing without a system applying it"
-        sub="Take off with our Starters 🚀"
+        highlightText
         text="
 We bring you [CMS starter](/starter) to help setup your next professional website lighning fast. For the beginning you can choose between headless CMS backends like **Static CMS**, **Storyblok**, **Netlify Create** (formerly **Stackbit**) or you go with **11ty static site** generation.
 
@@ -73,7 +79,7 @@ We bring you [CMS starter](/starter) to help setup your next professional websit
       headline={{
         text: "Highlights of the CMS Starter",
         sub: "Slide through our highlights",
-        textAlign: "center",
+        textAlign: "left",
       }}
     >
       <Slider autoplay equalHeight gap={15} arrows type="carousel">
@@ -144,13 +150,9 @@ We bring you [CMS starter](/starter) to help setup your next professional websit
         mode: "list",
         width: "wide",
       }}
-      headline={{
-        text: "Open Source vs. Premium Experience",
-        large: true,
-        width: "wide",
-      }}
     >
       <ImageStory
+        headline="Open Source vs. Premium Experience"
         layout="imageLeft"
         text={`
 **We built two distinct demo websites to represent the range of possibilities with kickstartDS. Plus, You'll find website starters, to start your journey even faster.**
@@ -168,15 +170,20 @@ For a more enhanced experience, check out the Premium Experience Demo. It demons
       />
     </Section>
 
-    <Section
-      content={{
-        mode: "list",
-        align: "center",
-        width: "wide",
-      }}
-    >
+    <Section width="wide">
       <Cta
-        textAlign="left"
+        backgroundColor="var(--ks-background-color-accent)"
+        padding
+        headline="Spoiler Alert!"
+        image={{
+          src: "/static/img/about/spoiler.png",
+          padding: true,
+        }}
+        highlightText
+        text="Although this is just a website for demo purposes, if you are looking for an agency to serve your **headless** or **Design System** needs, contact us, we are real experts!"
+        order={{
+          desktopImageLast: true,
+        }}
         buttons={[
           {
             label: "Contact us",
@@ -184,17 +191,12 @@ For a more enhanced experience, check out the Premium Experience Demo. It demons
             icon: "person",
           },
         ]}
-        headline="🤫 Spoiler!"
-        highlightText
-        text="Although this is just a website for demo purposes, if you are looking for an agency to serve your **headless** or **Design System** needs, contact us, we are real experts!"
       />
     </Section>
 
     <Section
       width="wide"
-      content={{
-        width: "default",
-      }}
+      backgroundColor="accent"
       headline={{
         width: "default",
         align: "left",
@@ -203,55 +205,41 @@ For a more enhanced experience, check out the Premium Experience Demo. It demons
         switchOrder: true,
       }}
     >
-      <Features
-        ctas={{
-          style: "button",
-          toggle: true,
+      <TeaserCard
+        headline="Basic Agency Website Demo"
+        text="Compare what the free version, using Open Source components only, can already offer"
+        target={"https://basic.design-system.agency/"}
+        button={{
+          label: "Browse basic Demo",
         }}
-        feature={[
-          {
-            cta: {
-              label: "Browse basic Demo",
-              target: "https://basic.design-system.agency/",
-            },
-            icon: "logout",
-            text: "Compare what the free version, using Open Source components only, can already offer",
-            title: "Basic Agency Website Demo",
-          },
-          {
-            cta: {
-              label: "Browse premium Demo",
-              target: "https://design-system.agency",
-            },
-            icon: "browser",
-            text: "Which is enriched with more complex components, based on the kickstartDS Content Module.",
-            title: "Premium Content Experience",
-          },
-          {
-            cta: {
-              label: "Browse all Components",
-              target: "/components",
-            },
-            icon: "search",
-            text: "Flick through our component collection, switching themes or toggling inverted styles",
-            title: "65+ Examples build on top of 18 components",
-          },
-          {
-            cta: {
-              label: "Explore Storybook",
-              target: "https://main--64f08cbba622af835d382b4f.chromatic.com/",
-            },
-            icon: "share",
-            text: "Browsing our Storybook will allow a look behind the scenes on what the kickstartDS Design System starter has to offer",
-            title: "Check out the Storybook",
-          },
-        ]}
-        layout="largeTiles"
-        style="stack"
+      />
+      <TeaserCard
+        headline="Premium Content Experience"
+        text="Which is enriched with more complex components, based on the kickstartDS Content Module."
+        target={"https://design-system.agency/"}
+        button={{
+          label: "Browse premium Demo",
+        }}
+      />
+      <TeaserCard
+        headline="65+ Examples build on top of 18 components"
+        text="Flick through our component collection, switching themes or toggling inverted styles"
+        target={"/components"}
+        button={{
+          label: "Browse all Components",
+        }}
+      />
+      <TeaserCard
+        headline="Check out the Storybook"
+        text="Browsing our Storybook will allow a look behind the scenes on what the kickstartDS Design System starter has to offer"
+        target={"https://main--64f08cbba622af835d382b4f.chromatic.com/"}
+        button={{
+          label: "Explore Storybook",
+        }}
       />
     </Section>
 
-    <Section width="narrow" spaceBefore="none">
+    <Section width="narrow">
       <Text
         text={`
 ### The purpose of this demo
@@ -263,24 +251,18 @@ While we've strived to provide a comprehensive demonstration, please bear in min
       />
     </Section>
 
-    <Section
-      width="wide"
-      spaceBefore="none"
-      spaceAfter="none"
-      backgroundColor="accent"
-      inverted={true}
-    >
+    <Section width="wide">
       <Cta
+        padding
+        backgroundColor="var(--ks-background-color-accent)"
         headline="Want to know more?"
         sub="Intrigued by what a kickstartDS-driven website can do for your brand?"
         text="Let's explore how we can shape your digital journey. Get in touch today!"
-        fullWidth
         order={{
-          desktopImageLast: false,
-          mobileImageLast: false,
+          desktopImageLast: true,
         }}
         image={{
-          src: "/static/img/deco/contact-us_jul-dal.png",
+          src: "img/about/angled-image.png",
         }}
         buttons={[
           {
@@ -297,7 +279,7 @@ While we've strived to provide a comprehensive demonstration, please bear in min
       />
     </Section>
 
-    <Footer {...footerProps} />
+    <Footer {...footerProps} inverted />
   </>
 );
 
