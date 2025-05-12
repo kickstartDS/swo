@@ -90,20 +90,21 @@
     }
 
     &--row {
-      flex-direction: row;
+      .c-teaser {
+        flex-direction: row;
 
-      .c-teaser__body {
-        justify-content: center;
-        flex-basis: 50%;
+        .c-teaser__body {
+          justify-content: center;
+          flex-basis: 50%;
 
-        .c-teaser__text {
-          flex: 0;
+          .c-teaser__text {
+            flex: 0;
+          }
         }
-      }
 
-      > :first-child:not(.c-teaser__body) {
-        flex: 50%;
-        border-radius: var(--dsa-teaser-card--border-radius) 0 0 var(--dsa-teaser-card--border-radius);
+        > :first-child:not(.c-teaser__body) {
+          flex: 50%;
+        }
       }
     }
   }

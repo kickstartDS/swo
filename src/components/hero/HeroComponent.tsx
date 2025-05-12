@@ -22,6 +22,7 @@ export const HeroContextDefault = forwardRef<
       highlightText,
       textPosition = "center",
       colorNeutral,
+      inverted,
       image,
       overlay,
       textbox,
@@ -50,6 +51,8 @@ export const HeroContextDefault = forwardRef<
             )}
             height={height}
             overlay={overlay}
+            skipButton={height === "fullScreen" ? true : false}
+            inverted
             box={{
               background: textbox === true ? "solid" : "transparent",
               enabled: true,

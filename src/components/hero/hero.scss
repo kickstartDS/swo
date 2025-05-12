@@ -6,7 +6,7 @@
   --c-visual_overlay--background-size: 100%;
 
   .c-visual__box {
-    --c-visual_box--background: var(--dsa-hero__textbox--background-color, var(--dsa-overlay--background-color));
+    --c-visual_box--background: var(--dsa-hero__textbox--background-color, var(--dsa-overlay-box--background-color));
     --c-visual_box--color: var(--dsa-hero__copy--color, var(--ks-text-color-default));
     --c-visual_box--border-radius: var(--dsa-hero__textbox--border-radius, var(--ks-border-radius-card));
     --c-visual_box--padding: var(--dsa-hero__textbox--padding, var(--ks-spacing-inset-squish-xl));
@@ -50,7 +50,7 @@
       --c-visual_box--max-width: var(--dsa-hero__textbox--max-width, var(--dsa-content--width_narrow));
 
       &:not(.c-visual__box--transparent) {
-        backdrop-filter: var(--dsa-hero__textbox--backdrop-filter, var(--dsa-overlay--backdrop-filter));
+        backdrop-filter: var(--dsa-hero__textbox--backdrop-filter, var(--dsa-overlay-box--backdrop-filter));
         box-shadow: var(--dsa-hero__textbox--box-shadow, var(--ks-box-shadow-card));
       }
     }
@@ -83,6 +83,11 @@
 
   .c-visual__content--indent {
     max-width: var(--dsa-content--width_wide);
+  }
+
+  .c-visual__continue-btn {
+    color: var(--dsa-overlay-text--text-color, var(--ks-color-fg));
+    filter: drop-shadow(var(--dsa-overlay-text--shadow, 0 0 10px var(--ks-color-bg-inverted-alpha-3-base)));
   }
 
   @include container.size("≥", 640px, "visual") {

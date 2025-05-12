@@ -7,24 +7,25 @@ import { Cta } from "../components/cta/CtaComponent";
 import { ImageStory } from "../components/image-story/ImageStoryComponent";
 import { ImageText } from "../components/image-text/ImageTextComponent";
 import { Slider } from "../components/slider/SliderComponent";
-import { Hero } from "../components/hero/HeroComponent";
 import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
+import { VideoCurtain } from "../components/video-curtain/VideoCurtainComponent";
 
 const Page = () => (
   <>
-    <Header {...headerProps} />
+    <Header {...headerProps} floating />
     <Section
       spaceBefore="none"
       spaceAfter="none"
       width="full"
+      inverted
       content={{
         mode: "list",
       }}
     >
-      <Hero
+      <VideoCurtain
+        overlay
         highlightText
-        textbox
-        textPosition="left"
+        textPosition="corner"
         headline="kickstartDS CMS Starter are here!"
         sub="Featuring a fully fledged, ready to use and easily themeable Design System"
         buttons={[
@@ -33,11 +34,10 @@ const Page = () => (
             target: "#starthere",
           },
         ]}
-        image={{
-          srcMobile: "img/people-brainstorming-work-meeting.png",
-          srcTablet: "img/people-brainstorming-work-meeting.png",
-          srcDesktop: "img/people-brainstorming-work-meeting.png",
-          src: "https://picsum.photos/seed/kdsvisual/640/270",
+        video={{
+          srcMobile: "img/videos/video-agency.mp4",
+          srcTablet: "img/videos/video-agency.mp4",
+          srcDesktop: "img/videos/video-agency.mp4",
         }}
       />
     </Section>

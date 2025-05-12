@@ -50,11 +50,18 @@ export const VideoCurtainContextDefault = forwardRef<
             height="fullScreen"
             inbox
             box={{
-              inverted: true,
               background: "transparent",
               enabled: true,
-              vertical: "center",
-              horizontal: textPosition,
+              vertical:
+                textPosition === "below" || textPosition === "corner"
+                  ? "bottom"
+                  : "center",
+              horizontal:
+                textPosition === "left" || textPosition === "corner"
+                  ? "left"
+                  : textPosition === "right"
+                  ? "right"
+                  : "center",
               link: {
                 // @ts-expect-error
                 buttons,
