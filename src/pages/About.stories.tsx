@@ -55,15 +55,18 @@ const Page = () => (
       style="deko"
       content={{
         mode: "list",
-        align: "center",
+        align: "left",
       }}
     >
       <Cta
+        align="top"
         highlightText
+        image={{ src: "/img/about/cta.png" }}
         text="
 We bring you [CMS starter](/starter) to help setup your next professional website lighning fast. For the beginning you can choose between headless CMS backends like **Static CMS**, **Storyblok**, **Netlify Create** (formerly **Stackbit**) or you go with **11ty static site** generation.
 
 **Dive into our demos, starter, components and discover the kickstartDS experience that suits you best!**"
+        order={{ desktopImageLast: true }}
         buttons={[
           {
             icon: "chevron-right",
@@ -192,7 +195,7 @@ For a more enhanced experience, check out the Premium Experience Demo. It demons
     </Section>
 
     <Section
-      style="accentTransition"
+      backgroundColor="accent"
       width="wide"
       headline={{
         width: "default",
@@ -236,7 +239,12 @@ For a more enhanced experience, check out the Premium Experience Demo. It demons
       />
     </Section>
 
-    <Section spaceBefore="none" style="framed" width="wide">
+    <Section
+      spaceBefore="none"
+      transition="to-inverted"
+      style="framed"
+      width="wide"
+    >
       <ImageText
         image={{
           src: "/img/about/purpose.png",

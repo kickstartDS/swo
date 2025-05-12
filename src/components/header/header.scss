@@ -9,7 +9,8 @@
   position: relative;
 
   &--floating {
-    background: var(--dsa-header_floating--background, linear-gradient(var(--ks-color-bg-alpha-5), transparent));
+    background: var(--dsa-header_floating--background, var(--dsa-overlay--background-color), transparent);
+    backdrop-filter: var(--dsa-header_floating--backdrop-filter, blur(10px));
     position: absolute;
 
     .c-nav-main__link {

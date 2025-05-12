@@ -117,20 +117,6 @@
     }
   }
 
-  &-style--accent-transition {
-    background-image: var(
-      --dsa-section_accent-transition--background-image,
-      linear-gradient(180deg, transparent 0%, var(--ks-background-color-accent) 100%)
-    );
-  }
-
-  &-style--bold-transition {
-    background-image: var(
-      --dsa-section_bold-transition--background-image,
-      linear-gradient(180deg, transparent 0%, var(--ks-background-color-bold) 100%)
-    );
-  }
-
   &-style--deko {
     background-image: var(
       --dsa-section_deko--background-image,

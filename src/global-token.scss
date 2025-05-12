@@ -8,10 +8,11 @@
   --dsa-text-color-on-primary-inverted-base: var(--ks-color-fg);
 
   // Overlay styles
-  --dsa-overlay-background-color: var(--ks-color-bg-inverted-alpha-2);
-  --dsa-overlay-background-color-inverted: var(--ks-color-bg-alpha-2);
-  --dsa-overlay-text-color: var(--ks-color-fg);
-  --dsa-overlay-text-color-inverted: var(--ks-color-fg-inverted);
+  --dsa-overlay--background-color: var(--ks-color-bg-alpha-3);
+  --dsa-overlay--background-color-inverted: var(--ks-color-bg-inverted-alpha-3);
+  --dsa-overlay--backdrop-filter: blur(10px);
+  --dsa-overlay--text-color: var(--ks-color-fg);
+  --dsa-overlay--text-color-inverted: var(--ks-color-fg-inverted);
 
   // Topic font styles
   --dsa-topic--font: var(--ks-font-display-m);

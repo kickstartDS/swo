@@ -6,7 +6,7 @@
   --c-visual_overlay--background-size: 100%;
 
   .c-visual__box {
-    --c-visual_box--background: var(--dsa-hero__textbox--background-color, var(--ks-color-bg-alpha-2));
+    --c-visual_box--background: var(--dsa-hero__textbox--background-color, var(--dsa-overlay--background-color));
     --c-visual_box--color: var(--dsa-hero__copy--color, var(--ks-text-color-default));
     --c-visual_box--border-radius: var(--dsa-hero__textbox--border-radius, var(--ks-border-radius-card));
     --c-visual_box--padding: var(--dsa-hero__textbox--padding, var(--ks-spacing-inset-squish-xl));
@@ -50,7 +50,7 @@
       --c-visual_box--max-width: var(--dsa-hero__textbox--max-width, var(--dsa-content--width_narrow));
 
       &:not(.c-visual__box--transparent) {
-        backdrop-filter: var(--dsa-hero__textbox--backdrop-filter, blur(0px));
+        backdrop-filter: var(--dsa-hero__textbox--backdrop-filter, var(--dsa-overlay--backdrop-filter));
         box-shadow: var(--dsa-hero__textbox--box-shadow, var(--ks-box-shadow-card));
       }
     }

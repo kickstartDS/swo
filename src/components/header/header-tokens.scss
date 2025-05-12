@@ -14,6 +14,9 @@
 .dsa-header {
   --dsa-header--max-width: var(--dsa-content--width_max);
   --dsa-header--background: var(--ks-background-color-default);
-  --dsa-header_floating--background: linear-gradient(var(--ks-color-bg), transparent);
+
+  --dsa-header_floating--background: var(--dsa-overlay--background-color);
+  --dsa-header_floating--backdrop-filter: var(--dsa-overlay--backdrop-filter);
+
   --dsa-header__logo--height: var(--dsa-logo--height);
 }

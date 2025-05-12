@@ -87,7 +87,7 @@
   }
 
   .c-visual__continue-btn {
-    color: var(--dsa-overlay-text-color, var(--ks-color-fg-inverted));
-    filter: drop-shadow(0 2px 6px var(--dsa-overlay-text-color-inverted));
+    color: var(--dsa-overlay--text-color, var(--ks-color-fg-inverted));
+    filter: drop-shadow(0 2px 6px var(--dsa-overlay--text-color-inverted));
   }
 }

@@ -13,7 +13,7 @@ import { ImageText } from "../components/image-text/ImageTextComponent";
 
 const Page = () => (
   <>
-    <Header {...headerProps} floating flyoutInverted />
+    <Header {...headerProps} floating />
 
     <Section spaceBefore="none" spaceAfter="none" width="full">
       <VideoCurtain
