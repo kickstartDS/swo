@@ -15,7 +15,7 @@ const Page = () => (
   <>
     <Header {...headerProps} floating />
 
-    <Section spaceBefore="none" spaceAfter="none" width="full">
+    <Section inverted spaceBefore="none" spaceAfter="none" width="full">
       <VideoCurtain
         buttons={[
           {
@@ -28,7 +28,7 @@ const Page = () => (
         overlay
         sub="With your headless experts"
         text="Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture."
-        textPosition="center"
+        textPosition="corner"
         video={{
           srcDesktop: "/img/videos/video-agency.mp4",
           srcMobile: "/img/videos/video-agency.mp4",
@@ -85,7 +85,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
     </Section>
 
     <Section
-      style="accentTransition"
+      transition="to-accent"
       headline={{
         text: "No Agency site without some shiny happy Customer",
         sub: "AI-generated smiles, as you see them everywhere nowadays",
@@ -131,7 +131,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
 
     <Section
       backgroundColor="accent"
-      style="boldTransition"
+      transition="to-bold"
       width="wide"
       headline={{
         text: "Happy Customers Showcases",
@@ -293,7 +293,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
       />
     </Section>
 
-    <Section style="anchorGlow" width="wide">
+    <Section width="wide">
       <Cta
         highlightText
         textAlign="center"

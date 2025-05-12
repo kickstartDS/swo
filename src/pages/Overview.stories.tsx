@@ -36,7 +36,7 @@ const Page = () => (
     </Section>
 
     <Section
-      style="accentTransition"
+      transition="to-accent"
       spaceBefore="small"
       spaceAfter="none"
       width="max"
@@ -100,7 +100,6 @@ const Page = () => (
       spaceBefore="small"
       spaceAfter="none"
       backgroundColor="accent"
-      style="anchorGlow"
       width="wide"
     >
       <Cta

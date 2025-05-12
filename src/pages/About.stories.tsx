@@ -155,7 +155,7 @@ We bring you [CMS starter](/starter) to help setup your next professional websit
         headline="Open Source vs. Premium Experience"
         layout="imageLeft"
         text={`
-**We built two distinct demo websites to represent the range of possibilities with kickstartDS. Plus, You'll find website starters, to start your journey even faster.**
+We built two distinct demo websites to represent the range of possibilities with kickstartDS. Plus, You'll find website starters, to start your journey even faster.
 
 #### Basic Demo of an Agency Website
 The Open Source Demo, built entirely on our [**open-source** modules](https://www.kickstartds.com/modules/), demonstrates the robust capabilities you can leverage at no cost. It highlights the immense value **kickstartDS** offers, without any investment.
