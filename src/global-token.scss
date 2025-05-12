@@ -1,18 +1,19 @@
 @use "./selectors" as *;
 
-:root,
-[ks-inverted],
-[ks-theme] {
+#{$selectors} {
   // Text color on primary backgrounds (e.g., buttons)
   --dsa-text-color-on-primary-base: var(--ks-color-fg-inverted);
   --dsa-text-color-on-primary-inverted-base: var(--ks-color-fg);
 
-  // Overlay styles
-  --dsa-overlay--background-color: var(--ks-color-bg-alpha-3);
-  --dsa-overlay--background-color-inverted: var(--ks-color-bg-inverted-alpha-3);
-  --dsa-overlay--backdrop-filter: blur(10px);
-  --dsa-overlay--text-color: var(--ks-color-fg);
-  --dsa-overlay--text-color-inverted: var(--ks-color-fg-inverted);
+  // Overlay Box styles
+  --dsa-overlay-box--background-color: var(--ks-color-bg-alpha-3);
+  --dsa-overlay-box--background-color-inverted: var(--ks-color-bg-inverted-alpha-3);
+  --dsa-overlay-box--backdrop-filter: blur(40px);
+  --dsa-overlay-box--text-color: var(--ks-color-fg);
+
+  // Overlay Text styles
+  --dsa-overlay-text--shadow: 0 0 10px var(--ks-color-fg-inverted);
+  --dsa-overlay-text--text-color: var(--ks-text-color-display);
 
   // Topic font styles
   --dsa-topic--font: var(--ks-font-display-m);

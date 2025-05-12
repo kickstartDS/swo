@@ -1,7 +1,7 @@
 .dsa-nav-flyout {
   --dsa-nav-flyout--padding: 0 var(--ks-spacing-inset-xl);
-  --dsa-nav-flyout--max-width: 18em;
-  --dsa-nav-flyout--shadow: 20px 0px 30px var(--ks-color-fg-inverted-alpha-5-base);
+  --dsa-nav-flyout--max-width: 100%;
+  --dsa-nav-flyout--shadow: 0px 0px 0px 100px var(--ks-color-fg-alpha-2-base);
   --dsa-nav-flyout--gap: var(--ks-spacing-stack-m);
   --dsa-nav-flyout--background: linear-gradient(
     125deg,

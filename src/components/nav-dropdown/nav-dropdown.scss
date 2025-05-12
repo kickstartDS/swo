@@ -40,11 +40,13 @@
     display: block;
     padding: var(--dsa-nav-dropdown__label--padding);
     text-align: left;
+    border-radius: var(--dsa-nav-dropdown__label--border-radius);
 
     &:hover,
     &:focus,
     &:active {
       color: var(--dsa-nav-dropdown__label--color_hover);
+      background-color: var(--dsa-nav-dropdown__label--background-color_hover);
       text-decoration: var(--dsa-nav-dropdown__label--text-decoration_hover);
     }
   }

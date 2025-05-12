@@ -59,8 +59,8 @@ export const docsTheme = create({
   textInverseColor: tokens.KsTextColorDefaultInvertedBase,
 
   // Toolbar default and active colors
-  barTextColor: tokens.KsColorSecondaryAlpha6Base,
-  barSelectedColor: tokens.KsColorSecondaryBase,
+  barTextColor: tokens.KsColorPrimaryAlpha6Base,
+  barSelectedColor: tokens.KsColorPrimaryBase,
   barBg: tokens.KsBackgroundColorDefaultBase,
 
   // Form colors
