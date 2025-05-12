@@ -6,9 +6,10 @@
   --dsa-text-color-on-primary-inverted-base: var(--ks-color-fg);
 
   // Overlay Box styles
-  --dsa-overlay-box--background-color: var(--ks-color-bg-alpha-3);
-  --dsa-overlay-box--background-color-inverted: var(--ks-color-bg-inverted-alpha-3);
-  --dsa-overlay-box--backdrop-filter: blur(40px);
+  --dsa-overlay-box_transparent--background-color: var(--ks-color-bg-alpha-4);
+  --dsa-overlay-box_transparent--backdrop-filter: blur(16px);
+  --dsa-overlay-box_opaque--background-color: var(--ks-color-bg-alpha-2);
+  --dsa-overlay-box_opaque--backdrop-filter: blur(20px);
   --dsa-overlay-box--text-color: var(--ks-color-fg);
 
   // Overlay Text styles
