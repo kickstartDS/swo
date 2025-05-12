@@ -32,7 +32,7 @@ export type Width = "full" | "max" | "wide" | "default" | "narrow";
 /**
  * Style of background
  */
-export type Style = "framed" | "eye-candy" | "colorful" | "accentTransition" | "boldTransition";
+export type Style = "framed" | "deko" | "colorful" | "accentTransition" | "boldTransition";
 /**
  * Color of background
  */

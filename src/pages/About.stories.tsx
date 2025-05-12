@@ -72,6 +72,38 @@ We bring you [CMS starter](/starter) to help setup your next professional websit
         ]}
       />
     </Section>
+
+    <Section
+      id="starthere"
+      width="wide"
+      headline={{
+        text: "A Design System is nothing without a system applying it",
+        sub: "Take off with our Starters 🚀",
+        width: "default",
+        align: "left",
+        large: true,
+      }}
+      style="deko"
+      content={{
+        mode: "list",
+        align: "center",
+      }}
+    >
+      <Cta
+        highlightText
+        text="
+We bring you [CMS starter](/starter) to help setup your next professional website lighning fast. For the beginning you can choose between headless CMS backends like **Static CMS**, **Storyblok**, **Netlify Create** (formerly **Stackbit**) or you go with **11ty static site** generation.
+
+**Dive into our demos, starter, components and discover the kickstartDS experience that suits you best!**"
+        buttons={[
+          {
+            icon: "chevron-right",
+            label: "Go with a starter",
+            target: "/starter",
+          },
+        ]}
+      />
+    </Section>
     <Section
       width="wide"
       headline={{

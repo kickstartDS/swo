@@ -103,6 +103,16 @@
     );
   }
 
+  &-style--deko {
+  }
+
+  &-style--colorful {
+    background-image: var(
+      --dsa-section_colorful--background-image,
+      linear-gradient(145deg, var(--ks-color-primary) 70%, var(--ks-color-secondary) 100%)
+    );
+  }
+
   &--spotlight {
     position: relative;
 

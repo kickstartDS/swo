@@ -18,7 +18,7 @@
       "description": "Style of background",
       "enum": [
         "framed",
-        "eye-candy",
+        "deko",
         "colorful",
         "accentTransition",
         "boldTransition"
