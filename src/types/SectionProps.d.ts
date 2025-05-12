@@ -32,11 +32,15 @@ export type Width = "full" | "max" | "wide" | "default" | "narrow";
 /**
  * Style of background
  */
-export type Style = "framed" | "deko" | "colorful" | "accentTransition" | "boldTransition";
+export type Style = "framed" | "deko" | "colorful";
 /**
  * Color of background
  */
 export type Style1 = "default" | "accent" | "bold";
+/**
+ * Color of background
+ */
+export type Style2 = "none" | "to-default" | "to-accent" | "to-bold" | "to-inverted";
 /**
  * Background image for the whole section
  */
@@ -143,6 +147,7 @@ export interface SectionProps {
   width?: Width;
   style?: Style;
   backgroundColor?: Style1;
+  transition?: Style2;
   backgroundImage?: BackgroundImage;
   spotlight?: Spotlight;
   spaceBefore?: SpaceBefore;
