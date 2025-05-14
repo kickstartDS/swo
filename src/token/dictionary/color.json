@@ -2775,9 +2775,9 @@
       "link-inverted": {
         "base": {
           "value": {
-            "r": 48,
-            "g": 101,
-            "b": 192,
+            "r": 152,
+            "g": 178,
+            "b": 224,
             "a": 1
           },
           "attributes": {
@@ -2792,9 +2792,9 @@
           "1": {
             "base": {
               "value": {
-                "r": 48,
-                "g": 101,
-                "b": 192,
+                "r": 152,
+                "g": 178,
+                "b": 224,
                 "a": 0.95
               },
               "attributes": {
@@ -2809,9 +2809,9 @@
           "2": {
             "base": {
               "value": {
-                "r": 48,
-                "g": 101,
-                "b": 192,
+                "r": 152,
+                "g": 178,
+                "b": 224,
                 "a": 0.87
               },
               "attributes": {
@@ -2826,9 +2826,9 @@
           "3": {
             "base": {
               "value": {
-                "r": 48,
-                "g": 101,
-                "b": 192,
+                "r": 152,
+                "g": 178,
+                "b": 224,
                 "a": 0.76
               },
               "attributes": {
@@ -2843,320 +2843,10 @@
           "4": {
             "base": {
               "value": {
-                "r": 48,
-                "g": 101,
-                "b": 192,
+                "r": 152,
+                "g": 178,
+                "b": 224,
                 "a": 0.63
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Link Inverted",
-                "presenter": "Color"
-              }
-            }
-          },
-          "5": {
-            "base": {
-              "value": {
-                "r": 48,
-                "g": 101,
-                "b": 192,
-                "a": 0.5
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Link Inverted",
-                "presenter": "Color"
-              }
-            }
-          },
-          "6": {
-            "base": {
-              "value": {
-                "r": 48,
-                "g": 101,
-                "b": 192,
-                "a": 0.37
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Link Inverted",
-                "presenter": "Color"
-              }
-            }
-          },
-          "7": {
-            "base": {
-              "value": {
-                "r": 48,
-                "g": 101,
-                "b": 192,
-                "a": 0.24
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Link Inverted",
-                "presenter": "Color"
-              }
-            }
-          },
-          "8": {
-            "base": {
-              "value": {
-                "r": 48,
-                "g": 101,
-                "b": 192,
-                "a": 0.13
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Link Inverted",
-                "presenter": "Color"
-              }
-            }
-          },
-          "9": {
-            "base": {
-              "value": {
-                "r": 48,
-                "g": 101,
-                "b": 192,
-                "a": 0.05
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Link Inverted",
-                "presenter": "Color"
-              }
-            }
-          }
-        },
-        "to-bg": {
-          "1": {
-            "base": {
-              "value": {
-                "r": 46,
-                "g": 98,
-                "b": 186,
-                "a": 1
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Link Inverted",
-                "presenter": "Color"
-              }
-            }
-          },
-          "2": {
-            "base": {
-              "value": {
-                "r": 44,
-                "g": 92,
-                "b": 175,
-                "a": 1
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Link Inverted",
-                "presenter": "Color"
-              }
-            }
-          },
-          "3": {
-            "base": {
-              "value": {
-                "r": 40,
-                "g": 84,
-                "b": 161,
-                "a": 1
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Link Inverted",
-                "presenter": "Color"
-              }
-            }
-          },
-          "4": {
-            "base": {
-              "value": {
-                "r": 36,
-                "g": 75,
-                "b": 144,
-                "a": 1
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Link Inverted",
-                "presenter": "Color"
-              }
-            }
-          },
-          "5": {
-            "base": {
-              "value": {
-                "r": 32,
-                "g": 67,
-                "b": 127,
-                "a": 1
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Link Inverted",
-                "presenter": "Color"
-              }
-            }
-          },
-          "6": {
-            "base": {
-              "value": {
-                "r": 27,
-                "g": 58,
-                "b": 110,
-                "a": 1
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Link Inverted",
-                "presenter": "Color"
-              }
-            }
-          },
-          "7": {
-            "base": {
-              "value": {
-                "r": 23,
-                "g": 49,
-                "b": 93,
-                "a": 1
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Link Inverted",
-                "presenter": "Color"
-              }
-            }
-          },
-          "8": {
-            "base": {
-              "value": {
-                "r": 19,
-                "g": 41,
-                "b": 79,
-                "a": 1
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Link Inverted",
-                "presenter": "Color"
-              }
-            }
-          },
-          "9": {
-            "base": {
-              "value": {
-                "r": 17,
-                "g": 35,
-                "b": 69,
-                "a": 1
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Link Inverted",
-                "presenter": "Color"
-              }
-            }
-          }
-        },
-        "to-fg": {
-          "1": {
-            "base": {
-              "value": {
-                "r": 58,
-                "g": 109,
-                "b": 195,
-                "a": 1
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Link Inverted",
-                "presenter": "Color"
-              }
-            }
-          },
-          "2": {
-            "base": {
-              "value": {
-                "r": 75,
-                "g": 121,
-                "b": 200,
-                "a": 1
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Link Inverted",
-                "presenter": "Color"
-              }
-            }
-          },
-          "3": {
-            "base": {
-              "value": {
-                "r": 98,
-                "g": 138,
-                "b": 207,
-                "a": 1
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Link Inverted",
-                "presenter": "Color"
-              }
-            }
-          },
-          "4": {
-            "base": {
-              "value": {
-                "r": 125,
-                "g": 158,
-                "b": 215,
-                "a": 1
               },
               "attributes": {
                 "category": "color"
@@ -3173,6 +2863,161 @@
                 "r": 152,
                 "g": 178,
                 "b": 224,
+                "a": 0.5
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Link Inverted",
+                "presenter": "Color"
+              }
+            }
+          },
+          "6": {
+            "base": {
+              "value": {
+                "r": 152,
+                "g": 178,
+                "b": 224,
+                "a": 0.37
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Link Inverted",
+                "presenter": "Color"
+              }
+            }
+          },
+          "7": {
+            "base": {
+              "value": {
+                "r": 152,
+                "g": 178,
+                "b": 224,
+                "a": 0.24
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Link Inverted",
+                "presenter": "Color"
+              }
+            }
+          },
+          "8": {
+            "base": {
+              "value": {
+                "r": 152,
+                "g": 178,
+                "b": 224,
+                "a": 0.13
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Link Inverted",
+                "presenter": "Color"
+              }
+            }
+          },
+          "9": {
+            "base": {
+              "value": {
+                "r": 152,
+                "g": 178,
+                "b": 224,
+                "a": 0.05
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Link Inverted",
+                "presenter": "Color"
+              }
+            }
+          }
+        },
+        "to-bg": {
+          "1": {
+            "base": {
+              "value": {
+                "r": 145,
+                "g": 171,
+                "b": 216,
+                "a": 1
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Link Inverted",
+                "presenter": "Color"
+              }
+            }
+          },
+          "2": {
+            "base": {
+              "value": {
+                "r": 134,
+                "g": 159,
+                "b": 203,
+                "a": 1
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Link Inverted",
+                "presenter": "Color"
+              }
+            }
+          },
+          "3": {
+            "base": {
+              "value": {
+                "r": 119,
+                "g": 143,
+                "b": 185,
+                "a": 1
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Link Inverted",
+                "presenter": "Color"
+              }
+            }
+          },
+          "4": {
+            "base": {
+              "value": {
+                "r": 101,
+                "g": 124,
+                "b": 164,
+                "a": 1
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Link Inverted",
+                "presenter": "Color"
+              }
+            }
+          },
+          "5": {
+            "base": {
+              "value": {
+                "r": 84,
+                "g": 105,
+                "b": 143,
                 "a": 1
               },
               "attributes": {
@@ -3187,9 +3032,9 @@
           "6": {
             "base": {
               "value": {
-                "r": 178,
-                "g": 198,
-                "b": 232,
+                "r": 66,
+                "g": 86,
+                "b": 122,
                 "a": 1
               },
               "attributes": {
@@ -3204,9 +3049,9 @@
           "7": {
             "base": {
               "value": {
-                "r": 205,
-                "g": 218,
-                "b": 240,
+                "r": 48,
+                "g": 67,
+                "b": 101,
                 "a": 1
               },
               "attributes": {
@@ -3221,9 +3066,9 @@
           "8": {
             "base": {
               "value": {
-                "r": 228,
-                "g": 235,
-                "b": 247,
+                "r": 33,
+                "g": 51,
+                "b": 83,
                 "a": 1
               },
               "attributes": {
@@ -3238,9 +3083,164 @@
           "9": {
             "base": {
               "value": {
-                "r": 245,
-                "g": 247,
-                "b": 252,
+                "r": 22,
+                "g": 39,
+                "b": 70,
+                "a": 1
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Link Inverted",
+                "presenter": "Color"
+              }
+            }
+          }
+        },
+        "to-fg": {
+          "1": {
+            "base": {
+              "value": {
+                "r": 157,
+                "g": 182,
+                "b": 226,
+                "a": 1
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Link Inverted",
+                "presenter": "Color"
+              }
+            }
+          },
+          "2": {
+            "base": {
+              "value": {
+                "r": 165,
+                "g": 188,
+                "b": 228,
+                "a": 1
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Link Inverted",
+                "presenter": "Color"
+              }
+            }
+          },
+          "3": {
+            "base": {
+              "value": {
+                "r": 177,
+                "g": 196,
+                "b": 231,
+                "a": 1
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Link Inverted",
+                "presenter": "Color"
+              }
+            }
+          },
+          "4": {
+            "base": {
+              "value": {
+                "r": 190,
+                "g": 206,
+                "b": 235,
+                "a": 1
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Link Inverted",
+                "presenter": "Color"
+              }
+            }
+          },
+          "5": {
+            "base": {
+              "value": {
+                "r": 204,
+                "g": 217,
+                "b": 240,
+                "a": 1
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Link Inverted",
+                "presenter": "Color"
+              }
+            }
+          },
+          "6": {
+            "base": {
+              "value": {
+                "r": 217,
+                "g": 227,
+                "b": 244,
+                "a": 1
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Link Inverted",
+                "presenter": "Color"
+              }
+            }
+          },
+          "7": {
+            "base": {
+              "value": {
+                "r": 230,
+                "g": 237,
+                "b": 248,
+                "a": 1
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Link Inverted",
+                "presenter": "Color"
+              }
+            }
+          },
+          "8": {
+            "base": {
+              "value": {
+                "r": 242,
+                "g": 245,
+                "b": 251,
+                "a": 1
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Link Inverted",
+                "presenter": "Color"
+              }
+            }
+          },
+          "9": {
+            "base": {
+              "value": {
+                "r": 250,
+                "g": 251,
+                "b": 253,
                 "a": 1
               },
               "attributes": {

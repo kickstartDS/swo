@@ -43,8 +43,9 @@ export const VideoCurtainContextDefault = forwardRef<
             skipButton
             className={classnames(
               `dsa-video-curtain`,
-              highlightText ? `dsa-video-curtain--highlight-text` : "",
-              colorNeutral ? `dsa-video-curtain--color-neutral` : "",
+              textPosition && `dsa-video-curtain--content-${textPosition}`,
+              highlightText && `dsa-video-curtain--highlight-text`,
+              colorNeutral && `dsa-video-curtain--color-neutral`,
               className
             )}
             height="fullScreen"
@@ -53,7 +54,7 @@ export const VideoCurtainContextDefault = forwardRef<
               background: "transparent",
               enabled: true,
               vertical:
-                textPosition === "below" || textPosition === "corner"
+                textPosition === "bottom" || textPosition === "corner"
                   ? "bottom"
                   : "center",
               horizontal:
@@ -67,7 +68,10 @@ export const VideoCurtainContextDefault = forwardRef<
                 buttons,
                 colorNeutral,
                 enabled: buttons.length > 0,
-                arrangement: textPosition === "center" ? "center" : "left",
+                arrangement:
+                  textPosition === "left" || textPosition === "corner"
+                    ? "left"
+                    : "center",
               },
               headline: {
                 text: headline,

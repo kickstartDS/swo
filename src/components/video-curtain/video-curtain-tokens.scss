@@ -15,9 +15,15 @@
   --dsa-video-curtain__textbox--max-width: var(--dsa-section__content--width_narrow);
   --dsa-video-curtain__textbox--padding: var(--ks-spacing-inset-squish-xl);
 
-  --dsa-video-curtain__overlay--background: linear-gradient(
+  --dsa-video-curtain_corner__overlay--background: linear-gradient(
+    20deg,
+    var(--ks-color-fg-inverted-alpha-2) 30%,
+    transparent 80%
+  );
+
+  --dsa-video-curtain_bottom__overlay--background: linear-gradient(
     0deg,
-    var(--dsa-overlay-box_transparent--background-color) 15%,
-    transparent 50%
+    var(--ks-color-fg-inverted-alpha-1),
+    transparent
   );
 }

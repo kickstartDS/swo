@@ -56,7 +56,7 @@ export type DesktopVideoSource = string;
 /**
  * Choose the alginment of the module content
  */
-export type ModuleAligment = "center" | "below" | "left" | "right" | "corner";
+export type ModuleAligment = "center" | "bottom" | "left" | "right" | "corner";
 
 export interface VideoCurtainProps {
   headline?: Headline;

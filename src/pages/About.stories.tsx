@@ -14,10 +14,10 @@ const Page = () => (
   <>
     <Header {...headerProps} floating />
     <Section
+      inverted
       spaceBefore="none"
       spaceAfter="none"
       width="full"
-      inverted
       content={{
         mode: "list",
       }}
@@ -76,6 +76,7 @@ We bring you [CMS starter](/starter) to help setup your next professional websit
         ]}
       />
     </Section>
+
     <Section
       width="wide"
       headline={{
@@ -270,7 +271,6 @@ While we've strived to provide a comprehensive demonstration, please bear in min
 
     <Section inverted width="wide">
       <Cta
-        inverted
         headline="Want to know more?"
         sub="Intrigued by what a kickstartDS-driven website can do for your brand?"
         text="Let's explore how we can shape your digital journey. Get in touch today!"
