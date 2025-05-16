@@ -19,15 +19,15 @@
   },
   "font": {
     "display": {
-      "family": "Inter, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
-      "font-size": 20,
+      "family": "Montserrat, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
+      "font-size": 16,
       "line-height": 1.15,
-      "scale-ratio": 1.225,
+      "scale-ratio": 1.25,
       "bp-factor": {
-        "phone": 1.125,
-        "tablet": 1.25,
-        "laptop": 1.35,
-        "desktop": 1.5
+        "phone": 1,
+        "tablet": 1.125,
+        "laptop": 1.25,
+        "desktop": 1.35
       }
     },
     "copy": {
