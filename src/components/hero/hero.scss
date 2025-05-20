@@ -1,6 +1,6 @@
 @use "hero-tokens.scss";
 @use "@kickstartds/core/source/core/container";
-@include container.wrapper("visual");
+@include container.wrapper("hero");
 
 .c-visual.dsa-hero {
   --c-visual_overlay--background-size: 100%;
@@ -35,16 +35,22 @@
     min-height: var(--dsa-hero--min-height_small);
   }
 
-  @include container.size("≥", 640px, "visual") {
-    --c-visual_overlay--background: radial-gradient(
-      50% 125% at 100% 0%,
-      var(--ks-color-primary-alpha-5) 0%,
-      var(--ks-color-bg-alpha-5) 100%
+  @include container.size("≥", 640px, "hero") {
+    --c-visual_overlay--background: var(
+      --dsa-hero__overlay--background,
+      radial-gradient(50% 125% at 100% 0%, var(--ks-color-primary-alpha-5) 0%, var(--ks-color-bg-alpha-4) 100%)
     );
 
     &.dsa-hero--content-below {
       --c-visual_overlay--background: var(
-        --dsa-hero__overlay--background,
+        --dsa-hero--below__overlay--background,
+        linear-gradient(0deg, var(--ks-background-color-default) 15%, transparent 50%)
+      );
+    }
+
+    &.dsa-hero--content-left {
+      --c-visual_overlay--background: var(
+        --dsa-hero--left__overlay--background,
         linear-gradient(0deg, var(--ks-background-color-default) 15%, transparent 50%)
       );
     }
@@ -93,7 +99,7 @@
     filter: drop-shadow(var(--dsa-overlay-text--shadow, 0 0 10px var(--ks-color-bg-inverted-alpha-3-base)));
   }
 
-  @include container.size("≥", 640px, "visual") {
+  @include container.size("≥", 640px, "hero") {
     &.dsa-hero--content-below {
       .c-visual__media {
         position: relative;
@@ -119,7 +125,7 @@
     &.dsa-hero--content-below.c-visual--no-crop {
       .c-visual__media {
         .c-visual__image {
-          @include container.size("≥", 640px, "visual") {
+          @include container.size("≥", 640px, "hero") {
             height: fit-content;
             img {
               object-fit: contain;
@@ -133,7 +139,7 @@
       height: fit-content;
       .c-visual__media {
         .c-visual__image {
-          @include container.size("≥", 640px, "visual") {
+          @include container.size("≥", 640px, "hero") {
             height: fit-content;
 
             img {

@@ -1,23 +1,25 @@
 @use "@kickstartds/core/source/core/container";
-@include container.wrapper("visual");
+@include container.wrapper("hero");
 
 .dsa-hero {
   --dsa-hero--min-height: 18rem;
   --dsa-hero--min-height_small: 13.2rem;
 
-  @include container.size("≥", 640px, "visual") {
+  @include container.size("≥", 640px, "hero") {
     --dsa-hero--min-height: 21rem;
     --dsa-hero--min-height_small: 13.35rem;
+    --dsa-hero__textbox--max-width: 50vw;
   }
 
-  @include container.size("≥", 960px, "visual") {
+  @include container.size("≥", 960px, "hero") {
     --dsa-hero--min-height: 31.5rem;
     --dsa-hero--min-height_small: 15.8rem;
   }
 
-  @include container.size("≥", 1024px, "visual") {
+  @include container.size("≥", 1024px, "hero") {
     --dsa-hero--min-height: 42rem;
     --dsa-hero--min-height_small: 20rem;
+    --dsa-hero__textbox--max-width: var(--dsa-content--width_narrow);
   }
 
   --dsa-hero__headline--color: var(--dsa-headline--color);
@@ -35,9 +37,26 @@
   --dsa-hero__textbox--backdrop-filter: var(--dsa-overlay-box_transparent--backdrop-filter);
   --dsa-hero__textbox--box-shadow: none;
   --dsa-hero__textbox--border-radius: var(--ks-border-radius-card);
-  --dsa-hero__textbox--max-width: calc(var(--dsa-content--width_narrow) * 1.15);
+  --dsa-hero__textbox--max-width: var(--dsa-content--width_narrow);
   --dsa-hero_below__textbox--max-width: var(--dsa-content--width_default);
   --dsa-hero__textbox--padding: var(--ks-spacing-inset-squish-xl);
 
-  --dsa-hero__overlay--background: linear-gradient(0deg, var(--ks-background-color-default) 15%, transparent 50%);
+  --dsa-hero__overlay--background: radial-gradient(
+    50% 125% at 100% 0%,
+    var(--ks-color-primary-alpha-5) 0%,
+    var(--ks-color-bg-alpha-4) 100%
+  );
+
+  --dsa-hero--below__overlay--background: linear-gradient(
+    0deg,
+    var(--ks-background-color-default) 15%,
+    transparent 50%
+  );
+
+  --dsa-hero--left__overlay--background: radial-gradient(
+    var(--dsa-hero__textbox--max-width) var(--dsa-hero__textbox--max-width) at
+      calc(var(--dsa-section__content--padding) * 2) 50%,
+    var(--ks-color-bg) 100%,
+    var(--ks-color-primary-alpha-5) 100%
+  );
 }
