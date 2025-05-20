@@ -1,6 +1,6 @@
 @use "sass:meta";
 @use "bourbon/core/bourbon";
-@use "./nav-topbar-tokens";
+@use "nav-topbar-tokens";
 
 .dsa-nav-topbar {
   --g-link--text-decoration: none;

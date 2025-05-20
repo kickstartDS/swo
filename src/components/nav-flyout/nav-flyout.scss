@@ -1,6 +1,6 @@
 @use "sass:meta";
 @use "bourbon/core/bourbon";
-@use "./nav-flyout-tokens";
+@use "nav-flyout-tokens";
 
 .dsa-nav-flyout {
   display: flex;
