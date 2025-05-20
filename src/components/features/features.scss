@@ -61,6 +61,10 @@
       }
     }
 
+    &--beside.dsa-feature--large {
+      padding-top: calc(var(--dsa-feature__icon--size) / 4);
+    }
+
     &--stack {
       .dsa-feature__header {
         display: flex;
