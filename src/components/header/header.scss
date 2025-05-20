@@ -8,6 +8,7 @@
   padding: var(--dsa-header--spacing-vertical) 0;
   transition: height var(--ks-transition-collapse);
   height: calc(var(--dsa-logo--height) + var(--dsa-header--spacing-vertical) * 2);
+  justify-content: center;
 
   &--overlay {
     position: fixed;
@@ -34,7 +35,6 @@
     max-width: calc(var(--dsa-header--max-width) + var(--dsa-header_floating--spacing-horizontal) * 2);
     top: 10px;
     padding: var(--dsa-header--spacing-vertical) 0;
-    margin: auto;
     left: 50%;
     transform: translate(-50%, 0);
     background: var(--dsa-header_floating--background, var(--dsa-overlay-box_opaque--background-color));
@@ -56,7 +56,6 @@
     padding: 0 var(--dsa-header--spacing-horizontal);
     max-width: calc(var(--dsa-header--max-width) + var(--dsa-header--spacing-horizontal) * 2);
     width: 100%;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
