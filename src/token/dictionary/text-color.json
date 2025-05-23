@@ -25,7 +25,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.link.base}",
+              "value": "{ks.color.link.alpha.4.base}",
               "attributes": {
                 "category": "color"
               },
@@ -85,7 +85,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.link-inverted.base}",
+              "value": "{ks.color.link-inverted.alpha.4.base}",
               "attributes": {
                 "category": "color"
               },
