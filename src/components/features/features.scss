@@ -31,6 +31,10 @@
   }
 
   .dsa-feature {
+    --dsa-feature_large__icon--size: calc(
+      var(--dsa-feature_small__icon--size) * var(--dsa-feature_large__icon--size-multiplier)
+    );
+
     display: flex;
     position: relative;
     flex-direction: column;
@@ -62,7 +66,7 @@
     }
 
     &--beside.dsa-feature--large {
-      padding-top: calc(var(--dsa-feature__icon--size) / 4);
+      padding-top: calc((var(--dsa-feature__icon--size) / 2) - (var(--dsa-feature_small__icon--size) / 2));
     }
 
     &--stack {
