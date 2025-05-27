@@ -14,6 +14,8 @@
   --dsa-nav-topbar__label--text-decoration: none;
   --dsa-nav-topbar__label--text-decoration_hover: none;
   --dsa-nav-topbar__label_dimmed--opacity: 1;
+  --dsa-nav-topbar__label--transition: var(--ks-transition-hover);
+  --dsa-nav-topbar__label--transition-property: background-color, color, opacity;
 
   --dsa-nav-topbar__label__icon--size: 1.5em;
 

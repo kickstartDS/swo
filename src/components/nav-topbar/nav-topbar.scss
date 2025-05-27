@@ -86,6 +86,8 @@
     align-items: center;
     padding: var(--dsa-nav-topbar__label--padding);
     text-decoration: var(--dsa-nav-topbar__label--text-decoration);
+    transition: var(--dsa-nav-topbar__label--transition);
+    transition-property: var(--dsa-nav-topbar__label--transition-property);
 
     &:hover,
     &:focus,
