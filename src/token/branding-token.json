@@ -21,14 +21,13 @@
   "font": {
     "display": {
       "family": "'Museo Sans' ,Helvetica, sans-serif, system-ui, -apple-system",
-      "font-size": 18,
+      "font-size": 16,
       "line-height": 1.5,
       "scale-ratio": 1.225,
       "bp-factor": {
-        "phone": 1.125,
-        "tablet": 1.25,
-        "laptop": 1.5,
-        "desktop": 1.75
+        "phone": 1.225,
+        "tablet": 1.325,
+        "laptop": 1.5
       }
     },
     "copy": {
@@ -37,7 +36,7 @@
       "line-height": 1.75,
       "scale-ratio": 1.225,
       "bp-factor": {
-        "tablet": 1.125
+        "phone": 1.125
       }
     },
     "interface": {
@@ -46,7 +45,7 @@
       "line-height": 1.75,
       "scale-ratio": 1.225,
       "bp-factor": {
-        "tablet": 1.125
+        "phone": 1.125
       }
     },
     "mono": {
@@ -55,7 +54,7 @@
       "line-height": 1.75,
       "scale-ratio": 1.225,
       "bp-factor": {
-        "tablet": 1.125
+        "phone": 1.125
       }
     }
   },
@@ -75,9 +74,9 @@
     "blur": "2.75px"
   },
   "breakpoints": {
-    "phone": 576,
-    "tablet": 768,
-    "laptop": 992,
+    "phone": 640,
+    "tablet": 960,
+    "laptop": 1024,
     "desktop": 1200,
     "tv": 1952
   }
