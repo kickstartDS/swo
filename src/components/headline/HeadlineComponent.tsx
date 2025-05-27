@@ -42,27 +42,27 @@ export const Headline = forwardRef<
     return text || sub ? (
       <header
         className={classnames(
-          "dsa-headline",
-          `dsa-headline--${style}`,
-          style !== "none" && style !== level && `dsa-headline--${style}`,
-          `dsa-headline--align-${align}`,
-          spaceAfter && `dsa-headline--space-after-${spaceAfter}`,
+          "swo-headline",
+          `swo-headline--${style}`,
+          style !== "none" && style !== level && `swo-headline--${style}`,
+          `swo-headline--align-${align}`,
+          spaceAfter && `swo-headline--space-after-${spaceAfter}`,
           className
         )}
         ref={ref}
         {...props}
       >
         {sub && switchOrder && (
-          <p className="dsa-headline__subheadline">{renderSubheadline(sub)}</p>
+          <p className="swo-headline__subheadline">{renderSubheadline(sub)}</p>
         )}
 
-        <TagName className={classnames("dsa-headline__headline")}>
-          <span className="dsa-headline__inner">
+        <TagName className={classnames("swo-headline__headline")}>
+          <span className="swo-headline__inner">
             {renderContent(text)}
             {props.id && level === "h2" && (
               <a
                 href={`#${props.id}`}
-                className="dsa-headline__anchor"
+                className="swo-headline__anchor"
                 aria-label="Link to this section"
                 title="Link to this section"
               >
@@ -73,7 +73,7 @@ export const Headline = forwardRef<
         </TagName>
 
         {sub && !switchOrder && (
-          <p className="dsa-headline__subheadline">{renderSubheadline(sub)}</p>
+          <p className="swo-headline__subheadline">{renderSubheadline(sub)}</p>
         )}
       </header>
     ) : null;

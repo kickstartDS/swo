@@ -29,7 +29,7 @@ export const Button = forwardRef<
   ) => (
     <ButtonContextDefault
       {...props}
-      className={classnames("dsa-button", className)}
+      className={classnames("swo-button", className)}
       href={target}
       label={label}
       size={size}

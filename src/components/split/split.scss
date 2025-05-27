@@ -3,18 +3,18 @@
 .l-split {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--dsa-split--gap-horizontal) var(--dsa-split--gap-horizontal);
+  gap: var(--swo-split--gap-horizontal) var(--swo-split--gap-horizontal);
 
   &--narrow {
-    --split__main--flex-basis: var(--dsa-content--width_narrow);
+    --split__main--flex-basis: var(--swo-content--width_narrow);
   }
 
   &--medium {
-    --split__main--flex-basis: var(--dsa-content--width_default);
+    --split__main--flex-basis: var(--swo-content--width_default);
   }
 
   &--wide {
-    --split__main--flex-basis: var(--dsa-content--width_wide);
+    --split__main--flex-basis: var(--swo-content--width_wide);
   }
 
   @media (min-width: 48em) {
@@ -28,31 +28,31 @@
 
   &--sidebar-right {
     > :first-child {
-      flex-basis: calc(var(--split__main--flex-basis) - calc(var(--dsa-content--horizontal-spacing) * 2));
+      flex-basis: calc(var(--split__main--flex-basis) - calc(var(--swo-content--horizontal-spacing) * 2));
     }
 
     > :last-child {
-      flex-basis: var(--dsa-split__side--flex-basis, 210px);
+      flex-basis: var(--swo-split__side--flex-basis, 210px);
       position: -webkit-sticky;
       position: sticky;
-      top: var(--dsa-split__side--top-offset, var(--ks-spacing-stack-l));
+      top: var(--swo-split__side--top-offset, var(--ks-spacing-stack-l));
       height: fit-content;
-      margin-top: var(--dsa-split__side-top-margin, var(--ks-spacing-stack-l));
+      margin-top: var(--swo-split__side-top-margin, var(--ks-spacing-stack-l));
     }
   }
 
   &--sidebar-left {
     > :last-child {
-      flex-basis: calc(var(--split__main--flex-basis) - calc(var(--dsa-content--horizontal-spacing) * 2));
+      flex-basis: calc(var(--split__main--flex-basis) - calc(var(--swo-content--horizontal-spacing) * 2));
     }
 
     > :first-child {
-      flex-basis: var(--dsa-split__side--flex-basis, 210px);
+      flex-basis: var(--swo-split__side--flex-basis, 210px);
       position: -webkit-sticky;
       position: sticky;
-      top: var(--dsa-split__side--top-margin, var(--ks-spacing-stack-l));
+      top: var(--swo-split__side--top-margin, var(--ks-spacing-stack-l));
       height: fit-content;
-      margin-top: var(--dsa-split__side-top-margin, var(--ks-spacing-stack-l));
+      margin-top: var(--swo-split__side-top-margin, var(--ks-spacing-stack-l));
     }
   }
 }

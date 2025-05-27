@@ -18,7 +18,7 @@ export const ConditionalSlider = forwardRef<
   if (layout === "slider") {
     return (
       <Slider
-        className="dsa-testimonials dsa-testimonials--slider"
+        className="swo-testimonials swo-testimonials--slider"
         arrows={arrows}
         nav={nav}
         {...props}
@@ -30,7 +30,7 @@ export const ConditionalSlider = forwardRef<
   } else {
     return (
       <div
-        className="dsa-testimonials dsa-testimonials--list"
+        className="swo-testimonials swo-testimonials--list"
         {...props}
         ref={ref}
       >

@@ -39,12 +39,12 @@ export const TeaserCardContextDefault = forwardRef<
     <Container name="teaser-card">
       <div
         className={classnames(
-          `dsa-teaser-card`,
-          `dsa-teaser-card--${layout}`,
-          `dsa-teaser-card--${imageRatio}`
+          `swo-teaser-card`,
+          `swo-teaser-card--${layout}`,
+          `swo-teaser-card--${imageRatio}`
         )}
       >
-        {label && <span className="dsa-teaser-card__label">{label}</span>}
+        {label && <span className="swo-teaser-card__label">{label}</span>}
         <TeaserBoxContextDefault
           {...rest}
           topic={headline}

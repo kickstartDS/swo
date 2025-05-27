@@ -1,16 +1,16 @@
-.dsa-faq {
-  --dsa-faq--border-color: var(--ks-border-color-interface);
+.swo-faq {
+  --swo-faq--border-color: var(--ks-border-color-interface);
 
-  --dsa-faq__summary--color: var(--dsa-topic--color);
-  --dsa-faq__summary--font-weight: var(--dsa-topic--font-weight);
-  --dsa-faq__summary--font: var(--dsa-topic--font);
-  --dsa-faq__summary--font-family: var(--dsa-topic--font-family);
+  --swo-faq__summary--color: var(--swo-topic--color);
+  --swo-faq__summary--font-weight: var(--swo-topic--font-weight);
+  --swo-faq__summary--font: var(--swo-topic--font);
+  --swo-faq__summary--font-family: var(--swo-topic--font-family);
 
-  --dsa-faq__answer--color: var(--dsa-headline--color);
-  --dsa-faq__answer--font: var(--dsa-topic--font);
+  --swo-faq__answer--color: var(--swo-headline--color);
+  --swo-faq__answer--font: var(--swo-topic--font);
 
-  --dsa-faq__icon--color: var(--ks-text-color-primary-interactive);
+  --swo-faq__icon--color: var(--ks-text-color-primary-interactive);
 
-  --dsa-faq_header--padding: 1em 0;
-  --dsa-faq_content--padding: 0em 0em 1em 0em;
+  --swo-faq_header--padding: 1em 0;
+  --swo-faq_content--padding: 0em 0em 1em 0em;
 }

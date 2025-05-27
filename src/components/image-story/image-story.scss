@@ -1,16 +1,16 @@
 @import "image-story-tokens.scss";
 
-.c-storytelling.dsa-image-story {
+.c-storytelling.swo-image-story {
   gap: var(--c-storytelling--horizontal-padding);
   --c-storytelling--horizontal-padding: var(
-    --dsa-image-story--horizontal-padding,
-    var(--dsa-content--horizontal-spacing)
+    --swo-image-story--horizontal-padding,
+    var(--swo-content--horizontal-spacing)
   );
-  --c-storytelling--vertical-padding: var(--dsa-image-story--vertical-padding, var(--ks-spacing-xl));
+  --c-storytelling--vertical-padding: var(--swo-image-story--vertical-padding, var(--ks-spacing-xl));
 
   .c-storytelling__box {
     &__content {
-      max-width: var(--dsa-content--width_narrow);
+      max-width: var(--swo-content--width_narrow);
     }
   }
 
@@ -38,8 +38,8 @@
   }
 
   .c-rich-text {
-    font: var(--dsa-image-story__copy--font, var(--dsa-rich-text--font));
-    color: var(--dsa-image-story__copy--color, var(--dsa-rich-text--color));
+    font: var(--swo-image-story__copy--font, var(--swo-rich-text--font));
+    color: var(--swo-image-story__copy--color, var(--swo-rich-text--color));
   }
 
   .c-storytelling__box,

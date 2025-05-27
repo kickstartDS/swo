@@ -20,23 +20,23 @@ export const LogosContextDefault = forwardRef<
   ) => (
     <div {...rest} ref={ref}>
       <Container name="logos">
-        <div className={classnames(`dsa-logos dsa-logos--align-${align}`)}>
-          {tagline && <div className="dsa-logos__tagline">{tagline}</div>}
+        <div className={classnames(`swo-logos swo-logos--align-${align}`)}>
+          {tagline && <div className="swo-logos__tagline">{tagline}</div>}
 
           <LogoTiles
             className={classnames(
-              `dsa-logo-tiles dsa-logo-tiles--cols-${logosPerRow}`
+              `swo-logo-tiles swo-logo-tiles--cols-${logosPerRow}`
             )}
             logos={logos}
           />
           {cta?.toggle ? (
-            <div className="dsa-logos__cta">
-              <div className="dsa-logos__cta__text">
+            <div className="swo-logos__cta">
+              <div className="swo-logos__cta__text">
                 {cta?.text}
                 {cta?.style === "text" ? (
                   <>
                     &#32;
-                    <Link className="dsa-logos__cta__link" href={cta.link}>
+                    <Link className="swo-logos__cta__link" href={cta.link}>
                       {cta.label}
                     </Link>
                   </>

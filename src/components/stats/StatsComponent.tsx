@@ -10,7 +10,7 @@ export const StatsContextDefault = forwardRef<
   StatsProps & HTMLAttributes<HTMLDivElement>
 >(({ stat: stats = [], ...rest }, ref) => {
   return (
-    <div {...rest} ref={ref} className="dsa-stats">
+    <div {...rest} ref={ref} className="swo-stats">
       {stats.map((item, index) => (
         <Stat {...item} key={index} />
       ))}

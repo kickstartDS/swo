@@ -1,16 +1,16 @@
-.dsa-slider {
-  --dsa-slider__arrow--background-color: transparent;
-  --dsa-slider__arrow--background-color_hover: transparent;
-  --dsa-slider__arrow--background-color_active: transparent;
+.swo-slider {
+  --swo-slider__arrow--background-color: transparent;
+  --swo-slider__arrow--background-color_hover: transparent;
+  --swo-slider__arrow--background-color_active: transparent;
 
-  --dsa-slider__bullet--border-color: var(--ks-border-color-primary);
-  --dsa-slider__bullet--border-color_hover: var(--ks-border-color-primary);
-  --dsa-slider__bullet--border-color_active: var(--ks-border-color-primary);
+  --swo-slider__bullet--border-color: var(--ks-border-color-primary);
+  --swo-slider__bullet--border-color_hover: var(--ks-border-color-primary);
+  --swo-slider__bullet--border-color_active: var(--ks-border-color-primary);
 
-  --dsa-slider__bullet--size: 1rem;
-  --dsa-slider__bullet--background-color: transparent;
-  --dsa-slider__bullet--background-color_hover: var(--ks-color-primary-alpha-8);
-  --dsa-slider__bullet--background-color_active: var(--ks-color-primary);
+  --swo-slider__bullet--size: 1rem;
+  --swo-slider__bullet--background-color: transparent;
+  --swo-slider__bullet--background-color_hover: var(--ks-color-primary-alpha-8);
+  --swo-slider__bullet--background-color_active: var(--ks-color-primary);
 
-  --dsa-slider__arrow--color: var(--ks-border-color-primary-interactive);
+  --swo-slider__arrow--color: var(--ks-border-color-primary-interactive);
 }

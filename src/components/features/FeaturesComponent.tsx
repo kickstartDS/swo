@@ -27,7 +27,7 @@ export const FeaturesContextDefault = forwardRef<
       {...rest}
       ref={ref}
       className={classnames(
-        `dsa-features dsa-features--${
+        `swo-features swo-features--${
           layout === "largeTiles"
             ? "large-tiles"
             : layout === "smallTiles"

@@ -45,9 +45,9 @@ export const HeroContextDefault = forwardRef<
               {...rest}
               ref={ref}
               className={classnames(
-                `dsa-hero dsa-hero--content-${textPosition}`,
-                highlightText ? `dsa-hero--highlight-text` : "",
-                colorNeutral ? `dsa-hero--color-neutral` : "",
+                `swo-hero swo-hero--content-${textPosition}`,
+                highlightText ? `swo-hero--highlight-text` : "",
+                colorNeutral ? `swo-hero--color-neutral` : "",
                 className
               )}
               height={height}

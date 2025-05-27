@@ -45,12 +45,12 @@ export const CtaContextDefault = forwardRef<
             {...rest}
             ref={ref}
             className={classnames(
-              "dsa-cta",
-              highlightText ? `dsa-cta--highlight-text` : "",
-              colorNeutral ? `dsa-cta--color-neutral` : "",
-              image?.padding ? `dsa-cta--image-padding` : "",
-              !padding ? `dsa-cta--no-padding` : "",
-              align && align !== "center" ? `dsa-cta--align-${align}` : ""
+              "swo-cta",
+              highlightText ? `swo-cta--highlight-text` : "",
+              colorNeutral ? `swo-cta--color-neutral` : "",
+              image?.padding ? `swo-cta--image-padding` : "",
+              !padding ? `swo-cta--no-padding` : "",
+              align && align !== "center" ? `swo-cta--align-${align}` : ""
             )}
             backgroundImage={backgroundImage}
             backgroundColor={backgroundColor}

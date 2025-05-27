@@ -42,10 +42,10 @@ export const VideoCurtainContextDefault = forwardRef<
             ref={ref}
             skipButton
             className={classnames(
-              `dsa-video-curtain`,
-              textPosition && `dsa-video-curtain--content-${textPosition}`,
-              highlightText && `dsa-video-curtain--highlight-text`,
-              colorNeutral && `dsa-video-curtain--color-neutral`,
+              `swo-video-curtain`,
+              textPosition && `swo-video-curtain--content-${textPosition}`,
+              highlightText && `swo-video-curtain--highlight-text`,
+              colorNeutral && `swo-video-curtain--color-neutral`,
               className
             )}
             height="fullScreen"

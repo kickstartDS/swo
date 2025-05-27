@@ -23,7 +23,7 @@ export const DividerContextDefault = forwardRef<
 >(({ variant, className, ...props }, ref) => (
   <DsaDividerContextDefault
     {...props}
-    className={classnames("dsa-divider", className)}
+    className={classnames("swo-divider", className)}
     variant={variant}
     ref={ref}
   />

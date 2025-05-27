@@ -2,77 +2,77 @@
 @use "@kickstartds/core/source/core/container";
 @include container.wrapper("hero");
 
-.c-visual.dsa-hero {
+.c-visual.swo-hero {
   --c-visual_overlay--background-size: 100%;
 
   .c-visual__box {
     --c-visual_box--background: var(
-      --dsa-hero__textbox--background-color,
-      var(--dsa-overlay-box_transparent--background-color)
+      --swo-hero__textbox--background-color,
+      var(--swo-overlay-box_transparent--background-color)
     );
-    --c-visual_box--color: var(--dsa-hero__copy--color, var(--ks-text-color-default));
-    --c-visual_box--border-radius: var(--dsa-hero__textbox--border-radius, var(--ks-border-radius-card));
-    --c-visual_box--padding: var(--dsa-hero__textbox--padding, var(--ks-spacing-inset-squish-xl));
+    --c-visual_box--color: var(--swo-hero__copy--color, var(--ks-text-color-default));
+    --c-visual_box--border-radius: var(--swo-hero__textbox--border-radius, var(--ks-border-radius-card));
+    --c-visual_box--padding: var(--swo-hero__textbox--padding, var(--ks-spacing-inset-squish-xl));
 
-    --c-visual_text--font: var(--dsa-hero__copy--font, var(--dsa-rich-text--font));
+    --c-visual_text--font: var(--swo-hero__copy--font, var(--swo-rich-text--font));
   }
 
   &--highlight-text.c-visual {
-    --dsa-hero__copy--font: var(--dsa-hero_highlight-text__copy--font, var(--ks-font-copy-l));
+    --swo-hero__copy--font: var(--swo-hero_highlight-text__copy--font, var(--ks-font-copy-l));
   }
 
   &--color-neutral.c-visual {
-    --dsa-hero__copy--color: var(--dsa-hero_color-neutral__copy--color, var(--ks-text-color-default));
-    --dsa-hero__headline--color: var(--dsa-hero_color-neutral__copy--color, var(--ks-text-color-default));
-    --dsa-hero__subheadline--color: var(--dsa-hero_color-neutral__copy--color, var(--ks-text-color-default));
+    --swo-hero__copy--color: var(--swo-hero_color-neutral__copy--color, var(--ks-text-color-default));
+    --swo-hero__headline--color: var(--swo-hero_color-neutral__copy--color, var(--ks-text-color-default));
+    --swo-hero__subheadline--color: var(--swo-hero_color-neutral__copy--color, var(--ks-text-color-default));
   }
 
   --c-visual_overlay--background: transparent;
-
-  min-height: var(--dsa-hero--min-height);
+  min-height: var(--swo-hero--min-height);
+  --c-visual--min-height: unset !important;
 
   &.c-visual--small {
-    min-height: var(--dsa-hero--min-height_small);
+    min-height: var(--swo-hero--min-height_small);
   }
 
   @include container.size("≥", 640px, "hero") {
     --c-visual_overlay--background: var(
-      --dsa-hero__overlay--background,
+      --swo-hero__overlay--background,
       radial-gradient(50% 125% at 100% 0%, var(--ks-color-primary-alpha-5) 0%, var(--ks-color-bg-alpha-4) 100%)
     );
 
-    &.dsa-hero--content-below {
+    &.swo-hero--content-below {
       --c-visual_overlay--background: var(
-        --dsa-hero--below__overlay--background,
+        --swo-hero--below__overlay--background,
         linear-gradient(0deg, var(--ks-background-color-default) 15%, transparent 50%)
       );
     }
 
-    &.dsa-hero--content-left {
+    &.swo-hero--content-left {
       --c-visual_overlay--background: var(
-        --dsa-hero--left__overlay--background,
+        --swo-hero--left__overlay--background,
         linear-gradient(0deg, var(--ks-background-color-default) 15%, transparent 50%)
       );
     }
 
     .c-visual__box {
-      --c-visual_box--max-width: var(--dsa-hero__textbox--max-width, var(--dsa-content--width_narrow));
+      --c-visual_box--max-width: var(--swo-hero__textbox--max-width, var(--swo-content--width_narrow));
 
       &:not(.c-visual__box--transparent) {
-        backdrop-filter: var(--dsa-hero__textbox--backdrop-filter, var(--dsa-overlay-box_transparent--backdrop-filter));
-        box-shadow: var(--dsa-hero__textbox--box-shadow, var(--ks-box-shadow-card));
+        backdrop-filter: var(--swo-hero__textbox--backdrop-filter, var(--swo-overlay-box_transparent--backdrop-filter));
+        box-shadow: var(--swo-hero__textbox--box-shadow, var(--ks-box-shadow-card));
       }
     }
   }
 }
 
-.c-visual.dsa-hero {
-  .dsa-headline {
-    .dsa-headline__headline {
-      color: var(--dsa-hero__headline--color, var(--dsa-headline--color, var(--ks-text-color-display)));
+.c-visual.swo-hero {
+  .swo-headline {
+    .swo-headline__headline {
+      color: var(--swo-hero__headline--color, var(--swo-headline--color, var(--ks-text-color-display)));
     }
-    .dsa-headline__subheadline {
-      color: var(--dsa-hero__subheadline--color, var(--dsa-headline__subheadline--color, var(--ks-text-color-primary)));
+    .swo-headline__subheadline {
+      color: var(--swo-hero__subheadline--color, var(--swo-headline__subheadline--color, var(--ks-text-color-primary)));
     }
   }
 
@@ -91,38 +91,38 @@
   }
 
   .c-visual__content--indent {
-    max-width: var(--dsa-content--width_wide);
+    max-width: var(--swo-content--width_wide);
   }
 
   .c-visual__continue-btn {
-    color: var(--dsa-overlay-text--text-color, var(--ks-color-fg));
-    filter: drop-shadow(var(--dsa-overlay-text--shadow, 0 0 10px var(--ks-color-bg-inverted-alpha-3-base)));
+    color: var(--swo-overlay-text--text-color, var(--ks-color-fg));
+    filter: drop-shadow(var(--swo-overlay-text--shadow, 0 0 10px var(--ks-color-bg-inverted-alpha-3-base)));
   }
 
   @include container.size("≥", 640px, "hero") {
-    &.dsa-hero--content-below {
+    &.swo-hero--content-below {
       .c-visual__media {
         position: relative;
 
         .c-visual__image {
-          height: var(--c-visual--min-height);
+          height: var(--swo-hero--min-height);
         }
       }
 
       .c-visual__content {
-        padding: 0 var(--dsa-content--horizontal-spacing);
+        padding: 0 var(--swo-content--horizontal-spacing);
         margin-top: -10%;
         position: relative;
 
         .c-visual__box {
-          --c-visual_box--max-width: var(--dsa-hero_below__textbox--max-width, var(--dsa-content--width_default));
+          --c-visual_box--max-width: var(--swo-hero_below__textbox--max-width, var(--swo-content--width_default));
         }
       }
     }
     &.c-visual--no-crop {
-      --c-visual--min-height: 0;
+      --swo-hero--min-height: 0;
     }
-    &.dsa-hero--content-below.c-visual--no-crop {
+    &.swo-hero--content-below.c-visual--no-crop {
       .c-visual__media {
         .c-visual__image {
           @include container.size("≥", 640px, "hero") {
@@ -135,7 +135,7 @@
         }
       }
     }
-    &.dsa-hero--content-below.c-visual--full {
+    &.swo-hero--content-below.c-visual--full {
       height: fit-content;
       .c-visual__media {
         .c-visual__image {

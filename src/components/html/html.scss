@@ -1,6 +1,6 @@
 @use "html-tokens.scss";
 
-.dsa-html {
+.swo-html {
   &__consent {
     position: relative;
     width: 100%;
@@ -15,9 +15,9 @@
     padding: var(--ks-spacing-inset-l);
 
     .c-rich-text {
-      color: var(--dsa-html__consent--color, var(--ks-text-color-display));
-      font: var(--dsa-html__consent--font, var(--ks-font-interface-m));
-      font-weight: var(--dsa-html__consent--font-weight, var(--ks-font-weight-regular));
+      color: var(--swo-html__consent--color, var(--ks-text-color-display));
+      font: var(--swo-html__consent--font, var(--ks-font-interface-m));
+      font-weight: var(--swo-html__consent--font-weight, var(--ks-font-weight-regular));
       text-align: center;
     }
 
@@ -27,7 +27,7 @@
       height: 100%;
       position: absolute;
       top: 0;
-      background-color: var(--dsa-html__consent--background, var(--ks-color-fg-inverted-alpha-6));
+      background-color: var(--swo-html__consent--background, var(--ks-color-fg-inverted-alpha-6));
     }
 
     > * {

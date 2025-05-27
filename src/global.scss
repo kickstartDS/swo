@@ -3,11 +3,7 @@
 @use "./components/blog-teaser/blog-teaser";
 @use "./components/form/form";
 @use "./components/lightbox/lightbox";
-@use "./fonts-systemics";
-@use "./fonts-dsa";
-@use "./fonts-business";
-@use "./fonts-telekom";
-@use "./fonts-google";
+@use "./fonts";
 @use "./components/rich-text/rich-text";
 @use "./selectors" as *;
 
@@ -36,39 +32,39 @@ hr.c-divider {
 }
 
 #{$selectors} {
-  --g-link--font-weight: var(--dsa-link--font-weight, var(--ks-font-weight-semi-bold));
-  --g-link--text-decoration: var(--dsa-link--text-decoration, underline);
-  --g-link--text-decoration-hover: var(--dsa-link--text-decoration_hover, none);
+  --g-link--font-weight: var(--swo-link--font-weight, var(--ks-font-weight-semi-bold));
+  --g-link--text-decoration: var(--swo-link--text-decoration, underline);
+  --g-link--text-decoration-hover: var(--swo-link--text-decoration_hover, none);
 
-  --g-link--color: var(--dsa-link--color, var(--ks-text-color-default-interactive));
-  --g-link--color-hover: var(--dsa-link--color_hover, var(--ks-text-color-default-interactive-hover));
-  --g-link--background: var(--dsa-link--background, transparent);
-  --g-link--border-radius: var(--dsa-link--border-radius, 0);
+  --g-link--color: var(--swo-link--color, var(--ks-text-color-default-interactive));
+  --g-link--color-hover: var(--swo-link--color_hover, var(--ks-text-color-default-interactive-hover));
+  --g-link--background: var(--swo-link--background, transparent);
+  --g-link--border-radius: var(--swo-link--border-radius, 0);
 
-  --g-topic--color: var(--dsa-topic--color, var(--ks-text-color-default));
-  --g-topic--font: var(--dsa-topic--font, var(--ks-font-display-l));
-  --g-topic--font-weight: var(--dsa-topic--font-weight, var(--ks-font-weight-bold));
+  --g-topic--color: var(--swo-topic--color, var(--ks-text-color-default));
+  --g-topic--font: var(--swo-topic--font, var(--ks-font-display-l));
+  --g-topic--font-weight: var(--swo-topic--font-weight, var(--ks-font-weight-bold));
 
-  --c-rich-text--font: var(--dsa-rich-text--font, var(--ks-font-copy-m));
-  --c-rich-text--vertical-spacing: var(--dsa-rich-text--vertical-spacing, var(--ks-spacing-m));
-  --c-rich-text--horizontal-spacing: var(--dsa-rich-text--horizontal-spacing, 1em);
-  --c-rich-text--color: var(--dsa-rich-text--color, var(--ks-text-color-default));
-  --c-rich-text--font-weight: var(--dsa-rich-text--font-weight, var(--ks-font-weight-regular));
+  --c-rich-text--font: var(--swo-rich-text--font, var(--ks-font-copy-m));
+  --c-rich-text--vertical-spacing: var(--swo-rich-text--vertical-spacing, var(--ks-spacing-m));
+  --c-rich-text--horizontal-spacing: var(--swo-rich-text--horizontal-spacing, 1em);
+  --c-rich-text--color: var(--swo-rich-text--color, var(--ks-text-color-default));
+  --c-rich-text--font-weight: var(--swo-rich-text--font-weight, var(--ks-font-weight-regular));
 
-  --c-rich-text_headline--color: var(--dsa-rich-text__headline--color, var(--ks-text-color-display));
-  --c-rich-text_headline--font: var(--dsa-rich-text__headline--font, var(--ks-font-display-m));
-  --c-rich-text_headline--font-weight: var(--dsa-rich-text__headline--font-weight, var(--ks-font-weight-medium));
-  --c-rich-text_headline--margin: var(--dsa-rich-text__headline--margin, 0.75em 0 0.5em);
+  --c-rich-text_headline--color: var(--swo-rich-text__headline--color, var(--ks-text-color-display));
+  --c-rich-text_headline--font: var(--swo-rich-text__headline--font, var(--ks-font-display-m));
+  --c-rich-text_headline--font-weight: var(--swo-rich-text__headline--font-weight, var(--ks-font-weight-medium));
+  --c-rich-text_headline--margin: var(--swo-rich-text__headline--margin, 0.75em 0 0.5em);
 }
 
 [ks-inverted="false"],
 :root,
 #root {
-  --dsa-text-color-on-primary: var(--dsa-text-color-on-primary-base);
-  --dsa-text-color-on-primary-inverted: var(--dsa-text-color-on-primary-inverted-base);
+  --swo-text-color-on-primary: var(--swo-text-color-on-primary-base);
+  --swo-text-color-on-primary-inverted: var(--swo-text-color-on-primary-inverted-base);
 }
 
 [ks-inverted="true"] {
-  --dsa-text-color-on-primary: var(--dsa-text-color-on-primary-inverted-base);
-  --dsa-text-color-on-primary-inverted: var(--dsa-text-color-on-primary-base);
+  --swo-text-color-on-primary: var(--swo-text-color-on-primary-inverted-base);
+  --swo-text-color-on-primary-inverted: var(--swo-text-color-on-primary-base);
 }

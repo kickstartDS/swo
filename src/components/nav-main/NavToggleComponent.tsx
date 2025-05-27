@@ -8,15 +8,15 @@ export const NavToggleContextDefault = forwardRef<
   <button
     ref={ref}
     type="button"
-    className="dsa-nav-toggle"
+    className="swo-nav-toggle"
     id="toggle-sidebar"
-    aria-controls="dsa-nav-flyout"
+    aria-controls="swo-nav-flyout"
     aria-expanded="false"
     ks-component="base.nav-toggle"
   >
-    <span className="dsa-nav-toggle__label">Open main navigation</span>
-    <span className="dsa-nav-toggle__icon">
-      <span className="dsa-nav-toggle__icon__middle"></span>
+    <span className="swo-nav-toggle__label">Open main navigation</span>
+    <span className="swo-nav-toggle__icon">
+      <span className="swo-nav-toggle__icon__middle"></span>
     </span>
   </button>
 ));

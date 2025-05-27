@@ -1,15 +1,15 @@
 @use "@kickstartds/core/source/core/container";
 @include container.wrapper("logos");
 
-.dsa-logos {
-  --dsa-logos-gap: var(--ks-spacing-stack-m);
-  --dsa-logos__tagline--font: var(--dsa-headline_h3--font);
-  --dsa-logos__tagline--font-weight: var(--dsa-headline--font-weight);
-  --dsa-logos__tagline--color: var(--dsa-headline--color);
+.swo-logos {
+  --swo-logos-gap: var(--ks-spacing-stack-m);
+  --swo-logos__tagline--font: var(--swo-headline_h3--font);
+  --swo-logos__tagline--font-weight: var(--swo-headline--font-weight);
+  --swo-logos__tagline--color: var(--swo-headline--color);
 
-  --dsa-logos__grid--gap-horizontal: var(--ks-spacing-inline-l);
-  --dsa-logos__grid--gap-vertical: var(--ks-spacing-stack-s);
+  --swo-logos__grid--gap-horizontal: var(--ks-spacing-inline-l);
+  --swo-logos__grid--gap-vertical: var(--ks-spacing-stack-s);
 
-  --dsa-logos__grid_mobile--cols: 2;
-  --dsa-logos__grid_tablet--cols: 3;
+  --swo-logos__grid_mobile--cols: 2;
+  --swo-logos__grid_tablet--cols: 3;
 }

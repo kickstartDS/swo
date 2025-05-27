@@ -2,41 +2,41 @@
 @import "blog-aside-tokens.scss";
 @include container.wrapper("blog-aside");
 
-.dsa-blog-aside {
+.swo-blog-aside {
   display: flex;
   flex-direction: column;
-  gap: var(--dsa-blog-aside--gap);
+  gap: var(--swo-blog-aside--gap);
 
-  .dsa-contact {
-    --dsa-contact--gap-vertical: var(--dsa-blog-aside__author--gap-vertical, var(--ks-spacing-stack-xs));
-    --dsa-contact--gap-horizontal: var(--dsa-blog-aside__author--gap-horizontal, var(--ks-spacing-inline-xs));
-    --dsa-contact__image--flex-basis: var(--dsa-blog-aside__author__image--flex-basis, 200px);
-    --dsa-contact__body--flex-basis: var(--dsa-blog-aside__author__body--flex-basis, 300px);
-    --dsa-contact__title--font: var(--dsa-blog-aside__author__title--font, var(--ks-font-copy-m));
-    --dsa-contact__subtitle--font: var(--dsa-blog-aside__author__subtitle--font, var(--ks-font-copy-s));
-    --dsa-contact__link--font: var(--dsa-blog-aside__author__link--font, var(--ks-font-interface-s));
+  .swo-contact {
+    --swo-contact--gap-vertical: var(--swo-blog-aside__author--gap-vertical, var(--ks-spacing-stack-xs));
+    --swo-contact--gap-horizontal: var(--swo-blog-aside__author--gap-horizontal, var(--ks-spacing-inline-xs));
+    --swo-contact__image--flex-basis: var(--swo-blog-aside__author__image--flex-basis, 200px);
+    --swo-contact__body--flex-basis: var(--swo-blog-aside__author__body--flex-basis, 300px);
+    --swo-contact__title--font: var(--swo-blog-aside__author__title--font, var(--ks-font-copy-m));
+    --swo-contact__subtitle--font: var(--swo-blog-aside__author__subtitle--font, var(--ks-font-copy-s));
+    --swo-contact__link--font: var(--swo-blog-aside__author__link--font, var(--ks-font-interface-s));
   }
 
   .c-post-meta {
     --c-post-meta--gap: 0.25em var(--ks-spacing-inline-s);
     --c-post-meta_item--gap: 0.5em;
-    --c-post-meta_item--font: var(--dsa-blog-aside__meta__item--font, var(--ks-font-interface-s));
-    --c-post-meta_item--color: var(--dsa-blog-aside__meta__item--color, var(--ks-text-color-interface));
-    --c-post-meta_item--icon-size: var(--dsa-blog-aside__meta__item__icon--size, 1.2em);
+    --c-post-meta_item--font: var(--swo-blog-aside__meta__item--font, var(--ks-font-interface-s));
+    --c-post-meta_item--color: var(--swo-blog-aside__meta__item--color, var(--ks-text-color-interface));
+    --c-post-meta_item--icon-size: var(--swo-blog-aside__meta__item__icon--size, 1.2em);
   }
 
   .c-post-share-bar {
-    --c-post-share-bar_link--icon-size: var(--dsa-blog-aside__share-bar__icon--size, 1.5rem);
+    --c-post-share-bar_link--icon-size: var(--swo-blog-aside__share-bar__icon--size, 1.5rem);
     .c-post-share-bar__link {
-      color: var(--dsa-blog-aside__sharebar__link--color, var(--dsa-link--color));
+      color: var(--swo-blog-aside__sharebar__link--color, var(--swo-link--color));
       &:hover {
-        color: var(--dsa-blog-aside__sharebar__link--color_hover, var(--dsa-link--color_hover));
+        color: var(--swo-blog-aside__sharebar__link--color_hover, var(--swo-link--color_hover));
       }
     }
   }
 
   .c-contact__links {
-    color: var(--dsa-blog-aside__links--color, var(--dsa-link--color));
+    color: var(--swo-blog-aside__links--color, var(--swo-link--color));
 
     .icon {
       color: inherit;
@@ -44,6 +44,6 @@
   }
 
   .c-divider {
-    --c-divider--background: var(--dsa-blog-aside__divider--color, var(--ks-border-color-accent));
+    --c-divider--background: var(--swo-blog-aside__divider--color, var(--ks-border-color-accent));
   }
 }

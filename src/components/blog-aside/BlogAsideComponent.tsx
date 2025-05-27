@@ -39,13 +39,13 @@ export const BlogAsideContextDefault = forwardRef<
     <Container name="blog-aside">
       <div
         ref={ref}
-        className={classnames(className, "dsa-blog-aside")}
+        className={classnames(className, "swo-blog-aside")}
         {...props}
       >
         <BlogAuthor {...author} />
         {metaItems && (
           <>
-            <PostMeta className="dsa-blog-aside__meta" items={metaItems} />
+            <PostMeta className="swo-blog-aside__meta" items={metaItems} />
           </>
         )}
         {socialLinks && (
@@ -57,7 +57,7 @@ export const BlogAsideContextDefault = forwardRef<
               spaceAfter="minimum"
             />
             <PostShareBar
-              className="dsa-blog-aside__share-bar"
+              className="swo-blog-aside__share-bar"
               links={socialLinks}
             />
           </div>

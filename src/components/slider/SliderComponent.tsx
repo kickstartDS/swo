@@ -25,7 +25,7 @@ export const Slider = forwardRef<
     ref
   ) => (
     <KickstartSlider
-      className={classnames(`dsa-slider`, className)}
+      className={classnames(`swo-slider`, className)}
       gap={gap}
       type={type}
       arrows={arrows}

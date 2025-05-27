@@ -57,10 +57,10 @@ export const SectionContextDefault = forwardRef<
         {...props}
         {...componentProps}
         className={classnames(
-          "dsa-section",
+          "section",
           style &&
             style !== "default" &&
-            `dsa-section-style--${
+            `section-style--${
               style === "verticalGradient"
                 ? "vertical-gradient"
                 : style === "horizontalGradient"
@@ -77,9 +77,9 @@ export const SectionContextDefault = forwardRef<
             }`,
           transition &&
             transition !== "none" &&
-            `dsa-section--transition-${transition}`,
-          headerSpacing && "dsa-section--header-spacing",
-          spotlight && "dsa-section--spotlight",
+            `section--transition-${transition}`,
+          headerSpacing && "section--header-spacing",
+          spotlight && "section--spotlight",
           className
         )}
         background={

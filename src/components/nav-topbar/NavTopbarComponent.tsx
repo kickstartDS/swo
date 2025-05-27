@@ -14,28 +14,28 @@ export const NavTopbarContextDefault = forwardRef<
 >(({ items, inverted }, ref) =>
   items && items.length > 0 ? (
     <nav
-      className="dsa-nav-topbar"
-      id="dsa-nav-topbar"
+      className="swo-nav-topbar"
+      id="swo-nav-topbar"
       aria-label="Main Navigation"
       ref={ref}
     >
-      <ul className="dsa-nav-topbar__list">
+      <ul className="swo-nav-topbar__list">
         {items.map(({ label, href, active, items: subItems }) => {
           return (
             <li
               className={classnames(
-                "dsa-nav-topbar__item",
-                active && "dsa-nav-topbar__item--active",
-                subItems?.length && "dsa-nav-topbar__item--dropdown"
+                "swo-nav-topbar__item",
+                active && "swo-nav-topbar__item--active",
+                subItems?.length && "swo-nav-topbar__item--dropdown"
               )}
               key={href}
             >
               {subItems?.length ? (
-                <span className="dsa-nav-topbar__label">
+                <span className="swo-nav-topbar__label">
                   {label}
                   {subItems?.length ? (
                     <Icon
-                      className="dsa-nav-topbar__label__icon"
+                      className="swo-nav-topbar__label__icon"
                       icon="chevron-down"
                       role="presentation"
                       aria-hidden
@@ -48,7 +48,7 @@ export const NavTopbarContextDefault = forwardRef<
               ) : (
                 <Link
                   href={href}
-                  className={`dsa-nav-topbar__label dsa-nav-topbar__link`}
+                  className={`swo-nav-topbar__label swo-nav-topbar__link`}
                 >
                   {label}
                 </Link>

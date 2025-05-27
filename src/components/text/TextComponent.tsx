@@ -21,17 +21,17 @@ export const TextContextDefault = forwardRef<
     ref
   ) => {
     const layoutClass = `${
-      layout === "multiColumn" ? "dsa-text--columns" : ""
+      layout === "multiColumn" ? "swo-text--columns" : ""
     }`;
-    const highlightClass = `${highlightText ? "dsa-text--highlight" : ""}`;
-    const alignClass = `${align === "center" ? "dsa-text--center" : ""}`;
+    const highlightClass = `${highlightText ? "swo-text--highlight" : ""}`;
+    const alignClass = `${align === "center" ? "swo-text--center" : ""}`;
 
     return (
       <RichText
         {...rest}
         ref={ref}
         className={classnames(
-          "dsa-text",
+          "swo-text",
           `${layoutClass}`,
           `${alignClass}`,
           `${highlightClass}`

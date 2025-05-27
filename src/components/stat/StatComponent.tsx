@@ -11,7 +11,7 @@ export const StatContextDefault = forwardRef<
   <CountUp
     {...rest}
     ref={ref}
-    className="dsa-stats__item"
+    className="swo-stats__item"
     to={number}
     icon={{
       icon: icon,

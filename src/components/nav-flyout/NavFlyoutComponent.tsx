@@ -12,46 +12,46 @@ export const NavFlyoutContextDefault = forwardRef<
 >(({ items, inverted }, ref) =>
   items && items.length > 0 ? (
     <nav
-      className="dsa-nav-flyout"
+      className="swo-nav-flyout"
       ks-inverted={inverted.toString()}
-      id="dsa-nav-flyout"
+      id="swo-nav-flyout"
       aria-label="Main Navigation"
       ref={ref}
     >
-      <ul className="dsa-nav-flyout__list">
+      <ul className="swo-nav-flyout__list">
         {items.map(({ label, href, active, items: subItems }) => {
           return (
             <li
               className={classnames(
-                "dsa-nav-flyout__item",
-                active && "dsa-nav-flyout__item--active"
+                "swo-nav-flyout__item",
+                active && "swo-nav-flyout__item--active"
               )}
               key={href}
             >
               {subItems?.length ? (
-                <span className="dsa-nav-flyout__label">{label}</span>
+                <span className="swo-nav-flyout__label">{label}</span>
               ) : (
                 <Link
                   href={href}
-                  className={`dsa-nav-flyout__label dsa-nav-flyout__link`}
+                  className={`swo-nav-flyout__label swo-nav-flyout__link`}
                 >
                   {label}
                 </Link>
               )}
               {subItems?.length ? (
-                <ul className="dsa-nav-flyout__sublist">
+                <ul className="swo-nav-flyout__sublist">
                   {subItems.map(({ label, href, active }) => {
                     return (
                       <li
                         className={classnames(
-                          "dsa-nav-flyout__item",
-                          active && "dsa-nav-flyout__item--active"
+                          "swo-nav-flyout__item",
+                          active && "swo-nav-flyout__item--active"
                         )}
                         key={href}
                       >
                         <Link
                           href={href}
-                          className={`dsa-nav-flyout__label dsa-nav-flyout__link`}
+                          className={`swo-nav-flyout__label swo-nav-flyout__link`}
                         >
                           {label}
                         </Link>

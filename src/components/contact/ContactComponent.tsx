@@ -25,38 +25,38 @@ export const ContactContextDefault = forwardRef<
   <Container name="contact">
     <address
       className={classnames(
-        "dsa-contact",
-        image?.aspectRatio && `dsa-contact--image-${image?.aspectRatio}`,
-        image?.fullWidth && `dsa-contact--image-full-width`,
+        "swo-contact",
+        image?.aspectRatio && `swo-contact--image-${image?.aspectRatio}`,
+        image?.fullWidth && `swo-contact--image-full-width`,
         className
       )}
       ref={ref}
       {...props}
     >
       {image && image.src && (
-        <div className="dsa-contact__image-wrap">
+        <div className="swo-contact__image-wrap">
           <Picture
             src={image?.src}
             alt={image?.alt}
-            className="dsa-contact__image"
+            className="swo-contact__image"
           />
         </div>
       )}
-      <div className="dsa-contact__body">
+      <div className="swo-contact__body">
         {title && (
-          <div className="dsa-contact__header">
-            <span className="dsa-contact__title">{title}</span>
-            <span className="dsa-contact__subtitle">{subtitle}</span>
+          <div className="swo-contact__header">
+            <span className="swo-contact__title">{title}</span>
+            <span className="swo-contact__subtitle">{subtitle}</span>
           </div>
         )}
-        {copy && <RichText text={copy} className="dsa-contact__copy" />}
+        {copy && <RichText text={copy} className="swo-contact__copy" />}
 
         {links && links.length && (
-          <ul className="dsa-contact__links">
+          <ul className="swo-contact__links">
             {links.map(({ icon, href, label, ariaLabel, newTab }, i) => (
               <li key={i}>
                 <Link
-                  className="dsa-contact__link"
+                  className="swo-contact__link"
                   aria-label={ariaLabel}
                   href={href}
                   {...(newTab && { target: "_blank", rel: "noopener" })}

@@ -1,15 +1,15 @@
 @use "sass:meta";
 @use "bourbon/core/bourbon";
 
-.dsa-nav-main {
-  .dsa-nav-flyout,
-  .dsa-nav-toggle {
+.swo-nav-main {
+  .swo-nav-flyout,
+  .swo-nav-toggle {
     @media (min-width: "62rem") {
       display: none;
     }
   }
 
-  .dsa-nav-topbar {
+  .swo-nav-topbar {
     @media (max-width: "62rem") {
       display: none;
     }

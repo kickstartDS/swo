@@ -2,68 +2,68 @@
 @import "../../selectors";
 @include container.wrapper("section");
 
-.dsa-section {
+.swo-section {
   //Columns
-  --dsa-section__col--repeat: auto-fit;
-  --dsa-section__col--max-width: 1fr;
-  --dsa-section__col--min-width_smallest: var(--dsa-tile--width_smallest);
-  --dsa-section__col--min-width_small: var(--dsa-tile--width_small);
-  --dsa-section__col--min-width_medium: var(--dsa-tile--width_medium);
-  --dsa-section__col--min-width_large: var(--dsa-tile--width_large);
-  --dsa-section__col--min-width_largest: var(--dsa-tile--width_largest);
+  --swo-section__col--repeat: auto-fit;
+  --swo-section__col--max-width: 1fr;
+  --swo-section__col--min-width_smallest: var(--swo-tile--width_smallest);
+  --swo-section__col--min-width_small: var(--swo-tile--width_small);
+  --swo-section__col--min-width_medium: var(--swo-tile--width_medium);
+  --swo-section__col--min-width_large: var(--swo-tile--width_large);
+  --swo-section__col--min-width_largest: var(--swo-tile--width_largest);
 
   //Vertical Space After & Before
-  --dsa-section--space_default: var(--dsa-content--vertical-spacing);
-  --dsa-section--space_small: calc(var(--ks-spacing-xxl) / 2);
+  --swo-section--space_default: var(--swo-content--vertical-spacing);
+  --swo-section--space_small: calc(var(--ks-spacing-xxl) / 2);
 
   //Gutter
-  --dsa-section--gutter_small: var(--ks-spacing-s);
-  --dsa-section--gutter_default: var(--ks-spacing-m);
-  --dsa-section--gutter_large: var(--ks-spacing-l);
+  --swo-section--gutter_small: var(--ks-spacing-s);
+  --swo-section--gutter_default: var(--ks-spacing-m);
+  --swo-section--gutter_large: var(--ks-spacing-l);
 
   //Buttons
-  --dsa-section__buttons--space-before: var(--ks-spacing-stack-m);
+  --swo-section__buttons--space-before: var(--ks-spacing-stack-m);
 
   //Content Width
-  --dsa-section__content--width_narrow: var(--dsa-content--width_narrow);
-  --dsa-section__content--width_default: var(--dsa-content--width_default);
-  --dsa-section__content--width_wide: var(--dsa-content--width_wide);
-  --dsa-section__content--width_max: 100vw;
-  --dsa-section__content--width_full: 100vw;
-  --dsa-section__content--padding: var(--dsa-content--horizontal-spacing);
+  --swo-section__content--width_narrow: var(--swo-content--width_narrow);
+  --swo-section__content--width_default: var(--swo-content--width_default);
+  --swo-section__content--width_wide: var(--swo-content--width_wide);
+  --swo-section__content--width_max: 100vw;
+  --swo-section__content--width_full: 100vw;
+  --swo-section__content--padding: var(--swo-content--horizontal-spacing);
 
   //Background Color
-  --dsa-section--background-color_default: var(--ks-background-color-default);
-  --dsa-section--background-color_accent: var(--ks-background-color-accent);
-  --dsa-section--background-color_bold: var(--ks-background-color-bold);
+  --swo-section--background-color_default: var(--ks-background-color-default);
+  --swo-section--background-color_accent: var(--ks-background-color-accent);
+  --swo-section--background-color_bold: var(--ks-background-color-bold);
 
   //Background Transitions
-  --dsa-section--transition_to-default: linear-gradient(
+  --swo-section--transition_to-default: linear-gradient(
     178deg,
     transparent 75%,
     var(--ks-background-color-default) 75%
   );
-  --dsa-section--transition_to-accent: linear-gradient(178deg, transparent 75%, var(--ks-background-color-accent) 75%);
-  --dsa-section--transition_to-bold: linear-gradient(178deg, transparent 75%, var(--ks-background-color-bold) 75%);
-  --dsa-section--transition_to-inverted: linear-gradient(
+  --swo-section--transition_to-accent: linear-gradient(178deg, transparent 75%, var(--ks-background-color-accent) 75%);
+  --swo-section--transition_to-bold: linear-gradient(178deg, transparent 75%, var(--ks-background-color-bold) 75%);
+  --swo-section--transition_to-inverted: linear-gradient(
     178deg,
     transparent 75%,
     var(--ks-background-color-default-inverted) 75%
   );
 
   //Slider Arrows
-  --dsa-section__slider-arrow--color: var(--ks-text-color-interface-interactive);
-  --dsa-section__slider-arrow--size: 2rem;
-  --dsa-section__slider-arrow--padding: 0.5em;
-  --dsa-section__slider-arrow--opacity: 0.6;
-  --dsa-section__slider-arrow--opacity_hover: 1;
-  --dsa-section__slider-arrow--opacity_disabled: 0.3;
-  --dsa-section__slider-arrow--background: transparent;
+  --swo-section__slider-arrow--color: var(--ks-text-color-interface-interactive);
+  --swo-section__slider-arrow--size: 2rem;
+  --swo-section__slider-arrow--padding: 0.5em;
+  --swo-section__slider-arrow--opacity: 0.6;
+  --swo-section__slider-arrow--opacity_hover: 1;
+  --swo-section__slider-arrow--opacity_disabled: 0.3;
+  --swo-section__slider-arrow--background: transparent;
 
   //Background Styles
 
   //Spotlight
-  --dsa-section__spotlight--size: 50px;
-  --dsa-section__spotlight--blur: 0%;
-  --dsa-section__spotlight--color: var(--ks-color-primary-alpha-5);
+  --swo-section__spotlight--size: 50px;
+  --swo-section__spotlight--blur: 0%;
+  --swo-section__spotlight--color: var(--ks-color-primary-alpha-5);
 }

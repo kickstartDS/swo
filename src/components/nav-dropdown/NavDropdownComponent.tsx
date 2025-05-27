@@ -8,19 +8,19 @@ export type { NavDropdownProps };
 
 export const NavDropdown: FC<NavDropdownProps> = ({ items, inverted }) => (
   <ul
-    className={classnames(`dsa-nav-dropdown`)}
+    className={classnames(`swo-nav-dropdown`)}
     ks-inverted={inverted?.toString()}
   >
     {items.map(({ label, active, href }) => {
       return (
         <li
           className={classnames(
-            "dsa-nav-dropdown__item",
-            active && "dsa-nav-dropdown__item--active"
+            "swo-nav-dropdown__item",
+            active && "swo-nav-dropdown__item--active"
           )}
           key={href}
         >
-          <Link href={href} className={`dsa-nav-dropdown__label`}>
+          <Link href={href} className={`swo-nav-dropdown__label`}>
             {label}
           </Link>
         </li>

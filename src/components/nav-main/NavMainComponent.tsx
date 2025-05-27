@@ -14,7 +14,7 @@ export const NavMainContextDefault = forwardRef<
   NavMainProps & HTMLAttributes<HTMLDivElement>
 >(({ logo, items, flyoutInverted, dropdownInverted }, ref) =>
   items && items.length > 0 ? (
-    <div ref={ref} className="dsa-nav-main">
+    <div ref={ref} className="swo-nav-main">
       <NavToggle />
       <NavTopbar items={items} inverted={dropdownInverted} />
       <NavFlyout items={items} inverted={flyoutInverted} logo={logo} />

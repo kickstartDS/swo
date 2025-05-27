@@ -13,19 +13,19 @@ export const FooterContextDefault = forwardRef<
 >(({ byline, navItems, inverted, logo }, ref) =>
   navItems && navItems.length > 0 ? (
     <div
-      className={classnames("dsa-footer")}
+      className={classnames("swo-footer")}
       ks-inverted={inverted.toString()}
       ref={ref}
     >
-      <div className="dsa-footer__content">
+      <div className="swo-footer__content">
         <Logo {...logo} inverted={inverted} />
-        {byline && <span className="dsa-footer__byline">{byline}</span>}
+        {byline && <span className="swo-footer__byline">{byline}</span>}
         {navItems.length > 0 ? (
-          <div className="dsa-footer__links">
+          <div className="swo-footer__links">
             {navItems.map(({ label, active, ...linkProps }) => (
               <Link
                 {...linkProps}
-                className="dsa-footer__link"
+                className="swo-footer__link"
                 key={linkProps.href + label}
               >
                 {label}

@@ -2,73 +2,73 @@
 @use "@kickstartds/core/source/core/container";
 @include container.wrapper("visual");
 
-.c-visual.dsa-video-curtain {
+.c-visual.swo-video-curtain {
   --c-visual_overlay--background: var(
-    --dsa-video-curtain__overlay--background,
+    --swo-video-curtain__overlay--background,
     radial-gradient(50% 126.2% at 100% 0%, var(--ks-color-primary-alpha-5) 0%, var(--ks-color-bg-alpha-4) 100%)
   );
   --c-visual_overlay--background-size: 100%;
 
   &--color-neutral {
-    --dsa-video-curtain__copy--color: var(--dsa-video-curtain_color-neutral__copy--color, var(--ks-text-color-default));
-    --dsa-video-curtain__headline--color: var(
-      --dsa-video-curtain_color-neutral__copy--color,
+    --swo-video-curtain__copy--color: var(--swo-video-curtain_color-neutral__copy--color, var(--ks-text-color-default));
+    --swo-video-curtain__headline--color: var(
+      --swo-video-curtain_color-neutral__copy--color,
       var(--ks-text-color-default)
     );
-    --dsa-video-curtain__subheadline--color: var(
-      --dsa-video-curtain_color-neutral__copy--color,
+    --swo-video-curtain__subheadline--color: var(
+      --swo-video-curtain_color-neutral__copy--color,
       var(--ks-text-color-default)
     );
   }
 
   &--content-bottom {
     --c-visual_overlay--background: var(
-      --dsa-video-curtain_bottom__overlay--background,
+      --swo-video-curtain_bottom__overlay--background,
       linear-gradient(0deg, var(--ks-background-color-default) 15%, transparent 50%)
     );
   }
 
   &--content-corner {
     --c-visual_overlay--background: var(
-      --dsa-video-curtain_corner__overlay--background,
+      --swo-video-curtain_corner__overlay--background,
       linear-gradient(40deg, var(--ks-background-color-default) 15%, transparent 50%)
     );
   }
 
   .c-visual__box {
-    --c-visual_box--background: var(--dsa-video-curtain__textbox--background-color, var(--ks-color-bg-alpha-2));
-    --c-visual_box--color: var(--dsa-video-curtain__copy--color, var(--ks-text-color-default));
-    --c-visual_box--border-radius: var(--dsa-video-curtain__textbox--border-radius, var(--ks-border-radius-surface));
-    --c-visual_box--padding: var(--dsa-video-curtain__textbox--padding, var(--ks-spacing-inset-squish-xl));
+    --c-visual_box--background: var(--swo-video-curtain__textbox--background-color, var(--ks-color-bg-alpha-2));
+    --c-visual_box--color: var(--swo-video-curtain__copy--color, var(--ks-text-color-default));
+    --c-visual_box--border-radius: var(--swo-video-curtain__textbox--border-radius, var(--ks-border-radius-surface));
+    --c-visual_box--padding: var(--swo-video-curtain__textbox--padding, var(--ks-spacing-inset-squish-xl));
 
-    --c-visual_text--font: var(--dsa-video-curtain__copy--font, var(--dsa-rich-text--font));
+    --c-visual_text--font: var(--swo-video-curtain__copy--font, var(--swo-rich-text--font));
   }
 
   &--highlight-text {
-    --dsa-video-curtain__copy--font: var(--dsa-video-curtain_highlight-text__box--font, var(--ks-font-copy-l));
+    --swo-video-curtain__copy--font: var(--swo-video-curtain_highlight-text__box--font, var(--ks-font-copy-l));
 
     .c-visual__box {
-      --c-visual_text--font: var(--dsa-video-curtain_highlight-text__copy--font, var(--ks-font-copy-l));
+      --c-visual_text--font: var(--swo-video-curtain_highlight-text__copy--font, var(--ks-font-copy-l));
     }
   }
 
   @container visual (min-width: 640px) {
     .c-visual__box {
-      --c-visual_box--max-width: var(--dsa-video-curtain__textbox--max-width, 50rem);
+      --c-visual_box--max-width: var(--swo-video-curtain__textbox--max-width, 50rem);
     }
   }
 }
 
-.c-visual.dsa-video-curtain {
-  .dsa-headline {
-    .dsa-headline__headline {
-      color: var(--dsa-video-curtain__headline--color, var(--dsa-headline--color, var(--ks-text-color-display)));
+.c-visual.swo-video-curtain {
+  .swo-headline {
+    .swo-headline__headline {
+      color: var(--swo-video-curtain__headline--color, var(--swo-headline--color, var(--ks-text-color-display)));
     }
 
-    .dsa-headline__subheadline {
+    .swo-headline__subheadline {
       color: var(
-        --dsa-video-curtain__subheadline--color,
-        var(--dsa-headline__subheadline--color, var(--ks-text-color-primary))
+        --swo-video-curtain__subheadline--color,
+        var(--swo-headline__subheadline--color, var(--ks-text-color-primary))
       );
     }
   }
@@ -91,7 +91,7 @@
     }
   }
 
-  &:not(.dsa-video-curtain--content-bottom) {
+  &:not(.swo-video-curtain--content-bottom) {
     .c-visual__continue-btn {
       position: absolute;
       bottom: 0;
@@ -105,7 +105,7 @@
   }
 
   .c-visual__continue-btn {
-    color: var(--dsa-overlay-text--text-color, var(--ks-color-fg));
-    filter: drop-shadow(var(--dsa-overlay-text--shadow, 0 0 10px var(--ks-color-bg-inverted-alpha-3-base)));
+    color: var(--swo-overlay-text--text-color, var(--ks-color-fg));
+    filter: drop-shadow(var(--swo-overlay-text--shadow, 0 0 10px var(--ks-color-bg-inverted-alpha-3-base)));
   }
 }

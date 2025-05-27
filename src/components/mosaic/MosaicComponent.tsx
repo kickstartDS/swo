@@ -9,7 +9,7 @@ export const MosaicContextDefault = forwardRef<
   HTMLDivElement,
   MosaicProps & HTMLAttributes<HTMLDivElement>
 >(({ layout, largeHeadlines, tile, ...rest }, ref) => (
-  <div {...rest} ref={ref} className="dsa-mosaic">
+  <div {...rest} ref={ref} className="swo-mosaic">
     {tile.map((tile, index) => (
       <Storytelling
         key={index}

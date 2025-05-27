@@ -6,33 +6,34 @@
   display: flex;
 }
 
-.dsa-teaser-card {
+.swo-teaser-card {
   display: flex;
   width: 100%;
   height: 100%;
   position: relative;
 
   .c-teaser {
-    --c-teaser--padding: var(--dsa-teaser-card--padding, var(--ks-spacing-inset-l));
-    --c-teaser--background: var(--dsa-teaser-card--background, var(--ks-background-color-card-interactive));
-    --c-teaser--color: var(--dsa-teaser-card__copy--color, var(--ks-text-color-default));
+    --c-teaser--padding: var(--swo-teaser-card--padding, var(--ks-spacing-inset-l));
+    --c-teaser--background: var(--swo-teaser-card--background, var(--ks-background-color-card-interactive));
+    --c-teaser--color: var(--swo-teaser-card__copy--color, var(--ks-text-color-default));
 
-    --c-teaser--border: var(--dsa-teaser-card--border-color, var(--ks-background-color-card-interactive))
-      var(--dsa-teaser-card--border-width) solid;
+    --c-teaser--border: var(--swo-teaser-card--border-color, var(--ks-background-color-card-interactive))
+      var(--swo-teaser-card--border-width) solid;
 
-    --c-teaser--border-radius: var(--dsa-teaser-card--border-radius, var(--ks-border-radius-card));
-    --c-teaser--shadow-hover: var(--dsa-teaser-card--shadow_hover, var(--ks-box-shadow-card-hover));
+    --c-teaser--border-radius: var(--swo-teaser-card--border-radius, var(--ks-border-radius-card));
+    --c-teaser--shadow-hover: var(--swo-teaser-card--shadow_hover, var(--ks-box-shadow-card-hover));
 
     position: relative;
     transition-property: border-color, background-color, box-shadow;
-    box-shadow: var(--dsa-teaser-card--shadow, var(--ks-box-shadow-card));
+    box-shadow: var(--swo-teaser-card--shadow, var(--ks-box-shadow-card));
 
     &:hover {
-      --c-teaser--border: var(--dsa-teaser-card--border-color_hover, var(--ks-background-color-card-interactive))
-        var(--dsa-teaser-card--border-width) solid;
+      --c-teaser--border: var(--swo-teaser-card--border-color_hover, var(--ks-background-color-card-interactive))
+        var(--swo-teaser-card--border-width) solid;
     }
 
     img {
+      border-radius: var(--swo-teaser-card__image--border-radius, var(--ks-border-radius-card));
       object-fit: cover;
     }
   }
@@ -56,30 +57,30 @@
   }
 
   .c-rich-text {
-    font: var(--dsa-teaser-card__copy--font, var(--dsa-rich-text--font, var(--ks-font-copy-m)));
+    font: var(--swo-teaser-card__copy--font, var(--swo-rich-text--font, var(--ks-font-copy-m)));
   }
 
   .c-teaser__topic {
-    color: var(--dsa-teaser__topic--color, var(--dsa-topic--color));
-    font: var(--dsa-teaser-card__topic--font, var(--dsa-topic--font));
-    font-weight: var(--dsa-teaser-card__topic--font-weight, var(--dsa-topic--font-weight));
+    color: var(--swo-teaser__topic--color, var(--swo-topic--color));
+    font: var(--swo-teaser-card__topic--font, var(--swo-topic--font));
+    font-weight: var(--swo-teaser-card__topic--font-weight, var(--swo-topic--font-weight));
   }
 
-  .dsa-teaser-card__label {
+  .swo-teaser-card__label {
     position: absolute;
     z-index: 1;
     top: 0;
     right: 0;
-    border-radius: var(--dsa-teaser-card__label--border-radius);
-    border: var(--dsa-teaser-card__label--border, 0);
+    border-radius: var(--swo-teaser-card__label--border-radius);
+    border: var(--swo-teaser-card__label--border, 0);
     pointer-events: initial;
-    padding: var(--dsa-teaser-card__label--padding);
+    padding: var(--swo-teaser-card__label--padding);
     transform: translate(0.5em, -50%);
-    font: var(--dsa-teaser-card__label--font);
+    font: var(--swo-teaser-card__label--font);
     text-align: center;
-    font-weight: var(--dsa-teaser-card__label--font-weight);
-    color: var(--dsa-teaser-card__label--color);
-    background-color: var(--dsa-teaser-card__label--background-color);
+    font-weight: var(--swo-teaser-card__label--font-weight);
+    color: var(--swo-teaser-card__label--color);
+    background-color: var(--swo-teaser-card__label--background-color);
   }
 
   @include container.size("≥", 640px, "teaser-card") {

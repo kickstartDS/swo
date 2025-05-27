@@ -46,7 +46,7 @@ export const BlogTeaserContextDefault = forwardRef<
       <Container name="blog-teaser">
         <PostTeaserContextDefault
           {...rest}
-          className={classnames(className, "dsa-blog-teaser")}
+          className={classnames(className, "swo-blog-teaser")}
           // @ts-expect-error
           image={{ src: image, alt: alt || headline }}
           meta={{

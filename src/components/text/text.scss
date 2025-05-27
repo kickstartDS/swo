@@ -1,12 +1,12 @@
 @import "text-tokens.scss";
 
-.c-rich-text.dsa-text {
-  font: var(--dsa-text--font, var(--dsa-rich-text--font), var(--ks-font-copy-m));
-  color: var(--dsa-text--color, var(--dsa-rich-text--color), var(--ks-text-color-default));
+.c-rich-text.swo-text {
+  font: var(--swo-text--font, var(--swo-rich-text--font), var(--ks-font-copy-m));
+  color: var(--swo-text--color, var(--swo-rich-text--color), var(--ks-text-color-default));
 
   &--highlight.c-rich-text {
-    color: var(--dsa-text_highlight--color, var(--ks-text-color-default));
-    font: var(--dsa-text_highlight--font, var(--ks-font-copy-l));
+    color: var(--swo-text_highlight--color, var(--ks-text-color-default));
+    font: var(--swo-text_highlight--font, var(--ks-font-copy-l));
   }
 
   &--center.c-rich-text {
@@ -14,8 +14,8 @@
   }
 
   &--columns.c-rich-text {
-    column-gap: var(--dsa-text__col--gap, var(--ks-spacing-inline-m));
-    column-width: var(--dsa-text__col--width, 16em);
+    column-gap: var(--swo-text__col--gap, var(--ks-spacing-inline-m));
+    column-width: var(--swo-text__col--width, 16em);
     column-count: auto;
   }
 }

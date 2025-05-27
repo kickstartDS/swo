@@ -1,24 +1,24 @@
 @import "gallery-tokens.scss";
 @import "../../selectors";
 
-.dsa-gallery {
+.swo-gallery {
   &__grid {
     &--stack {
       display: flex;
-      gap: var(--dsa-gallery--gap-vertical);
+      gap: var(--swo-gallery--gap-vertical);
       flex-direction: column;
     }
 
     &--small-tiles {
       display: grid;
-      gap: var(--dsa-gallery--gap-horizontal) var(--dsa-gallery--gap-vertical);
-      grid-template-columns: repeat(auto-fit, minmax(min(var(--dsa-gallery--tile-min-width-small), 100%), 1fr));
+      gap: var(--swo-gallery--gap-horizontal) var(--swo-gallery--gap-vertical);
+      grid-template-columns: repeat(auto-fit, minmax(min(var(--swo-gallery--tile-min-width-small), 100%), 1fr));
     }
 
     &--large-tiles {
       display: grid;
-      gap: var(--dsa-gallery--gap-horizontal) var(--dsa-gallery--gap-vertical);
-      grid-template-columns: repeat(auto-fit, minmax(min(var(--dsa-gallery--tile-min-width-large), 100%), 1fr));
+      gap: var(--swo-gallery--gap-horizontal) var(--swo-gallery--gap-vertical);
+      grid-template-columns: repeat(auto-fit, minmax(min(var(--swo-gallery--tile-min-width-large), 100%), 1fr));
     }
   }
 
@@ -27,21 +27,21 @@
 
     &--square {
       img {
-        aspect-ratio: var(--dsa-gallery--image-ratio-square);
+        aspect-ratio: var(--swo-gallery--image-ratio-square);
         object-fit: cover;
       }
     }
 
     &--wide {
       img {
-        aspect-ratio: var(--dsa-gallery--image-ratio-wide);
+        aspect-ratio: var(--swo-gallery--image-ratio-wide);
         object-fit: cover;
       }
     }
 
     &--landscape {
       img {
-        aspect-ratio: var(--dsa-gallery--image-ratio-landscape);
+        aspect-ratio: var(--swo-gallery--image-ratio-landscape);
         object-fit: cover;
       }
     }

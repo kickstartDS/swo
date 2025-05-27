@@ -1,29 +1,29 @@
 @import "../../selectors";
 
 .c-form-check {
-  --dsa-form-check--border: var(--ks-border-width-default) solid;
-  --dsa-form-check--border-color: var(--ks-border-color-interface-interactive);
-  --dsa-form-check--border-color_hover: var(--ks-border-color-interface-interactive-hover);
-  --dsa-form-check--border-color_focus: var(--ks-border-color-interface-interactive-active);
-  --dsa-form-check--border-color_checked: var(--ks-border-color-interface-interactive-selected);
+  --swo-form-check--border: var(--ks-border-width-default) solid;
+  --swo-form-check--border-color: var(--ks-border-color-interface-interactive);
+  --swo-form-check--border-color_hover: var(--ks-border-color-interface-interactive-hover);
+  --swo-form-check--border-color_focus: var(--ks-border-color-interface-interactive-active);
+  --swo-form-check--border-color_checked: var(--ks-border-color-interface-interactive-selected);
 
-  --dsa-form-check--background: var(--ks-background-color-interface-interactive);
-  --dsa-form-check--background_checked: var(--ks-color-secondary);
+  --swo-form-check--background: var(--ks-background-color-interface-interactive);
+  --swo-form-check--background_checked: var(--ks-color-secondary);
 
-  --dsa-form-check--shadow_focus: 0 0 4px 0;
-  --dsa-form-check__checkmark--color: var(--dsa-text-color-on-primary);
+  --swo-form-check--shadow_focus: 0 0 4px 0;
+  --swo-form-check__checkmark--color: var(--swo-text-color-on-primary);
 }
 
 .c-form-field {
-  --dsa-form-field--color: var(--ks-text-color-interface);
+  --swo-form-field--color: var(--ks-text-color-interface);
 
-  --dsa-form-field--border: var(--ks-border-width-default) solid;
-  --dsa-form-field--border-color: var(--ks-border-color-interface-interactive);
-  --dsa-form-field--border-color_hover: var(--ks-border-color-interface-interactive-hover);
-  --dsa-form-field--border-color_focus: var(--ks-border-color-interface-interactive-active);
+  --swo-form-field--border: var(--ks-border-width-default) solid;
+  --swo-form-field--border-color: var(--ks-border-color-interface-interactive);
+  --swo-form-field--border-color_hover: var(--ks-border-color-interface-interactive-hover);
+  --swo-form-field--border-color_focus: var(--ks-border-color-interface-interactive-active);
 
-  --dsa-form-field--background: var(--ks-background-color-interface-interactive);
-  --dsa-form-field--shadow_focus: 0 0 4px 0;
+  --swo-form-field--background: var(--ks-background-color-interface-interactive);
+  --swo-form-field--shadow_focus: 0 0 4px 0;
 
-  --dsa-form-field__placeholder--color: var(--ks-color-fg-alpha-5);
+  --swo-form-field__placeholder--color: var(--ks-color-fg-alpha-5);
 }

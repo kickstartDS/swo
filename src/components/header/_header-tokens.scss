@@ -2,25 +2,25 @@
 [ks-theme],
 [ks-inverted] {
   //Global token for calculation of header height
-  --dsa-header--height: calc(var(--dsa-logo--height) + var(--dsa-header--spacing-vertical) * 2);
-  --dsa-header--spacing-vertical: var(--ks-spacing-inset-m);
-  --dsa-header--spacing-horizontal: var(--ks-spacing-inset-xl);
-  --dsa-header_floating--spacing-horizontal: var(--ks-spacing-inset-l);
-  --dsa-header_open--shadow: 0 0 0 100px var(--ks-color-fg-alpha-3);
+  --swo-header--height: calc(var(--swo-logo--height) + var(--swo-header--spacing-vertical) * 2);
+  --swo-header--spacing-vertical: var(--ks-spacing-inset-m);
+  --swo-header--spacing-horizontal: var(--ks-spacing-inset-xl);
+  --swo-header_floating--spacing-horizontal: var(--ks-spacing-inset-l);
+  --swo-header_open--shadow: 0 0 0 100px var(--ks-color-fg-alpha-3);
 
   @media (min-width: 62em) {
-    --dsa-header--spacing-vertical: var(--ks-spacing-stack-s);
-    --dsa-header--spacing-horizontal: var(--dsa-content--horizontal-spacing);
-    --dsa-header_floating--spacing-horizontal: var(--ks-spacing-inset-m);
+    --swo-header--spacing-vertical: var(--ks-spacing-stack-s);
+    --swo-header--spacing-horizontal: var(--swo-content--horizontal-spacing);
+    --swo-header_floating--spacing-horizontal: var(--ks-spacing-inset-m);
   }
 }
 
-.dsa-header {
-  --dsa-header--max-width: var(--dsa-content--width_wide);
-  --dsa-header--background: var(--ks-background-color-default);
+.swo-header {
+  --swo-header--max-width: var(--swo-content--width_wide);
+  --swo-header--background: var(--ks-background-color-default);
 
-  --dsa-header_floating--background: var(--dsa-overlay-box_opaque--background-color);
-  --dsa-header_floating--backdrop-filter: var(--dsa-overlay-box_opaque--backdrop-filter);
+  --swo-header_floating--background: var(--swo-overlay-box_opaque--background-color);
+  --swo-header_floating--backdrop-filter: var(--swo-overlay-box_opaque--backdrop-filter);
 
-  --dsa-header__logo--height: var(--dsa-logo--height);
+  --swo-header__logo--height: var(--swo-logo--height);
 }

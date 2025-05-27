@@ -12,7 +12,7 @@ export const BlogAuthorContextDefault = forwardRef<
     <Contact
       ref={ref}
       {...props}
-      className="dsa-blog-aside__author"
+      className="swo-blog-aside__author"
       title={name}
       subtitle={byline}
       image={image}

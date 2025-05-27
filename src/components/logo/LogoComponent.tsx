@@ -30,10 +30,10 @@ export const LogoContextDefault = forwardRef<
     ref
   ) => {
     return (
-      <Link className={classnames("dsa-logo", className)} href={homepageHref}>
+      <Link className={classnames("swo-logo", className)} href={homepageHref}>
         <Picture
           ref={ref}
-          className="dsa-logo__img"
+          className="swo-logo__img"
           src={inverted && srcInverted ? srcInverted : src}
           alt={alt}
           width={width}

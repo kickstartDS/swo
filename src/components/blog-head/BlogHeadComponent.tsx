@@ -10,7 +10,7 @@ export const BlogHeadContextDefault = forwardRef<HTMLDivElement, BlogHeadProps>(
     return (
       <PostHead
         {...rest}
-        className="dsa-blog-head"
+        className="swo-blog-head"
         date={date}
         headline={{ text: headline, level: "h1", align: "left" }}
         image={{ src: image, alt: alt || headline }}

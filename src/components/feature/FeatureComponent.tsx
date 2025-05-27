@@ -15,35 +15,35 @@ export const FeatureContextDefault = forwardRef<
     {...rest}
     ref={ref}
     className={classnames(
-      `dsa-feature dsa-feature--${
+      `swo-feature swo-feature--${
         style === `stack`
-          ? `stack dsa-feature--large`
+          ? `stack swo-feature--large`
           : style === `besideSmall`
-          ? `beside dsa-feature--small`
+          ? `beside swo-feature--small`
           : style === `besideLarge`
-          ? `beside dsa-feature--large`
+          ? `beside swo-feature--large`
           : style === `intext`
-          ? `intext dsa-feature--small`
+          ? `intext swo-feature--small`
           : style === `centered`
-          ? `centered dsa-feature--large`
+          ? `centered swo-feature--large`
           : `${style}`
       }`
     )}
   >
-    <div className="dsa-feature__header">
+    <div className="swo-feature__header">
       {icon && (
         <Icon
-          className="dsa-feature__icon"
+          className="swo-feature__icon"
           icon={icon}
           role="presentation"
           aria-hidden
           focusable={false}
         />
       )}
-      <span className="dsa-feature__title">{title}</span>
+      <span className="swo-feature__title">{title}</span>
     </div>
     {text || cta.style === "intext" ? (
-      <p className="dsa-feature__text">
+      <p className="swo-feature__text">
         {text}
         {cta.style === "intext" && cta.toggle ? (
           <>
@@ -59,9 +59,9 @@ export const FeatureContextDefault = forwardRef<
     )}
 
     {cta.toggle && (cta.style === "link" || cta.style === "button") && (
-      <div className="dsa-feature__cta">
+      <div className="swo-feature__cta">
         {cta.style === "link" ? (
-          <Link className="dsa-feature__link" href={cta.target}>
+          <Link className="swo-feature__link" href={cta.target}>
             {cta.label ? cta.label : "See more"}
             <Icon
               aria-hidden
@@ -72,7 +72,7 @@ export const FeatureContextDefault = forwardRef<
           </Link>
         ) : cta.style === "button" ? (
           <Button
-            className="dsa-feature__button"
+            className="swo-feature__button"
             size="small"
             target={cta.target}
             label={cta.label ? cta.label : "See more"}
