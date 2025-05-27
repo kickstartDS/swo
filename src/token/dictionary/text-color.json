@@ -25,7 +25,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.link.base}",
+              "value": "{ks.color.fg.base}",
               "attributes": {
                 "category": "color"
               },
@@ -37,7 +37,7 @@
           },
           "active": {
             "base": {
-              "value": "{ks.color.link.base}",
+              "value": "{ks.color.fg.base}",
               "attributes": {
                 "category": "color"
               },
@@ -49,7 +49,7 @@
           },
           "selected": {
             "base": {
-              "value": "{ks.color.link.base}",
+              "value": "{ks.color.fg.base}",
               "attributes": {
                 "category": "color"
               },

@@ -205,7 +205,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.fg.alpha.5.base}",
+              "value": "{ks.color.fg.alpha.4.base}",
               "attributes": {
                 "category": "color"
               },
@@ -481,7 +481,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.primary.to-bg.2.base}",
+              "value": "{ks.color.primary.to-fg.3.base}",
               "attributes": {
                 "category": "color"
               },

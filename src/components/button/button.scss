@@ -20,6 +20,7 @@
   }
 
   &.swo-button--primary {
+    font-weight: var(--ks-font-weight-regular);
     padding: 0;
 
     --c-button--color: var(--swo-button_primary--color, var(--swo-text-color-on-primary));
@@ -113,31 +114,31 @@
     );
   }
 
-  &.swo-button--terciary {
+  &.swo-button--tertiary {
     padding: var(--swo-button--padding);
 
-    --c-button--color: var(--swo-button_terciary--color, var(--ks-text-color-default));
-    --c-button--color-hover: var(--swo-button_terciary--color_hover, var(--ks-text-color-default));
-    --c-button--color-active: var(--swo-button_terciary--color_active, var(--ks-text-color-default));
+    --c-button--color: var(--swo-button_tertiary--color, var(--ks-text-color-default));
+    --c-button--color-hover: var(--swo-button_tertiary--color_hover, var(--ks-text-color-default));
+    --c-button--color-active: var(--swo-button_tertiary--color_active, var(--ks-text-color-default));
 
-    --c-button--border-color: var(--swo-button_terciary--border-color, var(--ks-border-color-interface-interactive));
+    --c-button--border-color: var(--swo-button_tertiary--border-color, var(--ks-border-color-interface-interactive));
     --c-button--border-color-hover: var(
-      --swo-button_terciary--border-color_hover,
+      --swo-button_tertiary--border-color_hover,
       var(--ks-border-color-interface-interactive-hover)
     );
     --c-button--border-color-active: var(
-      --swo-button_terciary--border-color_active,
+      --swo-button_tertiary--border-color_active,
       var(--ks-border-color-interface-interactive-active)
     );
     --c-button--border-color-selected: var(
-      --swo-button_terciary--border-color-selected,
+      --swo-button_tertiary--border-color-selected,
       var(--ks-border-color-interface-interactive_selected)
     );
 
-    --c-button--background-color: var(--swo-button_terciary--background-color, none);
-    --c-button--background-color-hover: var(--swo-button_terciary--background-color_hover, none);
-    --c-button--background-color-active: var(--swo-button_terciary--background-color_active, none);
-    --c-button--background-color-selected: var(--swo-button_terciary--background-color_selected, none);
+    --c-button--background-color: var(--swo-button_tertiary--background-color, none);
+    --c-button--background-color-hover: var(--swo-button_tertiary--background-color_hover, none);
+    --c-button--background-color-active: var(--swo-button_tertiary--background-color_active, none);
+    --c-button--background-color-selected: var(--swo-button_tertiary--background-color_selected, none);
   }
 
   transition-property: box-shadow, transform, background-color, color, border;

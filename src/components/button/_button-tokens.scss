@@ -2,9 +2,9 @@
 
 .swo-button {
   --swo-button--padding: 0.75em 1.5em;
-  --swo-button--border-width: var(--ks-border-width-default);
+  --swo-button--border-width: var(--ks-border-width-emphasized);
   --swo-button--border-radius: var(--ks-border-radius-control);
-  --swo-button--font-weight: var(--ks-font-weight-semi-bold);
+  --swo-button--font-weight: var(--ks-font-weight-bold);
   --swo-button--text-transform: default;
 
   // Sizes
@@ -29,20 +29,23 @@
   --swo-button_secondary--color_hover: var(--ks-text-color-default);
   --swo-button_secondary--color_active: var(--ks-text-color-default);
 
-  --swo-button_secondary--background-color: var(--ks-background-color-interface-interactive);
-  --swo-button_secondary--background-color_hover: var(--ks-background-color-interface-interactive-hover);
-  --swo-button_secondary--background-color_active: var(--ks-background-color-interface-interactive-active);
+  --swo-button_secondary--border-color: var(--ks-border-color-interface-interactive);
+  --swo-button_secondary--border-color_hover: var(--ks-border-color-interface-interactive-hover);
+  --swo-button_secondary--border-color_active: var(--ks-border-color-interface-interactive-active);
 
-  //TERCIARY
+  --swo-button_secondary--background-color_hover: transparent;
+  --swo-button_secondary--background-color_active: transparent;
 
-  --swo-button_terciary--color: var(--ks-text-color-default);
-  --swo-button_terciary--color_hover: var(--ks-text-color-default);
-  --swo-button_terciary--color_active: var(--ks-text-color-default);
+  //TERTIARY
 
-  --swo-button_terciary--border-color: var(--ks-border-color-interface-interactive);
-  --swo-button_terciary--border-color_hover: var(--ks-border-color-interface-interactive-hover);
-  --swo-button_terciary--border-color_active: var(--ks-border-color-interface-interactive-active);
+  --swo-button_tertiary--color: var(--ks-text-color-default);
+  --swo-button_tertiary--color_hover: var(--ks-text-color-default);
+  --swo-button_tertiary--color_active: var(--ks-text-color-default);
 
-  --swo-button_terciary--background-color_hover: transparent;
-  --swo-button_terciary--background-color_active: transparent;
+  --swo-button_tertiary--border-color: var(--ks-border-color-primary-interactive);
+  --swo-button_tertiary--border-color_hover: var(--ks-border-color-primary-interactive-hover);
+  --swo-button_tertiary--border-color_active: var(--ks-border-color-primary-interactive-active);
+
+  --swo-button_tertiary--background-color_hover: transparent;
+  --swo-button_tertiary--background-color_active: transparent;
 }

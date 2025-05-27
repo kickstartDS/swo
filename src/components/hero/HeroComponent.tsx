@@ -56,7 +56,7 @@ export const HeroContextDefault = forwardRef<
               inverted
               box={{
                 background: textbox === true ? "solid" : "transparent",
-                enabled: true,
+                enabled: headline && true,
                 vertical:
                   textPosition === "below" || textPosition === "corner"
                     ? "bottom"
