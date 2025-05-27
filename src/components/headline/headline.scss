@@ -69,6 +69,42 @@
     --headline--space-after_large: var(--swo-headline_p--space-after_large);
   }
 
+  &--switch-order {
+    .swo-headline__subheadline {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25em;
+
+      &::after {
+        display: block;
+        content: "";
+        width: 3rem;
+        height: 0.25rem;
+        border-radius: 0.125rem;
+        background-color: #fc3c44;
+      }
+    }
+
+    &.swo-headline--align-center {
+      align-items: center;
+
+      .swo-headline__subheadline {
+        &::before {
+          display: block;
+          content: "";
+          width: 3rem;
+          height: 0.25rem;
+          border-radius: 0.125rem;
+          background-color: #fc3c44;
+          margin: auto;
+        }
+        &::after {
+          margin: auto;
+        }
+      }
+    }
+  }
+
   .swo-headline__headline {
     font: var(--headline--font);
     color: var(--swo-headline--color, var(--ks-text-color-display));

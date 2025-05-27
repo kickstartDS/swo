@@ -25,7 +25,7 @@ export const Headline = forwardRef<
       text = content,
       sub,
       align = "left",
-      switchOrder = false,
+      switchOrder = true,
       level = "h2",
       // @ts-expect-error: Some kDS Components set the `styleAs`Props (e.g. https://github.com/kickstartDS/content/blob/next/source/storytelling/StorytellingComponent.tsx#L146)
       styleAs,
@@ -47,6 +47,7 @@ export const Headline = forwardRef<
           style !== "none" && style !== level && `swo-headline--${style}`,
           `swo-headline--align-${align}`,
           spaceAfter && `swo-headline--space-after-${spaceAfter}`,
+          switchOrder && `swo-headline--switch-order`,
           className
         )}
         ref={ref}

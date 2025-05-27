@@ -21,7 +21,7 @@
       "type": "boolean",
       "title": "Switch order?",
       "description": "Switch order of headline and subheadline",
-      "default": false
+      "default": true
     },
     "align": {
       "type": "string",
