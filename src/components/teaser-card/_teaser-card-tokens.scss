@@ -7,22 +7,22 @@
   --swo-teaser-card--border-width: 0;
   --swo-teaser-card--border-color: var(--ks-border-color-card-interactive);
   --swo-teaser-card--border-color_hover: var(--ks-border-color-card-interactive-hover);
-  --swo-teaser-card--border-radius: 0;
+  --swo-teaser-card--border-radius: var(--ks-border-radius-card);
 
   --swo-teaser-card--shadow: none;
   --swo-teaser-card--shadow_hover: none;
 
   --swo-teaser__topic--color: var(--swo-topic--color);
 
-  --swo-teaser-card__label--font: var(--ks-font-interface-s);
+  --swo-teaser-card__label--font: var(--ks-font-interface-m);
   --swo-teaser-card__label--font-weight: var(--ks-font-weight-semi-bold);
-  --swo-teaser-card__label--color: var(--ks-text-color-primary);
-  --swo-teaser-card__label--background-color: var(--ks-background-color-bold);
-  --swo-teaser-card__label--padding: 0.5em 1em;
-  --swo-teaser-card__label--border-radius: var(--ks-border-radius-pill);
-  --swo-teaser-card__label--border: 1px solid var(--ks-border-color-interface);
+  --swo-teaser-card__label--color: var(--swo-text-color-on-primary-base);
+  --swo-teaser-card__label--background-color: var(--ks-background-color-primary);
+  --swo-teaser-card__label--padding: 0 0.5em;
+  --swo-teaser-card__label--border-radius: 0.25rem;
+  --swo-teaser-card__label--border: 0;
 
-  --swo-teaser-card__image--border-radius: var(--ks-border-radius-card);
+  --swo-teaser-card__image--border-radius: 0;
 
   //Scaling for Mobile Breakpoint
   --swo-teaser-card__topic--font: var(--ks-font-display-l);
@@ -31,13 +31,13 @@
   --swo-teaser-card__copy--font: var(--swo-rich-text--font);
   --swo-teaser-card__copy--color: var(--ks-text-color-default);
 
-  --swo-teaser-card--padding: var(--ks-spacing-inset-l) 0;
+  --swo-teaser-card--padding: var(--ks-spacing-inset-l);
 
   @media (min-width: 48em) {
     //Scaling for Desktop Breakpoint SmallTiles
     --swo-teaser-card__topic--font: var(--ks-font-display-s);
     --swo-teaser-card__copy--font: var(--ks-font-copy-s);
-    --swo-teaser-card--padding: var(--ks-spacing-inset-s) 0;
+    --swo-teaser-card--padding: var(--ks-spacing-inset-s);
 
     //Scaling for Desktop Breakpoint MediumTiles
     @include container.size("≥", 300px, "teaser-card") {
@@ -49,7 +49,7 @@
     @include container.size("≥", 820px, "teaser-card") {
       --swo-teaser-card__topic--font: var(--ks-font-display-l);
       --swo-teaser-card__copy--font: var(--ks-font-copy-l);
-      --swo-teaser-card--padding: var(--ks-spacing-inset-l) =;
+      --swo-teaser-card--padding: var(--ks-spacing-inset-l);
     }
   }
 }

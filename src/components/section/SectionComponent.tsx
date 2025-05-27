@@ -57,29 +57,13 @@ export const SectionContextDefault = forwardRef<
         {...props}
         {...componentProps}
         className={classnames(
-          "section",
-          style &&
-            style !== "default" &&
-            `section-style--${
-              style === "verticalGradient"
-                ? "vertical-gradient"
-                : style === "horizontalGradient"
-                ? "horizontal-gradient"
-                : style === "accentTransition"
-                ? "accent-transition"
-                : style === "boldTransition"
-                ? "bold-transition"
-                : style === "symmetricGlow"
-                ? "symmetric-glow"
-                : style === "anchorGlow"
-                ? "anchor-glow"
-                : style
-            }`,
+          "swo-section",
+          style && style !== "default" && `swo-section-style--${style}`,
           transition &&
             transition !== "none" &&
-            `section--transition-${transition}`,
-          headerSpacing && "section--header-spacing",
-          spotlight && "section--spotlight",
+            `swo-section--transition-${transition}`,
+          headerSpacing && "swo-section--header-spacing",
+          spotlight && "swo-section--spotlight",
           className
         )}
         background={

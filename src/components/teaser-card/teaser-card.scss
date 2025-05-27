@@ -61,13 +61,16 @@
   }
 
   .c-teaser__topic {
+    display: flex;
+    flex-direction: column;
     color: var(--swo-teaser__topic--color, var(--swo-topic--color));
     font: var(--swo-teaser-card__topic--font, var(--swo-topic--font));
     font-weight: var(--swo-teaser-card__topic--font-weight, var(--swo-topic--font-weight));
   }
 
   .swo-teaser-card__label {
-    position: absolute;
+    position: relative;
+    width: fit-content;
     z-index: 1;
     top: 0;
     right: 0;
@@ -75,12 +78,26 @@
     border: var(--swo-teaser-card__label--border, 0);
     pointer-events: initial;
     padding: var(--swo-teaser-card__label--padding);
-    transform: translate(0.5em, -50%);
     font: var(--swo-teaser-card__label--font);
     text-align: center;
     font-weight: var(--swo-teaser-card__label--font-weight);
     color: var(--swo-teaser-card__label--color);
     background-color: var(--swo-teaser-card__label--background-color);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0.25rem 100%;
+
+    &:after {
+      content: "";
+      top: 0;
+      display: inline-flex;
+      transform: skew(-10deg);
+      width: 0.75rem;
+      height: 100%;
+      background-color: inherit;
+      right: -0.25rem;
+      position: absolute;
+      border-radius: 0.25rem;
+    }
   }
 
   @include container.size("≥", 640px, "teaser-card") {

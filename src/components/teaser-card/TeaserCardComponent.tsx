@@ -44,13 +44,17 @@ export const TeaserCardContextDefault = forwardRef<
           `swo-teaser-card--${imageRatio}`
         )}
       >
-        {label && <span className="swo-teaser-card__label">{label}</span>}
         <TeaserBoxContextDefault
           {...rest}
           topic={headline}
           text={text}
           // @ts-expect-error
-          renderTopic={() => <>{compiler(headline)}</>}
+          renderTopic={() => (
+            <>
+              {label && <span className="swo-teaser-card__label">{label}</span>}
+              {compiler(headline)}
+            </>
+          )}
           link={{
             hidden: button?.hidden,
             label: button.label,

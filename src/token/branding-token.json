@@ -43,7 +43,7 @@
     "interface": {
       "family": "'Museo Sans' ,Helvetica, sans-serif, system-ui, -apple-system",
       "font-size": 16,
-      "line-height": 1.5,
+      "line-height": 1.75,
       "scale-ratio": 1.225,
       "bp-factor": {
         "tablet": 1.125
@@ -52,7 +52,7 @@
     "mono": {
       "family": "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace",
       "font-size": 16,
-      "line-height": 1.5,
+      "line-height": 1.75,
       "scale-ratio": 1.225,
       "bp-factor": {
         "tablet": 1.125

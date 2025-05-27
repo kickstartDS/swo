@@ -36,22 +36,12 @@ Bei der Planung und Installation einer Solaranlage gibt es Einiges zu beachten. 
       />
     </Section>
     <Section
-      backgroundColor="default"
       content={{
-        align: "center",
-        gutter: "default",
         tileWidth: "large",
-        width: "unset",
       }}
       headline={{
-        large: false,
-        sub: "We can create something shining for you too!",
-        text: "Happy Customers Showcases",
-        width: "unset",
+        text: "Solar-Infos im Überblick",
       }}
-      spaceAfter="default"
-      spaceBefore="default"
-      width="default"
     >
       <TeaserCard
         button={{
@@ -87,6 +77,47 @@ Bei der Planung und Installation einer Solaranlage gibt es Einiges zu beachten. 
         target="#"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
       />
+      <TeaserCard
+        button={{
+          hidden: true,
+          label: "Go to Page",
+        }}
+        headline="Transformation Love Story"
+        image="/img/showcases/comp_tfe01.jpg"
+        layout="row"
+        target="#"
+        text="See how we saved TechFusions a year's worth of development time"
+      />
+      <TeaserCard
+        button={{
+          hidden: true,
+          label: "Go to Page",
+        }}
+        headline="Speed and Scale"
+        image="/img/showcases/comp_audio01.jpg"
+        label="Freshest Fruit"
+        layout="row"
+        target="#"
+        text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
+      />
+      <TeaserCard
+        button={{
+          hidden: true,
+          label: "Go to Page",
+        }}
+        headline="Saving Time and Money"
+        image="/img/showcases/comp_eco01.jpg"
+        layout="row"
+        target="#"
+        text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
+      />
+    </Section>
+    <Section
+      backgroundColor="accent"
+      headline={{
+        text: "Weitere Solar-Themen für Sie",
+      }}
+    >
       <TeaserCard
         button={{
           hidden: true,
