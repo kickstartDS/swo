@@ -15,7 +15,7 @@ export const NavFlyoutContextDefault = forwardRef<
       className="dsa-nav-flyout"
       ks-inverted={inverted.toString()}
       id="dsa-nav-flyout"
-      aria-label="Hauptnavigation"
+      aria-label="Main Navigation"
       ref={ref}
     >
       <ul className="dsa-nav-flyout__list">
@@ -29,9 +29,7 @@ export const NavFlyoutContextDefault = forwardRef<
               key={href}
             >
               {subItems?.length ? (
-                <span tabIndex={0} className="dsa-nav-flyout__label">
-                  {label}
-                </span>
+                <span className="dsa-nav-flyout__label">{label}</span>
               ) : (
                 <Link
                   href={href}

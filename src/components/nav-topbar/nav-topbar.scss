@@ -58,6 +58,7 @@
     &--active {
       .dsa-nav-topbar__label {
         color: var(--dsa-nav-topbar__label--color_active);
+        background-color: var(--dsa-nav-topbar__label--background-color_active);
         font-weight: var(--dsa-nav-topbar__label--font-weight_active);
       }
     }
@@ -76,9 +77,11 @@
   .dsa-nav-topbar__label {
     display: flex;
     font: var(--dsa-nav-topbar__label--font);
-    font-family: var(--dsa-nav-topbar__label-font-family);
+    font-family: var(--dsa-nav-topbar__label--font-family);
     font-weight: var(--dsa-nav-topbar__label--font-weight);
     color: var(--dsa-nav-topbar__label--color);
+    background-color: var(--dsa-nav-topbar__label--background-color);
+    border-radius: var(--ks-border-radius-control);
     height: 100%;
     align-items: center;
     padding: var(--dsa-nav-topbar__label--padding);
@@ -88,6 +91,7 @@
     &:focus,
     &:active {
       color: var(--dsa-nav-topbar__label--color_hover);
+      background-color: var(--dsa-nav-topbar__label--background-color_hover);
       text-decoration: var(--dsa-nav-topbar__label--text-decoration_hover);
     }
 

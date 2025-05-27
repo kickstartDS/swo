@@ -12,8 +12,10 @@
   --dsa-nav-flyout__label--color: var(--ks-color-fg);
   --dsa-nav-flyout__label--color_hover: var(--ks-text-color-interface-interactive-hover);
   --dsa-nav-flyout__label--color_active: var(--ks-text-color-interface-interactive-active);
+  --dsa-nav-flyout__label--background-color_hover: unset;
+  --dsa-nav-flyout__label--background-color_active: unset;
   --dsa-nav-flyout__label--font: var(--ks-font-interface-l);
-  --dsa-nav-flyout__label-font-family: var(--ks-font-family-display);
+  --dsa-nav-flyout__label--font-family: var(--ks-font-family-display);
   --dsa-nav-flyout__label--font-weight: var(--ks-font-weight-semi-bold);
   --dsa-nav-flyout__label--font-weight_active: var(--ks-font-weight-bold);
   --dsa-nav-flyout__label--padding: 0.25em 0;

@@ -64,21 +64,17 @@
       > .dsa-nav-flyout__label {
         font-weight: var(--dsa-nav-flyout__label--font-weight_active);
         color: var(--dsa-nav-flyout__label--color_active);
-      }
-    }
-
-    &:hover {
-      > .dsa-nav-sublist {
-        display: flex;
+        background-color: var(--dsa-nav-flyout__label--background-color_active);
       }
     }
   }
 
   .dsa-nav-flyout__label {
     text-decoration: var(--dsa-nav-flyout__label--text-decoration);
-    display: flex;
+    display: block;
+    width: fit-content;
     font: var(--dsa-nav-flyout__label--font);
-    font-family: var(--dsa-nav-flyout__label-font-family);
+    font-family: var(--dsa-nav-flyout__label--font-family);
     font-weight: var(--dsa-nav-flyout__label--font-weight);
     color: var(--dsa-nav-flyout__label--color);
     height: 100%;
@@ -89,6 +85,7 @@
     &:focus,
     &:active {
       color: var(--dsa-nav-flyout__label--color_hover);
+      background-color: var(--dsa-nav-flyout__label--background-color_hover);
       text-decoration: var(--dsa-nav-flyout__label--text-decoration_hover);
     }
   }

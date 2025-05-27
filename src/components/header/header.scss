@@ -32,6 +32,7 @@
   }
 
   &--floating {
+    width: calc(100vw - var(--dsa-header_floating--spacing-horizontal) * 2);
     max-width: calc(var(--dsa-header--max-width) + var(--dsa-header_floating--spacing-horizontal) * 2);
     top: 10px;
     padding: var(--dsa-header--spacing-vertical) 0;

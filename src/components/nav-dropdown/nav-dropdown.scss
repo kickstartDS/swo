@@ -27,6 +27,7 @@
     &--active {
       .dsa-nav-dropdown__label {
         color: var(--dsa-nav-dropdown__label--color_active);
+        background-color: var(--dsa-nav-dropdown__label--background-color_active);
         font-weight: var(--dsa-nav-dropdown__label--font-weight_active);
       }
     }
@@ -36,7 +37,7 @@
     text-decoration: var(--dsa-nav-dropdown__label--text-decoration);
     font: inherit;
     font-weight: var(--dsa-nav-dropdown__label--font-weight);
-    font-family: var(--dsa-nav-dropdown__label-font-family);
+    font-family: var(--dsa-nav-dropdown__label--font-family);
     color: var(--dsa-nav-dropdown__label--color);
     position: relative;
     display: block;
