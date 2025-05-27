@@ -66,6 +66,7 @@ export const FeatureContextDefault = forwardRef<
             <Icon
               aria-hidden
               role="presentation"
+              focusable={false}
               icon={cta.icon || "arrow-right"}
             />
           </Link>
