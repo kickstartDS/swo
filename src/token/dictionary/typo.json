@@ -428,48 +428,48 @@
       },
       "interface": {
         "xxs": {
-          "value": 1.5
+          "value": 1.75
         },
         "xs": {
-          "value": 1.5
+          "value": 1.75
         },
         "s": {
-          "value": 1.5
+          "value": 1.75
         },
         "m": {
-          "value": 1.5
+          "value": 1.75
         },
         "l": {
-          "value": 1.5
+          "value": 1.75
         },
         "xl": {
-          "value": 1.5
+          "value": 1.75
         },
         "xxl": {
-          "value": 1.5
+          "value": 1.75
         }
       },
       "mono": {
         "xxs": {
-          "value": 1.5
+          "value": 1.75
         },
         "xs": {
-          "value": 1.5
+          "value": 1.75
         },
         "s": {
-          "value": 1.5
+          "value": 1.75
         },
         "m": {
-          "value": 1.5
+          "value": 1.75
         },
         "l": {
-          "value": 1.5
+          "value": 1.75
         },
         "xl": {
-          "value": 1.5
+          "value": 1.75
         },
         "xxl": {
-          "value": 1.5
+          "value": 1.75
         }
       }
     }

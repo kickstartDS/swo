@@ -15,13 +15,13 @@
 
   //PRIMARY
 
-  --swo-button_primary--color: var(--swo-text-color-on-primary);
-  --swo-button_primary--color_hover: var(--swo-text-color-on-primary);
-  --swo-button_primary--color_active: var(--swo-text-color-on-primary);
+  --swo-button_primary--color: var(--ks-text-color-default-interactive);
+  --swo-button_primary--color_hover: var(--ks-text-color-default-interactive-hover);
+  --swo-button_primary--color_active: var(--ks-text-color-default-interactive-active);
 
-  --swo-button_primary--background-color: var(--ks-background-color-primary-interactive);
-  --swo-button_primary--background-color_hover: var(--ks-background-color-primary-interactive-hover);
-  --swo-button_primary--background-color_active: var(--ks-background-color-primary-interactive-active);
+  --swo-button_primary--background-color: transparent;
+  --swo-button_primary--background-color_hover: transparent;
+  --swo-button_primary--background-color_active: transparent;
 
   //SECONDARY
 

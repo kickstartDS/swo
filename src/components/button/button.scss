@@ -19,7 +19,9 @@
     --c-button--font: var(--swo-button_large--font, var(--ks-font-interface-l));
   }
 
-  &.c-button--solid {
+  &.swo-button--primary {
+    padding: 0;
+
     --c-button--color: var(--swo-button_primary--color, var(--swo-text-color-on-primary));
     --c-button--color-hover: var(--swo-button_primary--color_hover, var(--swo-text-color-on-primary));
     --c-button--color-active: var(--swo-button_primary--color_active, var(--swo-text-color-on-primary));
@@ -45,9 +47,43 @@
       --swo-button_primary--background-color_selected,
       var(--ks-background-color-primary-interactive-selected)
     );
+
+    &:hover {
+      .icon {
+        use {
+          animation: arrow-hover-effect 0.4s ease-in-out;
+        }
+      }
+    }
+
+    @keyframes arrow-hover-effect {
+      0% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      49% {
+        transform: translateX(50%);
+        opacity: 0;
+      }
+      51% {
+        transform: translateX(-50%);
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .icon {
+      border-radius: var(--ks-border-radius-circle);
+      border: 2px solid var(--ks-border-color-primary-interactive);
+      box-sizing: content-box;
+      margin-left: 0.5rem;
+      color: var(--ks-color-fg);
+    }
   }
 
-  &.c-button--clear {
+  &.swo-button--secondary {
     padding: var(--swo-button--padding);
 
     --c-button--color: var(--swo-button_secondary--color, var(--ks-text-color-default));
@@ -77,7 +113,7 @@
     );
   }
 
-  &.c-button--outline {
+  &.swo-button--terciary {
     padding: var(--swo-button--padding);
 
     --c-button--color: var(--swo-button_terciary--color, var(--ks-text-color-default));

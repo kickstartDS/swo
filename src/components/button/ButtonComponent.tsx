@@ -29,13 +29,13 @@ export const Button = forwardRef<
   ) => (
     <ButtonContextDefault
       {...props}
-      className={classnames("swo-button", className)}
+      className={classnames("swo-button", `swo-button--${variant}`, className)}
       href={target}
       label={label}
       size={size}
       variant={
         variant === "primary"
-          ? "solid"
+          ? "clear"
           : variant === "secondary"
           ? "clear"
           : variant === "tertiary"
@@ -44,7 +44,7 @@ export const Button = forwardRef<
       }
       disabled={disabled}
       iconAfter={{
-        icon: icon,
+        icon: variant === "primary" ? "chevron-right" : icon,
       }}
       ref={ref}
     />
