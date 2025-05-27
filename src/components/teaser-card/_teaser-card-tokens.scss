@@ -1,5 +1,4 @@
 @use "@kickstartds/core/source/core/container";
-@import "../../selectors";
 @include container.wrapper("teaser-card");
 
 .dsa-teaser-card {
