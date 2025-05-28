@@ -6,6 +6,7 @@ import { Section } from "../components/section/SectionComponent";
 import { Text } from "../components/text/TextComponent";
 import { Hero } from "../components/hero/HeroComponent";
 import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
+import { ContentNavCard } from "../components/content-nav-card/ContentNavCardComponent";
 
 const Page = () => (
   <>
@@ -26,6 +27,7 @@ const Page = () => (
         text: "Wissenswertes rund um Ihre Solarenergie",
         sub: "Auf einen Blick für Sie zusammengefasst",
         switchOrder: true,
+        large: true,
         align: "center",
       }}
       backgroundColor="accent"
@@ -40,76 +42,82 @@ Bei der Planung und Installation einer Solaranlage gibt es Einiges zu beachten. 
         tileWidth: "large",
       }}
       headline={{
-        text: "Solar-Infos im Überblick",
+        text: "Unsere wichtigsten Angebote & Services im Überblick",
       }}
     >
-      <TeaserCard
-        button={{
-          hidden: true,
-          label: "Go to Page",
+      <ContentNavCard
+        label="Energie für die Region"
+        topic="Ökostrom- und Erdgas-Tarife mit Preisgarantien"
+        image={{
+          src: "https://media.stadtwerke-osnabrueck.de/bdb0948c5f2f08c2bf790d179cf42cba/40c54eda1fd5b3e2/83b7fe23b27e/v/823838563cd1/PK-Tarif-Grundrauschen_Mobil_950x633.jpg",
+          alt: "Bild",
         }}
-        headline="Transformation Love Story"
-        image="/img/showcases/comp_tfe01.jpg"
-        layout="row"
-        target="#"
-        text="See how we saved TechFusions a year's worth of development time"
+        link={{
+          label: "Unsere Energietarife",
+          target: "#",
+        }}
       />
-      <TeaserCard
-        button={{
-          hidden: true,
-          label: "Go to Page",
+      <ContentNavCard
+        label="Mission Glasfaser"
+        topic="Glasfaserausbau für ganz Osnabrück"
+        image={{
+          src: "https://media.stadtwerke-osnabrueck.de/bdb0948c5f2f08c2bf790d179cf42cba/e230f2b1c9b1d483/34f053b018e8/v/e6338e707fab/mission-glasfaser-ausbau",
+          alt: "Bild",
         }}
-        headline="Speed and Scale"
-        image="/img/showcases/comp_audio01.jpg"
-        label="Freshest Fruit"
-        layout="row"
-        target="#"
-        text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
+        link={{
+          label: "Jetzt Verfügbarkeit prüfen",
+          target: "#",
+        }}
       />
-      <TeaserCard
-        button={{
-          hidden: true,
-          label: "Go to Page",
+      <ContentNavCard
+        topic="Mit uns zur eigenen Wärmepumpe"
+        label="Wärmewende für Ihr Zuhause"
+        image={{
+          src: "https://media.stadtwerke-osnabrueck.de/bdb0948c5f2f08c2bf790d179cf42cba/9a5df82d06dcc479/d04998cc97f8/v/d0c2d0196e4e/waermepumpe-ohne-menschen_final.jpg",
+          alt: "Bild",
         }}
-        headline="Saving Time and Money"
-        image="/img/showcases/comp_eco01.jpg"
-        layout="row"
-        target="#"
-        text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
+        link={{
+          label: "Zun Angebot",
+          target: "#",
+        }}
       />
-      <TeaserCard
-        button={{
-          hidden: true,
-          label: "Go to Page",
+      <ContentNavCard
+        label="Vorteilswelt"
+        topic="Mehr drin für unsere Energiekunden"
+        image={{
+          src: "https://media.stadtwerke-osnabrueck.de/bdb0948c5f2f08c2bf790d179cf42cba/ec3da32f4deaa8ca/ca2f9eb010be/v/298731ee0430/Vorteilswelt-Loma-Sauna.jpg",
+          alt: "Bild",
         }}
-        headline="Transformation Love Story"
-        image="/img/showcases/comp_tfe01.jpg"
-        layout="row"
-        target="#"
-        text="See how we saved TechFusions a year's worth of development time"
+        link={{
+          label: "Zur Vorteilswelt",
+          target: "#",
+        }}
+        campaignGreen
       />
-      <TeaserCard
-        button={{
-          hidden: true,
-          label: "Go to Page",
+      <ContentNavCard
+        label="Deutschlandticket"
+        topic="Für 58 Euro quer durch's Land!"
+        image={{
+          src: "https://media.stadtwerke-osnabrueck.de/bdb0948c5f2f08c2bf790d179cf42cba/6db5e7eabc6d3fe3/f5501a06e12f/v/9164af296429/deutschland-ticket-swo-web-2000x665_Logo--2-.jpg",
+          alt: "Bild",
         }}
-        headline="Speed and Scale"
-        image="/img/showcases/comp_audio01.jpg"
-        label="Freshest Fruit"
-        layout="row"
-        target="#"
-        text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
+        link={{
+          label: "Infos zum D-Ticket",
+          target: "#",
+        }}
+        campaignGreen
       />
-      <TeaserCard
-        button={{
-          hidden: true,
-          label: "Go to Page",
+      <ContentNavCard
+        label="In Osnabrück leben"
+        topic="Unsere Wohnungsangebote"
+        image={{
+          src: "https://media.stadtwerke-osnabrueck.de/bdb0948c5f2f08c2bf790d179cf42cba/342ca5291414ed67/b47b1cc736e1/v/ad56ee047f7c/wio-junges-paar-3089.jpg",
+          alt: "Bild",
         }}
-        headline="Saving Time and Money"
-        image="/img/showcases/comp_eco01.jpg"
-        layout="row"
-        target="#"
-        text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
+        link={{
+          label: "Zu den Angeboten",
+          target: "#",
+        }}
       />
     </Section>
     <Section
@@ -120,8 +128,7 @@ Bei der Planung und Installation einer Solaranlage gibt es Einiges zu beachten. 
     >
       <TeaserCard
         button={{
-          hidden: true,
-          label: "Go to Page",
+          label: "Mehr Infos",
         }}
         headline="Transformation Love Story"
         image="/img/showcases/comp_tfe01.jpg"
@@ -131,8 +138,7 @@ Bei der Planung und Installation einer Solaranlage gibt es Einiges zu beachten. 
       />
       <TeaserCard
         button={{
-          hidden: true,
-          label: "Go to Page",
+          label: "Zu unseren Solarlösungen",
         }}
         headline="Speed and Scale"
         image="/img/showcases/comp_audio01.jpg"
@@ -143,8 +149,7 @@ Bei der Planung und Installation einer Solaranlage gibt es Einiges zu beachten. 
       />
       <TeaserCard
         button={{
-          hidden: true,
-          label: "Go to Page",
+          label: "Zu unseren Solarlösungen",
         }}
         headline="Saving Time and Money"
         image="/img/showcases/comp_eco01.jpg"

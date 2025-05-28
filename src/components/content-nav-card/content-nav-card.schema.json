@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/content-nav-card.schema.json",
+  "title": "Content Nav Card",
+  "description": "Component used to tease content",
+  "type": "object",
+  "properties": {
+    "topic": {
+      "type": "string",
+      "title": "Topic",
+      "description": "Topic for the content nav card",
+      "format": "markdown"
+    },
+    "label": {
+      "type": "string",
+      "title": "Label",
+      "description": "Label for the Content Nav Card"
+    },
+    "image": {
+      "type": "object",
+      "title": "Image",
+      "description": "Image to display as cover",
+      "properties": {
+        "src": {
+          "type": "string",
+          "title": "Image Source",
+          "description": "URL of the image to display",
+          "format": "uri"
+        },
+        "alt": {
+          "type": "string",
+          "title": "Alt Text",
+          "description": "Alternative text for the image"
+        }
+      }
+    },
+    "campaignGreen": {
+      "type": "boolean",
+      "title": "Campaign Green",
+      "description": "Whether the card should feature a campaign green banderole at the bottom of the image"
+    },
+    "link": {
+      "type": "object",
+      "title": "Link",
+      "description": "Link to navigate to when the button or the image is clicked",
+      "properties": {
+        "label": {
+          "title": "Label",
+          "type": "string",
+          "description": "Label of the button. Still A11Y relevant when the button is hidden."
+        },
+        "target": {
+          "type": "string",
+          "title": "Target",
+          "description": "URL to navigate to when the button is clicked",
+          "format": "uri"
+        }
+      },
+      "required": ["label", "href"]
+    },
+    "secondaryLink": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "title": "Label",
+          "type": "string",
+          "description": "Label of the button. Still A11Y relevant when the button is hidden."
+        },
+        "target": {
+          "type": "string",
+          "title": "Link URL",
+          "description": "URL to navigate to when the button is clicked",
+
+          "format": "uri"
+        }
+      },
+      "required": ["label", "href"]
+    }
+  },
+  "additionalProperties": false,
+  "required": ["topic", "link", "image"]
+}
