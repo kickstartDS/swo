@@ -2,7 +2,7 @@
 @include container.wrapper("teaser-card");
 
 .swo-teaser-card {
-  --swo-teaser-card--background: transparent;
+  --swo-teaser-card--background: var(--ks-background-color-card-interactive);
 
   --swo-teaser-card--border-width: 0;
   --swo-teaser-card--border-color: var(--ks-border-color-card-interactive);
@@ -12,15 +12,12 @@
   --swo-teaser-card--shadow: none;
   --swo-teaser-card--shadow_hover: none;
 
-  --swo-teaser__topic--color: var(--swo-topic--color);
+  --swo-teaser-card__topic--color: var(--swo-topic--color);
+  --swo-teaser-card__topic--gap: 0.125em;
 
-  --swo-teaser-card__label--font: var(--ks-font-interface-m);
-  --swo-teaser-card__label--font-weight: var(--ks-font-weight-semi-bold);
-  --swo-teaser-card__label--color: var(--swo-text-color-on-primary-base);
-  --swo-teaser-card__label--background-color: var(--ks-background-color-primary);
-  --swo-teaser-card__label--padding: 0 0.5em;
-  --swo-teaser-card__label--border-radius: 0.25rem;
-  --swo-teaser-card__label--border: 0;
+  --swo-teaser-card__label--font: var(--ks-font-interface-s);
+  --swo-teaser-card__label--font-weight: var(--ks-font-weight-bold);
+  --swo-teaser-card__label--color: var(--ks-text-color-interface);
 
   --swo-teaser-card__image--border-radius: 0;
 
@@ -42,12 +39,12 @@
     //Scaling for Desktop Breakpoint MediumTiles
     @include container.size("≥", 300px, "teaser-card") {
       --swo-teaser-card__copy--font: var(--ks-font-copy-m);
-      --swo-teaser-card__topic--font: var(--ks-font-display-m);
+      --swo-teaser-card__topic--font: var(--ks-font-display-s);
     }
 
     // Scaling for Desktop Breakpoint LargeTiles
     @include container.size("≥", 820px, "teaser-card") {
-      --swo-teaser-card__topic--font: var(--ks-font-display-l);
+      --swo-teaser-card__topic--font: var(--ks-font-display-s);
       --swo-teaser-card__copy--font: var(--ks-font-copy-l);
       --swo-teaser-card--padding: var(--ks-spacing-inset-l);
     }

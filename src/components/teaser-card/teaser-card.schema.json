@@ -68,6 +68,11 @@
       "enum": ["wide", "landscape", "square", "unset"],
       "description": "Aspect ratio of the image",
       "default": "wide"
+    },
+    "campaignGreen": {
+      "type": "boolean",
+      "title": "Campaign Green",
+      "description": "Whether the card should feature a campaign green banderole at the bottom of the image"
     }
   },
   "additionalProperties": false,

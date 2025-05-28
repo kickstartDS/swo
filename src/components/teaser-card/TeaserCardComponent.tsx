@@ -32,6 +32,7 @@ export const TeaserCardContextDefault = forwardRef<
       imageRatio = "wide",
       label,
       layout = "stack",
+      campaignGreen = false,
       ...rest
     },
     ref
@@ -41,7 +42,8 @@ export const TeaserCardContextDefault = forwardRef<
         className={classnames(
           `swo-teaser-card`,
           `swo-teaser-card--${layout}`,
-          `swo-teaser-card--${imageRatio}`
+          `swo-teaser-card--${imageRatio}`,
+          campaignGreen && "swo-teaser-card--campaign-green"
         )}
       >
         <TeaserBoxContextDefault

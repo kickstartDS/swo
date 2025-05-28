@@ -37,6 +37,10 @@ export type DisplayButton = boolean;
  * Image to display as cover
  */
 export type Image = string;
+/**
+ * Whether the card should feature a campaign green banderole at the bottom of the image
+ */
+export type CampaignGreen = boolean;
 
 /**
  * Component used to tease content
@@ -60,4 +64,5 @@ export interface TeaserCardProps {
    * Aspect ratio of the image
    */
   imageRatio?: "wide" | "landscape" | "square" | "unset";
+  campaignGreen?: CampaignGreen;
 }

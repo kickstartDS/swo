@@ -63,41 +63,16 @@
   .c-teaser__topic {
     display: flex;
     flex-direction: column;
-    color: var(--swo-teaser__topic--color, var(--swo-topic--color));
+    gap: var(--swo-teaser-card__topic--gap, 0.125em);
+    color: var(--swo-teaser-card__topic--color, var(--swo-topic--color));
     font: var(--swo-teaser-card__topic--font, var(--swo-topic--font));
     font-weight: var(--swo-teaser-card__topic--font-weight, var(--swo-topic--font-weight));
   }
 
   .swo-teaser-card__label {
-    position: relative;
-    width: fit-content;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    border-radius: var(--swo-teaser-card__label--border-radius);
-    border: var(--swo-teaser-card__label--border, 0);
-    pointer-events: initial;
-    padding: var(--swo-teaser-card__label--padding);
     font: var(--swo-teaser-card__label--font);
-    text-align: center;
     font-weight: var(--swo-teaser-card__label--font-weight);
     color: var(--swo-teaser-card__label--color);
-    background-color: var(--swo-teaser-card__label--background-color);
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0.25rem 100%;
-
-    &:after {
-      content: "";
-      top: 0;
-      display: inline-flex;
-      transform: skew(-10deg);
-      width: 0.75rem;
-      height: 100%;
-      background-color: inherit;
-      right: -0.25rem;
-      position: absolute;
-      border-radius: 0.25rem;
-    }
   }
 
   @include container.size("≥", 640px, "teaser-card") {
@@ -123,6 +98,27 @@
         > :first-child:not(.c-teaser__body) {
           flex: 50%;
         }
+      }
+    }
+  }
+  &.swo-teaser-card--campaign-green {
+    .c-teaser > *:first-child {
+      position: relative;
+
+      &::after {
+        background: linear-gradient(
+          100deg,
+          #529900 50%,
+          rgba(82, 153, 0, 0.5) 50%,
+          rgba(82, 153, 0, 0.5) 75%,
+          rgba(82, 153, 0, 0.15) 75%
+        );
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        content: "";
+        height: 1.5rem;
+        left: 0;
       }
     }
   }
