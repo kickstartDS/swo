@@ -1,7 +1,7 @@
 import classnames from "classnames";
 import { Link } from "@kickstartds/base/lib/link";
 import { FooterProps } from "./FooterProps";
-import { Logo } from "../logo/LogoComponent";
+
 import "./footer.scss";
 import { createContext, forwardRef, HTMLAttributes, useContext } from "react";
 
@@ -10,7 +10,7 @@ export type { FooterProps };
 export const FooterContextDefault = forwardRef<
   HTMLDivElement,
   FooterProps & HTMLAttributes<HTMLDivElement>
->(({ byline, navItems, inverted, logo }, ref) =>
+>(({ byline, navItems, inverted }, ref) =>
   navItems && navItems.length > 0 ? (
     <div
       className={classnames("swo-footer")}
@@ -18,7 +18,6 @@ export const FooterContextDefault = forwardRef<
       ref={ref}
     >
       <div className="swo-footer__content">
-        <Logo {...logo} inverted={inverted} />
         {byline && <span className="swo-footer__byline">{byline}</span>}
         {navItems.length > 0 ? (
           <div className="swo-footer__links">

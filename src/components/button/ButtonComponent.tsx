@@ -19,7 +19,7 @@ export const Button = forwardRef<
       label,
       target,
       size = "medium",
-      variant = "secondary",
+      variant = "primary",
       icon,
       disabled = false,
       className,

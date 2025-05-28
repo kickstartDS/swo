@@ -7,6 +7,9 @@ import { Text } from "../components/text/TextComponent";
 import { Hero } from "../components/hero/HeroComponent";
 import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
 import { ContentNavCard } from "../components/content-nav-card/ContentNavCardComponent";
+import { Button } from "../components/button/ButtonComponent";
+import { Faq } from "../components/faq/FaqComponent";
+import { Logos } from "../components/logos/LogosComponent";
 
 const Page = () => (
   <>
@@ -127,38 +130,155 @@ Bei der Planung und Installation einer Solaranlage gibt es Einiges zu beachten. 
       }}
     >
       <TeaserCard
+        label="Wir bringen den Ausbau voran"
+        headline="Photovoltaikanlagen in Osnabrück und der Region"
+        image="https://media.stadtwerke-osnabrueck.de/bdb0948c5f2f08c2bf790d179cf42cba/cb966ace58b03b46/524b60eaf7de/v/725e6432444f/Photovoltaikanlage-Flachdach-Unternehmen.jpg"
+        imageRatio="landscape"
+        target="#"
         button={{
           label: "Mehr Infos",
         }}
-        headline="Transformation Love Story"
-        image="/img/showcases/comp_tfe01.jpg"
-        layout="row"
-        target="#"
-        text="See how we saved TechFusions a year's worth of development time"
       />
       <TeaserCard
+        headline="Sonnenstrom vom eigenen Dach"
+        image="https://media.stadtwerke-osnabrueck.de/bdb0948c5f2f08c2bf790d179cf42cba/44ba16630830b852/1fc879687f7b/v/efa71d51e475/haus-solar-anlage-photovoltaik.jpg"
+        imageRatio="landscape"
+        label="Ein Überblick"
+        target="#"
         button={{
           label: "Zu unseren Solarlösungen",
         }}
-        headline="Speed and Scale"
-        image="/img/showcases/comp_audio01.jpg"
-        label="Freshest Fruit"
-        layout="row"
-        target="#"
-        text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
       />
       <TeaserCard
+        headline="Die richtige Photovoltaikanlage für Ihr Unternehmen"
+        label="Sie sind Geschäftskunde?"
+        image="https://media.stadtwerke-osnabrueck.de/bdb0948c5f2f08c2bf790d179cf42cba/efbf799d1397cac1/5ba44ac7add3/v/373831494c47/Photovoltaikanlage-Solaranlage-Buerogebaeude.jpg"
+        imageRatio="landscape"
+        target="#"
         button={{
           label: "Zu unseren Solarlösungen",
         }}
-        headline="Saving Time and Money"
-        image="/img/showcases/comp_eco01.jpg"
-        layout="row"
-        target="#"
-        text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
       />
     </Section>
-    <Footer {...footerProps} />
+    <Section>
+      <Text
+        text={` ### Dach-Eignungsprüfung durch die Stadt Osnabrück
+Die Stadt Osnabrück hat mittels Laserscanner-Daten für seine Bürger eine Standortanalyse und Potenzialberechnung für Photovoltaikanlagen und thermische Solaranlagen erstellen lassen. [Informieren Sie sich über die Ergebnisse Ihres Dachs!](#)`}
+      />
+    </Section>
+    <Section
+      content={{
+        align: "left",
+      }}
+      backgroundColor="accent"
+      headline={{
+        text: "Sie sind auf der Suche nach einem Installateur für Ihre Photovoltaikanlage?",
+        sub: "Das Installateurverzeichnis der SWO Netz",
+        switchOrder: true,
+      }}
+    >
+      <Button label={"Jetzt finden!"} />
+    </Section>
+    <Section>
+      <Faq
+        questions={[
+          {
+            question:
+              "Welche Dachflächen eignen sich für die Installation einer Photovoltaik-Anlage?",
+            answer: `Alle herkömmlichen Dachformen sind für die Installation einer Photovoltaik-Anlage geeignet. Von hoher Bedeutung sind die Faktoren Dachneigung, verfügbare Dachfläche und Dachausrichtung.
+
+Falls das Gebäude unter Denkmalschutz steht, prüfen Sie bitte zunächst, ob eine Photovoltaik-Anlage installiert werden darf!`,
+          },
+          {
+            question: "Was ist der Autarkiegrad?",
+            answer: `Alle herkömmlichen Dachformen sind für die Installation einer Photovoltaik-Anlage geeignet. Von hoher Bedeutung sind die Faktoren Dachneigung, verfügbare Dachfläche und Dachausrichtung.
+
+Falls das Gebäude unter Denkmalschutz steht, prüfen Sie bitte zunächst, ob eine Photovoltaik-Anlage installiert werden darf!`,
+          },
+          {
+            question: "Bleibt die Höhe der Einspeisevergütung konstant?",
+            answer: `Die Stromautarkie entspricht dem Verhältnis von PV-Strom-Eigenverbrauch zum gesamten Stromverbrauch des Kunden. Beträgt der jährliche Stromverbrauch z.B. 6.000 kWh pro Jahr und werden 2.100 kWh des durch die Photovoltaik-Anlage produzierten Solarstroms direkt im Gebäude genutzt, so wird ein Autarkiegrad von 35 % erreicht.
+
+Der Autarkiegrad ist immer abhängig davon, zu welchen Zeiten Sie den Strom vorrangig verbrauchen und wieviel Strom die PV-Anlage zum gleichen Zeitpunkt erzeugt. Verbrauchen Sie den Strom beispielsweise am stärksten in den Morgen- und Abendstunden, weil Sie tagsüber außer Haus sind, wird der hauptsächlich am Tag erzeugte Strom ins Netz eingespeist. In den Morgen- und Abendstunden ist es für Sie somit i.d.R. erforderlich, zusätzlichen Strom aus dem Netz hinzuzukaufen. Veränderte Verbrauchszeiten haben somit einen Einfluss auf den Autarkiegrad, genauso wie der Einsatz eines Stromspeichers, da der produzierte und ungenutzte Strom zu anderen Zeiten verwendet werden kann.`,
+          },
+          {
+            question:
+              "Warum kann ich meinen Haushalt trotz eines Energiespeichers nicht zu 100% autark mit eigenem Sonnenstrom versorgen?",
+            answer: `Alle herkömmlichen Dachformen sind für die Installation einer Photovoltaik-Anlage geeignet.`,
+          },
+          {
+            question: "Ab welcher Anlagengröße werden EEG-Abgaben fällig?",
+            answer: `Alle herkömmlichen Dachformen sind für die Installation einer Photovoltaik-Anlage geeignet.`,
+          },
+        ]}
+      />
+    </Section>
+    <Section
+      backgroundColor="accent"
+      headline={{
+        text: "\\#machwasdraus - so machen Mats, Marlene und Tobi mehr aus Sonne",
+      }}
+    >
+      <TeaserCard
+        label="#machwasdraus"
+        headline="Mach´s wie Mats - Sonnenenergie für nächtliche Abenteuer"
+        image="https://media.stadtwerke-osnabrueck.de/bdb0948c5f2f08c2bf790d179cf42cba/cb966ace58b03b46/524b60eaf7de/v/725e6432444f/Photovoltaikanlage-Flachdach-Unternehmen.jpg"
+        imageRatio="landscape"
+        target="#"
+        button={{
+          label: "Zu Mats",
+        }}
+        campaignGreen
+      />
+      <TeaserCard
+        headline="Mach´s wie Marlene: Sonnenenergie für den grünen Daumen"
+        image="https://media.stadtwerke-osnabrueck.de/bdb0948c5f2f08c2bf790d179cf42cba/44ba16630830b852/1fc879687f7b/v/efa71d51e475/haus-solar-anlage-photovoltaik.jpg"
+        imageRatio="landscape"
+        label="#machwasdraus"
+        target="#"
+        button={{
+          label: "Zu Marlene",
+        }}
+        campaignGreen
+      />
+      <TeaserCard
+        headline="Mach´s wie Tobi: Sonnenenergie für den schönsten Platz der Welt"
+        label="#machwasdraus"
+        image="https://media.stadtwerke-osnabrueck.de/bdb0948c5f2f08c2bf790d179cf42cba/efbf799d1397cac1/5ba44ac7add3/v/373831494c47/Photovoltaikanlage-Solaranlage-Buerogebaeude.jpg"
+        imageRatio="landscape"
+        target="#"
+        button={{
+          label: "Zu Tobi",
+        }}
+      />
+    </Section>
+    <Section>
+      <Logos
+        logo={[
+          {
+            src: "https://www.stadtwerke-osnabrueck.de/rm-frontend/swo/images/cachets/H.png",
+            alt: "Siegel Herausragender Regionalversorger Strom und Erdgas",
+          },
+          {
+            src: "https://www.stadtwerke-osnabrueck.de/rm-frontend/swo/images/cachets/G.png",
+            alt: "Siegel Familienfreundlicher Arbeitgeber",
+          },
+          {
+            src: "https://www.stadtwerke-osnabrueck.de/rm-frontend/swo/images/cachets/D.png",
+            alt: "Siegel Schlichtungsstelle Niedersachsen und Bremen",
+          },
+          {
+            src: "https://www.stadtwerke-osnabrueck.de/rm-frontend/swo/images/cachets/I.png",
+            alt: "Siegel IHK Top-Ausbilder",
+          },
+          {
+            src: "https://www.stadtwerke-osnabrueck.de/rm-frontend/swo/images/cachets/TUEV.png",
+            alt: "Siegel TÜV zertifiziert",
+          },
+        ]}
+      />
+    </Section>
+    <Footer {...footerProps} inverted />
   </>
 );
 

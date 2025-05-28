@@ -5,7 +5,14 @@
   --c-button--padding: var(--swo-button--padding, 0.75em 2em);
   --c-button--font-weight: var(--swo-button--font-weight, var(--ks-font-weight-semi-bold));
   --c-button--border-width: var(--swo-button--border-width, var(--ks-border-width-default));
+
   text-transform: var(--swo-button--text-transform);
+  width: fit-content;
+  transition-property: box-shadow, transform, background-color, color, border;
+
+  &:disabled {
+    pointer-events: none;
+  }
 
   &.c-button--small {
     --c-button--font: var(--swo-button_small--font, var(--ks-font-interface-s));
@@ -139,11 +146,5 @@
     --c-button--background-color-hover: var(--swo-button_tertiary--background-color_hover, none);
     --c-button--background-color-active: var(--swo-button_tertiary--background-color_active, none);
     --c-button--background-color-selected: var(--swo-button_tertiary--background-color_selected, none);
-  }
-
-  transition-property: box-shadow, transform, background-color, color, border;
-
-  &:disabled {
-    pointer-events: none;
   }
 }
