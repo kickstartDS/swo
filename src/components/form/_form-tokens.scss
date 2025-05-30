@@ -1,29 +1,44 @@
 @import "../../selectors";
 
 .c-form-check {
-  --swo-form-check--border: var(--ks-border-width-emphasized);
-  --swo-form-check--border-color: var(--ks-border-color-interface-interactive);
-  --swo-form-check--border-color_hover: var(--ks-border-color-interface-interactive-hover);
-  --swo-form-check--border-color_focus: var(--ks-border-color-interface-interactive-active);
-  --swo-form-check--border-color_checked: var(--ks-border-color-interface-interactive-selected);
+  --swo-check--background: var(--ks-background-color-default);
+  --swo-check--background_checked: var(--ks-color-primary);
 
-  --swo-form-check--background: transparent;
-  --swo-form-check--background_checked: var(--ks-color-secondary);
+  --swo-check--border: var(--ks-border-width-) solid;
+  --swo-check--border-color: var(--ks-border-color-interface-interactive);
+  --swo-check--border-color_hover: var(--ks-border-color-interface-interactive-hover);
+  --swo-check--border-color_focus: var(--ks-border-color-primary);
+  --swo-check--border-color_checked: var(--ks-border-color-primary);
 
-  --swo-form-check--shadow_focus: 0 0 4px 0;
-  --swo-form-check__checkmark--color: var(--swo-text-color-on-primary);
+  --swo-check--size: 1.35em;
+
+  --swo-check--shadow_focus: 0 0 0 var(--ks-border-width-emphasized);
+
+  --swo-check_box--border-radius: min(var(--ks-border-radius-control), calc(var(--swo-check--size) / 4));
+
+  --swo-check_radio--border-radius: var(--ks-border-radius-circle);
+  --swo-check_radio__checkmark--size: calc(var(--swo-check--size) * 0.3);
+
+  --swo-check__checkmark--color: var(--rub-text-color-on-primary);
+
+  --swo-check__label--font: var(--ks-font-interface-s);
+  --swo-check__label--font-weight: var(--ks-font-weight-semi-bold);
+  --swo-check__label--color: var(--ks-text-color-interface-interactive-default);
 }
 
 .c-form-field {
-  --swo-form-field--color: var(--ks-text-color-interface);
+  --swo-form-field--color: var(--ks-background-color-interface-interactive);
 
-  --swo-form-field--border: var(--ks-border-width-emphasized);
+  --swo-form-field--border: var(--ks-border-width-default) solid;
   --swo-form-field--border-color: var(--ks-border-color-interface-interactive);
   --swo-form-field--border-color_hover: var(--ks-border-color-interface-interactive-hover);
   --swo-form-field--border-color_focus: var(--ks-border-color-interface-interactive-active);
+  --swo-form-field--border-color_active: var(--ks-border-color-interface-interactive-active);
 
-  --swo-form-field--background: transparent;
-  --swo-form-field--shadow_focus: 0 0 4px 0;
+  --swo-form-field--background: var(--ks-background-color-interface-interactive);
+  --swo-form-field--background_focus: var(--ks-background-color-interface-interactive-active);
+
+  --swo-form-field--shadow_focus: 0;
 
   --swo-form-field__placeholder--color: var(--ks-color-fg-alpha-5);
 }
