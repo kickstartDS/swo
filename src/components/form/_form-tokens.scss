@@ -12,7 +12,7 @@
 
   --swo-check--size: 1.35em;
 
-  --swo-check--shadow_focus: 0 0 0 var(--ks-border-width-emphasized);
+  --swo-check--shadow_focus: 0;
 
   --swo-check_box--border-radius: min(var(--ks-border-radius-control), calc(var(--swo-check--size) / 4));
 
@@ -27,18 +27,24 @@
 }
 
 .c-form-field {
-  --swo-form-field--color: var(--ks-background-color-interface-interactive);
+  --swo-input--color: var(--ks-text-color-interface);
 
-  --swo-form-field--border: var(--ks-border-width-default) solid;
-  --swo-form-field--border-color: var(--ks-border-color-interface-interactive);
-  --swo-form-field--border-color_hover: var(--ks-border-color-interface-interactive-hover);
-  --swo-form-field--border-color_focus: var(--ks-border-color-interface-interactive-active);
-  --swo-form-field--border-color_active: var(--ks-border-color-interface-interactive-active);
+  --swo-input--padding: 0.4rem 0.75rem 0.35rem;
+  --swo-input--font: var(--ks-font-interface-s);
 
-  --swo-form-field--background: var(--ks-background-color-interface-interactive);
-  --swo-form-field--background_focus: var(--ks-background-color-interface-interactive-active);
+  --swo-input--border: var(--ks-border-width-default) solid;
+  --swo-input--border-color: var(--ks-border-color-interface-interactive);
+  --swo-input--border-color_hover: var(--ks-border-color-interface-interactive-hover);
+  --swo-input--border-color_focus: var(--ks-border-color-interface-interactive-active);
+  --swo-input--border-color_active: var(--ks-border-color-interface-interactive-active);
 
-  --swo-form-field--shadow_focus: 0;
+  --swo-input--background: var(--ks-background-color-interface-interactive);
+  --swo-input--background_focus: var(--ks-background-color-interface-interactive-active);
 
-  --swo-form-field__placeholder--color: var(--ks-color-fg-alpha-5);
+  --swo-input--shadow_focus: 0;
+
+  --swo-input__label--color: var(--ks-text-color-default);
+  --swo-input__label--font-weight: var(--ks-font-weight-bold);
+
+  --swo-input__placeholder--color: var(--ks-color-fg-alpha-5);
 }
