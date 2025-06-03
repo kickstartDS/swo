@@ -45,7 +45,7 @@ export const EnergyCalculatorContextDefault = forwardRef<
         </div>
         <div className="page-teaser__row">
           <div className="page-teaser__col page-teaser__col--customer">
-            <Radio value="PK" label="Privatkunde" name="customer" />
+            <Radio value="PK" label="Privatkunde" name="customer" checked />
           </div>
           <div className="page-teaser__col page-teaser__col--customer">
             <Radio value="GK" label="Geschäftskunde" name="customer" />
