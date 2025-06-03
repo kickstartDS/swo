@@ -1,14 +1,14 @@
 {
-  "name": "@kickstartds/ds-agency-premium",
-  "version": "1.6.67",
+  "name": "@kickstartds/swo",
+  "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/kickstartDS/ds-agency-premium#readme",
+  "homepage": "https://github.com/kickstartDS/swo#readme",
   "bugs": {
-    "url": "https://github.com/kickstartDS/ds-agency-premium/issues"
+    "url": "https://github.com/kickstartDS/swo/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kickstartDS/ds-agency-premium.git"
+    "url": "git+https://github.com/kickstartDS/swo.git"
   },
   "license": "(MIT OR Apache-2.0)",
   "author": "Jonas Ulrich <jonas.ulrich@kickstartds.com> (https://www.kickstartDS.com/)",
