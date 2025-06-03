@@ -6,6 +6,7 @@
   --c-button--font-weight: var(--swo-button--font-weight, var(--ks-font-weight-semi-bold));
   --c-button--border-width: var(--swo-button--border-width, var(--ks-border-width-default));
 
+  text-align: left;
   text-transform: var(--swo-button--text-transform);
   width: fit-content;
   transition-property: box-shadow, transform, background-color, color, border;
