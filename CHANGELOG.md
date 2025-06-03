@@ -1,3 +1,15 @@
+# v1.0.2 (Tue Jun 03 2025)
+
+#### ⚠️ Pushed to `main`
+
+- fix: update CHANGELOG ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.1 (Tue Jun 03 2025)
 
 #### ⚠️ Pushed to `main`
