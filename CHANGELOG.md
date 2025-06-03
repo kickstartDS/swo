@@ -1,3 +1,19 @@
+# v1.0.5 (Tue Jun 03 2025)
+
+#### ⚠️ Pushed to `main`
+
+- feat(favicon): fix faulty paths ([@fleven-kds](https://github.com/fleven-kds))
+- feat(signpost): add offset property to signpost + add new page ([@fleven-kds](https://github.com/fleven-kds))
+- feat(signpost): design adjustments ([@fleven-kds](https://github.com/fleven-kds))
+- Merge branch 'main' of github.com:kickstartDS/swo ([@fleven-kds](https://github.com/fleven-kds))
+- feat(signpost): add component ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.4 (Tue Jun 03 2025)
 
 #### ⚠️ Pushed to `main`
