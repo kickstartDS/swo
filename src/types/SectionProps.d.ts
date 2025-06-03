@@ -32,7 +32,7 @@ export type Width = "full" | "max" | "wide" | "default" | "narrow";
 /**
  * Style of background
  */
-export type Style = "framed" | "deko" | "colorful";
+export type Style = "framed" | "deko" | "colorful" | "offset";
 /**
  * Color of background
  */

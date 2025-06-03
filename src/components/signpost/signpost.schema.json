@@ -4,6 +4,12 @@
   "title": "Signpost",
   "type": "object",
   "properties": {
+    "offset": {
+      "title": "Offset",
+      "description": "Offset of the signpost to overlap the previous section",
+      "type": "boolean",
+      "default": true
+    },
     "tabs": {
       "title": "Tabs",
       "type": "array",

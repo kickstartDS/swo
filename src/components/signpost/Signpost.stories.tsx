@@ -73,7 +73,6 @@ export const Default: Story = {
             {
               label: "YANiQ macht's möglich. Busfahren zum Bestpreis!",
               target: "https://www.yaniq.de/",
-              external: true,
             },
             {
               label: "VOSpilot – Mobilitäts-App für Osnabrück und Region",
@@ -82,7 +81,6 @@ export const Default: Story = {
             {
               label: "Aktuelle Verkehrsmeldungen",
               target: "https://www.vos.info/aktuelles/verkehrsmeldungen.html",
-              external: true,
             },
           ],
         },

@@ -1,4 +1,19 @@
 .signpost {
+  position: relative;
+
+  &--offset {
+    .signpost__tabs {
+      @media (min-width: 960px) {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        transform: translateY(-100%);
+        z-index: 1;
+        left: 0;
+      }
+    }
+  }
+
   &__tabs {
     display: none;
 
@@ -67,7 +82,7 @@
     &--desktop {
       flex-direction: column;
       padding: 1rem;
-      background-color: var(--ks-color-fg-alpha-8);
+      background-color: var(--ks-color-fg-to-bg-9);
       text-align: center;
 
       @media (min-width: 640px) {

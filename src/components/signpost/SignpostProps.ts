@@ -7,6 +7,10 @@
 
 import type {PageTeaserProps} from "../page-teaser/PageTeaserProps";
 
+/**
+ * Offset of the signpost to overlap the previous section
+ */
+export type Offset = boolean;
 export type Label = string;
 export type Icon = string;
 export type Tabs = {
@@ -23,6 +27,7 @@ export type Tabs = {
 export type AdditionalClasses = string;
 
 export interface SignpostProps {
+  offset?: Offset;
   tabs?: Tabs;
   className?: AdditionalClasses;
 }

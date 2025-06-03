@@ -4,6 +4,7 @@ import {
   ImgHTMLAttributes,
   useContext,
 } from "react";
+import classnames from "classnames";
 import { SignpostProps } from "./SignpostProps";
 import "./signpost.scss";
 import { Icon } from "@kickstartds/base/lib/icon";
@@ -15,12 +16,12 @@ export type { SignpostProps };
 export const SignpostContextDefault = forwardRef<
   HTMLImageElement,
   SignpostProps & ImgHTMLAttributes<HTMLImageElement>
->(({ tabs, ...props }) => {
+>(({ tabs, offset = true, ...props }) => {
   return (
     <>
       <div
         {...props}
-        className="signpost"
+        className={classnames("signpost", offset && "signpost--offset")}
         ks-component="swo.signpost"
         data-component="swo.signpost"
       >
