@@ -4,14 +4,12 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Signpost } from "./SignpostComponent";
 import schema from "./signpost.schema.dereffed.json";
-import customProperties from "./signpost-tokens.json";
 
 const meta: Meta<typeof Signpost> = {
   title: "Components/Signpost",
   component: Signpost,
   parameters: {
     jsonschema: { schema },
-    cssprops: { customProperties },
   },
   ...getArgsShared(schema as JSONSchema7),
 };
