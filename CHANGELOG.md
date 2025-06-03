@@ -1,3 +1,16 @@
+# v1.0.4 (Tue Jun 03 2025)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/swo ([@julrich](https://github.com/julrich))
+- chore: update previews ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.3 (Tue Jun 03 2025)
 
 #### ⚠️ Pushed to `main`
