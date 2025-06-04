@@ -1,3 +1,16 @@
+# v1.0.6 (Wed Jun 04 2025)
+
+#### ⚠️ Pushed to `main`
+
+- fix: update types for changed section ([@julrich](https://github.com/julrich))
+- fix: add signpost component to section ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.5 (Tue Jun 03 2025)
 
 #### ⚠️ Pushed to `main`
