@@ -17,6 +17,7 @@ import type {ImageStoryProps} from "@kickstartds/image-story.schema.json/lib/ima
 import type {ImageTextProps} from "@kickstartds/image-text.schema.json/lib/image-text/typing";
 import type {LogosProps} from "@kickstartds/logos.schema.json/lib/logos/typing";
 import type {MosaicProps} from "@kickstartds/mosaic.schema.json/lib/mosaic/typing";
+import type {SignpostProps} from "@kickstartds/signpost.schema.json/lib/signpost/typing";
 import type {SliderProps} from "@kickstartds/content/lib/slider/typing";
 import type {StatsProps} from "@kickstartds/stats.schema.json/lib/stats/typing";
 import type {TeaserCardProps} from "@kickstartds/teaser-card.schema.json/lib/teaser-card/typing";
@@ -128,6 +129,7 @@ export type Content = (
   | ImageTextProps
   | LogosProps
   | MosaicProps
+  | SignpostProps
   | SliderProps
   | StatsProps
   | TeaserCardProps

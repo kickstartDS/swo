@@ -16,6 +16,7 @@ import type {ImageStoryProps} from "../image-story/ImageStoryProps";
 import type {ImageTextProps} from "../image-text/ImageTextProps";
 import type {LogosProps} from "../logos/LogosProps";
 import type {MosaicProps} from "../mosaic/MosaicProps";
+import type {SignpostProps} from "../signpost/SignpostProps";
 import type {SliderProps} from "../slider/SliderProps";
 import type {StatsProps} from "../stats/StatsProps";
 import type {TeaserCardProps} from "../teaser-card/TeaserCardProps";
@@ -127,6 +128,7 @@ export type Content = (
   | ImageTextProps
   | LogosProps
   | MosaicProps
+  | SignpostProps
   | SliderProps
   | StatsProps
   | TeaserCardProps
