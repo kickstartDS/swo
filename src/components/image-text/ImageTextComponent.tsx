@@ -19,10 +19,9 @@ export type { ImageTextProps };
 export const ImageTextContextDefault = forwardRef<
   HTMLDivElement,
   ImageTextProps & HTMLAttributes<HTMLDivElement>
->(({ text, image, layout, highlightText, ...rest }, ref) => (
+>(({ text, image, layout, highlightText }, ref) => (
   <Container name="text-media" ref={ref}>
     <OriginalTextMediaContextDefault
-      {...rest}
       className={classnames(
         highlightText ? "swo-image-text--highlight" : "",
         "swo-image-text"
@@ -35,13 +34,7 @@ export const ImageTextContextDefault = forwardRef<
           },
         },
       ]}
-      mediaAlignment={
-        layout === "above"
-          ? "above-center"
-          : layout === "below"
-          ? "below-center"
-          : layout
-      }
+      mediaAlignment={layout}
     />
   </Container>
 ));

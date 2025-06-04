@@ -20,7 +20,7 @@ export default meta;
 
 type Story = StoryObj<typeof ImageText>;
 
-export const BesideRightLayout: Story = {
+export const BesideLayout: Story = {
   parameters: {
     viewport: {
       width: 1240,
@@ -58,6 +58,27 @@ _Experience the power of streamlined development and see the difference it can m
       src: "img/close-up-young-business-team-working.png",
       alt: "Agency",
     },
-    layout: "above",
+    layout: "above-center",
+  }),
+};
+
+export const IntextLayout: Story = {
+  parameters: {
+    viewport: {
+      width: 760,
+      height: 829,
+    },
+  },
+  args: pack({
+    text: `We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).
+
+This tool expedites our **development process**, saving you precious time and enabling us to deliver superior results more quickly. With this framework, your design system aspirations can be realized faster than ever before.
+
+_Experience the power of streamlined development and see the difference it can make in your projects._`,
+    image: {
+      src: "img/close-up-young-business-team-working.png",
+      alt: "Agency",
+    },
+    layout: "intext-right",
   }),
 };

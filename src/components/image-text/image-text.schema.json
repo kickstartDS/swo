@@ -6,11 +6,7 @@
   "type": "object",
   "properties": {
     "text": {
-      "type": "string",
-      "format": "markdown",
-      "title": "Text",
-      "description": "Text content to display beside the image",
-      "examples": ["This is a sample text"]
+      "$ref": "http://schema.kickstartds.com/base/text-media.schema.json#/properties/text"
     },
     "highlightText": {
       "type": "boolean",
@@ -37,11 +33,7 @@
       }
     },
     "layout": {
-      "type": "string",
-      "enum": ["above", "below", "beside-right", "beside-left"],
-      "title": "Layout",
-      "description": "Position of the image relative to the text",
-      "examples": ["above"]
+      "$ref": "http://schema.kickstartds.com/base/text-media.schema.json#/properties/mediaAlignment"
     }
   },
   "required": ["text", "image", "layout"]

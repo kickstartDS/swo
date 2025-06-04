@@ -6,9 +6,9 @@
  */
 
 /**
- * Text content to display beside the image
+ * Copy text for the element
  */
-export type Text = string;
+export type TextContent = string;
 /**
  * Visually highlight the text
  */
@@ -22,19 +22,29 @@ export type ImageSource = string;
  */
 export type AltText = string;
 /**
- * Position of the image relative to the text
+ * In relation to the text content
  */
-export type Layout = "above" | "below" | "beside-right" | "beside-left";
+export type MediaAlignment =
+  | "above-left"
+  | "above-center"
+  | "above-right"
+  | "beside-left"
+  | "beside-right"
+  | "intext-left"
+  | "intext-right"
+  | "below-left"
+  | "below-center"
+  | "below-right";
 
 /**
  * Component used to display an image beside or above/below a text block
  */
 export interface ImageTextProps {
-  text: Text;
+  text: TextContent;
   highlightText?: HighlightText;
   image: {
     src?: ImageSource;
     alt?: AltText;
   };
-  layout: Layout;
+  layout: MediaAlignment;
 }
