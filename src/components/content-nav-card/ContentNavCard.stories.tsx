@@ -31,7 +31,7 @@ export const SingleLink: Story = {
     topic: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     label: "Lorem Ipsum",
     image: {
-      src: "img/swo/PK-Tarif-Grundrauschen_Mobil_950x633.webp",
+      src: "img/swo/waermepumpe-ohne-menschen_final.webp",
     },
     link: {
       label: "Go to page",
@@ -50,7 +50,7 @@ export const WithoutLabel: Story = {
   args: pack({
     topic: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     image: {
-      src: "img/swo/PK-Tarif-Grundrauschen_Mobil_950x633.webp",
+      src: "img/swo/waermepumpe-ohne-menschen_final.webp",
     },
     link: {
       label: "Go to page",
@@ -70,7 +70,7 @@ export const DuoLink: Story = {
     topic: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     label: "Lorem Ipsum",
     image: {
-      src: "img/swo/PK-Tarif-Grundrauschen_Mobil_950x633.webp",
+      src: "img/swo/waermepumpe-ohne-menschen_final.webp",
     },
     link: {
       label: "Go to page",
@@ -95,7 +95,7 @@ export const CampaignGreen: Story = {
     label: "Lorem Ipsum",
     campaignGreen: true,
     image: {
-      src: "img/swo/PK-Tarif-Grundrauschen_Mobil_950x633.webp",
+      src: "img/swo/waermepumpe-ohne-menschen_final.webp",
     },
     link: {
       label: "Go to page",
