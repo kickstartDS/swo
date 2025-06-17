@@ -6,6 +6,7 @@
  */
 
 import type {CtaProps} from "../cta/CtaProps";
+import type {ContentNavCardProps} from "../content-nav-card/ContentNavCardProps";
 import type {DividerProps} from "../divider/DividerProps";
 import type {FaqProps} from "../faq/FaqProps";
 import type {FeaturesProps} from "../features/FeaturesProps";
@@ -118,6 +119,7 @@ export type TileWidth = "smallest" | "default" | "medium" | "large" | "largest";
  */
 export type Content = (
   | CtaProps
+  | ContentNavCardProps
   | DividerProps
   | FaqProps
   | FeaturesProps

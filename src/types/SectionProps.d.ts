@@ -7,6 +7,7 @@ declare module "@kickstartds/base/lib/section/typing" {
  */
 
 import type {CtaProps} from "@kickstartds/cta.schema.json/lib/cta/typing";
+import type {ContentNavCardProps} from "@kickstartds/content-nav-card.schema.json/lib/content-nav-card/typing";
 import type {DividerProps} from "@kickstartds/base/lib/divider/typing";
 import type {FaqProps} from "@kickstartds/faq.schema.json/lib/faq/typing";
 import type {FeaturesProps} from "@kickstartds/features.schema.json/lib/features/typing";
@@ -119,6 +120,7 @@ export type TileWidth = "smallest" | "default" | "medium" | "large" | "largest";
  */
 export type Content = (
   | CtaProps
+  | ContentNavCardProps
   | DividerProps
   | FaqProps
   | FeaturesProps

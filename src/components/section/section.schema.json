@@ -170,6 +170,9 @@
             "$ref": "http://schema.mydesignsystem.com/cta.schema.json"
           },
           {
+            "$ref": "http://schema.mydesignsystem.com/content-nav-card.schema.json"
+          },
+          {
             "$ref": "http://schema.mydesignsystem.com/divider.schema.json"
           },
           {
