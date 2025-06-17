@@ -1,3 +1,15 @@
+# v1.0.11 (Tue Jun 17 2025)
+
+#### ⚠️ Pushed to `main`
+
+- fix(section.schema): add reference to content-nav-card schema ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.10 (Tue Jun 17 2025)
 
 #### ⚠️ Pushed to `main`
