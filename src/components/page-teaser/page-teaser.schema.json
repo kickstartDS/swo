@@ -11,7 +11,8 @@
       "properties": {
         "src": {
           "title": "Image Source",
-          "type": "string"
+          "type": "string",
+          "format": "image"
         },
         "alt": {
           "title": "Image Alt Text",
