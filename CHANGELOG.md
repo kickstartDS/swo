@@ -1,3 +1,16 @@
+# v1.0.12 (Tue Jun 17 2025)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/swo ([@fleven-kds](https://github.com/fleven-kds))
+- feat(signpost.js): rename file ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.11 (Tue Jun 17 2025)
 
 #### ⚠️ Pushed to `main`
