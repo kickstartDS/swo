@@ -24,7 +24,7 @@ export const PageTeaserContextDefault = forwardRef<
           <div className="page-teaser__content">
             <img
               className="page-teaser__image"
-              src={image.src}
+              src={image?.src}
               alt="Alle vrijetijdsactiviteiten in het Nettebad"
             />
           </div>
