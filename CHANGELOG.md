@@ -1,3 +1,15 @@
+# v1.0.8 (Mon Jun 16 2025)
+
+#### ⚠️ Pushed to `main`
+
+- feat(contentNavCard): replace missing image asset ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.7 (Wed Jun 04 2025)
 
 #### ⚠️ Pushed to `main`
