@@ -8,8 +8,7 @@
     "topic": {
       "type": "string",
       "title": "Topic",
-      "description": "Topic for the content nav card",
-      "format": "markdown"
+      "description": "Topic for the content nav card"
     },
     "label": {
       "type": "string",

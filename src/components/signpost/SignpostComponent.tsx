@@ -9,7 +9,7 @@ import { SignpostProps } from "./SignpostProps";
 import "./signpost.scss";
 import { Icon } from "@kickstartds/base/lib/icon";
 import { PageTeaser } from "../page-teaser/PageTeaserComponent";
-import "./Signpost.js";
+import "./Signpost.client.js";
 
 export type { SignpostProps };
 
