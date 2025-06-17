@@ -1,3 +1,16 @@
+# v1.0.9 (Tue Jun 17 2025)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/swo ([@fleven-kds](https://github.com/fleven-kds))
+- fix(PageTeaserComponent): safely access image source with optional chaining ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.8 (Mon Jun 16 2025)
 
 #### ⚠️ Pushed to `main`
